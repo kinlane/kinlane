@@ -5,7 +5,7 @@ title: 'Having the Strength to Power on Through'
 date: 2022-05-27T12:00:00.000Z
 tags:
   - Kin Lane
-image: https://s3.amazonaws.com/kinlane-productions2/southern-oregon-2022/stories-kin-mountain-dali-three.jpg
+image: https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/stories-kin-mountain-dali-three.jpg
 ---
 I’ve been working hard lately. It is an understatement to say that I have a lot on my plate. My team has grown to 25, and I have a number of big projects front and center right now. While I have many different projects to think about big and small, there is one particular project that happens every year around this time that has intense deadlines and deliverables that are out of my control, and I am the only person with enough of a handle on the big picture to tackle. I need to be on my game, and it isn’t a time for anything to go wrong, but on the Friday before the Memorial holiday weekend it was clear that everything would go wrong, and I would just have to fight my forward and resist letting everything fall apart. 
 
