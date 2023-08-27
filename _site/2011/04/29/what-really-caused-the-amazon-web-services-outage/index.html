@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>What Really Caused the Amazon Web Services Outage? | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="What Really Caused the Amazon Web Services Outage?" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Amazon released a summary of the Amazon EC2 and Amazon RDS service disruption in the US East Region today. These so caled stuck volumes and stuck EC2 instances, well those were mine. Right after midnight on April 21st I was working on one of my harvest tools, which pulls feeds from all major blogs, breaks them down and stores them for analysis. I was reviewing the analysis for what it pulled in the last hour, then my EC2 instance froze. I closed everything down and logged back into the root, but it took be about 45 minutes to actually get things to load back up. Once back in I saw some sort of scan going on? Whatever was scanning on this instance was going through large volumes of information, and it was moving so fast I really couldn’t make sense of it. I tried to shut things down, but couldn’t. I’d lost control over my instance. I run a quadruple extra large instance for harvesting data. For nearly 4 days I couldn’t get my machine to respond. I assumed once Amazon resolved their problems, then I could get back in. It was late Sunday night before I was able to get back into my instance, everything looked fine. Upon closer inspection I noticed that my hard drive was all but maxed out. I started looking further and noticed my normally 500 GB EBS volume was now 1 TB. Then I noticed there were 25 separate 1TB EBS volumes attached. Holy shit, where did this come from? I started going through these drives, they appeared to full of logs of the last 4 days activities. I was curious to know what happened, so I started looking through. I started with the files timestamped from 4/21/2011. The logs contained complete copies of everything I’ve harvested over the last years, but that was just the first 4 hours. After that it looks like some other data, I do not recognize it. After looking for patterns I noticed several things. In the first 2 hours I saw my dictionary database I use for indexing harvested data processed, with following coded tags around each word: 112 114 111 99 101 115 115&gt;&gt;aardvaark&lt;&lt;112 114 111 99 101 115 115 The log files the rest of the days seemed to be processing all blog posts I&#39;ve pulled from around the web for the last year: 76 101 97 114 110&gt;&gt; The first serious infowar is now engaged, EFF co-founder John Perry Barlow tweeted on Friday. The field of battle is WikiLeaks. You are the troops. Cablegate and Tech Companies. And here we are. In the week since the whistleblower site released its latest round of documents to major global newspapers, the site has been besieged by DDOS attacks (upwards of 10 Gbps at one point), forcing the site offline and hampering its ability to deliver data...&lt;&lt;76 101 97 114 110 Then for the next 36 hours the log files contained random posts, bits of information, which I could not make sense of: 85 110 100 101 114 115 116 97 110 100&gt;&gt;Care must be taken to recognize when the effects of one constraint may counteract the benefits of some other constraint. Nevertheless, it is possible for an experienced software architect to build such a derivation tree of architectural constraints for a given application domain, and then use the tree to evaluate many different architectural designs for applications within that domain. Thus, building a derivation tree provides a mechanism for architectural design guidance.&lt;&lt; 85 110 100 101 114 115 116 97 110 100 This is pretty what seemed to fill up my hard drive(s). After that, all it seemed to pull was was Amazon EC2 instance IDs and EBS Volume IDs: 69 120 112 108 111 114 101&gt;&gt;i-77f3849,i-399fF3a49&lt;&lt;69 120 112 108 111 114 101 I&#39;ve looked for other reports of this type of scanning across the Internet and can&#39;t find anything. Whatever or whoever it was it seem to get smarter and more efficient the more it scanned. It found my information, and after it worked through that, it found a whole bunch of other content from that. What worries me is it looks like it explored beyond my machine and found about 67,000 other instances while it was exploring. I don&#39;t have this information on my server or storage. The last file I found modified was a log file with timestamp Sunday at 8:01:00 PM with a single line in it: 83 108 101 101 112 I&#39;m not sure what all this is, but it seemed to only exist on my server and started at the same time everyone started complaining about an outage. Amazons report on outage, says a similar time: 12:47 AM PDT on April 21st. They claim it was due to a &quot;network change&quot;. Interesting. It may have coincided with a network change, but what I saw seemed like something else. What I saw, seemed to be some sort of machine learning or evolving intelligence. Maybe its all part of my imagination....oh wait...it is....none of this happened." />
+<meta property="og:description" content="Amazon released a summary of the Amazon EC2 and Amazon RDS service disruption in the US East Region today. These so caled stuck volumes and stuck EC2 instances, well those were mine. Right after midnight on April 21st I was working on one of my harvest tools, which pulls feeds from all major blogs, breaks them down and stores them for analysis. I was reviewing the analysis for what it pulled in the last hour, then my EC2 instance froze. I closed everything down and logged back into the root, but it took be about 45 minutes to actually get things to load back up. Once back in I saw some sort of scan going on? Whatever was scanning on this instance was going through large volumes of information, and it was moving so fast I really couldn’t make sense of it. I tried to shut things down, but couldn’t. I’d lost control over my instance. I run a quadruple extra large instance for harvesting data. For nearly 4 days I couldn’t get my machine to respond. I assumed once Amazon resolved their problems, then I could get back in. It was late Sunday night before I was able to get back into my instance, everything looked fine. Upon closer inspection I noticed that my hard drive was all but maxed out. I started looking further and noticed my normally 500 GB EBS volume was now 1 TB. Then I noticed there were 25 separate 1TB EBS volumes attached. Holy shit, where did this come from? I started going through these drives, they appeared to full of logs of the last 4 days activities. I was curious to know what happened, so I started looking through. I started with the files timestamped from 4/21/2011. The logs contained complete copies of everything I’ve harvested over the last years, but that was just the first 4 hours. After that it looks like some other data, I do not recognize it. After looking for patterns I noticed several things. In the first 2 hours I saw my dictionary database I use for indexing harvested data processed, with following coded tags around each word: 112 114 111 99 101 115 115&gt;&gt;aardvaark&lt;&lt;112 114 111 99 101 115 115 The log files the rest of the days seemed to be processing all blog posts I&#39;ve pulled from around the web for the last year: 76 101 97 114 110&gt;&gt; The first serious infowar is now engaged, EFF co-founder John Perry Barlow tweeted on Friday. The field of battle is WikiLeaks. You are the troops. Cablegate and Tech Companies. And here we are. In the week since the whistleblower site released its latest round of documents to major global newspapers, the site has been besieged by DDOS attacks (upwards of 10 Gbps at one point), forcing the site offline and hampering its ability to deliver data...&lt;&lt;76 101 97 114 110 Then for the next 36 hours the log files contained random posts, bits of information, which I could not make sense of: 85 110 100 101 114 115 116 97 110 100&gt;&gt;Care must be taken to recognize when the effects of one constraint may counteract the benefits of some other constraint. Nevertheless, it is possible for an experienced software architect to build such a derivation tree of architectural constraints for a given application domain, and then use the tree to evaluate many different architectural designs for applications within that domain. Thus, building a derivation tree provides a mechanism for architectural design guidance.&lt;&lt; 85 110 100 101 114 115 116 97 110 100 This is pretty what seemed to fill up my hard drive(s). After that, all it seemed to pull was was Amazon EC2 instance IDs and EBS Volume IDs: 69 120 112 108 111 114 101&gt;&gt;i-77f3849,i-399fF3a49&lt;&lt;69 120 112 108 111 114 101 I&#39;ve looked for other reports of this type of scanning across the Internet and can&#39;t find anything. Whatever or whoever it was it seem to get smarter and more efficient the more it scanned. It found my information, and after it worked through that, it found a whole bunch of other content from that. What worries me is it looks like it explored beyond my machine and found about 67,000 other instances while it was exploring. I don&#39;t have this information on my server or storage. The last file I found modified was a log file with timestamp Sunday at 8:01:00 PM with a single line in it: 83 108 101 101 112 I&#39;m not sure what all this is, but it seemed to only exist on my server and started at the same time everyone started complaining about an outage. Amazons report on outage, says a similar time: 12:47 AM PDT on April 21st. They claim it was due to a &quot;network change&quot;. Interesting. It may have coincided with a network change, but what I saw seemed like something else. What I saw, seemed to be some sort of machine learning or evolving intelligence. Maybe its all part of my imagination....oh wait...it is....none of this happened." />
+<link rel="canonical" href="http://localhost:4000/2011/04/29/what-really-caused-the-amazon-web-services-outage/" />
+<meta property="og:url" content="http://localhost:4000/2011/04/29/what-really-caused-the-amazon-web-services-outage/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/matrix-pics/blue-matrix-400.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-04-29T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2011/04/29/what-really-caused-the-amazon-web-services-outage/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"What Really Caused the Amazon Web Services Outage?","dateModified":"2011-04-29T00:00:00-07:00","datePublished":"2011-04-29T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/04/29/what-really-caused-the-amazon-web-services-outage/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/matrix-pics/blue-matrix-400.jpg","description":"Amazon released a summary of the Amazon EC2 and Amazon RDS service disruption in the US East Region today. These so caled stuck volumes and stuck EC2 instances, well those were mine. Right after midnight on April 21st I was working on one of my harvest tools, which pulls feeds from all major blogs, breaks them down and stores them for analysis. I was reviewing the analysis for what it pulled in the last hour, then my EC2 instance froze. I closed everything down and logged back into the root, but it took be about 45 minutes to actually get things to load back up. Once back in I saw some sort of scan going on? Whatever was scanning on this instance was going through large volumes of information, and it was moving so fast I really couldn’t make sense of it. I tried to shut things down, but couldn’t. I’d lost control over my instance. I run a quadruple extra large instance for harvesting data. For nearly 4 days I couldn’t get my machine to respond. I assumed once Amazon resolved their problems, then I could get back in. It was late Sunday night before I was able to get back into my instance, everything looked fine. Upon closer inspection I noticed that my hard drive was all but maxed out. I started looking further and noticed my normally 500 GB EBS volume was now 1 TB. Then I noticed there were 25 separate 1TB EBS volumes attached. Holy shit, where did this come from? I started going through these drives, they appeared to full of logs of the last 4 days activities. I was curious to know what happened, so I started looking through. I started with the files timestamped from 4/21/2011. The logs contained complete copies of everything I’ve harvested over the last years, but that was just the first 4 hours. After that it looks like some other data, I do not recognize it. After looking for patterns I noticed several things. In the first 2 hours I saw my dictionary database I use for indexing harvested data processed, with following coded tags around each word: 112 114 111 99 101 115 115&gt;&gt;aardvaark&lt;&lt;112 114 111 99 101 115 115 The log files the rest of the days seemed to be processing all blog posts I&#39;ve pulled from around the web for the last year: 76 101 97 114 110&gt;&gt; The first serious infowar is now engaged, EFF co-founder John Perry Barlow tweeted on Friday. The field of battle is WikiLeaks. You are the troops. Cablegate and Tech Companies. And here we are. In the week since the whistleblower site released its latest round of documents to major global newspapers, the site has been besieged by DDOS attacks (upwards of 10 Gbps at one point), forcing the site offline and hampering its ability to deliver data...&lt;&lt;76 101 97 114 110 Then for the next 36 hours the log files contained random posts, bits of information, which I could not make sense of: 85 110 100 101 114 115 116 97 110 100&gt;&gt;Care must be taken to recognize when the effects of one constraint may counteract the benefits of some other constraint. Nevertheless, it is possible for an experienced software architect to build such a derivation tree of architectural constraints for a given application domain, and then use the tree to evaluate many different architectural designs for applications within that domain. Thus, building a derivation tree provides a mechanism for architectural design guidance.&lt;&lt; 85 110 100 101 114 115 116 97 110 100 This is pretty what seemed to fill up my hard drive(s). After that, all it seemed to pull was was Amazon EC2 instance IDs and EBS Volume IDs: 69 120 112 108 111 114 101&gt;&gt;i-77f3849,i-399fF3a49&lt;&lt;69 120 112 108 111 114 101 I&#39;ve looked for other reports of this type of scanning across the Internet and can&#39;t find anything. Whatever or whoever it was it seem to get smarter and more efficient the more it scanned. It found my information, and after it worked through that, it found a whole bunch of other content from that. What worries me is it looks like it explored beyond my machine and found about 67,000 other instances while it was exploring. I don&#39;t have this information on my server or storage. The last file I found modified was a log file with timestamp Sunday at 8:01:00 PM with a single line in it: 83 108 101 101 112 I&#39;m not sure what all this is, but it seemed to only exist on my server and started at the same time everyone started complaining about an outage. Amazons report on outage, says a similar time: 12:47 AM PDT on April 21st. They claim it was due to a &quot;network change&quot;. Interesting. It may have coincided with a network change, but what I saw seemed like something else. What I saw, seemed to be some sort of machine learning or evolving intelligence. Maybe its all part of my imagination....oh wait...it is....none of this happened.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2011/04/29/what-really-caused-the-amazon-web-services-outage/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What Really Caused the Amazon Web Services Outage? | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2011/04/29/what-really-caused-the-amazon-web-services-outage/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="What Really Caused the Amazon Web Services Outage? | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">What Really Caused the Amazon Web Services Outage?</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2011-04-29T00:00:00-07:00" itemprop="datePublished">
+    
+    Apr 29, 2011
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/matrix-pics/blue-matrix-400.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/matrix-pics/blue-matrix-400.jpg" alt="" width="300" align="right" />Amazon released a summary of the <a href="http://aws.amazon.com/message/65648/">Amazon EC2 and Amazon RDS service disruption in the US East Region</a> today.
+<p></p>
+These so caled stuck volumes and stuck EC2 instances, well those were mine.
+<p></p>
+Right after midnight on April 21st I was working on one of my harvest tools,  which pulls feeds from all major blogs, breaks them down and stores them for analysis.
+<p></p>
+I was reviewing the analysis for what it pulled in the last hour, then my EC2 instance froze.   I closed everything down and logged back into the root, but it took be about 45 minutes to actually get things to load back up.
+<p></p>
+Once back in I saw some sort of scan going on?   Whatever was scanning on this instance was going through large volumes of information, and it was moving so fast I really couldn't make sense of it.
+<p></p>
+I tried to shut things down, but couldn't.  I'd lost control over my instance.  I run a quadruple extra large instance for harvesting data.  For nearly 4 days I couldn't get my machine to respond.
+<p></p>
+I assumed once Amazon resolved their problems, then I could get back in.
+<p></p>
+It was late Sunday night before I was able to get back into my instance, everything looked fine.  Upon closer inspection I noticed that my hard drive was all but maxed out.   I started looking further and noticed my normally 500 GB EBS volume was now 1 TB.   Then I noticed there were 25 separate 1TB EBS volumes attached.  Holy shit, where did this come from?
+<p></p>
+I started going through these drives, they appeared to full of logs of the last 4 days activities.
+<p></p>
+I was curious to know what happened, so I started looking through.  I started with the files timestamped from 4/21/2011.
+<p></p>
+The logs contained complete copies of everything I've harvested over the last years, but that was just the first 4 hours.  After that it looks like some other data, I do not recognize it.
+<p></p>
+After looking for patterns I noticed several things. In the first 2 hours I saw my dictionary database I use for indexing harvested data processed, with following coded tags around each word:
+<p style="padding-left: 30px;"><em>112 114 111 99 101 115 115&gt;&gt;aardvaark&lt;&lt;112 114 111 99 101 115 115</em>
+The log files the rest of the days seemed to be processing all blog posts I've pulled from around the web for the last year:
+<p style="padding-left: 30px;"><em>76 101 97 114 110&gt;&gt; The first serious infowar is now engaged, EFF co-founder John Perry Barlow tweeted on Friday. The field of battle is WikiLeaks. You are the troops.  Cablegate and Tech Companies. And here we are. In the week since the whistleblower site released its latest round of documents to major global newspapers, the site has been besieged by DDOS attacks (upwards of 10 Gbps at one point), forcing the site offline and hampering its ability to deliver data...&lt;&lt;76 101 97 114 110</em>
+Then for the next 36 hours the log files contained random posts, bits of information, which I could not make sense of:
+<p style="padding-left: 30px;"><em>85 110 100 101 114 115 116 97 110 100&gt;&gt;Care must be taken to recognize when the effects of one constraint may counteract the benefits of some other constraint. Nevertheless, it is possible for an experienced software architect to build such a derivation tree of architectural constraints for a given application domain, and then use the tree to evaluate many different architectural designs for applications within that domain. Thus, building a derivation tree provides a mechanism for architectural design guidance.&lt;&lt; 85 110 100 101 114 115 116 97 110 100</em>
+This is pretty what seemed to fill up my hard drive(s). After that, all it seemed to pull was  was Amazon EC2 instance IDs and EBS Volume IDs:
+<p style="padding-left: 30px;"><em>69 120 112 108 111 114 101&gt;&gt;i-77f3849,i-399fF3a49&lt;&lt;69 120 112 108 111 114 101</em>
+I've looked for other reports of this type of scanning across the Internet and can't find anything.
+<p></p>
+Whatever or whoever it was it seem to get smarter and more efficient the more it scanned.  It found my information, and after it worked through that, it found a whole bunch of other content from that.
+<p></p>
+What worries me is it looks like it explored beyond my machine and found about 67,000 other instances while it was exploring.  I don't have this information on my server or storage.
+<p></p>
+The last file I found modified was a log file with timestamp Sunday at 8:01:00 PM with a single line in it:
+<p style="padding-left: 30px;"><em>83 108 101 101 112</em>
+I'm not sure what all this is, but it seemed to only exist on my server and started at the same time everyone started complaining about an outage.  Amazons report on outage, says a similar time:  12:47 AM PDT on April 21st.
+<p></p>
+They claim it was due to a <em><strong>"network change"</strong></em>.  Interesting.
+<p></p>
+It may have coincided with a network change, but what I saw seemed like something else.  What I saw, seemed to be some sort of machine learning or evolving intelligence.
+<p></p>
+Maybe its all part of my imagination....oh wait...it is....none of this happened.
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=What Really Caused the Amazon Web Services Outage?&url=http://localhost:4000/2011/04/29/what-really-caused-the-amazon-web-services-outage/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2011%2F04%2F29%2Fwhat-really-caused-the-amazon-web-services-outage%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2011/04/29/deltacloud-api-as-a-service/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2011/04/30/bound-document-printer-with-boxnet-and-mimeo-connect/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

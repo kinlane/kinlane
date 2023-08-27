@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Evolution of My Technology Platform Over Last 24 Years | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Evolution of My Technology Platform Over Last 24 Years" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Every couple of years I migrate my platform a little bit forward (hopefully) and begin weaving in new tools into my personal and business world. I recently spent some time looking back, and trying to map out the last 24 years of my professional technology career--in hopes of helping me understand how far I&#39;ve come. 1988 - When I first started programming, I was still in high school. I was recommended for a job by my high school computer science teacher Mr. Smith and went to work for Mt Rose Software where I spent my time assisting the owner in building student information systems in Cobol. We compiled, distributed and installed this software ourselves. 1993 - As we made our way into the 1990&#39;s we rewrote the codebase from Cobol to Foxpro, but still the systems were compiled and installed database systems, that we had to distribute to all school districts manualy. No servers or Internet in my world yet. 1995 - In 1995 the Internet started to become more prominent in my daily business world, but much of the work I did was around building database systems for music, commerce and non-profits. I did much of this work in Microsoft Access, but when I started doing work for non-profits I started using Filemaker Pro. This is when I started building web pages using HTML, but at this point they were static, hand-crafted sites without much that was dynamic. 1998 - I remember trying to play with Frontpage and build dynamic sites and being very frustrated. I discovered Microsoft Internet Information Server (IIS), which was an add-on to the Windows NT server. I began building dynamic web sites using Active Server Pages (ASP) and Microsoft Access databases. Due to locks on the database I quickly discovered SQL Server and began launching separate web and database servers using Windows NT. 2001 - By 2001 I was playing around with new Microsoft tools like .NET and more robust languages like C#, and continued to use ASP, SQL Server and Windows Server with IIS to deliver websites. This formula would remain constant for a few more years, assisting me in building some pretty large, dynamic web sites / applications. 2004 - In 2004 I faced a major rewrite of my companies custom content management system. I had zero confidence in .NET at this point and rather than continue using an obsolete language, I opted to replace ASP with PHP and SQL Server with MySQL and being the migration to open source tools. I still maintained my own Windows server as I had invested a lot in hardware, software as well as server management scripts in classic ASP. 2006 - This year was the beginning of cloud computing for me. I was an early adopter of Amazon S3 and immediately saw the potential for storing heavy objects on the new platform. While I still ran my own server farm, with a flavor of Windows, MySQL and PHP (WAMP), I would story all images, CSS, JS, PDF and all objects centrally at Amazon S3. 2008 - Once Amazon came out with Amazon EC2, I was hooked on the cloud. I was facing buying new hardware and opted to migrate everything to the cloud. The language, server and database remained the same, but I moved from my own colo facility and went entirely into the Amazon Cloud. Running Windows instances on Amazon EC2, keeping storage at Amazon S3--selling all of my server infrastructure. 2010 - As Amazon continue to add to their stack I took advantage of the scalability of Amazon RDS. I stopped deploying my own servers running MySQL and depended exclusively on MySQL running on RDS. I also opted to finally ditch Windows Server as my primary server OS at this time, and began using Fedora Linux w/ Apache as my base OS and web server. I was finally a full LAMP stack running exclusively in the cloud. 2013 This year I&#39;m still keeping my core LAMP stack running the cloud, but it is becoming just the core of what I call the &quot;Laneworks Network&quot;. While I still rely on LAMP to do the heavy lifting an data crunching in the clouds, I am migrating projects and public sites to run as Github repositories using Github Pages. This new approach uses Github Pages for static pages, Jekyll for the blog and JSON output from the core lane works on a schedule, taking advantage of mustache templates and JavaScript for display. I have been pushing the boundaries of what I know, and which tools I use for 24 years now. I&#39;m excited about the potential of all my sites and projects being completely open source and running as exclusively client side projects on the Internet. i feel the potential is much greater when I leverage the open and social environment of Github. 90% of all my work be open, public repositories with only a handful held back as private repositories. Additionally, a growing part of my platform is dependent on APIs. APIs I create or those of providers like AWS to Pinboard. While i still rely on my core Laneworks operations to make things function, in 2013 my world is becoming mostly &nbsp;API driven client side applications written in HTML, CSS and JavaScript. I&#39;m excited for the potential!" />
+<meta property="og:description" content="Every couple of years I migrate my platform a little bit forward (hopefully) and begin weaving in new tools into my personal and business world. I recently spent some time looking back, and trying to map out the last 24 years of my professional technology career--in hopes of helping me understand how far I&#39;ve come. 1988 - When I first started programming, I was still in high school. I was recommended for a job by my high school computer science teacher Mr. Smith and went to work for Mt Rose Software where I spent my time assisting the owner in building student information systems in Cobol. We compiled, distributed and installed this software ourselves. 1993 - As we made our way into the 1990&#39;s we rewrote the codebase from Cobol to Foxpro, but still the systems were compiled and installed database systems, that we had to distribute to all school districts manualy. No servers or Internet in my world yet. 1995 - In 1995 the Internet started to become more prominent in my daily business world, but much of the work I did was around building database systems for music, commerce and non-profits. I did much of this work in Microsoft Access, but when I started doing work for non-profits I started using Filemaker Pro. This is when I started building web pages using HTML, but at this point they were static, hand-crafted sites without much that was dynamic. 1998 - I remember trying to play with Frontpage and build dynamic sites and being very frustrated. I discovered Microsoft Internet Information Server (IIS), which was an add-on to the Windows NT server. I began building dynamic web sites using Active Server Pages (ASP) and Microsoft Access databases. Due to locks on the database I quickly discovered SQL Server and began launching separate web and database servers using Windows NT. 2001 - By 2001 I was playing around with new Microsoft tools like .NET and more robust languages like C#, and continued to use ASP, SQL Server and Windows Server with IIS to deliver websites. This formula would remain constant for a few more years, assisting me in building some pretty large, dynamic web sites / applications. 2004 - In 2004 I faced a major rewrite of my companies custom content management system. I had zero confidence in .NET at this point and rather than continue using an obsolete language, I opted to replace ASP with PHP and SQL Server with MySQL and being the migration to open source tools. I still maintained my own Windows server as I had invested a lot in hardware, software as well as server management scripts in classic ASP. 2006 - This year was the beginning of cloud computing for me. I was an early adopter of Amazon S3 and immediately saw the potential for storing heavy objects on the new platform. While I still ran my own server farm, with a flavor of Windows, MySQL and PHP (WAMP), I would story all images, CSS, JS, PDF and all objects centrally at Amazon S3. 2008 - Once Amazon came out with Amazon EC2, I was hooked on the cloud. I was facing buying new hardware and opted to migrate everything to the cloud. The language, server and database remained the same, but I moved from my own colo facility and went entirely into the Amazon Cloud. Running Windows instances on Amazon EC2, keeping storage at Amazon S3--selling all of my server infrastructure. 2010 - As Amazon continue to add to their stack I took advantage of the scalability of Amazon RDS. I stopped deploying my own servers running MySQL and depended exclusively on MySQL running on RDS. I also opted to finally ditch Windows Server as my primary server OS at this time, and began using Fedora Linux w/ Apache as my base OS and web server. I was finally a full LAMP stack running exclusively in the cloud. 2013 This year I&#39;m still keeping my core LAMP stack running the cloud, but it is becoming just the core of what I call the &quot;Laneworks Network&quot;. While I still rely on LAMP to do the heavy lifting an data crunching in the clouds, I am migrating projects and public sites to run as Github repositories using Github Pages. This new approach uses Github Pages for static pages, Jekyll for the blog and JSON output from the core lane works on a schedule, taking advantage of mustache templates and JavaScript for display. I have been pushing the boundaries of what I know, and which tools I use for 24 years now. I&#39;m excited about the potential of all my sites and projects being completely open source and running as exclusively client side projects on the Internet. i feel the potential is much greater when I leverage the open and social environment of Github. 90% of all my work be open, public repositories with only a handful held back as private repositories. Additionally, a growing part of my platform is dependent on APIs. APIs I create or those of providers like AWS to Pinboard. While i still rely on my core Laneworks operations to make things function, in 2013 my world is becoming mostly &nbsp;API driven client side applications written in HTML, CSS and JavaScript. I&#39;m excited for the potential!" />
+<link rel="canonical" href="http://localhost:4000/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/" />
+<meta property="og:url" content="http://localhost:4000/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/cobol.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-01-13T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Evolution of My Technology Platform Over Last 24 Years","dateModified":"2013-01-13T00:00:00-08:00","datePublished":"2013-01-13T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/cobol.jpeg","description":"Every couple of years I migrate my platform a little bit forward (hopefully) and begin weaving in new tools into my personal and business world. I recently spent some time looking back, and trying to map out the last 24 years of my professional technology career--in hopes of helping me understand how far I&#39;ve come. 1988 - When I first started programming, I was still in high school. I was recommended for a job by my high school computer science teacher Mr. Smith and went to work for Mt Rose Software where I spent my time assisting the owner in building student information systems in Cobol. We compiled, distributed and installed this software ourselves. 1993 - As we made our way into the 1990&#39;s we rewrote the codebase from Cobol to Foxpro, but still the systems were compiled and installed database systems, that we had to distribute to all school districts manualy. No servers or Internet in my world yet. 1995 - In 1995 the Internet started to become more prominent in my daily business world, but much of the work I did was around building database systems for music, commerce and non-profits. I did much of this work in Microsoft Access, but when I started doing work for non-profits I started using Filemaker Pro. This is when I started building web pages using HTML, but at this point they were static, hand-crafted sites without much that was dynamic. 1998 - I remember trying to play with Frontpage and build dynamic sites and being very frustrated. I discovered Microsoft Internet Information Server (IIS), which was an add-on to the Windows NT server. I began building dynamic web sites using Active Server Pages (ASP) and Microsoft Access databases. Due to locks on the database I quickly discovered SQL Server and began launching separate web and database servers using Windows NT. 2001 - By 2001 I was playing around with new Microsoft tools like .NET and more robust languages like C#, and continued to use ASP, SQL Server and Windows Server with IIS to deliver websites. This formula would remain constant for a few more years, assisting me in building some pretty large, dynamic web sites / applications. 2004 - In 2004 I faced a major rewrite of my companies custom content management system. I had zero confidence in .NET at this point and rather than continue using an obsolete language, I opted to replace ASP with PHP and SQL Server with MySQL and being the migration to open source tools. I still maintained my own Windows server as I had invested a lot in hardware, software as well as server management scripts in classic ASP. 2006 - This year was the beginning of cloud computing for me. I was an early adopter of Amazon S3 and immediately saw the potential for storing heavy objects on the new platform. While I still ran my own server farm, with a flavor of Windows, MySQL and PHP (WAMP), I would story all images, CSS, JS, PDF and all objects centrally at Amazon S3. 2008 - Once Amazon came out with Amazon EC2, I was hooked on the cloud. I was facing buying new hardware and opted to migrate everything to the cloud. The language, server and database remained the same, but I moved from my own colo facility and went entirely into the Amazon Cloud. Running Windows instances on Amazon EC2, keeping storage at Amazon S3--selling all of my server infrastructure. 2010 - As Amazon continue to add to their stack I took advantage of the scalability of Amazon RDS. I stopped deploying my own servers running MySQL and depended exclusively on MySQL running on RDS. I also opted to finally ditch Windows Server as my primary server OS at this time, and began using Fedora Linux w/ Apache as my base OS and web server. I was finally a full LAMP stack running exclusively in the cloud. 2013 This year I&#39;m still keeping my core LAMP stack running the cloud, but it is becoming just the core of what I call the &quot;Laneworks Network&quot;. While I still rely on LAMP to do the heavy lifting an data crunching in the clouds, I am migrating projects and public sites to run as Github repositories using Github Pages. This new approach uses Github Pages for static pages, Jekyll for the blog and JSON output from the core lane works on a schedule, taking advantage of mustache templates and JavaScript for display. I have been pushing the boundaries of what I know, and which tools I use for 24 years now. I&#39;m excited about the potential of all my sites and projects being completely open source and running as exclusively client side projects on the Internet. i feel the potential is much greater when I leverage the open and social environment of Github. 90% of all my work be open, public repositories with only a handful held back as private repositories. Additionally, a growing part of my platform is dependent on APIs. APIs I create or those of providers like AWS to Pinboard. While i still rely on my core Laneworks operations to make things function, in 2013 my world is becoming mostly &nbsp;API driven client side applications written in HTML, CSS and JavaScript. I&#39;m excited for the potential!","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evolution of My Technology Platform Over Last 24 Years | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Evolution of My Technology Platform Over Last 24 Years | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Evolution of My Technology Platform Over Last 24 Years</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2013-01-13T00:00:00-08:00" itemprop="datePublished">
+    
+    Jan 13, 2013
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/cobol.jpeg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/cobol.jpeg" alt="" width="150" align="right" /></p>
+<p>Every couple of years I migrate my platform a little bit forward (hopefully) and begin weaving in new tools into my personal and business world.  I recently spent some time looking back, and trying to map out the last 24 years of my professional technology career--in hopes of helping me understand how far I've come.</p>
+<p><strong>1988</strong> - When I first started programming, I was still in high school.  I was recommended for a job by my high school computer science teacher Mr. Smith and went to work for Mt Rose Software where I spent my time assisting the owner in building student information systems in Cobol.  We compiled, distributed and installed this software ourselves.</p>
+<p><strong>1993</strong> - As we made our way into the 1990's we rewrote the codebase from Cobol to Foxpro, but still the systems were compiled and installed database systems, that we had to distribute to all school districts manualy.  No servers or Internet in my world yet.</p>
+<p><strong>1995</strong> - In 1995 the Internet started to become more prominent in my daily business world, but much of the work I did was around building database systems for music, commerce and non-profits.  I did much of this work in Microsoft Access, but when I started doing work for non-profits I started using Filemaker Pro.  This is when I started building web pages using HTML, but at this point they were static, hand-crafted sites without much that was dynamic.</p>
+<p><strong>1998</strong> - I remember trying to play with Frontpage and build dynamic sites and being very frustrated.  I discovered Microsoft Internet Information Server (IIS), which was an add-on to the Windows NT server.  I began building dynamic web sites using Active Server Pages (ASP) and Microsoft Access databases.  Due to locks on the database I quickly discovered SQL Server and began launching separate web and database servers using Windows NT.</p>
+<p><strong>2001</strong> - By 2001 I was playing around with new Microsoft tools like .NET and more robust languages like C#, and continued to use ASP, SQL Server and Windows Server with IIS to deliver websites.  This formula would remain constant for a few more years, assisting me in building some pretty large, dynamic web sites / applications.</p>
+<p><strong>2004</strong> - In 2004 I faced a major rewrite of my companies custom content management system.  I had zero confidence in .NET at this point and rather than continue using an obsolete language, I opted to replace ASP with PHP and SQL Server with MySQL and being the migration to open source tools.  I still maintained my own Windows server as I had invested a lot in hardware, software as well as server management scripts in classic ASP.</p>
+<p><strong>2006</strong> - This year was the beginning of cloud computing for me.  I was an early adopter of Amazon S3 and immediately saw the potential for storing heavy objects on the new platform.  While I still ran my own server farm, with a flavor of Windows, MySQL and PHP (WAMP), I would story all images, CSS, JS, PDF and all objects centrally at Amazon S3.</p>
+<p><strong>2008</strong> - Once Amazon came out with Amazon EC2, I was hooked on the cloud.  I was facing buying new hardware and opted to migrate everything to the cloud.  The language, server and database remained the same, but I moved from my own colo facility and went entirely into the Amazon Cloud.  Running Windows instances on Amazon EC2, keeping storage at Amazon S3--selling all of my server infrastructure.</p>
+<p><strong>2010</strong> - As Amazon continue to add to their stack I took advantage of the scalability of Amazon RDS.  I stopped deploying my own servers running MySQL and depended exclusively on MySQL running on RDS.  I also opted to finally ditch Windows Server as my primary server OS at this time, and began using Fedora Linux w/ Apache as my base OS and web server.  I was finally a full LAMP stack running exclusively in the cloud.</p>
+<p><strong>2013</strong> This year I'm still keeping my core LAMP stack running the cloud, but it is becoming just the core of what I call the "Laneworks Network".  While I still rely on LAMP to do the heavy lifting an data crunching in the clouds, I am migrating projects and public sites to run as Github repositories using Github Pages.  This new approach uses Github Pages for static pages, Jekyll for the blog and JSON output from the core lane works on a schedule, taking advantage of mustache templates and JavaScript for display.</p>
+<p>I have been pushing the boundaries of what I know, and which tools I use for 24 years now.  I'm excited about the potential of all my sites and projects being completely open source and running as exclusively client side projects on the Internet.  i feel the potential is much greater when I leverage the open and social environment of Github.  90% of all my work be open, public repositories with only a handful held back as private repositories.</p>
+<p>Additionally, a growing part of my platform is dependent on APIs.  APIs I create or those of providers like AWS to Pinboard.  While i still rely on my core Laneworks operations to make things function, in 2013 my world is becoming mostly &nbsp;API driven client side applications written in HTML, CSS and JavaScript.</p>
+<p>I'm excited for the potential!</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Evolution of My Technology Platform Over Last 24 Years&url=http://localhost:4000/2013/01/13/evolution-of-my-technology-platform-over-last-24-years/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2013%2F01%2F13%2Fevolution-of-my-technology-platform-over-last-24-years%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2013/01/16/connecting-my-platforms-into-one-stack-overflow-resume/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

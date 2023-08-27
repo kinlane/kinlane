@@ -1,0 +1,74 @@
+---
+layout: post
+title: 'Social Network Authentication Using Singly (PHP Edition)'
+source: http://kinlane.com/2012/09/12/social-network-authentication-using-singly-php-edition/
+domain: kinlane.com
+image: 
+---
+<p><a href="http://www.singly.com/"><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/singly/singly-twitter-linkedin-github-facebook-authentication.png" alt="" width="175" align="right" /></a></p>
+<p>As an active user of a variety of cloud services I&rsquo;ve become very accustom to authenticating using my social networks, such as Facebook, Twitter, LInkedin or Github,  rather than creating yet another new account.</p>
+<p>If I want access to an online service, and it allows me to authenticate using my social networks, I make a quick assumption on which one is best to use, click on link, give the application appropriate oAuth approval, and begin using the service. I can revoke their access at any time when I manage my oAuth permissions in the social network.</p>
+<p>I want to make this default for users of my websites, apps and APIs--allowing them authenticate using six social networks:</p>
+<table style="padding-left: 25px;" cellspacing="10" cellpadding="10">
+<tbody>
+<tr>
+<td width="25"><a title="Facebook" href="https://singly.com/docs/facebook"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/facebook.png" alt="" width="25" /></a></td>
+<td><a title="Facebook" href="https://singly.com/docs/facebook"><strong>Facebook</strong></a></td>
+<td width="25"><a title="Foursquare" href="https://singly.com/docs/foursquare"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/foursquare.png" alt="" width="25" /></a></td>
+<td><strong><a title="Foursquare" href="https://singly.com/docs/foursquare">Foursquare</a></strong></td>
+<td width="25"><a title="Github" href="https://singly.com/docs/github"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/github.png" alt="" width="25" /></a></td>
+<td><strong><a title="Github" href="https://singly.com/docs/github">Github</a></strong></td>
+</tr>
+<tr>
+<td width="25"><a title="Instagram" href="https://singly.com/docs/instagram"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/instagram.png" alt="" width="25" /></a></td>
+<td><strong><a title="Instagram" href="https://singly.com/docs/instagram">Instagram</a></strong></td>
+<td width="25"><a title="LinkedIn" href="https://singly.com/docs/linkedin"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/linkedin.png" alt="" width="25" /></a></td>
+<td><strong><a href="https://singly.com/docs/linkedin">LinkedIn</a></strong></td>
+<td width="25"><a title="Twitter" href="https://singly.com/docs/twitter"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/twitter-2.png" alt="" width="25" /></a></td>
+<td><strong><a title="Twitter" href="https://singly.com/docs/twitter">Twitter</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><strong>Singly has made this nice and easy!</strong></p>
+<table>
+<tbody>
+<tr>
+<td valign="top">
+<p><strong>Step 1 - <a href="https://singly.com/signup?section=header" target="_blank">Sign up for Singly</a></strong></p>
+<p><a href="https://singly.com/signup?section=header" target="_blank"><img style="padding-left: 25px;" src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Sign-Up.png" alt="" width="250" /></a></p>
+</td>
+<td>
+<p><strong>Step 2 - <a href="https://singly.com/apps/new" target="_blank">Create New Singly App</a></strong></p>
+<p><a href="https://singly.com/apps/new" target="_blank"><img style="padding-left: 25px;" src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Create-New-App.png" alt="" width="250" /></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 3 - Create Social Network Apps. </strong> This part seems like it is a lot of work, but once done...it is sweet.  You need to create an app for each one of the six social networks you will be allowing authentication:</p>
+<table style="padding-left: 25px;" cellspacing="2" cellpadding="2">
+<tbody>
+<tr>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/facebook.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Facebook-New-App.png" alt="" width="150" /></td>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/foursquare.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Foursquare-New-App.png" alt="" width="150" /></td>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/github.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Github-New-App.png" alt="" width="150" /></td>
+</tr>
+<tr>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/instagram.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Instagram-New-App.png" alt="" width="150" /></td>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/linkedin.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-LinkedIn-New-App.png" alt="" width="150" /></td>
+<td width="25"><img src="https://s3.amazonaws.com/kinlane-productions2/icons/twitter-2.png" alt="" width="25" /></td>
+<td><img src="https://s3.amazonaws.com/kinlane-productions2/singly/Singly-Twitter-New-App.png" alt="" width="150" /></td>
+</tr>
+</tbody>
+</table>
+<p>Singly has great instructions to walk you through this process.  It will only take you about 5-10 minutes.  And once you are done, you will have one API key to access all six of these APIs.</p>
+<p>I built a <a href="http://singly-authentication.laneworks.net/">prototype PHP application</a> that demonstrates this process, you can <a href="https://github.com/kinlane/singly-social-authentication-php">download on Github</a>.  Once downloaded, all you need to do is add your Singly app keys, and Site URL into the config file.</p>
+<p>I provide six links with icons triggering the social network authentication via Singly:</p>
+<script src="https://gist.github.com/3710690.js?file=gistfile1.txt"></script>
+<p>Then I provide <a href="https://github.com/kinlane/singly-social-authentication-php/tree/master/auth">six separate authentication callback handlers</a>.  I keep them separate, because I intend to do separate handling for each social network within these callbacks in the near future.</p>
+<p>All six callback handlers just set a session with your authentication information and redirect you back to home page for display.  What&rsquo;s next is up to you.</p>
+<p>I will be adding more to this social network authentication prototype in the near future.  A couple of things I would like to do is have a display profile widget and some sort of ranking of users by social network.</p>

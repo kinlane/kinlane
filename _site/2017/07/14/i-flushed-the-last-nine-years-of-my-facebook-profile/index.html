@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>I Flushed The Last 9 Years Of My Facebook Profile | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="I Flushed The Last 9 Years Of My Facebook Profile" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I flushed the the last 9 years of my Facebook profile over the last couple of days. Instead of deleting my account, I just cleaned up everything except what I have posted in 2017. In the future I will make it a yearly ritual to flush the previous year of my Facebook profile–something including an altar, candles, and Mark Zuckerberg picture. After watching the last nine years flash by before my eyes, slowly over the last 4 days–I feel confident that I’m not going to need ANY of this social media diarrhea." />
+<meta property="og:description" content="I flushed the the last 9 years of my Facebook profile over the last couple of days. Instead of deleting my account, I just cleaned up everything except what I have posted in 2017. In the future I will make it a yearly ritual to flush the previous year of my Facebook profile–something including an altar, candles, and Mark Zuckerberg picture. After watching the last nine years flash by before my eyes, slowly over the last 4 days–I feel confident that I’m not going to need ANY of this social media diarrhea." />
+<link rel="canonical" href="http://localhost:4000/2017/07/14/i-flushed-the-last-nine-years-of-my-facebook-profile/" />
+<meta property="og:url" content="http://localhost:4000/2017/07/14/i-flushed-the-last-nine-years-of-my-facebook-profile/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/kinlane_physical_digital_self_publish.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-14T07:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2017/07/14/i-flushed-the-last-nine-years-of-my-facebook-profile/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"I Flushed The Last 9 Years Of My Facebook Profile","dateModified":"2017-07-14T07:00:00-07:00","datePublished":"2017-07-14T07:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/07/14/i-flushed-the-last-nine-years-of-my-facebook-profile/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/kinlane_physical_digital_self_publish.jpg","description":"I flushed the the last 9 years of my Facebook profile over the last couple of days. Instead of deleting my account, I just cleaned up everything except what I have posted in 2017. In the future I will make it a yearly ritual to flush the previous year of my Facebook profile–something including an altar, candles, and Mark Zuckerberg picture. After watching the last nine years flash by before my eyes, slowly over the last 4 days–I feel confident that I’m not going to need ANY of this social media diarrhea.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="I Flushed The Last 9 Years Of My Facebook Profile | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="I Flushed The Last 9 Years Of My Facebook Profile | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">I Flushed The Last 9 Years Of My Facebook Profile</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-07-14T07:00:00-07:00" itemprop="datePublished">
+    
+    Jul 14, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/kinlane_physical_digital_self_publish.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="http://apievangelist.com/2017/01/09/the-api-driven-marketplace-that-is-my-digital-self/"><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/kinlane_physical_digital_self_publish.jpg" align="right" width="40%" style="padding: 15px" /></a></p>
+<p>I flushed the the last 9 years of my Facebook profile over the last couple of days. Instead of deleting my account, I just cleaned up everything except what I have posted in 2017. In the future I will make it a yearly ritual to flush the previous year of my Facebook profile–something including an altar, candles, and Mark Zuckerberg picture. After watching the last nine years flash by before my eyes, slowly over the last 4 days–I feel confident that I’m not going to need ANY of this social media diarrhea.</p>
+
+<p>This work is part of a larger effort to go through all layers of my digital self and clean house. <a href="http://kinlane.com/2017/07/06/i-deleted-all-but-the-last-six-months-of-my-gmail/">I recently delete all but the last year of my Gmail</a>, and <a href="http://kinlane.com/2017/07/10/i-deleted-my-mysql-database/">deleted my central MySQL database</a>, which has been up for the last decade in some instance. Of course, I have downloaded my Facebook archive, and created backups of my Gmail and MySQL databases–which I zip up and store locally on SD cards. Along the way I managed to also cleaned up my Amazon S3 storage which has been up since 2006, and stored what I wanted to keep from their on the same SD cards.</p>
+
+<p>Why am I doing this? I am just just asserting control over my digital self. Gmail and Facebook provide an unprecedented look into our lives–my life. I’m thankful (sometimes) for the tools they provide, but I’m not convinced that they need to possess this intimiate look into my life for an entire decade. I’m not naive enough to think they don’t have some sort of backup, cache, or at least some sort of algorithm trained on my data. But asserting control, and cleaning it up makes me feel like I am a little more in control of my digital self in a time where I feel like I’m increasingly losing control of who I am it this surveillance economy.</p>
+
+<p>I did not manually clean up my Facebook profile manually. I could have automated it using the Facebook API, but I wanted to use a tool that would be available for my readers to use. I’m following the lead of my partner in crime Audrey Watters, who is <a href="http://fragments.audreywatters.com/2017/deleting-the-network">using F___book Post Manager to delete her network</a>. I took many hours to delete some years, but I just tackled it year by year going back from 2016 until 2007, until it had done its job. I had to rerun it couple times to get some more stragglers, and there are still a handful of things that won’t go away no matter what–not sure what is going on here. However, the majority of my Facebook profile has now been removed, except for anything in 2017.</p>
+
+<p>When you clean up your digital profile this scale, you always think twice about it–what if I need something in here at some point? However, once you are done, this feeling fades away, and you realize you will almost never need any of it, and the one or two items you do, will end up being just fine. Somewhere along the way we were convinced that all of this matters. I’m not saying it doesn’t matter at all, it just doesn’t matter as much as we’ve convinced ourselves that it does, and we do not need a record of everything that has gone on in the past at this scale. We don’t.</p>
+
+<p>Having the last decade of my Facebook doesn’t benefit me. It benefits Facebook. It benefits Facebook partners and advertisers. They want us to think it benefits us, but rarely will it actually serve us better ads, or surface that amazing news article or video. However, the chances that someone will be targeting you, surveilling you, or use a piece of your Facebook out of context to negatively impact your life is pretty great. In this modern digital world we’ve created for ourselves, the more companies and governments have on our behavior, the bigger target we will become–for advertising, surveilling, and p0wning.</p>
+
+<p>I didn’t want to delete my Facebook profile. I like keeping my network, because I enjoy sharing news I curate, and publishing the stories I write here. I also like staying in tune with my friends or families lives on Facebook. However, all of this has an expiration date, which I’ve identified as 1 year. The last year of my life is all I need on there. Once it rolls over a year, I archive it, and move on. Facebook has already aggregated the data, and trained their ML models. Keeping all this data does me no good, and just allows application integrations, advertisers, and other digital actors to look into my life, as well as my past. MY past.</p>
+
+<p>I’m going to move on to Twitter next, cleaning it up just like I have done with my Facebook. I’ll continue to work through all of my personal accounts in this way. I won’t be doing this to any of my business accounts, or my personal blogs, because I see more value in keeping a history of my business activity out there, and happy to maintain a more personal view of my world that gets published within my own domain. <a href="http://apievangelist.com/2017/01/09/the-api-driven-marketplace-that-is-my-digital-self/">As I learn more about my digital self, and develop a deeper awareness of the digital bits of mine that are floating around out there</a>–the more I want to take control, curate, clean, and assert control over these bits. They are mine. It is me.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=I Flushed The Last 9 Years Of My Facebook Profile&url=http://localhost:4000/2017/07/14/i-flushed-the-last-nine-years-of-my-facebook-profile/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F07%2F14%2Fi-flushed-the-last-nine-years-of-my-facebook-profile%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/07/10/i-deleted-my-mysql-database/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/07/15/showing-what-algorithmic-influence-on-markets-leave-out/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

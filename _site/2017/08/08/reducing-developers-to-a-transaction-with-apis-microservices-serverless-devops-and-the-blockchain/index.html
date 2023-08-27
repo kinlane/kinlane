@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A topic that keeps coming up in discussions with my partner in crime Audrey Watters (@audreywatters) about our podcast is around the future of labor in an API world. I have not written anything about this, which means I’m still in early stages of any research into this area, but it has come up in conversation, and reflected regularly in my monitoring of the API space, I need to begin working through my ideas in this area. A process that helps me better see what is coming down the API pipes, and fill the gaps in what I do not know." />
+<meta property="og:description" content="A topic that keeps coming up in discussions with my partner in crime Audrey Watters (@audreywatters) about our podcast is around the future of labor in an API world. I have not written anything about this, which means I’m still in early stages of any research into this area, but it has come up in conversation, and reflected regularly in my monitoring of the API space, I need to begin working through my ideas in this area. A process that helps me better see what is coming down the API pipes, and fill the gaps in what I do not know." />
+<link rel="canonical" href="http://localhost:4000/2017/08/08/reducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain/" />
+<meta property="og:url" content="http://localhost:4000/2017/08/08/reducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/containership_dark_dali.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-08-08T02:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2017/08/08/reducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain","dateModified":"2017-08-08T02:00:00-07:00","datePublished":"2017-08-08T02:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/08/08/reducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/containership_dark_dali.jpg","description":"A topic that keeps coming up in discussions with my partner in crime Audrey Watters (@audreywatters) about our podcast is around the future of labor in an API world. I have not written anything about this, which means I’m still in early stages of any research into this area, but it has come up in conversation, and reflected regularly in my monitoring of the API space, I need to begin working through my ideas in this area. A process that helps me better see what is coming down the API pipes, and fill the gaps in what I do not know.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-08-08T02:00:00-07:00" itemprop="datePublished">
+    
+    Aug 8, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/containership_dark_dali.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img src="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/containership_dark_dali.jpg" align="right" width="40%" style="padding: 15px;" /></p>
+<p>A topic that keeps coming up in discussions with my partner in crime Audrey Watters (@audreywatters) about our podcast is around the future of labor in an API world. I have not written anything about this, which means I’m still in early stages of any research into this area, but it has come up in conversation, and reflected regularly in my monitoring of the API space, I need to begin working through my ideas in this area. A process that helps me better see what is coming down the API pipes, and fill the gaps in what I do not know.</p>
+
+<p>Audrey has long joked about my API world using a simple phrase: “reducing everything to a transaction”. She says it mostly in jest, but other times I feel like she wields it as the Cassandra she channels. I actually bring up the phrase more than she does, because it is something I regularly find myself working in the service of as the API Evangelist. By taking a pro API stance I am actively working to reduce legacy business, institutional, and government processes down and breaking them down into a variety of individual tasks, or if you see things through a commercial lens, transactions.</p>
+
+<p><strong>Microservices</strong><br />
+A microservices philosophy is all about breaking down monoliths into small bite size chunks, so they can be transacted independently, scaled, evolved, and deprecated in isolation. Microservices should do one thing, and do it well (no backtalk). Microservices should do what it does as efficiently as possible, with as few dependencies as possible. Microservices are self-contained, self-sufficient, and have everything they need to get the job done under a single definition of a service (a real John Wayne of compute). And of course, everything has an API. Microservices aren’t just about decoupling the technology, they are are about decoupling the business, and the politics of doing business within SMB, SME, enterprises, institutions, and government agencies–the philosophy for reducing everything to a transaction.</p>
+
+<p><strong>Containers</strong><br />
+A microservice way of thinking about software that is born in the clouds, a bi-product of virtualization and API-ization of IT resources like storage and compute. In the last decade, as IT services moved from the basement of companies into the cloud, a new approach to delivering the compute, storage, and scalability needed to drive this new microservices way of doing business emerged that was called containers. In 2017 businesses are being containerized. The enterprise monolith is being reduced down to small transactions, putting the technology, business, and politics of each business transaction into a single container, for more efficient development, deployment, scaling, and management. Containers are the vehicle moving the microservices philosophy forward–the virtualized embodiment of reducing everything to a transaction.</p>
+
+<p><strong>Serverless</strong><br />
+Alongside a microservice way of life, driven by containerization, is another technological trend (undertow) called serverless. With the entire IT backend being virtualized in the cloud, the notion of the server is disappearing, lightening the load for developers in their quest for containerizing everything, turning the business landscape into microservices, than can be distilled down to a single, simple, executable, scalable function. Serverless is the codified conveyor belt of transactions rolling by each worker on the factory floor. Each slot on a containerized, serverless, microservices factory floor possessing a single script or function, allowing each transaction to be executed,  and replicated allowing it to be applied over and over, scaled, and fixed as needed. Serverless is the big metal stamping station along a multidimensional digital factory assembly line.</p>
+
+<p><strong>DevOps</strong><br />
+Living in microservices land, with everything neatly in containers, being assembled, developed, and wrenched on by developers, you are increasingly given more (or less) control over the conveyor belt that rolls by you on the factory floor. As a transaction developer you are given the ability to change direction of your conveyor belt, speed things up, apply one or many metal stamp templates, and orchestrate as much, or as little of the transaction supply chain as you can keep up with (meritocracy 5.3.4). Some transaction developers will be closer to the title of architect, understanding larger portions of the transaction supply chain, while most will be specialized, applying one or a handful of transaction templates, with no training or awareness of the bigger picture, simply pulling the Devops knobs and levers within their reach.</p>
+
+<p><strong>Blockchain</strong><br />
+Another trend (undertow) that has been building for sometime, that I have managed to ignore as much as I can (until recently) is the blockchain. Blockchain and the emergence of API driven smart contracts has brought the technology front and center for me, making it something i can ignore, as I see signs that each API transaction will soon be put in the blockchain. The blockchain appears to becoming the decentralized (ha!) and encrypted manifestation of what many of us has been calling the API contract for years. <a href="https://azure.microsoft.com/en-us/blog/introducing-enterprise-smart-contracts/">I am seeing movements from all the major cloud providers</a>, and lesser known API providers to <a href="https://medium.com/@kevinsimper/serverless-is-the-jump-before-ethereum-smart-contracts-121d92e67426">ensure that all transactions are put into the blockchain</a>, providing a record of everything that flows through API pipes, and has been decoupled, containerized, rendered as serverless, and available for devops orchestration.</p>
+
+<p><strong>Ignorance of Labor</strong><br />
+I am not an expert in labor, unions, and markets. Hell, I still haven’t even finished my Marx and Engels Reader. But, I know enough to be able to see that us developers are fucking ourselves right now. Our quest to reduce everything to a transaction, decouple all the things, and containerize and render them serverless makes us the perfect tool(s) for some pretty dark working conditions. Sure, some of us will have the bigger picture, and make a decent living being architects. The rest of us will become digital assembly line workers, stamping, maintaining a handful of services that do one thing and do it well. We will be completely unaware of dependencies, or how things are orchestrated, barely able to stay afloat, pay the bills, leaving us thankful for any transactions sent our way.</p>
+
+<p>Think of this frontline in terms of Amazon Mechanical Turk + API + Microservices + Containers + Serverless + Blockhain. There is a reason young developers make for good soldiers on this front line. Lack of awareness of history. Lack of awareness of labor. Makes great digital factory floor workers, stamping transactions for reuse elsewhere in the digital assembly line process. This model will fit well with current Silicon Valley culture. There will still be enough opportunity in this environment for architects and cybersecurity theater conductors to make money, exploit, and generate wealth. Without the defense of unions, government or institutions, us developers will find ourselves reduced to transactions, stamping out other transactions on the digital assembly line floor.</p>
+
+<p>I know you think your savvy. I used to think this too. Then after having the rug pulled out from under me, and the game changed around me by business partners, investors, and other actors who were playing a game I’m not familiar with, I have become more critical. You can look around the landscape right now and see numerous ways in which power has set its sights on the web, and completely distorting any notion of the web being democratic, open, inclusive, or safe environment. Why do us developers think it will be any different wit us? Oh yeah, privilege.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Reducing Developers To A Transaction With APIs, Microservices, Serverless, Devops, and the Blockchain&url=http://localhost:4000/2017/08/08/reducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F08%2F08%2Freducing-developers-to-a-transaction-with-apis-microservices-serverless-devops-and-the-blockchain%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/08/08/randomize-iot-device-username-and-password-by-default/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/08/11/fake-news-is-just-the-beginning/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

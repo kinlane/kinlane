@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Public Front-end And Private Back-end For My Sites On Github | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Public Front-end And Private Back-end For My Sites On Github" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I moved my public presence onto Github almost two years ago, running API Evangelist as 90+ Github repositories, driving each portion of my presence using Github Pages, HTML, CSS, JavaScript, and JSON. Each of my research sites run as a public website using Github pages, in the gh-pages branch of its repository. Over the last year I&#39;ve been playing with how to use the master branch for some projects, as a private content and data storage. Github repositories are cool like that, where you can make the gh-pages branch public, and the master branch private. If I don&#39;t want some content, JSON data, or files public, I just put it in the master branch for the research project. Github All of this is possible because of Github, the social coding platform. Github provides a cloud platform on top of the open source software management solution Git. Using Github I can create repositories that act as storage solutions for each of my research projects. I count 78 repositories currently making up the API evangelist network, but I see over 100+ repositories in my Github profile. Most of my repositories are publicly available which is free with Github, but a growing number are private, and my monthly bill for Github has increased each year. Github Pages Github provides a simple new service that transformed Github repositories from code management folders, into public websites, called Github Pages. With a three step wizard, any Github repository can have a new Github Pages (gh-pages) branch, immediately giving each repository a public face. Each Github Pages site is extremeley simple, only running HTML, Markdown, CSS, and JavaScript, but thats ok, it is just the way I like it. Jekyll Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Jekyll gives you the ability to manage the look and feel of your site, along with simple management of pages, and a blog. The rest is up to you. There are plenty of folks who are pushing the boundaries of what Jekyll can do, comparable to the evolution of the WordPress platform, but in a much more static way--Jekyll is the hollywood front for all of my public website. Github API Along with Git repositories, Github Pages, and the other social features, Github provides an&nbsp;API which gives you access to users, repositories, files, and pretty much every other aspect of the Github platform. This means that each one of my research projects, and their public web sites have an API. I use the Github API to publish all of the blog posts, pages, and JSON data files that support my research, across 78+ projects. oAuth.io oAuth.io is the fastest, and easiest way to integrate oAuth of popular platforms into your apps. This is no joke, with just a few lines of code, you can put Facebook, Twitter, Github, and other platforms oAuth into use on any website. I use oAuth.io for putting Github to work as the identity and access layer of my network. After you setup your oAuth.io account, setup an oauth.io and Github application, and connect them together, all I do is grab my app key, and publish this JavaScript: In the header of my websites, I add a little handler that keeps an eye out for the incoming oAuth_Token--Github and oauth.io handle everything else. If the oAuth_Token is available, using JavaScript I rewrite any navigation, and other key links, appending oAuth_Token to the link, so that it will travel with the user from page to page, alerting the website that the user is authenticated. Github.js Next I use Github.js, a JavaScript wrapper for the Github API. Using the oAuth_Token I get using oAuth.io and the Github API, I can now make actual API calls using the Github.js wrapper to the private master branch of this repository, that is, if you have access. &nbsp;There is one more layer of security, before you can actually get access to anything. Using Github.js I try to grab the contents of a file in the private, master repository, and if the authenticated Github user is added as a collaborator on the repository, the call is successful, if not I deny the user access to any content, data or files in the projects master repo. This is the line between public and private, or front-end and back-end on my websites. Using Github identity as authentication to my private world, I am able control who has access, using the standard Github organization, and user management. Currently I&rsquo;m using this layer to decide whether or not to access and display data from JSON files, and access to PDF files located in the master branch. You can see this in action via my messaging research of email, SMS, or MMS. If you are listed on each of the projects repos as a collaborator, and logged in via Github, you can see the building blocks for each research area, and the current PDF version of the research report--otherwise you just get the default information. As with all of my work, this is a work in progress. This step in my evolution is all about using as a paywall for my research, where other tools I&rsquo;ve built like my CSV Converter, and Data On Github applications are using the master branch as application store, even if you aren&#39;t logged in the app will still run, you just can&rsquo;t save anything. Next I&rsquo;m going to play with this approach as part of my API broker research, exploring different ways of aggregating APIs, and managing key access using the private master branch for each repository." />
+<meta property="og:description" content="I moved my public presence onto Github almost two years ago, running API Evangelist as 90+ Github repositories, driving each portion of my presence using Github Pages, HTML, CSS, JavaScript, and JSON. Each of my research sites run as a public website using Github pages, in the gh-pages branch of its repository. Over the last year I&#39;ve been playing with how to use the master branch for some projects, as a private content and data storage. Github repositories are cool like that, where you can make the gh-pages branch public, and the master branch private. If I don&#39;t want some content, JSON data, or files public, I just put it in the master branch for the research project. Github All of this is possible because of Github, the social coding platform. Github provides a cloud platform on top of the open source software management solution Git. Using Github I can create repositories that act as storage solutions for each of my research projects. I count 78 repositories currently making up the API evangelist network, but I see over 100+ repositories in my Github profile. Most of my repositories are publicly available which is free with Github, but a growing number are private, and my monthly bill for Github has increased each year. Github Pages Github provides a simple new service that transformed Github repositories from code management folders, into public websites, called Github Pages. With a three step wizard, any Github repository can have a new Github Pages (gh-pages) branch, immediately giving each repository a public face. Each Github Pages site is extremeley simple, only running HTML, Markdown, CSS, and JavaScript, but thats ok, it is just the way I like it. Jekyll Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Jekyll gives you the ability to manage the look and feel of your site, along with simple management of pages, and a blog. The rest is up to you. There are plenty of folks who are pushing the boundaries of what Jekyll can do, comparable to the evolution of the WordPress platform, but in a much more static way--Jekyll is the hollywood front for all of my public website. Github API Along with Git repositories, Github Pages, and the other social features, Github provides an&nbsp;API which gives you access to users, repositories, files, and pretty much every other aspect of the Github platform. This means that each one of my research projects, and their public web sites have an API. I use the Github API to publish all of the blog posts, pages, and JSON data files that support my research, across 78+ projects. oAuth.io oAuth.io is the fastest, and easiest way to integrate oAuth of popular platforms into your apps. This is no joke, with just a few lines of code, you can put Facebook, Twitter, Github, and other platforms oAuth into use on any website. I use oAuth.io for putting Github to work as the identity and access layer of my network. After you setup your oAuth.io account, setup an oauth.io and Github application, and connect them together, all I do is grab my app key, and publish this JavaScript: In the header of my websites, I add a little handler that keeps an eye out for the incoming oAuth_Token--Github and oauth.io handle everything else. If the oAuth_Token is available, using JavaScript I rewrite any navigation, and other key links, appending oAuth_Token to the link, so that it will travel with the user from page to page, alerting the website that the user is authenticated. Github.js Next I use Github.js, a JavaScript wrapper for the Github API. Using the oAuth_Token I get using oAuth.io and the Github API, I can now make actual API calls using the Github.js wrapper to the private master branch of this repository, that is, if you have access. &nbsp;There is one more layer of security, before you can actually get access to anything. Using Github.js I try to grab the contents of a file in the private, master repository, and if the authenticated Github user is added as a collaborator on the repository, the call is successful, if not I deny the user access to any content, data or files in the projects master repo. This is the line between public and private, or front-end and back-end on my websites. Using Github identity as authentication to my private world, I am able control who has access, using the standard Github organization, and user management. Currently I&rsquo;m using this layer to decide whether or not to access and display data from JSON files, and access to PDF files located in the master branch. You can see this in action via my messaging research of email, SMS, or MMS. If you are listed on each of the projects repos as a collaborator, and logged in via Github, you can see the building blocks for each research area, and the current PDF version of the research report--otherwise you just get the default information. As with all of my work, this is a work in progress. This step in my evolution is all about using as a paywall for my research, where other tools I&rsquo;ve built like my CSV Converter, and Data On Github applications are using the master branch as application store, even if you aren&#39;t logged in the app will still run, you just can&rsquo;t save anything. Next I&rsquo;m going to play with this approach as part of my API broker research, exploring different ways of aggregating APIs, and managing key access using the private master branch for each repository." />
+<link rel="canonical" href="http://localhost:4000/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/" />
+<meta property="og:url" content="http://localhost:4000/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github-storefront.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-11-16T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Public Front-end And Private Back-end For My Sites On Github","dateModified":"2014-11-16T00:00:00-08:00","datePublished":"2014-11-16T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github-storefront.png","description":"I moved my public presence onto Github almost two years ago, running API Evangelist as 90+ Github repositories, driving each portion of my presence using Github Pages, HTML, CSS, JavaScript, and JSON. Each of my research sites run as a public website using Github pages, in the gh-pages branch of its repository. Over the last year I&#39;ve been playing with how to use the master branch for some projects, as a private content and data storage. Github repositories are cool like that, where you can make the gh-pages branch public, and the master branch private. If I don&#39;t want some content, JSON data, or files public, I just put it in the master branch for the research project. Github All of this is possible because of Github, the social coding platform. Github provides a cloud platform on top of the open source software management solution Git. Using Github I can create repositories that act as storage solutions for each of my research projects. I count 78 repositories currently making up the API evangelist network, but I see over 100+ repositories in my Github profile. Most of my repositories are publicly available which is free with Github, but a growing number are private, and my monthly bill for Github has increased each year. Github Pages Github provides a simple new service that transformed Github repositories from code management folders, into public websites, called Github Pages. With a three step wizard, any Github repository can have a new Github Pages (gh-pages) branch, immediately giving each repository a public face. Each Github Pages site is extremeley simple, only running HTML, Markdown, CSS, and JavaScript, but thats ok, it is just the way I like it. Jekyll Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Jekyll gives you the ability to manage the look and feel of your site, along with simple management of pages, and a blog. The rest is up to you. There are plenty of folks who are pushing the boundaries of what Jekyll can do, comparable to the evolution of the WordPress platform, but in a much more static way--Jekyll is the hollywood front for all of my public website. Github API Along with Git repositories, Github Pages, and the other social features, Github provides an&nbsp;API which gives you access to users, repositories, files, and pretty much every other aspect of the Github platform. This means that each one of my research projects, and their public web sites have an API. I use the Github API to publish all of the blog posts, pages, and JSON data files that support my research, across 78+ projects. oAuth.io oAuth.io is the fastest, and easiest way to integrate oAuth of popular platforms into your apps. This is no joke, with just a few lines of code, you can put Facebook, Twitter, Github, and other platforms oAuth into use on any website. I use oAuth.io for putting Github to work as the identity and access layer of my network. After you setup your oAuth.io account, setup an oauth.io and Github application, and connect them together, all I do is grab my app key, and publish this JavaScript: In the header of my websites, I add a little handler that keeps an eye out for the incoming oAuth_Token--Github and oauth.io handle everything else. If the oAuth_Token is available, using JavaScript I rewrite any navigation, and other key links, appending oAuth_Token to the link, so that it will travel with the user from page to page, alerting the website that the user is authenticated. Github.js Next I use Github.js, a JavaScript wrapper for the Github API. Using the oAuth_Token I get using oAuth.io and the Github API, I can now make actual API calls using the Github.js wrapper to the private master branch of this repository, that is, if you have access. &nbsp;There is one more layer of security, before you can actually get access to anything. Using Github.js I try to grab the contents of a file in the private, master repository, and if the authenticated Github user is added as a collaborator on the repository, the call is successful, if not I deny the user access to any content, data or files in the projects master repo. This is the line between public and private, or front-end and back-end on my websites. Using Github identity as authentication to my private world, I am able control who has access, using the standard Github organization, and user management. Currently I&rsquo;m using this layer to decide whether or not to access and display data from JSON files, and access to PDF files located in the master branch. You can see this in action via my messaging research of email, SMS, or MMS. If you are listed on each of the projects repos as a collaborator, and logged in via Github, you can see the building blocks for each research area, and the current PDF version of the research report--otherwise you just get the default information. As with all of my work, this is a work in progress. This step in my evolution is all about using as a paywall for my research, where other tools I&rsquo;ve built like my CSV Converter, and Data On Github applications are using the master branch as application store, even if you aren&#39;t logged in the app will still run, you just can&rsquo;t save anything. Next I&rsquo;m going to play with this approach as part of my API broker research, exploring different ways of aggregating APIs, and managing key access using the private master branch for each repository.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Public Front-end And Private Back-end For My Sites On Github | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Public Front-end And Private Back-end For My Sites On Github | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Public Front-end And Private Back-end For My Sites On Github</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2014-11-16T00:00:00-08:00" itemprop="datePublished">
+    
+    Nov 16, 2014
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github-storefront.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github-storefront.png" alt="" width="250" align="right" /></p>
+<p>I <a href="http://kinlane.com/2013/01/02/all-side-projects-are-now-hosted-on-github/">moved my public presence onto Github almost two years ago</a>, running API Evangelist as 90+ Github repositories, driving each portion of my presence using Github Pages, HTML, CSS, JavaScript, and JSON. Each of my research sites run as a public website using Github pages, in the gh-pages branch of its repository.</p>
+<p>Over the last year I've been <a href="http://kinlane.com/2013/11/06/private-web-application-running-on-github/">playing with how to use the master branch for some projects, as a private content and data storage</a>. Github repositories are cool like that, where you can make the gh-pages branch public, and the master branch private. If I don't want some content, JSON data, or files public, I just put it in the master branch for the research project.</p>
+<p><strong>Github</strong><br /> All of this is possible because of <a href="https://github.com/">Github</a>, the social coding platform. Github provides a cloud platform on top of the open source software management solution Git. Using Github I can create repositories that act as storage solutions for each of my research projects. I count <a href="http://kinlane.com/projects/">78 repositories currently making up the API evangelist network</a>, but I see over 100+ repositories in my Github profile. Most of my repositories are publicly available which is free with Github, but a growing number are private, and my monthly bill for Github has increased each year.</p>
+<p><strong>Github Pages</strong><br /> Github provides a simple new service that transformed Github repositories from code management folders, into public websites, called <a href="https://pages.github.com/">Github Pages</a>. With a three step wizard, any Github repository can have a new Github Pages (gh-pages) branch, immediately giving each repository a public face. Each Github Pages site is extremeley simple, only running HTML, Markdown, CSS, and JavaScript, but thats ok, it is just the way I like it.</p>
+<p><strong>Jekyll</strong><br /> <a href="http://jekyllrb.com/">Jekyll</a> is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Jekyll gives you the ability to manage the look and feel of your site, along with simple management of pages, and a blog. The rest is up to you. There are plenty of folks who are pushing the boundaries of what Jekyll can do, comparable to the evolution of the WordPress platform, but in a much more static way--Jekyll is the hollywood front for all of my public website.</p>
+<p><strong>Github API</strong><br /> Along with Git repositories, Github Pages, and the other social features, Github provides an&nbsp;<a href="https://developer.github.com/v3/">API which gives you access to users, repositories, files, and pretty much every other aspect of the Github platform</a>. This means that each one of my research projects, and their public web sites have an API. I use the Github API to publish all of the blog posts, pages, and JSON data files that support my research, across 78+ projects.</p>
+<p><strong>oAuth.io</strong><br /> <a href="http://oauth.io">oAuth.io</a> is the fastest, and easiest way to integrate oAuth of popular platforms into your apps. This is no joke, with just a few lines of code, you can put Facebook, Twitter, Github, and other platforms oAuth into use on any website. I use oAuth.io for putting Github to work as the identity and access layer of my network. After you setup your oAuth.io account, setup an oauth.io and Github application, and connect them together, all I do is grab my app key, and publish this JavaScript:</p>
+<script src="https://gist.github.com/kinlane/68dc755a64c769ae468c.js"></script>
+<p>In the header of my websites, I add a little handler that keeps an eye out for the incoming oAuth_Token--Github and oauth.io handle everything else.</p>
+<script src="https://gist.github.com/kinlane/7820f38003cd8fa8f5ca.js"></script>
+<p>If the oAuth_Token is available, using JavaScript I rewrite any navigation, and other key links, appending oAuth_Token to the link, so that it will travel with the user from page to page, alerting the website that the user is authenticated.</p>
+<p><strong>Github.js</strong><br /> Next I use <a href="https://github.com/michael/github">Github.js</a>, a JavaScript wrapper for the Github API. Using the oAuth_Token I get using oAuth.io and the Github API, I can now make actual API calls using the Github.js wrapper to the private master branch of this repository, that is, if you have access. &nbsp;There is one more layer of security, before you can actually get access to anything.</p>
+<p>Using Github.js I try to grab the contents of a file in the private, master repository, and if the authenticated Github user is added as a collaborator on the repository, the call is successful, if not I deny the user access to any content, data or files in the projects master repo. This is the line between public and private, or front-end and back-end on my websites. Using Github identity as authentication to my private world, I am able control who has access, using the standard Github organization, and user management.</p>
+<script src="https://gist.github.com/kinlane/506a2ab514c9dafabc9f.js"></script>
+<p>Currently I&rsquo;m using this layer to decide whether or not to access and display data from JSON files, and access to PDF files located in the master branch. You can see this in action via my messaging research of <a href="http://email.apievangelist.com">email</a>, <a href="http://sms.apievangelist.com">SMS</a>, or <a href="http://mms.apievangelist.com">MMS</a>. If you are listed on each of the projects repos as a collaborator, and logged in via Github, you can see the building blocks for each research area, and the current PDF version of the research report--otherwise you just get the default information.</p>
+<p>As with all of my work, this is a work in progress. This step in my evolution is all about using as a paywall for my research, where other tools I&rsquo;ve built like my <a href="http://csv-converter.publicprivatesector.org/">CSV Converter</a>, and <a href="http://data.ongithub.com/">Data On Github</a> applications are using the master branch as application store, even if you aren't logged in the app will still run, you just can&rsquo;t save anything. Next I&rsquo;m going to play with this approach as part of my <a href="http://apievangelist.com/2014/10/10/exploring-the-possibilities-of-being-an-api-broker/">API broker research</a>, exploring different ways of aggregating APIs, and managing key access using the private master branch for each repository.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Public Front-end And Private Back-end For My Sites On Github&url=http://localhost:4000/2014/11/16/public-frontend-and-private-backend-for-my-sites-on-github/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2014%2F11%2F16%2Fpublic-frontend-and-private-backend-for-my-sites-on-github%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2014/11/03/voting-with-my-user-account-shutting-down-my-quora-profile/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2014/11/26/reclaim-your-domain-godaddy-time/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

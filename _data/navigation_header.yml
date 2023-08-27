@@ -1,0 +1,28 @@
+# Navbar left menu navigation links
+left:
+  - title: Home
+    url: /
+
+  - title: Stories
+    url: /blog/    
+
+  - title: About
+    url: /about/
+
+  - title: Experiences
+    url: /experiences/
+
+  - title: Images
+    url: /images/    
+
+  - title: Videos
+    url: /videos/
+
+  - title: Archives
+    url: /archives/    
+
+right:
+
+  - title: Question?
+    url: /contact/
+    button: success

@@ -1,0 +1,47 @@
+---
+layout: post
+title: 'Introduction to the Google Cloud Print Services Interface'
+source: http://kinlane.com/2011/02/06/introduction-to-the-google-cloud-print-services-interface/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print.png
+---
+The <a href="http://code.google.com/apis/cloudprint/docs/proxyinterfaces.html" target="_blank">Google Cloud Print services interface</a> or <a href="http://code.google.com/apis/cloudprint/docs/proxyinterfaces.html" target="_blank">Google Cloud Print API</a> is where the whole cloud print thing starts getting cool.
+<p></p>
+The Google Cloud Print service interfacekinlane-productions2te a cloud print proxy that gives you a virtual cloud printer you can send jobs to.
+<img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print.png" alt="" width="300" align="right" />
+I'm developing a PHP / MySQL proxy that enables me to register a virtual cloud printer with Google Cloud Print (GCP) registry. Once the printer is registered with the service, it can then receive jobs from and communicate status with Google Cloud Print.
+<p></p>
+Google defines a <strong><em>Cloud Print Proxy</em></strong> as: <em>A cloud print proxy can be a piece of software that runs on a computer connected to a non-cloud-aware printer, a small add-on hardware device that contains the proxy interface and connects to the printer, or firmware that is built in to printers of the future.</em>
+<p></p>
+I want to evolve the proxy definition beyond just hardware, I want to proxy Google Cloud Print jobs and translate them into anything, but first what is the GCP services interface?
+<p></p>
+The <strong>URL for the GCP services interface</strong> is:
+<ul class="mainlist">
+	<li><a href="http://www.google.com/cloudprint/interface/" target="_blank">http://www.google.com/cloudprint/interface/</a></li>
+</ul>
+Currently GCP services interface uses <a href="http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html" target="_blank">Google client login for installed apps</a>, although I don't see any reason it can't use <a href="http://code.google.com/apis/accounts/docs/OAuth.html" target="_blank">oAuth for Web Apps</a>.  Both types of authentication give you access to a users Google Account services, the oAuth for Web Apps is cleaner, and doesn't require you ask for a login.
+<p></p>
+The Auth token retrieved from authentication will need to be included in all requests using the <a class="zem_slink" title="List of HTTP header fields" rel="wikipedia" href="http://en.wikipedia.org/wiki/List_of_HTTP_header_fields">HTTP header</a> Authorization: GoogleLogin auth={auth_token}.
+<p></p>
+In addition, all requests to the Google Cloud Print server will need to incldue the HTTP header: X-CloudPrint-Proxy: {OEM_ID}
+<p></p>
+Once you are authenticated with a users account you can begin to make calls against the GCP services interface.  Google provides the following cloud print endpoints:
+<ul class="mainlist">
+	<li><strong><a href="http://www.kinlane.com/2011/02/google-cloud-print-control/" target="_blank">/control</a></strong> - Allows proxy control over the status of a cloud print job.</li>
+	<li><strong><a href="http://www.kinlane.com/2011/02/google-cloud-print-delete/">/deletkinlane-productions2lows proxy to delete a printer from Google Cloud Print (GCP) registry.</li>
+	<li><strong><a href="http://www.kinlane.com/2011/02/2822/">/fetch</a></strong> - Allows proxy to fetch the next available job for the specified cloud printer.</li>
+	<li><strong><a href="http://www.kinlane.com/2011/02/google-cloud-print-list/">/list</a></strong> - Provides proxy a listing of all the printers for the given users Google Account.</li>
+	<li><strong><a href="http://www.kinlane.com/2011/02/google-cloud-print-register/">/register</a></strong> - Allows proxy to register printers.</li>
+	<li><strong><a href="http://www.kinlane.com/2011/02/google-cloud-print-update/" target="_blank">/update</a> </strong>- Allows proxy to update various attributes and parameters of the printer registered with Google Cloud Print.</li>
+</ul>
+The GCP services interface gives you access to everything you for managing Google Cloud printers and jobs.  Google Cloud Print can also provide print job availability notification through Google Talk, using a persistent <a class="zem_slink" title="Extensible Messaging and Presence Protocol" rel="wikipedia" href="http://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol">XMPP</a> connection.
+<a href="http://www.mimeo.com" target="_blank"><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/mimeo-logo.jpg" alt="" width="250" align="right" /></a>
+I have a working XMPP script, because my focus goes beyond instant gratification from a local printer, into more a commercial cloud print format, I'm not implementing the XMPP jobs management and just relying on the /fetch and /control endpoints to manage jobs.
+<p></p>
+That concludes a quick overview of the GCP services interface, I will be publishing specific Google Cloud Print code samples for each step shortly.  You can also find<a href="http://code.google.com/apis/cloudprint/docs/devguide.html" target="_blank"> a Google Cloud Print Developers</a> <a href="http://code.google.com/apis/cloudprint/docs/proxyinterfaces.html" target="_blank">Guide and Google Cloud Print Services Interface Guide</a> over at Google Code.
+<h6 class="zemanta-related-title" style="font-size: 1em;">Related articles</h6>
+<ul class="zemanta-article-ul">
+	<li class="zemanta-article-ul-li"><a href="http://www.readwriteweb.com/archives/cloud_print_coming_soon_to_google_docs.php">Cloud Print "Coming Soon" to Google Docs</a> (readwriteweb.com)</li>
+	<li class="zemanta-article-ul-li"><a href="http://mashable.com/2011/01/24/google-cloud-print-gmail-mobile/">Wireless Printing From Gmail Coming Soon to Android and iOS</a> (mashable.com)</li>
+	<li class="zemanta-article-ul-li"><a href="http://www.macworld.com/article/157364/2011/01/cloudprint.html?lsrc=rss_main">Google Cloud Print lets you print GMail content from your mobile device</a> (macworld.com)</li>
+</ul>

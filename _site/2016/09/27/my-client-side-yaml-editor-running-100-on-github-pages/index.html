@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My Client Side YAML Editor Running 100% On Github Pages | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="My Client Side YAML Editor Running 100% On Github Pages" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I am working on a base template which acts as a seed for all of my micro tools which run 100% on Github. I have a number of little micro tools I want to build, and I needed a series of core building blocks that I could fork and reuse across all my tools. I produced this base template, and next up was creating a simple YAML editor, that would allow me to edit the YAML file in the _data folder for any Jekyll site hosted on Github Pages. The objective here is to provide little applications that use the native functionality of Jekyll and Liquid for displaying static, data-driven applications, and when I need to write data back to the YAML files I use JavaScript and the Github API. The critical piece is the authentication with the Github API in a 100% client-side environment (ie. Github Pages). This is something I&#39;ve used OAuth.io before in the past, and my own Github OAuth proxy, but for these projects I want them to be forkable, and all you need is a Github personal token to access&nbsp;(which all Github accounts have) to access. YAML In The _data Folder In Jekyll SitesWhen you put YAML into the _data folder for any Jekyll driven site hosted on Github some interesting things become possible. Jekyll takes the YAML and loads it up as an object you can easily reference using Liquid Markup. It all makes Jekyll perfect for building little data-driven micro tools, with the YAML as a core. If you need JSON, XML, Atom, or other representations, you can easily publish pages that output in these formats. This YAML is accessible in the _data folder for the Github repository that houses this site. I just want to provide a simple Github Gists for reference in this story. This YAML will be the driver of static, as well as dynamic content and data used across this prototype micro tool. Static Listing of YAML data Using LiquidNext up is to display the YAML data available in the _data folder and render it for viewing. Using Liquid I am able to dynamically generate and HTML listing of all the data in the YAML, acting as the static listing of the products that I have in my data store. Here is the Liquid that dumps all the products in the YAML file: Liquid does have a learning curve, but once you get the hang of it, and have some base templates developed--it gets easier. I&#39;ve been able to recreate anything that I would accomplish dynamically with PHP and a MySQL database, but using Liquid and YAML data stores.&nbsp; Editing YAML Files Client Side With Github APII have more YAML data store, and a basic static listing of the data store, now I want to edit it. Using Github.js and the Github API I am able to mount the YAML files in the _data/ folder and list out on the page with text boxes for editing. This obviously won&#39;t work for very large YAML files, but for sensibly structured data, kept in my small bits it will work just fine. Once I&#39;m done working with the data, I can save the form, and I wrote some JavaScript that traverses the form, updating the YAML file using the Github API. The trick is that this form, reading from the YAML file, and writing to it via the API isn&#39;t allowed unless you pass in a valid personal token from a Github user who has access to the underlying repository. My 100% Client Side YAML Editing Micro ToolThat is it. This is my base template for any micro tools I build that will allow for reading and writing YAML files that are stored in the _data folder. It may not seem like much at first glance, but it opens up for me a wealth of new possibilities when it comes to data-driven tooling and collaborative projects that run on Jekyll (not just Github Pages, as Jekyll can be hosted anywhere). First, I&#39;m offloading application operations to Github. Sure Github has some issues from time to time, but I&#39;ve been running 100% on them for over two years, and it is more than sufficient for most needs. Github scales and secures my applications, and I don&#39;t have to be concerned with keeping the infrastructure up and running--I just have to keep track of my personal tokens. Second, these apps are self-contained and forkable. Anyone can fork it, grab their own personal token, and get to work managing the YAML core of their application. This is important to me. I like my tooling like I like my APIs, little, forkable and disposable, and truly open source tooling that anyone can put to use. This is just &nbsp;base template prototype. I&#39;ll come up with more sophisticated versions soon. I just wanted to get the base template for running apps 100% on Github together, then this simple example of reading and writing YAML data from a _data folder before I moved on. I have a couple of API micro tools I want to develop in the area of API design, and I needed this functionality to make it all come together. The base micro tool template&nbsp;and this base micro tool YAML template are both on Github." />
+<meta property="og:description" content="I am working on a base template which acts as a seed for all of my micro tools which run 100% on Github. I have a number of little micro tools I want to build, and I needed a series of core building blocks that I could fork and reuse across all my tools. I produced this base template, and next up was creating a simple YAML editor, that would allow me to edit the YAML file in the _data folder for any Jekyll site hosted on Github Pages. The objective here is to provide little applications that use the native functionality of Jekyll and Liquid for displaying static, data-driven applications, and when I need to write data back to the YAML files I use JavaScript and the Github API. The critical piece is the authentication with the Github API in a 100% client-side environment (ie. Github Pages). This is something I&#39;ve used OAuth.io before in the past, and my own Github OAuth proxy, but for these projects I want them to be forkable, and all you need is a Github personal token to access&nbsp;(which all Github accounts have) to access. YAML In The _data Folder In Jekyll SitesWhen you put YAML into the _data folder for any Jekyll driven site hosted on Github some interesting things become possible. Jekyll takes the YAML and loads it up as an object you can easily reference using Liquid Markup. It all makes Jekyll perfect for building little data-driven micro tools, with the YAML as a core. If you need JSON, XML, Atom, or other representations, you can easily publish pages that output in these formats. This YAML is accessible in the _data folder for the Github repository that houses this site. I just want to provide a simple Github Gists for reference in this story. This YAML will be the driver of static, as well as dynamic content and data used across this prototype micro tool. Static Listing of YAML data Using LiquidNext up is to display the YAML data available in the _data folder and render it for viewing. Using Liquid I am able to dynamically generate and HTML listing of all the data in the YAML, acting as the static listing of the products that I have in my data store. Here is the Liquid that dumps all the products in the YAML file: Liquid does have a learning curve, but once you get the hang of it, and have some base templates developed--it gets easier. I&#39;ve been able to recreate anything that I would accomplish dynamically with PHP and a MySQL database, but using Liquid and YAML data stores.&nbsp; Editing YAML Files Client Side With Github APII have more YAML data store, and a basic static listing of the data store, now I want to edit it. Using Github.js and the Github API I am able to mount the YAML files in the _data/ folder and list out on the page with text boxes for editing. This obviously won&#39;t work for very large YAML files, but for sensibly structured data, kept in my small bits it will work just fine. Once I&#39;m done working with the data, I can save the form, and I wrote some JavaScript that traverses the form, updating the YAML file using the Github API. The trick is that this form, reading from the YAML file, and writing to it via the API isn&#39;t allowed unless you pass in a valid personal token from a Github user who has access to the underlying repository. My 100% Client Side YAML Editing Micro ToolThat is it. This is my base template for any micro tools I build that will allow for reading and writing YAML files that are stored in the _data folder. It may not seem like much at first glance, but it opens up for me a wealth of new possibilities when it comes to data-driven tooling and collaborative projects that run on Jekyll (not just Github Pages, as Jekyll can be hosted anywhere). First, I&#39;m offloading application operations to Github. Sure Github has some issues from time to time, but I&#39;ve been running 100% on them for over two years, and it is more than sufficient for most needs. Github scales and secures my applications, and I don&#39;t have to be concerned with keeping the infrastructure up and running--I just have to keep track of my personal tokens. Second, these apps are self-contained and forkable. Anyone can fork it, grab their own personal token, and get to work managing the YAML core of their application. This is important to me. I like my tooling like I like my APIs, little, forkable and disposable, and truly open source tooling that anyone can put to use. This is just &nbsp;base template prototype. I&#39;ll come up with more sophisticated versions soon. I just wanted to get the base template for running apps 100% on Github together, then this simple example of reading and writing YAML data from a _data folder before I moved on. I have a couple of API micro tools I want to develop in the area of API design, and I needed this functionality to make it all come together. The base micro tool template&nbsp;and this base micro tool YAML template are both on Github." />
+<link rel="canonical" href="http://localhost:4000/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/" />
+<meta property="og:url" content="http://localhost:4000/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-yaml-file.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-09-27T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"My Client Side YAML Editor Running 100% On Github Pages","dateModified":"2016-09-27T00:00:00-07:00","datePublished":"2016-09-27T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-yaml-file.png","description":"I am working on a base template which acts as a seed for all of my micro tools which run 100% on Github. I have a number of little micro tools I want to build, and I needed a series of core building blocks that I could fork and reuse across all my tools. I produced this base template, and next up was creating a simple YAML editor, that would allow me to edit the YAML file in the _data folder for any Jekyll site hosted on Github Pages. The objective here is to provide little applications that use the native functionality of Jekyll and Liquid for displaying static, data-driven applications, and when I need to write data back to the YAML files I use JavaScript and the Github API. The critical piece is the authentication with the Github API in a 100% client-side environment (ie. Github Pages). This is something I&#39;ve used OAuth.io before in the past, and my own Github OAuth proxy, but for these projects I want them to be forkable, and all you need is a Github personal token to access&nbsp;(which all Github accounts have) to access. YAML In The _data Folder In Jekyll SitesWhen you put YAML into the _data folder for any Jekyll driven site hosted on Github some interesting things become possible. Jekyll takes the YAML and loads it up as an object you can easily reference using Liquid Markup. It all makes Jekyll perfect for building little data-driven micro tools, with the YAML as a core. If you need JSON, XML, Atom, or other representations, you can easily publish pages that output in these formats. This YAML is accessible in the _data folder for the Github repository that houses this site. I just want to provide a simple Github Gists for reference in this story. This YAML will be the driver of static, as well as dynamic content and data used across this prototype micro tool. Static Listing of YAML data Using LiquidNext up is to display the YAML data available in the _data folder and render it for viewing. Using Liquid I am able to dynamically generate and HTML listing of all the data in the YAML, acting as the static listing of the products that I have in my data store. Here is the Liquid that dumps all the products in the YAML file: Liquid does have a learning curve, but once you get the hang of it, and have some base templates developed--it gets easier. I&#39;ve been able to recreate anything that I would accomplish dynamically with PHP and a MySQL database, but using Liquid and YAML data stores.&nbsp; Editing YAML Files Client Side With Github APII have more YAML data store, and a basic static listing of the data store, now I want to edit it. Using Github.js and the Github API I am able to mount the YAML files in the _data/ folder and list out on the page with text boxes for editing. This obviously won&#39;t work for very large YAML files, but for sensibly structured data, kept in my small bits it will work just fine. Once I&#39;m done working with the data, I can save the form, and I wrote some JavaScript that traverses the form, updating the YAML file using the Github API. The trick is that this form, reading from the YAML file, and writing to it via the API isn&#39;t allowed unless you pass in a valid personal token from a Github user who has access to the underlying repository. My 100% Client Side YAML Editing Micro ToolThat is it. This is my base template for any micro tools I build that will allow for reading and writing YAML files that are stored in the _data folder. It may not seem like much at first glance, but it opens up for me a wealth of new possibilities when it comes to data-driven tooling and collaborative projects that run on Jekyll (not just Github Pages, as Jekyll can be hosted anywhere). First, I&#39;m offloading application operations to Github. Sure Github has some issues from time to time, but I&#39;ve been running 100% on them for over two years, and it is more than sufficient for most needs. Github scales and secures my applications, and I don&#39;t have to be concerned with keeping the infrastructure up and running--I just have to keep track of my personal tokens. Second, these apps are self-contained and forkable. Anyone can fork it, grab their own personal token, and get to work managing the YAML core of their application. This is important to me. I like my tooling like I like my APIs, little, forkable and disposable, and truly open source tooling that anyone can put to use. This is just &nbsp;base template prototype. I&#39;ll come up with more sophisticated versions soon. I just wanted to get the base template for running apps 100% on Github together, then this simple example of reading and writing YAML data from a _data folder before I moved on. I have a couple of API micro tools I want to develop in the area of API design, and I needed this functionality to make it all come together. The base micro tool template&nbsp;and this base micro tool YAML template are both on Github.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="My Client Side YAML Editor Running 100% On Github Pages | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Client Side YAML Editor Running 100% On Github Pages | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">My Client Side YAML Editor Running 100% On Github Pages</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2016-09-27T00:00:00-07:00" itemprop="datePublished">
+    
+    Sep 27, 2016
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-yaml-file.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="https://kinlane.github.io/github-micro-tool-yaml/"><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-yaml-file.png" alt="" width="25%" align="right" /></a></p>
+<p>I am working on a <a href="http://kinlane.com/2016/09/27/my-forkable-base-for-building-apps-that-run-100-on-github/">base template which acts as a seed for all of my micro tools which run 100% on Github</a>. I have a number of little micro tools I want to build, and I needed a series of core building blocks that I could fork and reuse across all my tools. I produced this base template, and <a href="https://kinlane.github.io/github-micro-tool-yaml/">next up was creating a simple YAML editor</a>, that would allow me to edit the YAML file in the _data folder for any Jekyll site hosted on Github Pages.</p>
+<p>The objective here is to provide little applications that use the native functionality of Jekyll and Liquid for displaying static, data-driven applications, and when I need to write data back to the YAML files I use JavaScript and the Github API. The critical piece is the authentication with the Github API in a 100% client-side environment (ie. Github Pages). This is something I've used <a href="http://OAuth.io">OAuth.io</a> before in the past, and my own Github OAuth proxy, but for these projects I want them to be forkable, and all you need is <a href="https://github.com/settings/tokens">a Github personal token to access</a>&nbsp;(which all Github accounts have) to access.</p>
+<p><strong>YAML In The _data Folder In Jekyll Sites<br /></strong>When you put YAML into the _data folder for any Jekyll driven site hosted on Github some interesting things become possible. Jekyll takes the YAML and loads it up as an object you can easily reference using Liquid Markup. It all makes Jekyll perfect for building little data-driven micro tools, with the YAML as a core. If you <a href="http://apievangelist.com/2016/09/19/providing-yaml-driven-xml-json-and-atom-using-jekyll-and-github/">need JSON, XML, Atom, or other representations, you can easily publish pages that output in these formats</a>.</p>
+<script src="https://gist.github.com/kinlane/307ce704398ccca5dd5f1fbaeba6c953.js"></script>
+<p>This YAML is accessible in the _data folder for the Github repository that houses this site. I just want to provide a simple Github Gists for reference in this story. This YAML will be the driver of static, as well as dynamic content and data used across this prototype micro tool.</p>
+<p><strong>Static Listing of YAML data Using Liquid<br /></strong>Next up is to display the YAML data available in the _data folder and render it for viewing. <a href="https://shopify.github.io/liquid/">Using Liquid</a> I am able to dynamically generate and HTML listing of all the data in the YAML, acting as the static listing of the products that I have in my data store. Here is the Liquid that dumps all the products in the YAML file:</p>
+<script src="https://gist.github.com/kinlane/bb8b31a3dc6880c147389d84563102b9.js"></script>
+<p><a href="https://shopify.github.io/liquid/">Liquid does have a learning curve</a>, but once you get the hang of it, and have some base templates developed--it gets easier. I've been able to recreate anything that I would accomplish dynamically with PHP and a MySQL database, but using Liquid and YAML data stores.&nbsp;</p>
+<p><strong>Editing YAML Files Client Side With Github API<br /></strong>I have more YAML data store, and a basic static listing of the data store, now I want to edit it. Using Github.js and the Github API I am able to mount the YAML files in the _data/ folder and list out on the page with text boxes for editing. This obviously won't work for very large YAML files, but for sensibly structured data, kept in my small bits it will work just fine.</p>
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/my_github_yaml_editor_micro_tool_base.png" alt="" width="90%" /></p>
+<p>Once I'm done working with the data, I can save the form, and I wrote some JavaScript that traverses the form, updating the YAML file using the Github API. The trick is that this form, reading from the YAML file, and writing to it via the API isn't allowed unless you pass in a valid personal token from a Github user who has access to the underlying repository.</p>
+<p><strong>My 100% Client Side YAML Editing Micro Tool<br /></strong>That is it. This is my base template for any micro tools I build that will allow for reading and writing YAML files that are stored in the _data folder. It may not seem like much at first glance, but it opens up for me a wealth of new possibilities when it comes to data-driven tooling and collaborative projects that run on Jekyll (not just Github Pages, as Jekyll can be hosted anywhere).</p>
+<p>First, I'm offloading application operations to Github. Sure Github has some issues from time to time, but I've been running 100% on them for over two years, and it is more than sufficient for most needs. Github scales and secures my applications, and I don't have to be concerned with keeping the infrastructure up and running--I just have to keep track of my personal tokens.</p>
+<p>Second, these apps are self-contained and forkable. Anyone can fork it, grab their own personal token, and get to work managing the YAML core of their application. This is important to me. I like my tooling like I like my APIs, little, forkable and disposable, and truly open source tooling that anyone can put to use.</p>
+<p><a href="https://kinlane.github.io/github-micro-tool-yaml/">This is just &nbsp;base template prototype</a>. I'll come up with more sophisticated versions soon. I just wanted to get <a href="https://kinlane.github.io/github-micro-tool/">the base template for running apps 100% on Github together</a>, then this simple example of reading and writing YAML data from a _data folder before I moved on. I have a couple of API micro tools I want to develop in the area of API design, and I needed this functionality to make it all come together.</p>
+<p>The <a href="https://github.com/kinlane/github-micro-tool">base micro tool </a><a href="https://github.com/kinlane/github-micro-tool">template</a>&nbsp;and <a href="https://github.com/kinlane/github-micro-tool-yaml">this base micro tool YAML template</a> are both on Github.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=My Client Side YAML Editor Running 100% On Github Pages&url=http://localhost:4000/2016/09/27/my-client-side-yaml-editor-running-100-on-github-pages/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2016%2F09%2F27%2Fmy-client-side-yaml-editor-running-100-on-github-pages%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2016/09/22/my-response-to-people-trying-to-sell-me-email-lists-of-corporate-users/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2016/09/27/my-forkable-base-for-building-apps-that-run-100-on-github/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

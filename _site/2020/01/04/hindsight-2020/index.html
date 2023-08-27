@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Hindsight 2020’ | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Hindsight 2020’" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="This decade was a big one for me. Many life and world changing things occurred to me in the last ten years. I am not one to make predictions about what the next decade will hold, but I am big on learning from my past and thinking deeply about what has happened to me. I suspect I will be learning from this last decade for some time to come, as there were many lessons which emerged for me that I am still processing and learning from. The last decade forever changed my world view on multiple personal levels, but then also allowed me to take my professional work to new heights-—leaving me feeling pretty successful overall, despite many concerns about the rest of the world." />
+<meta property="og:description" content="This decade was a big one for me. Many life and world changing things occurred to me in the last ten years. I am not one to make predictions about what the next decade will hold, but I am big on learning from my past and thinking deeply about what has happened to me. I suspect I will be learning from this last decade for some time to come, as there were many lessons which emerged for me that I am still processing and learning from. The last decade forever changed my world view on multiple personal levels, but then also allowed me to take my professional work to new heights-—leaving me feeling pretty successful overall, despite many concerns about the rest of the world." />
+<link rel="canonical" href="http://localhost:4000/2020/01/04/hindsight-2020/" />
+<meta property="og:url" content="http://localhost:4000/2020/01/04/hindsight-2020/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/gypsymosaic-gypsy-eyes-smoking-cigarette.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-04T04:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2020/01/04/hindsight-2020/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Hindsight 2020’","dateModified":"2020-01-04T04:00:00-08:00","datePublished":"2020-01-04T04:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/01/04/hindsight-2020/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/gypsymosaic-gypsy-eyes-smoking-cigarette.jpg","description":"This decade was a big one for me. Many life and world changing things occurred to me in the last ten years. I am not one to make predictions about what the next decade will hold, but I am big on learning from my past and thinking deeply about what has happened to me. I suspect I will be learning from this last decade for some time to come, as there were many lessons which emerged for me that I am still processing and learning from. The last decade forever changed my world view on multiple personal levels, but then also allowed me to take my professional work to new heights-—leaving me feeling pretty successful overall, despite many concerns about the rest of the world.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hindsight 2020&#39; | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hindsight 2020&#39; | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Hindsight 2020&#39;</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2020-01-04T04:00:00-08:00" itemprop="datePublished">
+    
+    Jan 4, 2020
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/gypsymosaic-gypsy-eyes-smoking-cigarette.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>This decade was a big one for me. Many life and world changing things occurred to me in the last ten years. I am not one to make predictions about what the next decade will hold, but I am big on learning from my past and thinking deeply about what has happened to me. I suspect I will be learning from this last decade for some time to come, as there were many lessons which emerged for me that I am still processing and learning from. The last decade forever changed my world view on multiple personal levels, but then also allowed me to take my professional work to new heights-—leaving me feeling pretty successful overall, despite many concerns about the rest of the world.</p>
+
+<p>This post is all about me. It isn’t about the decade as much as it is about how I was impacted by the decade. It is hard to say it has been one of the most transformative decades of my 48 year old life, but it did move me in what I’d consider to be the most positive direction of my entire life. Opening my eyes to the world around me in ways I could never see before, and equipping me to see what is going on in ways I couldn’t comprehend just ten short years ago. All of which is directly linked and influenced by the most important thing to have happened to me this past decade, which began as 2009 was coming to a close.</p>
+
+<h1 id="meeting-the-now-infamous-audrey-watters">Meeting The (Now) Infamous Audrey Watters</h1>
+
+<p>By January 1st 2010, Audrey Watters was my girlfriend and by January 1st, 2020 she is my wife. She changed everything. I love her. She means the world to me. In the beginning, because of past trauma I didn’t fully open up to her. Along the way I learned to let her in, and now I trust her with my life. She’s not always the easiest to handle, not always saying what I want to hear, but almost always what I need to hear. She can’t help it, it is just her way. I don’t think I would have continued to grow as a human being, and fully unlock my potential if I hand’t met her. I still remember walking her through purchasing <a href="https://web.archive.org/web/20200508123730/http://hackeducation.com/">hackeducation.com</a>, setting up of an AWS EC2 server with MySQL for her to run WordPress, then insisting that she learn to manage on her own because I may not be here in six months. Oh, and don’t expect much traffic from your blog—-it takes years to build an audience. Ha! It took her months. Audrey was definitely the thing that made the biggest impact on me over the last decade, and for decades to come.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane-audrey-watters.jpg" alt="" /></p>
+
+<h1 id="having-my-kiddo-become-an-adult">Having My Kiddo Become An Adult</h1>
+
+<p>I have one biological child I brought into this world—-literally. In 2000, I pulled this human being which I had created into this world, and smacked her until she screamed. She means the world to me, and this decade I got to watch her graduate and go off to University. The transition into adulthood was rocky one for me, so I have a lot of anxiety about her making her way in this world. She is why all the pussy grabbing talk in the 2016 election became a line in the sand for me. It is not the world I accept for my child. I don’t give a shit if you see it as locker room talk. Sexism is real, and one of the largest systemic illnesses we suffer from as a society. I want my child to have the same opportunities as others, and I don’t want her to have to deal with all the asshole bros I watch my wife do battle with on a daily basis. Anyways, I’m super proud to have made it over the 18 year line with my biological offspring. I’m happy to see her making the switch to becoming a full blown adult with her own opinions and beliefs, even if it leaves me with crippling anxiety. My entire adult plan has consistent of staying alive until she became an adult, so I really do not have any plan for what happens next with her, or me. I’m just making this shit up as I go along now.</p>
+
+<h1 id="i-am-the-api-evangelist">I Am The API Evangelist</h1>
+
+<p>At the same time Audrey started Hack Education I started API Evangelist. It is a project that has transformed my career and my life. Ultimately, this whole API thing didn’t work out as I originally envisioned when I began API Evangelist, but it all did work out as well as one can expect of ventured financed techno-solutionism. I began API Evangelist thinking that APIs could change most any business sector where applied, and could open up government and make it more transparent. But, like most white bros who are wielding technology, I neglected to see the bad that can happen, due to my privilege and cluelessness. It is something I will be reconciling until the day I die, but from my current vantage point it appears to just be my curse / purpose in life. In 2020 I am thankful I can make a healthy living on the back of the work I’ve done as the API Evangelist. I am happy wherever and whenever I can make a small impact on the overall API conversation, and resulting online world, but as I enter the next decade I possess a healthy skepticism that people will ever wield APIs in a positive way, let alone actually doing them “right”. Prove me wrong! I predict that the next decade will be more of the same API-inflicted chaos and mediocrity. The question for me is how involved I stay in the overall conversation, and what I will spend my time doing for a living and to keep my chaotic-good mind occupied.</p>
+
+<p><img src="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/la-muse-butterfly-purple-flower.jpg" alt="" /></p>
+
+<h1 id="writing-speaking-and-storytelling">Writing, Speaking and Storytelling</h1>
+
+<p>I wouldn’t go so far as saying I consider myself a professional writer. I still struggle with some of the fundamentals, mostly due to the speed at which I move through the world. However, I have found a deep and profound love of writing over the last decade. It isn’t just something I love to do, it is something I need to do or I do not feel like I am living. If you asked my 12 year old self what I’d be doing when I grew up I would have said computer programmer and writer—-nailed it. Too bad I was told by counselors that my math was too low to be a computer programmer, and others saying my writing wasn’t any good. Ha, in your face. I love writing. I do it every day. I even make money from doing it. I get to write about only the things that interest me. I can say that I truly found my storytelling voice in this decade. Something that has acted as a perpetual relief value for my own anxiety about the world around me, and the antidote to my overactive and often times uncontrollable brain.</p>
+
+<h1 id="the-2016-election">The 2016 Election</h1>
+
+<p>The 2016 election hit me like a ton of bricks. It cracked open the universe for me. It put a San Andreas size fault in my reality that will never close. It took me back to 1986. A place in time where I didn’t hold out much hope for the future. I knew conservatives weren’t caring people with all of their talk of morality, religion, and white supremacy. I didn’t think they were collectively capable of full throated Trumpism. The election took away family and friends forever. It showed me how much we hate women and people of color, and demonstrated that hatred is baked into the fabric of our country. I am left hoping this is just a last desperate gasp of a very scared and increasingly minority white supremacy. I just can’t go back to the belief that there is no future–something I lived in 1986, because that made for a pretty dark young man which took me over a decade to dig out of. I can’t go back there. I have to hold out hope that we can move things in a better direction. Ultimately I will stay in the game, but you won’t find me returning home anytime soon in the coming decade—-I need some time to physically and mentally heal from the trauma caused by this election.</p>
+
+<h1 id="waking-up-to-systemic-misogyny">Waking Up To Systemic Misogyny</h1>
+
+<p>I thought I understood what sexism was before I was with Audrey. I didn’t. I still don’t fully grasp the scope, and that scares the shit out of me. Watching Audrey endure harassment online, and myself being exposed to it by association, shook me to my core. This is normal for women in the physical and online worlds? Fuck! Men suck. We are some chicken shit fuckers. I’ve seen men in prominent positions say some pretty mind blowing shit to Audrey, revealing to me that a hatred of women is still very mainstream—-you just don’t always see it as a white male. I find these shadows very disturbing. Then during the 2016 election there were two revealing moments for me, 1) realizing that men like me hate women more than they hate black men, and 2) when Trump’s “grab em’ by the pussy” line didn’t derail his election, and people accepted it as the way thing are in this world. Fuck you. Fuck all of you. I refuse to accept this. It was the line for me when it came to everything Trump. It was the point of no return for me. I refuse to accept this view of women, and I refuse to accept those who are willfully ignorant of the sexism that is all around us. I want to be better. I will be better.</p>
+
+<h1 id="painfully-aware-of-my-racism">Painfully Aware Of My Racism</h1>
+
+<p>I wouldn’t say I’m not racist in 2020. I know better. I hung out with more people of color this decade than at any point previously in my life. I am progressing from somewhere between a less than 10 racist to a greater than 25+ racist. Meaning I am not racist around less than 10 people of color, but you put me in a bar or restaurant with over 25 people of color I still feel uncomfortable. Not intentionally. I am not really scared. I am just programmed as part of my upbringing, and I don’t have a lot of experience being around large groups of people of color. I recognize my shortcomings, and I am on the path to being solidly anti-racist. Reading 400 Years of White Trash by Nancy Isenberg, and Stamped From the Beginning by Ibram X. Kendi during the elections helped me process my white supremacist libertarian upbringing, changing my views on myself, the people I grew up with, rural realities, and big cities. I see how much of my view of the world has been shaped by white supremacy. It has knocked the wind out of me several times this decade, but I’m determined to stay on the path, and continuing to open my mind of this front, no matter how painful it is.</p>
+
+<h1 id="attempted-drone-recovery">Attempted Drone Recovery</h1>
+
+<p>With the election taking me back to 1986, it is ironic that months before the 2016 election I managed to work through a signifiant amount of my own baggage from decades earlier after I left the technology sector and spent the summer in the woods with Audrey’s son. After multiple attempts to address his mental state and addiction, I took him out in the woods and walked him around, hoping the experience would shift his view of the world. Looking back now, I think it did more to shake my view of thing than it ever did his. The summer gave me an opportunity to have a conversation with my 20 something year old self, battle some demons, and step away from technology for a while. All of which I think was preparing me for what is happening now, and helping me ground myself before taking on this next decade. Ultimately our <a href="https://web.archive.org/web/20200508123730/http://dronerecovery.org/">Drone Recovery summer</a> signaled another milestone in my recovery, I am just hoping eventually the kid makes it to a similar milestone as he hopefully progresses in a more positive direction.</p>
+
+<p><img src="https://s3.amazonaws.com/drone-recovery/kerby4.jpg" alt="" /></p>
+
+<h1 id="becoming-a-global-traveler">Becoming a Global Traveler</h1>
+
+<p>I traveled more this decade than I ever have. I had never left North America (except for living in Hawaii as a kid) until this decade. I have always had a passport, but I never used it to travel internationally until 2012. We spent every bit of extra money we made this decade on traveling to new places. While 98% of our travels were work related, we quickly learned to carve out personal experience time on other people’s dime. Building our careers, while also exposing ourselves to other ways of living, shifting how I view myself and the world. Most of my travel was to Europe, and I spent a lot of time in Paris, Barcelona, London, Berlin, Amsterdam, Rome, as well as made it out to Australia. While I don’t imagine I’ll travel with the same intensity as I did this last decade, I do intend to maintain some momentum, and see many new places in the 2020s. Traveling with Audrey was definitely one of the most memorable aspects of the last ten years, creating experiences we will remember forever, making all of this so very worth it.</p>
+
+<h1 id="a-presidential-innovation-fellow">A Presidential Innovation Fellow</h1>
+
+<p>Going to work for the White House was a high point of the decade and of my career. While I didn’t stay around for the entire fellowship due to financial constraints, it is an experience that continues to impact my work as the API Evangelist. With me returning to DC multiple times a year to work with different federal agencies, and private sector interests moving the API conversation forward at the federal level. While my work on open data and APIs at the federal level has left a huge mark on me, I’d say learning about how government works, and having been exposed to some of the realities of the government bureaucracy was exactly what this naive, information-deprived, libertarian, anti-government white boy needed. It forced me out of the defensive position my poor rural upbringing had put me in, and showed me the real world out there. Another thing it did was slap back my white privileged entrepreneurial self from thinking I can do anything. After seeing the scope of problems we face in DC, I realized just how much I do not know. Lastly, I’d say the fact that friends and family from my youth are largely unaware of what I do in Washington DC, with many actually feeling it was a bad thing, and think lesser of me for doing it. #fuckem</p>
+
+<h1 id="also-being-an-ipa-evangelist">Also Being An IPA Evangelist</h1>
+
+<p>If you hung out with me prior to 2015 you know I liked to drink beer, and specifically IPAs. I drank regularly. At some point in 2015 I hit a wall with drinking beer. I still like the idea of drinking a beer, but my body doesn’t feel the same way. I hit peak saturation when it came to drinking this amazing fermented drink. If I had my way I would still be drinking beer but my stomach and liver is saying we are done. I took a number of breaks from drinking in the last five years, and I am much more mindful of how my body responses in general to alcohol as I enter the next decade. I still love to drink, but I’m also a big fan of feeling good, and staying a live, so I won’t be going back to my old ways any time soon.</p>
+
+<h1 id="in-love--hate-with-the-tech-industry">In Love / Hate With The Tech Industry</h1>
+
+<p>I have learned so much studying the tech industry over the last decade. I went into this last decade as a believer and came out the other end a cautious skeptic. This is a difficult place to find yourself in as an evangelist for a ubiquitous technology. It isn’t that I don’t believe in the power of technology anymore, it is just that the potential for abuse and exploitation within human hands is just too great to ignore anymore. After watching the Twitter and Facebook APIs fuck with our world so heavily in the last decade I am left questioning if I should be doing this at all. APIs aren’t good, bad, or even neutral. APIs are purely a reflection of their creators and operators. In the last decade APIs are being used for more harm than they are good, and the favorite tool for inflicting a lot of mediocre unsecured technology that doesn’t really care about the humans they are purportedly serving. Don’t get me wrong, I’ve made a lot of money working in the tech industry. I used the tech industry to elevate myself out of addiction, poverty, and made a damn good living working in the space. Presenting a pretty significant challenge for me in coming decades regarding how I manage to balance my critical voice of the industry I work in, while still try to make a living, and keep myself busy. <img src="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/downtown-fredericksburg-downtown-fredericksburg-propaganda-leaflets.JPG" alt="" /></p>
+
+<h1 id="i-learned-a-lot-about-myself">I Learned A Lot About Myself</h1>
+
+<p>Between 2010 and 2020 I learned a lot about Kin. I am healthier and have less immediate anxiety coming out of the decade as I did going into it. I have found peace with a lot of demons that were chasing me, and I cut a lot of emotional cords. Sadly a lot of this work on myself makes going back to where I grew up very difficult, and something don’t see any value in doing—so I don’t. I find it very painful and negative to look back, and I find it very rewarding and nourishing to look forward. I spent so many years thinking the world would end at any moment, so I am cherishing looking forward with optimism, and living in the moment without so much fear and concern for the future. Growing up in the 70s and 80s left me hopeless, and it took me the 90s to dig out of that, and I refuse to go back. I am not going to let the Trump believers bring me down, and I refuse to see the world as dangerous and threatening as they do. I insist on living today, and doing my best to give my daughter, and the people around me the brightest view of the future as I possibly can.</p>
+
+<p>I wasn’t going to write a retrospective on the last decade as I largely view the line as arbitrary. However, after thinking about it for a couple of days I began to see value in at least capturing a few of the things that made their mark on me in this decade. Really, it was writing <a href="https://web.archive.org/web/20200508123730/http://kinlane.com/2020/01/03/it-is-easier-for-me-to-sit-down-as-my-8-year-old-self-for-star-wars-these-days/">a simple story about me being able to enjoy the latest Star Wars movies</a>, and the highlight of the movie actually being the reflections of who I was at different points in my life when each of the Star Wars trilogies trilogy were released that pushed me to write this retrospective. I would really enjoy there being a write up about 1990, 2000, and 2010 today, so why not write one about 2020. I’ll try to do so in 2030—-we’ll see. ;-) Overall I am proud of who I’ve become. I’m confident that I am on the right side of history in the crazy moment we find ourselves in. Most of all I have survived. I am here. I am happy, healthy, and doing what I love. I have an amazing wife. I have a beautiful daughter. And, I’m working on something I really enjoy and that I am well paid to do. Personally I feel like everything is dialed in—-if only I could do more about the rest of the world right now. However, for right now I will enjoy what I have.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Hindsight 2020'&url=http://localhost:4000/2020/01/04/hindsight-2020/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F01%2F04%2Fhindsight-2020%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2019/01/31/the-invisible-currents-flowing-around-me-and-my-belief-in-technology/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2020/07/05/tears-from-seattle-to-olympia/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

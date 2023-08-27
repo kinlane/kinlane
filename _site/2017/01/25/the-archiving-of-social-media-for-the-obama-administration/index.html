@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Archiving Of Social Media For The Obama Administration | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="The Archiving Of Social Media For The Obama Administration" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I&#39;m thinking a lot about my bits lately, and the legacy of my work in a digital environment. As I&#39;m working and writing on this topic, an email came through my inbox from the White House on the archive work they&#39;ve done with the President&#39;s social media. I thought their approach was worth sharing as what I&#39;d consider to be an archival and reclaim lesson when it comes to our digital bits and a positive approach to preserving the legacy of our digital work. WhiteHouse.gov becomes ObamaWhiteHouse.govThe Obama White House website &ndash; which includes press articles, blog posts, videos, and photos &ndash; will be available at ObamaWhiteHouse.gov, a site maintained by the National Archives and Records Administration (NARA), beginning on January 20, 2017. If you are looking for a post or page on the Obama administration&rsquo;s WhiteHouse.gov from 2009 through 2017, you can find it by changing the URL to ObamaWhiteHouse.gov. For example, after the transition, this blog post will be available at ObamaWhiteHouse.gov/obama-administration-digital-transition-moving-forward. President Obama, Vice President Biden, First Lady Michelle Obama, and Dr. Biden Archived content posted to these social media accounts during the Obama administration will be maintained by NARA at the following handles: President Obama: @POTUS on Twitter&nbsp;will be archived at @POTUS44 Facebook.com/POTUS&nbsp;will be archived at Facebook.com/POTUS44 [email&nbsp;protected] will be archived at [email&nbsp;protected] Vice President Biden: @VP on Twitter will be archived at @VP44 Facebook.com/VicePresidentBiden will be archived at Facebook.com/VicePresidentBiden44 Instagram.com/VP will be archived at Instagram.com/VP44 [email&nbsp;protected] will be archived at [email&nbsp;protected] First Lady Michelle Obama: @FLOTUS&nbsp;on Twitter will be archived at @FLOTUS44 @MichelleObama on Instagram will be archived at @MichelleObama44 [email&nbsp;protected] will be archived at @FLOTUS44 Dr. Jill Biden: @DrBiden&nbsp;on Twitter will be archived at @DrBiden44 @DrBiden on Instagram will be archived at @DrBiden44 [email&nbsp;protected] will be archived at [email&nbsp;protected] White House Social Media Archived content posted to institutional White House social media accounts during the Obama administration will be maintained by NARA at the following handles: @WhiteHouse on Twitter will be archived at @ObamaWhiteHouse Facebook.com/WhiteHouse will be archived at Facebook.com/ObamaWhiteHouse Instagram.com/WhiteHouse will be archived at Instagram.com/ObamaWhiteHouse @LaCasaBlanca on Twitter will be archived at @LaCasaBlancaObama Facebook.com/whitehouse.espanol will be archived at Facebook.com/LaCasaBlancaObama Medium.com/WhiteHouse will be archived at [email&nbsp;protected] Flickr.com/WhiteHouse will be archived at Flickr.com/ObamaWhiteHouse YouTube.com/WhiteHouse will be archived at YouTube.com/ObamaWhiteHouse Tumblr.com/WhiteHouse will be archived at ObamaWhiteHouse.tumblr.com Some other content you may be looking for can be found here:&nbsp; @ONDCP&nbsp;will be archived at @ONDCP44 @ONDCPespanol will be archived at @ONDCPespanol44 @OMBPress will be archived at @OMBPress44 @WhiteHouseOSTP will be archived at @WHOSTP44 WhiteHouseCEQ will be archived at @WhiteHouseCEQ44 @OpenGov will be archived at @OpenGov44 @USCTO will be archived at @USCTO44 @CEAChair will be archived at @CEAChair44 @WHWeb will be arhived at @WHWeb44 This is a static archive index of our 44th President that because each of the channels also has an API (except Medium), this index can act as an engine for research and storytelling on the 44th presidency, and possible a backdrop for current, and future presidencies. Using these platform APIs you can easily pull photos, quotes, video, and other valuable snippets from this period in time. This approach to archiving will play a significant role in how the history books are written (or rewritten). I&#39;m considering how I can create a new type of APIs.json index that can be used in this approach, providing a machine readable index to not just the Twitter, Facebook, Instagram, Flickr, Instagram, and Youtube APIs, but also provide a&nbsp;reference to all of the accounts present in an archive. I&#39;m looking to further quantify the dimensions of this approach to archiving, by having a machine-readable definition of the APIs, the accounts, as well as the data, and content contained within each archive. I want to be able to feed a single APIs.json file into a tool, and have it spit out a complete Github archive of everything represented by an archival index." />
+<meta property="og:description" content="I&#39;m thinking a lot about my bits lately, and the legacy of my work in a digital environment. As I&#39;m working and writing on this topic, an email came through my inbox from the White House on the archive work they&#39;ve done with the President&#39;s social media. I thought their approach was worth sharing as what I&#39;d consider to be an archival and reclaim lesson when it comes to our digital bits and a positive approach to preserving the legacy of our digital work. WhiteHouse.gov becomes ObamaWhiteHouse.govThe Obama White House website &ndash; which includes press articles, blog posts, videos, and photos &ndash; will be available at ObamaWhiteHouse.gov, a site maintained by the National Archives and Records Administration (NARA), beginning on January 20, 2017. If you are looking for a post or page on the Obama administration&rsquo;s WhiteHouse.gov from 2009 through 2017, you can find it by changing the URL to ObamaWhiteHouse.gov. For example, after the transition, this blog post will be available at ObamaWhiteHouse.gov/obama-administration-digital-transition-moving-forward. President Obama, Vice President Biden, First Lady Michelle Obama, and Dr. Biden Archived content posted to these social media accounts during the Obama administration will be maintained by NARA at the following handles: President Obama: @POTUS on Twitter&nbsp;will be archived at @POTUS44 Facebook.com/POTUS&nbsp;will be archived at Facebook.com/POTUS44 [email&nbsp;protected] will be archived at [email&nbsp;protected] Vice President Biden: @VP on Twitter will be archived at @VP44 Facebook.com/VicePresidentBiden will be archived at Facebook.com/VicePresidentBiden44 Instagram.com/VP will be archived at Instagram.com/VP44 [email&nbsp;protected] will be archived at [email&nbsp;protected] First Lady Michelle Obama: @FLOTUS&nbsp;on Twitter will be archived at @FLOTUS44 @MichelleObama on Instagram will be archived at @MichelleObama44 [email&nbsp;protected] will be archived at @FLOTUS44 Dr. Jill Biden: @DrBiden&nbsp;on Twitter will be archived at @DrBiden44 @DrBiden on Instagram will be archived at @DrBiden44 [email&nbsp;protected] will be archived at [email&nbsp;protected] White House Social Media Archived content posted to institutional White House social media accounts during the Obama administration will be maintained by NARA at the following handles: @WhiteHouse on Twitter will be archived at @ObamaWhiteHouse Facebook.com/WhiteHouse will be archived at Facebook.com/ObamaWhiteHouse Instagram.com/WhiteHouse will be archived at Instagram.com/ObamaWhiteHouse @LaCasaBlanca on Twitter will be archived at @LaCasaBlancaObama Facebook.com/whitehouse.espanol will be archived at Facebook.com/LaCasaBlancaObama Medium.com/WhiteHouse will be archived at [email&nbsp;protected] Flickr.com/WhiteHouse will be archived at Flickr.com/ObamaWhiteHouse YouTube.com/WhiteHouse will be archived at YouTube.com/ObamaWhiteHouse Tumblr.com/WhiteHouse will be archived at ObamaWhiteHouse.tumblr.com Some other content you may be looking for can be found here:&nbsp; @ONDCP&nbsp;will be archived at @ONDCP44 @ONDCPespanol will be archived at @ONDCPespanol44 @OMBPress will be archived at @OMBPress44 @WhiteHouseOSTP will be archived at @WHOSTP44 WhiteHouseCEQ will be archived at @WhiteHouseCEQ44 @OpenGov will be archived at @OpenGov44 @USCTO will be archived at @USCTO44 @CEAChair will be archived at @CEAChair44 @WHWeb will be arhived at @WHWeb44 This is a static archive index of our 44th President that because each of the channels also has an API (except Medium), this index can act as an engine for research and storytelling on the 44th presidency, and possible a backdrop for current, and future presidencies. Using these platform APIs you can easily pull photos, quotes, video, and other valuable snippets from this period in time. This approach to archiving will play a significant role in how the history books are written (or rewritten). I&#39;m considering how I can create a new type of APIs.json index that can be used in this approach, providing a machine readable index to not just the Twitter, Facebook, Instagram, Flickr, Instagram, and Youtube APIs, but also provide a&nbsp;reference to all of the accounts present in an archive. I&#39;m looking to further quantify the dimensions of this approach to archiving, by having a machine-readable definition of the APIs, the accounts, as well as the data, and content contained within each archive. I want to be able to feed a single APIs.json file into a tool, and have it spit out a complete Github archive of everything represented by an archival index." />
+<link rel="canonical" href="http://localhost:4000/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/" />
+<meta property="og:url" content="http://localhost:4000/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/barack_obama_michelle.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-25T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"The Archiving Of Social Media For The Obama Administration","dateModified":"2017-01-25T00:00:00-08:00","datePublished":"2017-01-25T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/barack_obama_michelle.jpg","description":"I&#39;m thinking a lot about my bits lately, and the legacy of my work in a digital environment. As I&#39;m working and writing on this topic, an email came through my inbox from the White House on the archive work they&#39;ve done with the President&#39;s social media. I thought their approach was worth sharing as what I&#39;d consider to be an archival and reclaim lesson when it comes to our digital bits and a positive approach to preserving the legacy of our digital work. WhiteHouse.gov becomes ObamaWhiteHouse.govThe Obama White House website &ndash; which includes press articles, blog posts, videos, and photos &ndash; will be available at ObamaWhiteHouse.gov, a site maintained by the National Archives and Records Administration (NARA), beginning on January 20, 2017. If you are looking for a post or page on the Obama administration&rsquo;s WhiteHouse.gov from 2009 through 2017, you can find it by changing the URL to ObamaWhiteHouse.gov. For example, after the transition, this blog post will be available at ObamaWhiteHouse.gov/obama-administration-digital-transition-moving-forward. President Obama, Vice President Biden, First Lady Michelle Obama, and Dr. Biden Archived content posted to these social media accounts during the Obama administration will be maintained by NARA at the following handles: President Obama: @POTUS on Twitter&nbsp;will be archived at @POTUS44 Facebook.com/POTUS&nbsp;will be archived at Facebook.com/POTUS44 [email&nbsp;protected] will be archived at [email&nbsp;protected] Vice President Biden: @VP on Twitter will be archived at @VP44 Facebook.com/VicePresidentBiden will be archived at Facebook.com/VicePresidentBiden44 Instagram.com/VP will be archived at Instagram.com/VP44 [email&nbsp;protected] will be archived at [email&nbsp;protected] First Lady Michelle Obama: @FLOTUS&nbsp;on Twitter will be archived at @FLOTUS44 @MichelleObama on Instagram will be archived at @MichelleObama44 [email&nbsp;protected] will be archived at @FLOTUS44 Dr. Jill Biden: @DrBiden&nbsp;on Twitter will be archived at @DrBiden44 @DrBiden on Instagram will be archived at @DrBiden44 [email&nbsp;protected] will be archived at [email&nbsp;protected] White House Social Media Archived content posted to institutional White House social media accounts during the Obama administration will be maintained by NARA at the following handles: @WhiteHouse on Twitter will be archived at @ObamaWhiteHouse Facebook.com/WhiteHouse will be archived at Facebook.com/ObamaWhiteHouse Instagram.com/WhiteHouse will be archived at Instagram.com/ObamaWhiteHouse @LaCasaBlanca on Twitter will be archived at @LaCasaBlancaObama Facebook.com/whitehouse.espanol will be archived at Facebook.com/LaCasaBlancaObama Medium.com/WhiteHouse will be archived at [email&nbsp;protected] Flickr.com/WhiteHouse will be archived at Flickr.com/ObamaWhiteHouse YouTube.com/WhiteHouse will be archived at YouTube.com/ObamaWhiteHouse Tumblr.com/WhiteHouse will be archived at ObamaWhiteHouse.tumblr.com Some other content you may be looking for can be found here:&nbsp; @ONDCP&nbsp;will be archived at @ONDCP44 @ONDCPespanol will be archived at @ONDCPespanol44 @OMBPress will be archived at @OMBPress44 @WhiteHouseOSTP will be archived at @WHOSTP44 WhiteHouseCEQ will be archived at @WhiteHouseCEQ44 @OpenGov will be archived at @OpenGov44 @USCTO will be archived at @USCTO44 @CEAChair will be archived at @CEAChair44 @WHWeb will be arhived at @WHWeb44 This is a static archive index of our 44th President that because each of the channels also has an API (except Medium), this index can act as an engine for research and storytelling on the 44th presidency, and possible a backdrop for current, and future presidencies. Using these platform APIs you can easily pull photos, quotes, video, and other valuable snippets from this period in time. This approach to archiving will play a significant role in how the history books are written (or rewritten). I&#39;m considering how I can create a new type of APIs.json index that can be used in this approach, providing a machine readable index to not just the Twitter, Facebook, Instagram, Flickr, Instagram, and Youtube APIs, but also provide a&nbsp;reference to all of the accounts present in an archive. I&#39;m looking to further quantify the dimensions of this approach to archiving, by having a machine-readable definition of the APIs, the accounts, as well as the data, and content contained within each archive. I want to be able to feed a single APIs.json file into a tool, and have it spit out a complete Github archive of everything represented by an archival index.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Archiving Of Social Media For The Obama Administration | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Archiving Of Social Media For The Obama Administration | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">The Archiving Of Social Media For The Obama Administration</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-01-25T00:00:00-08:00" itemprop="datePublished">
+    
+    Jan 25, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/barack_obama_michelle.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/barack_obama_michelle.jpg" alt="" width="40%" align="right" /></p>
+<p><a href="http://apievangelist.com/2017/01/09/the-api-driven-marketplace-that-is-my-digital-self/">I'm thinking a lot about my bits lately</a>, and the legacy of my work in a digital environment. As I'm working and writing on this topic, an email came through my inbox from the White House on the archive work they've done with the President's social media. I thought their approach was worth sharing as what I'd consider to be an archival and reclaim lesson when it comes to our digital bits and a positive approach to preserving the legacy of our digital work.</p>
+<p><span class="s1"><strong>WhiteHouse.gov</strong></span><span class="s2"><strong> becomes </strong><span class="s3"><strong>ObamaWhiteHouse.gov<br /></strong></span></span>The Obama White House website &ndash; which includes press articles, blog posts, videos, and photos &ndash; will be available at <a href="http://www.obamawhitehouse.gov/"><span class="s5">ObamaWhiteHouse.gov</span></a>, a site maintained by the National Archives and Records Administration (NARA), beginning on January 20, 2017. If you are looking for a post or page on the Obama administration&rsquo;s <a href="http://whitehouse.gov/"><span class="s5">WhiteHouse.gov</span></a> from 2009 through 2017, you can find it by changing the URL to <a href="http://obamawhitehouse.gov/"><span class="s5">ObamaWhiteHouse.gov</span></a>. For example, after the transition, this blog post will be available at <a href="http://obamawhitehouse.gov/obama-administration-digital-transition-moving-forward"><span class="s5">ObamaWhiteHouse.gov/obama-administration-digital-transition-moving-forward</span></a>.</p>
+<p><span class="s4"><strong>President Obama, Vice President Biden, First Lady Michelle Obama, and Dr. Biden</strong></span></p>
+<p><span class="s4">Archived content posted to these social media accounts during the Obama administration will be maintained by NARA at the following handles:</span></p>
+<ul class="ul1">
+<li><strong></strong><span class="s4"><strong>President Obama:</strong></span> 
+<ul class="ul2">
+<li><span class="s4">@POTUS on Twitter&nbsp;will be archived at <a href="http://www.twitter.com/potus44"><span class="s5">@POTUS44</span></a></span></li>
+<li><span class="s6"><a href="http://facebook.com/POTUS"><span class="s3">Facebook.com/POTUS</span></a></span><span class="s2">&nbsp;will be archived at <a href="http://www.facebook.com/POTUS44"><span class="s3">Facebook.com/POTUS44</span></a></span></li>
+<li><span class="s6"><a href="http://medium.com/@PresidentObama"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span><span class="s2"> will be archived at <a href="http://www.medium.com/@POTUS44"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span></li>
+</ul>
+</li>
+<li><strong></strong><span class="s4"><strong>Vice President Biden:</strong></span> 
+<ul class="ul2">
+<li><span class="s4">@VP on Twitter will be archived at <a href="http://www.twitter.com/@VP44"><span class="s5">@VP44</span></a></span></li>
+<li><span class="s6"><a href="http://facebook.com/VicePresidentBiden"><span class="s3">Facebook.com/VicePresidentBiden</span></a></span><span class="s2"> will be archived at <a href="http://www.facebook.com/vicepresidentbiden44"><span class="s3">Facebook.com/VicePresidentBiden44</span></a></span></li>
+<li><span class="s6"><a href="http://instagram.com/VP"><span class="s3">Instagram.com/VP</span></a></span><span class="s2"> will be archived at <a href="http://www.instagram.com/vp44"><span class="s3">Instagram.com/VP44</span></a></span></li>
+<li><span class="s6"><a href="http://medium.com/@VPOTUS44"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span><span class="s2"> will be archived at <a href="http://www.medium.com/vpotus44"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span></li>
+</ul>
+</li>
+<li><strong></strong><span class="s4"><strong>First Lady Michelle Obama:</strong></span> 
+<ul class="ul2">
+<li><span class="s4">@FLOTUS&nbsp;on Twitter will be archived at <a href="http://www.twitter.com/FLOTUS44"><span class="s5">@FLOTUS44</span></a></span></li>
+<li><span class="s4">@MichelleObama on Instagram will be archived at <a href="http://www.instagram.com/michelleobama44"><span class="s5">@M</span></a><a href="http://www.instagram.com/@MichelleObama44"><span class="s5">ichelleObama44</span></a></span></li>
+<li><span class="s6"><a href="http://medium.com/@FLOTUS"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span><span class="s2"> will be archived at <a href="http://www.medium.com/@FLOTUS44"><span class="s3">@FLOTUS44</span></a></span></li>
+</ul>
+</li>
+<li><strong></strong><span class="s4"><strong>Dr. Jill Biden:</strong></span> 
+<ul class="ul2">
+<li><span class="s4">@DrBiden&nbsp;on Twitter will be archived at <a href="http://www.twitter.com/drbiden44"><span class="s5">@DrBiden44</span></a></span></li>
+<li><span class="s4">@DrBiden on Instagram will be archived at <a href="http://www.instagram.com/drbiden44"><span class="s5">@DrBiden44</span></a></span></li>
+<li><span class="s6"><a href="http://medium.com/@DrBiden"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span><span class="s2"> will be archived at <a href="http://www.medium.com/@DrBiden44"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span></li>
+</ul>
+</li>
+</ul>
+<p><span class="s4"><strong>White House Social Media</strong></span></p>
+<p><span class="s4">Archived content posted to institutional White House social media accounts during the Obama administration will be maintained by NARA at the following handles:</span></p>
+<ul class="ul1">
+<li><span class="s4">@WhiteHouse on Twitter will be archived at <a href="http://www.twitter.com/ObamaWhiteHouse"><span class="s5">@ObamaWhiteHouse</span></a></span></li>
+<li><span class="s6"><a href="http://facebook.com/WhiteHouse"><span class="s3">Facebook.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.facebook.com/ObamaWhiteHouse"><span class="s3">Facebook.com/ObamaWhiteHouse</span></a></span></li>
+<li><span class="s6"><a href="http://instagram.com/WhiteHouse"><span class="s3">Instagram.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.instagram.com/ObamaWhiteHouse"><span class="s3">Instagram.com/ObamaWhiteHouse</span></a></span></li>
+<li><span class="s4">@LaCasaBlanca on Twitter will be archived at <a href="http://www.twitter.com/@LaCasaBlancaObama"><span class="s5">@LaCasaBlancaObama</span></a></span></li>
+<li><span class="s6"><a href="http://facebook.com/whitehouse.espanol"><span class="s3">Facebook.com/whitehouse.espanol</span></a></span><span class="s2"> will be archived at <a href="http://www.facebook.com/LaCasaBlancaObama"><span class="s3">Facebook.com/LaCasaBlancaObama</span></a></span></li>
+<li><span class="s6"><a href="http://medium.com/WhiteHouse"><span class="s3">Medium.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.medium.com/@ObamaWhiteHouse"><span class="s3"><span class="__cf_email__">[email&nbsp;protected]</span> </span></a></span></li>
+<li><span class="s6"><a href="http://flickr.com/WhiteHouse"><span class="s3">Flickr.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.flickr.com/ObamaWhiteHouse"><span class="s3">Flickr.com/ObamaWhiteHouse</span></a></span></li>
+<li><span class="s6"><a href="http://youtube.com/WhiteHouse"><span class="s3">YouTube.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.youtube.com/ObamaWhiteHouse"><span class="s3">YouTube.com/ObamaWhiteHouse</span></a></span></li>
+<li><span class="s6"><a href="http://tumblr.com/WhiteHouse"><span class="s3">Tumblr.com/WhiteHouse</span></a></span><span class="s2"> will be archived at <a href="http://www.obamawhitehouse.tumblr.com/"><span class="s3">ObamaWhiteHouse.tumblr.com</span></a></span></li>
+</ul>
+<p><span class="s4">Some other content you may be looking for can be found here:&nbsp;</span></p>
+<ul class="ul1">
+<li><span class="s4">@ONDCP&nbsp;will be archived at <a href="http://www..twitter.com/ONDCP44"><span class="s5">@ONDCP44</span></a></span></li>
+<li><span class="s4">@ONDCPespanol will be archived at <a href="http://www.twitter.com/ONDCPespanol44"><span class="s5">@ONDCPespanol44</span></a></span></li>
+<li><span class="s4">@OMBPress will be archived at <a href="http://www.twitter.com/OMBPress44"><span class="s5">@OMBPress44</span></a></span></li>
+<li><span class="s4">@WhiteHouseOSTP will be archived at <a href="http://www.twitter.com/WHOSTP44"><span class="s5">@WHOSTP44</span></a></span></li>
+<li><span class="s4">WhiteHouseCEQ will be archived at <a href="http://www.twitter.com/WhiteHouseCEQ44"><span class="s5">@WhiteHouseCEQ44</span></a></span></li>
+<li><span class="s4">@OpenGov will be archived at <a href="http://www.twitter.com/OpenGov44"><span class="s5">@OpenGov44</span></a></span></li>
+<li><span class="s4">@USCTO will be archived at <a href="http://www.twitter.com/USCTO44"><span class="s5">@USCTO44</span></a></span></li>
+<li><span class="s4">@CEAChair will be archived at <a href="http://www.twitter.com/CEAChair44"><span class="s5">@CEAChair44</span></a></span></li>
+<li><span class="s4">@WHWeb will be arhived at <a href="http://www.twitter.com/WHWeb44"><span class="s5">@WHWeb44</span></a></span></li>
+</ul>
+<p>This is a static archive index of our 44th President that because each of the channels also has an API (except Medium), this index can act as an engine for research and storytelling on the 44th presidency, and possible a backdrop for current, and future presidencies. Using these platform APIs you can easily pull photos, quotes, video, and other valuable snippets from this period in time. This approach to archiving will play a significant role in how the history books are written (or rewritten).</p>
+<p>I'm considering how I can create a new type of <a href="http://apisjson.org">APIs.json index</a> that can be used in this approach, providing a machine readable index to not just the Twitter, Facebook, Instagram, Flickr, Instagram, and Youtube APIs, but also provide a&nbsp;reference to all of the accounts present in an archive. I'm looking to further quantify the dimensions of this approach to archiving, by having a machine-readable definition of the APIs, the accounts, as well as the data, and content contained within each archive. I want to be able to feed a single APIs.json file into a tool, and have it spit out a complete Github archive of everything represented by an archival index.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=The Archiving Of Social Media For The Obama Administration&url=http://localhost:4000/2017/01/25/the-archiving-of-social-media-for-the-obama-administration/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F25%2Fthe-archiving-of-social-media-for-the-obama-administration%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/01/24/it-is-always-sad-when-i-click-on-your-dormant-or-dead-domain/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/01/25/why-i-am-not-good-at-business-and-politics/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

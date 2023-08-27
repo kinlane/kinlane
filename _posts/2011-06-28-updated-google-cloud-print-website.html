@@ -1,0 +1,46 @@
+---
+layout: post
+title: 'Updated Google Cloud Print Website'
+source: http://kinlane.com/2011/06/28/updated-google-cloud-print-website/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg
+---
+<a title="Mimeo-Google Cloud Print" href="http://developer.mimeo.com" target="_blank"><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg" alt="" width="200" align="right" /></a>Google updated the <a title="Google Cloud Print website" href="http://code.google.com/apis/cloudprint/docs/overview.html">Google Cloud Print website</a> today with all new documentation, code samples and other goodies to help get up and running using Google Cloud Print.
+<p></p>
+The restructured site pulls together months of learning from behind the scenes by Google, partners and developers on the GCP platform.
+<p></p>
+The new site starts with a introduction to Google Cloud Print and walks you through each of the components of the Google Cloud Print architecture:
+<ul class="mainlist">
+	<li><strong>Applications</strong> - Any type of application that enable users to print via Google Cloud Print such as web apps, desktop or mobile applications.</li>
+	<li><strong>Google Cloud Print Services</strong> - Google's API allowing registering of printers, sharing of printers and sending of print jobs to these printers via applications.</li>
+	<li><strong>User Interface </strong>- A set of common web interfaces developed by Google that allow users to manage their Google Cloud Print services.</li>
+	<li><strong>Printers</strong> - Currently defined by cloud ready and non-cloud printing devices.
+<ul class="mainlist">
+	<li><strong>Cloud Ready Printers</strong> - A new generation of printers with native support for connecting to cloud print services.</li>
+	<li><strong>Non-Cloud Printers</strong> - All other legacy printers that still connect to devices via PCs and network connections.</li>
+</ul>
+</li>
+	<li><strong>Google Chrome OS Printinkinlane-productions2's new web operating system where cloud printing is the default print interface, and there is no option for local printing.</li>
+</ul>
+<img class="aligncenter" src="http://kinlane-productions2.s3.amazonaws.com/google/Google-Cloud-Print-Version-2.png" alt="" width="600" align="center" />
+<p></p>
+The new <a title="Google Cloud Print" href="http://developer.mimeo.com/blog/blog_detail.php?ID=143">Google Cloud Print</a> site provides two main areas for integration with the Google Cloud Print Services:
+<ul class="mainlist">
+	<li><strong>Submitting Print Jobs</strong>
+<ul class="mainlist">
+	<li><strong>GCP Web Elements </strong>- A JavaScript widget enable simple printing of a PDF file using Google Cloud Print</li>
+	<li><strong>Android Integration </strong>- Tools for submitting print jobs via Android mobile and tablet platforms</li>
+	<li><strong>Services Interface </strong>- API documentation for the /submit, /jobs, /deletejob, /printer, /search interfaces, allowing seamless print integration</li>
+</ul>
+</li>
+	<li><strong>Receiving Print Jobs</strong>
+<ul class="mainlist">
+	<li><strong>Developer Guide</strong> - A guide that covers registering printers, handling printers and print jobs on the Google Cloud Print platform.</li>
+	<li><strong>XMPP Handshake Flow</strong> - Details on the XMPP print job notification system used for notifying "printers" of of new print jobs in real time.</li>
+	<li><strong>Services Interface </strong>- API documentation for the /control, /delete, /fetch, /list, /register, and /update interfaces, allowing seamless print integration</li>
+</ul>
+</li>
+</ul>
+The new Google Cloud Print update provides much more complete documentation on <a title="submitting print jobs" href="http://code.google.com/apis/cloudprint/docs/sendJobs.html">submitting print jobs</a> and the <a title="XMPP integration" href="http://code.google.com/apis/cloudprint/docs/rawxmpp.html">XMPP integration</a> for print job notification.
+<p></p>
+They also provide <a title="Google Cloud Print Python Code Samples" href="http://code.google.com/apis/cloudprint/docs/sendJobs.html">python code samples</a> for integrating with GCP.  You can also use the <a title="Mimeo PHP Gogole Cloud Print Samples" href="https://github.com/mimeoconnect/Google-Cloud-Print-Proxy">Mimeo PHP Google Cloud Print samples</a> that I wrote earlier this year, and I will be working on a set of C# samples also, and publish when ready.

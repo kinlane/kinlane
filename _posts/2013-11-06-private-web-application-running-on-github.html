@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Private Web Application Running on Github'
+source: http://kinlane.com/2013/11/06/private-web-application-running-on-github/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg
+---
+<p><img style="padding: 10px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github.jpg" alt="" width="150" align="right" /></p>
+<p>I wanted to launch a small web application in stealth mode. I also wanted it to run completely on <a href="http://github.com">Github</a>, using <a href="http://pages.github.com/">Github Pages</a>. I was able to setup a Github repository, as a private repo, then was able to launch a Github Page for the same repository and make this branch public.</p>
+<p>This approach gives me two branches to work with. The master which is private and the gh-pages which is public. Using Jekyll I was able to quickly setup a basic website in the gh-pages brand of my repository. Once I had the basic site outline and index page setup, I needed a way to make content show on each page, but only for people who had access.</p>
+<p>To secure my website I did two things. First I setup a JSON file that was stored in the private, master branch of my site repository. Then I setup my site to pull the navigation of the site and the content for each page from this JSON file. My site would load the home page, about page and other pages from this private JSON file.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/kinlane-productions2/api-commons/api-commons-site-pages-2.png" alt="" width="550" /></p>
+<p>Next I needed to provide a key to my private website, one that would allow the public gh-pages branch to pull the JSON file from the private master branch.  I opted to use oAuth as the authentication layer. I went to my Github settings and generated an oAuth key for a specific application I set-up for my project. Using this key I can control who has access to my site.</p>
+<script src="https://gist.github.com/kinlane/7344915.js"></script>
+<p>When you visit the website URL, then append the oAuth token as a variable, all the content shows on the website. Using Github.js I pass the oAuth token and authenticate with the master repository, pull the contents of the JSON file and publish to the page.</p>
+<p>My JSON file located in the private master repository acts as a sort of backend database to my public gh-pages repository which is actually viewed publicly at the website URL. Using JavaScript, the Github API and oAuth for security I'm easily able to control access to the web application.</p>
+<p>A more advanced approach to this would be to require oAuth authentication using Github, allowing each user to be managed through Github team or collaborators settings. Then I could control each user who has access, but the approach applies to both scenarios, and is a pretty quick and dirty way to launch a private web site or application, that completely runs on Github.</p>

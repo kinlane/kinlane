@@ -1,0 +1,12 @@
+---
+layout: post
+title: 'My Smart Little (Big) Brother And Programmatically making Sense Of PDFs'
+sourceurl: http://kinlane.com/2015/01/31/my-smart-little-big-brother-and-programmatically-making-sense-of-pdfs/
+image: http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/tesseract.gif
+---
+
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/tesseract.gif" alt="" width="250" align="right" /></p>
+<p>I was in Portland, Oregon a couple of weeks ago, and one of the things I do when I visit PDX is drink beer with my little (big) brother Michael (<a href="https://twitter.com/m_thelander">@m_thelander</a>). He is a programmer in Portland, working diligently away at <a href="http://www.rentrak.com/">Rentrak</a>.  Unlike myself, Michael is a classically trained programmer, and someone you want as your employee. ;-)  He&rsquo;s a rock solid guy.</p>
+<p>Anyhoo. Michael and I were drinking beer in downtownt Portland, and talking about a project he had worked on during an internal hackathon at Retrak. I won&rsquo;t give away the details, as I didn&rsquo;t ask him if I could write this. :-) The project involved the programmatic analysis of thousand of PDFs, so I asked him what tools he was using to work with PDFs?</p>
+<p>He said they were stumbling on the differences between the formatting of each PDF, and couldn&rsquo;t get consistent results, so they decided to just save each page as an image, and used the <a href="https://code.google.com/p/tesseract-ocr/">tesseract&nbsp;open source OCR engine</a> to read each image. Doing this essentially flattened the differences between PDF types, giving him additional details provided when you use tesseract.</p>
+<p>It may not seem like much, but ultimately it is a very interesting approach, and as I continue doing <a href="http://patents.apievangelist.com/">big data projects around things like patents</a>, I&rsquo;m always faced with the question&mdash;what do I do with a PDF? I will have to steal (borrow) from my smart little brothers work and build a tesseract API prototype.</p>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole? | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole?" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m doing a significant amount of research into the big picture of public data through my new partnership with Streamdata.io. I am going through all my research around open and public data, as well as my research our city, county, state, and federal government data efforts. I’m assessing my hangover from the Web 2.0 open data wave I believed in so heavily, as well as my own participation in the tech invasion of Washington D.C. as a Presidential Innovation Fellow. As I do this work, I’m painting a picture of the transit data landscape, which Google dominates as part of their Google Maps work, and reading a story in the New York Times called City of the Future? Humans, Not Technology, Are the Challenge in Toronto. Phew!!" />
+<meta property="og:description" content="I’m doing a significant amount of research into the big picture of public data through my new partnership with Streamdata.io. I am going through all my research around open and public data, as well as my research our city, county, state, and federal government data efforts. I’m assessing my hangover from the Web 2.0 open data wave I believed in so heavily, as well as my own participation in the tech invasion of Washington D.C. as a Presidential Innovation Fellow. As I do this work, I’m painting a picture of the transit data landscape, which Google dominates as part of their Google Maps work, and reading a story in the New York Times called City of the Future? Humans, Not Technology, Are the Challenge in Toronto. Phew!!" />
+<link rel="canonical" href="http://localhost:4000/2018/01/03/how-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole/" />
+<meta property="og:url" content="http://localhost:4000/2018/01/03/how-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/42_110_800_500_0_max_0_-5_-5.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-03T04:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2018/01/03/how-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole?","dateModified":"2018-01-03T04:00:00-08:00","datePublished":"2018-01-03T04:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/01/03/how-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/42_110_800_500_0_max_0_-5_-5.jpg","description":"I’m doing a significant amount of research into the big picture of public data through my new partnership with Streamdata.io. I am going through all my research around open and public data, as well as my research our city, county, state, and federal government data efforts. I’m assessing my hangover from the Web 2.0 open data wave I believed in so heavily, as well as my own participation in the tech invasion of Washington D.C. as a Presidential Innovation Fellow. As I do this work, I’m painting a picture of the transit data landscape, which Google dominates as part of their Google Maps work, and reading a story in the New York Times called City of the Future? Humans, Not Technology, Are the Challenge in Toronto. Phew!!","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole? | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole? | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole?</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2018-01-03T04:00:00-08:00" itemprop="datePublished">
+    
+    Jan 3, 2018
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/42_110_800_500_0_max_0_-5_-5.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>I’m doing a significant amount of research into the big picture of public data through my new partnership with <a href="http://streamdata.io">Streamdata.io</a>. I am going through all my research around open and public data, as well as my research our city, county, state, and federal government data efforts. I’m assessing my hangover from the Web 2.0 open data wave I believed in so heavily, as well as my own participation in the tech invasion of Washington D.C. as a <a href="https://presidentialinnovationfellows.gov/fellows/">Presidential Innovation Fellow</a>. As I do this work, I’m painting a picture of the transit data landscape, which Google dominates as part of their Google Maps work, and reading a story in the New York Times called <a href="https://www.nytimes.com/2017/12/29/world/canada/google-toronto-city-future.html?_r=1">City of the Future? Humans, Not Technology, Are the Challenge in Toronto</a>. Phew!!</p>
+
+<p>I keep putting this work down and questioning what the fuck I am doing. Then when I pick it back up, I keep asking myself how I can possibly do this work without being a neoliberal asshole. Seriously. I’m not joking. I’m no longer in denial what a tool I’ve been for the neoliberal agenda over the last decade+ of my career, and how damaging the open / public data movement(s) have been on communities, and the people that live in them. On the surface, the open data movement seems positive. However, seven years I have begun to see the wreckage of open data movements, where open means “open for business”, with no regards to the stewards of the data being successful, people’s privacy, or the sustainability of the agencies and organizations where the data originates. As long as startups, and tech giants can get at the data, then the open data promise has been fulfilled–leaving a pretty sad landscape of half-assed open data portals that are out of date, un-maintained, and not really not very usable.</p>
+
+<p>While there are plenty of examples out there, right now Google Maps is the best example on my workbench. I find city and after city data source that is barely maintained, with all roads leading to Google Maps. All data within Google Maps for a city is mined, extracted, and delivered with 99.9% of the value going to Google. There is almost no investment back in the communities where Google Maps provides information about. Transit, road, construction, business, and even end-user data is all harvested, with almost no awareness by municipal leaders, or any sign of Google giving back, and reinvesting in these communities in any way, beyond ensuring everyone is using the Google stack of applications. Google Maps platform, applications, and API is a neoliberal wet dream when it comes to public data value extraction.</p>
+
+<p>There are many other examples of this out there from municipal 311 programs operating exclusively on Twitter, state 511 programs buying data back from Waze (also Google), and political campaigns relying on their Facebook presence to get the word out, and act as their “web page”. Amidst all of this, I struggle with the fact that I am asking largely unaware municipal organizations to open up data, and publish APIs. Why? Just so they can be mined? The current way of doing things doesn’t give anything back. We expect those APIs and downloads to be free, even if we are building commercial applications, and have the resources of tech giants like Amazon, Google, and Facebook. We see endless examples of these tech giants expecting that cities give away tax breaks, land, as well as their valuable public data. Why the hell do I want to be an ambassador for this neoliberal bullshit? I don’t.</p>
+
+<p>Which brings me back to my original question? How do I work with municipal public data without being a neoliberal asshole? I’m seriously looking for answers, and trying to ask myself this question at every step. I want to keep empowering cities, and their citizens to open up valuable data, to better deliver meaningful applications at the local level. But, I don’t want to do it, if it is just going to open them up for exploitation, mining, and the other shady things startups and tech giants are so good at these days. This is just one of many aspects of doing business with public data I’m considering as I do this research. I’m looking to ask the hard questions, and get better at equipping people on the ground within communities with the tools they need to protect their most valuable assets in a digital era–public and personal data. I’ll be asking this question on a regular basis, to ensure I’m not falling for many of the delusions that have trapped me around open data and APIs in previous years.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=How Do I Work With Municipal Public Data Without Being A Neoliberal Asshole?&url=http://localhost:4000/2018/01/03/how-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F01%2F03%2Fhow-do-i-work-with-municipal-public-data-without-being-a-neoliberal-asshole%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2018/01/02/no-big-resolutions-just-ready-to-work/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2018/01/04/i-will-never-be-the-same-after-last-year/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

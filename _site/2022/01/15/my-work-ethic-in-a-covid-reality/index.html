@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My Work Ethic in a Covid Reality | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="My Work Ethic in a Covid Reality" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Times are hard right now. It takes a lot of work just to keep balance during a pandemic. I am thankful that I have a good job in this reality. I have the stability of a regular paycheck, healthcare, and comfortable apartment. Even with this stability, I work hard to find balance in everything I do, acknowledging that I need to keep working, but I also need to take care of my mental and physical health, otherwise I might burnout. I am very familiar with burnout, and have a number of tactics for identifying and addressing what can lead to burnout. I spent the last decade self-employed with no safety net, so burnout hasn’t historically been an option for me, which is something that is still part of my work ethic two years into my employment at Postman." />
+<meta property="og:description" content="Times are hard right now. It takes a lot of work just to keep balance during a pandemic. I am thankful that I have a good job in this reality. I have the stability of a regular paycheck, healthcare, and comfortable apartment. Even with this stability, I work hard to find balance in everything I do, acknowledging that I need to keep working, but I also need to take care of my mental and physical health, otherwise I might burnout. I am very familiar with burnout, and have a number of tactics for identifying and addressing what can lead to burnout. I spent the last decade self-employed with no safety net, so burnout hasn’t historically been an option for me, which is something that is still part of my work ethic two years into my employment at Postman." />
+<link rel="canonical" href="http://localhost:4000/2022/01/15/my-work-ethic-in-a-covid-reality/" />
+<meta property="og:url" content="http://localhost:4000/2022/01/15/my-work-ethic-in-a-covid-reality/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/bf-skinner-old-piano-paris-hospital.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-15T04:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2022/01/15/my-work-ethic-in-a-covid-reality/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"My Work Ethic in a Covid Reality","dateModified":"2022-01-15T04:00:00-08:00","datePublished":"2022-01-15T04:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/01/15/my-work-ethic-in-a-covid-reality/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/bf-skinner-old-piano-paris-hospital.jpg","description":"Times are hard right now. It takes a lot of work just to keep balance during a pandemic. I am thankful that I have a good job in this reality. I have the stability of a regular paycheck, healthcare, and comfortable apartment. Even with this stability, I work hard to find balance in everything I do, acknowledging that I need to keep working, but I also need to take care of my mental and physical health, otherwise I might burnout. I am very familiar with burnout, and have a number of tactics for identifying and addressing what can lead to burnout. I spent the last decade self-employed with no safety net, so burnout hasn’t historically been an option for me, which is something that is still part of my work ethic two years into my employment at Postman.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="My Work Ethic in a Covid Reality | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Work Ethic in a Covid Reality | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">My Work Ethic in a Covid Reality</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2022-01-15T04:00:00-08:00" itemprop="datePublished">
+    
+    Jan 15, 2022
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/bf-skinner-old-piano-paris-hospital.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>Times are hard right now. It takes a lot of work just to keep balance during a pandemic. I am thankful that I have a good job in this reality. I have the stability of a regular paycheck, healthcare, and comfortable apartment. Even with this stability, I work hard to find balance in everything I do, acknowledging that I need to keep working, but I also need to take care of my mental and physical health, otherwise I might burnout. I am very familiar with burnout, and have a number of tactics for identifying and addressing what can lead to burnout. I spent the last decade self-employed with no safety net, so burnout hasn’t historically been an option for me, which is something that is still part of my work ethic two years into my employment at Postman.</p>
+
+<p>When I say that I have no safety net, I mean it. I’ve had this conversation with a few people who were confused by me saying this, assuming I was being dramatic. When it is a reality. I don’t have a mother or father I can go to for help. There is no family farm or house to return to. I literally do not have any aunts, uncles, grand parents, or anyone that I can go to and ask for help. I have a couple of siblings I could borrow money from in a pinch, but they are in similar state as me, and doing the best with what they have. So, if the Kin Lane train breaks down and I can’t pay my rent, I have nowhere to go. I live in my car, hotel, or directly to the streets. The reason I left DC while working during the Obama administration was that we were staying in AirBnb because we couldn’t afford down payment on an apartment, living paycheck to paycheck, so when the government shutdown and I stopped getting paid, we literally would have been stuck on streets of DC if my friend at 3Scale hadn’t offered me work.</p>
+
+<p>My work ethic is driven by this reality. I have savings now, and a little buffer between me and being homeless, but the fear of everything breaking down still dictates how hard I work. It pushes me to always be learning something new, working on weekends, and making sure I am a valuable asset at work. I would love to take time off, but honestly I worry that if I don’t keep going, that I won’t be able to keep everything together. Now, I also make sure I take care of myself to prevent burnout and mental exhaustion, but I am constantly monitoring this line, and constantly pushing myself as fast and hard as I can go. Perpetually inventing new ways of motivating myself and lighting the fire under my ass each day, keeping the Kin Lane train not just in forward motion, but heading in the direction I need. Plus, I am good at what I do, and I enjoy my work, which leaves me pretty proud of what I have build over the last ten years, and I am damn sure not going to let it all come apart.</p>
+
+<p>Honestly, my work ethic is one of the biggest contributors to me keeping things together. Work makes me happy. It is intellectually stimulating, and keeps my overactive brain from dwelling in dark ways, and in forward motion. M work gives me purpose, keeps me financially independent and stable, and in another couple years, able to buy a house–all by myself, no assist necessary. Even when taking time off each weekend I spend a lot of time thinking about work, reading about making better sense of our work worlds, and contemplating how my team at work views the world. Everyone on my team is struggling with work/life balance right now, and most of them are sharing this with me as their manager in real-time, resulting in me getting pretty creative when it comes to carving out space for folks and helping them find their way. There is one who holds his cards very close to his chest leaving me unsure of how work and covid is impacting his reality, but for most the part we are all working together to figure things out. Personally, keeping the fire under my ass when it comes to projects and tasks at work makes the covid world much more bearable.</p>
+
+<p>Now, with this said, there is still a lot about my work ethic I am trying to unwind and unpack, allowing me to fix some of the unhealthy aspects of how I approach work. I work a lot, which has taken a toll on my health. I tend to easily ignore my wife when it comes to work. I used work to get me through the overdosing of the kid at the beginning of the pandemic, cleaning up his apartment, and address our mourning afterwards. From where I stand now, I successfully balance this moment in time across work, the Poppy dog, and walks around Lake Merritt each morning at 5:00 AM. I have a lot more to unwind around my ignorance of capitalism, and me diving head first into work after my own struggle with drugs back in the early 1990s. But, I think I am doing pretty good at incrementally working my way through all of this—-recently reading Out of Office, Capital, and other illuminating works. Ultimately, I would give my work ethic in a covid reality a solid A. Now if you expect me to go back to traveling or into the office, I think this would go down to a B or a C, but with the balance I have found I feel like I have everything I need, and my work is benefiting me beyond just paying our bills.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=My Work Ethic in a Covid Reality&url=http://localhost:4000/2022/01/15/my-work-ethic-in-a-covid-reality/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2022%2F01%2F15%2Fmy-work-ethic-in-a-covid-reality%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2021/12/12/being-hard-of-hearing-during-the-covid-19-pandemic/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2022/02/06/not-manifesting-doom-and-gloom/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

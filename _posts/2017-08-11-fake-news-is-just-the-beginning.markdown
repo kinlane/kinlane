@@ -1,0 +1,15 @@
+---
+published: true
+layout: post
+title: Fake News Is Just The Beginning
+date: 2017-08-11T12:00:00.000Z
+tags:
+  - Kin Lane
+  - Fake
+image: 'https://s3.amazonaws.com/kinlane-productions2/photos/three-clowns.jpg'
+---
+<p><img src="https://s3.amazonaws.com/kinlane-productions2/photos/three-clowns.jpg" align="right" width="40%" style="padding: 15px;"/></p> in the area of fake news](http://boingboing.net/2017/08/04/fbi-tracked-fake-news.html), but I wanted to explore some of the other fake I'm coming across in my regular monitoring of the news.
+
+[We've seen folks having an increasing number of conversations with fake accounts](http://www.teenvogue.com/story/donald-trump-retweeted-a-reportedly-fake-twitter-account), and services working [to tackle fake influencers on their platforms](https://thenextweb.com/insider/2017/07/04/instagram-is-cracking-down-on-fake-influencers/#.tnw_GIItqchA). Facebook is [working hard to tackle fake ads using AI](https://www.engadget.com/2017/08/09/facebook-cloaking-detection-ai/), and Google is busy [running tests to identify fake advertising](http://www.businessinsider.com/google-bogus-ads-programmatic-exchanges-2017-7). Wells Fargo is artfully crafting a fake world [where customers get fake bank accounts they never wanted](https://www.usatoday.com/story/money/2017/07/10/wells-fargo-pay-142-m-fake-account-settlement/464377001/), and receiving [fake insurance they don't know they have](https://www.washingtonpost.com/news/business/wp/2017/07/28/wells-fargo-charged-570000-customers-for-auto-insurance-they-didnt-need-potentially-forced-some-to-have-cars-repossessed/?utm_term=.a48d25a0911b). You come across [fake photos](https://www.washingtonpost.com/news/speaking-of-science/wp/2017/07/17/many-people-cant-tell-when-photos-are-fake-can-you/?utm_term=.fde8f1fdba45), [fake customers](https://www.theverge.com/2017/7/12/15961416/spotify-fake-artist-controversy-mystery-tracks), [fake dating](https://www.riskiq.com/blog/labs/fingta-fake-dating/), and [fake currencies](http://splinternews.com/all-this-bitcoin-stuff-is-fake-1797714696).
+
+Fake news is just one symptom in a fast spreading epidemic. The Internet excels at everything fake. A small portion of world has figured out how to amplify their message with everything fake online. Opposing forces are lining up to [assist us with fake literacy](https://www.wired.com/2017/06/fake-fact-era-schools-teach-abcs-news-literacy/), developing [courses on how to spot all the fake things](http://splinternews.com/all-this-bitcoin-stuff-is-fake-1797714696), and helping us developer strategies, frameworks, and processes for identifying and dealing with fake news and other aspects of our digital world. Both sides of the coin are gearing up to wage a fake war, with much of it funded by a fundamental component of the web these days--advertising. Google, Twitter, and Facebook are all tailored for this type of behavior, allowing everything fake to morph, evolve, and continuing to make a negative impact online.

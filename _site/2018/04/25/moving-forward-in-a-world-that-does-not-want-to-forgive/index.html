@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Moving Forward In A World That Does Not Want To Forgive | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Moving Forward In A World That Does Not Want To Forgive" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I just received notification I was denied a role on a project for a federal agency because I couldn’t produce enough documentation regarding my troubled past – specifically criminal charges (not convictions) involving my drug use 20 years ago, and my divorce / bankruptcy a decade ago. It comes at a time where I’m also hearing about projections around my partners kid regarding his more recent troubled past, in which he has worked incredibly hard to put behind him. Emphasizing for me (once again) how you have to keep moving forward in a world that does not want to ever forgive you for the mistakes you’ve made. No matter how out of your control they might have been, or how long ago they’ve might have occurred. Once you fuck up, the world will almost always continue to see you as a fuck up. I’ve just learned it is more about them, than it ever is about me." />
+<meta property="og:description" content="I just received notification I was denied a role on a project for a federal agency because I couldn’t produce enough documentation regarding my troubled past – specifically criminal charges (not convictions) involving my drug use 20 years ago, and my divorce / bankruptcy a decade ago. It comes at a time where I’m also hearing about projections around my partners kid regarding his more recent troubled past, in which he has worked incredibly hard to put behind him. Emphasizing for me (once again) how you have to keep moving forward in a world that does not want to ever forgive you for the mistakes you’ve made. No matter how out of your control they might have been, or how long ago they’ve might have occurred. Once you fuck up, the world will almost always continue to see you as a fuck up. I’ve just learned it is more about them, than it ever is about me." />
+<link rel="canonical" href="http://localhost:4000/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/" />
+<meta property="og:url" content="http://localhost:4000/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/kin-lane/kin-lane-charges.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-25T02:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Moving Forward In A World That Does Not Want To Forgive","dateModified":"2018-04-25T02:00:00-07:00","datePublished":"2018-04-25T02:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/kin-lane/kin-lane-charges.png","description":"I just received notification I was denied a role on a project for a federal agency because I couldn’t produce enough documentation regarding my troubled past – specifically criminal charges (not convictions) involving my drug use 20 years ago, and my divorce / bankruptcy a decade ago. It comes at a time where I’m also hearing about projections around my partners kid regarding his more recent troubled past, in which he has worked incredibly hard to put behind him. Emphasizing for me (once again) how you have to keep moving forward in a world that does not want to ever forgive you for the mistakes you’ve made. No matter how out of your control they might have been, or how long ago they’ve might have occurred. Once you fuck up, the world will almost always continue to see you as a fuck up. I’ve just learned it is more about them, than it ever is about me.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moving Forward In A World That Does Not Want To Forgive | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moving Forward In A World That Does Not Want To Forgive | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Moving Forward In A World That Does Not Want To Forgive</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2018-04-25T02:00:00-07:00" itemprop="datePublished">
+    
+    Apr 25, 2018
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/kin-lane/kin-lane-charges.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p>I just received notification I was denied a role on a project for a federal agency because I couldn’t produce enough documentation regarding my troubled past – specifically criminal charges (not convictions) involving my drug use 20 years ago, and my divorce / bankruptcy a decade ago. It comes at a time where I’m also hearing about projections around my partners kid regarding his more recent troubled past, in which he has worked incredibly hard to put behind him. Emphasizing for me (once again) how you have to keep moving forward in a world that does not want to ever forgive you for the mistakes you’ve made. No matter how out of your control they might have been, or how long ago they’ve might have occurred. Once you fuck up, the world will almost always continue to see you as a fuck up. I’ve just learned it is more about them, than it ever is about me.</p>
+
+<p>As part of <a href="http://dronerecovery.org/">the Drone Recovery</a> work with the kid, I dished out my own amount of judgement on the poor guy. In my defense, I was dealing with him first hand, and as a former junkie myself, I know the headspace you are in at the moment. I also know that my judgement would be much softer and forgiving than what he’d encounter in the real world. With that said, I have to give it to him. He has pulled his shit together, and continues to move forward in a world that doesn’t want to forgive him. He’s going to have to roll with that judgement now, and for the rest of his life. He seems to be doing that. More power to him. Keep pushing back, and doing your thing, in your way. Don’t let anyone fucking change you. I just hope that when you hit your 20+ year mark, and you encounter your former self–you show compassion. Not too much, but just enough. The right balance will be hard to find.</p>
+
+<p>I’ve worked really hard to get where I’m at. I’m mostly unfazed by the notice I got from this federal agency yesterday. However, I did want to pause and take note of how unforgiving the world is. It expects you to not make mistakes, and if you do, you have are expected to keep documentation around explaining what happened. I was expected to have documentation explaining what happened in 1994-1997 in my life. I was asked the first and last date I did drugs. Really? I was a junkie! There is no way I can tell you the first date, but the last court date was approximately the last time I did anything. The irony of it all is that I actually was asked to pay almost $20K (CASH) to the officers and lawyer(s) involved in the case in Effingham, Illinois, and they said that the felonies would never be on my record (HA!). Which also included a signed nude photo of Pamela Anderson in exchange for recording the whole incident (another felony they said). I’m guessing none of these officers will never have to account for their bad behavior, as this isn’t how the machine works.</p>
+
+<p>Anyways, I’m also thankful for the failed marriage I had after this, because she pushed me to stay clean, develop my career, and I have an amazing daughter whom I love with all my heart. However, apparently a divorce and bankruptcy is unacceptable as well, especially if you can’t get the dysfunctional county to produce documentation within the required seven day deadline. I have no regrets, and I sure as hell didn’t keep any of that paperwork around beyond five years–having dumped it in the recycling bin years ago. Who the hell keeps that kind of stuff around in a filing cabinet? In order to move on I shed EVERYTHING from these times in my life, allowing myself to move forward without the cords attached to me by others during these times. It was part of my healing process, and I find it ridiculous that a federal agency would require me to produce documentation around these past life events within a seven day window–especially when they know first hand the speed at which government moves. I’m guessing they assume everyone has a filing cabinet of every life event? IDK.</p>
+
+<p>Well, I just needed to vent on this. I’m heading into an all day workshop in Paris, and I need to be present, and wearing my complete API Evangelist costume. I don’t need people projecting their shit on me, and making me feel like I’m a fuck up because I don’t meet their standards. Fuck them. You either sit down and get to know me, and understand what I bring to the table, or move along. I don’t have time to play your bullshit games. I’ve worked way to hard to get where I am. I’m fully accountable for my actions as a young man, but I’m also accountable for my actions as an adult–which should override my previous life. Like the kid, I picked myself up, pulled my shit together, and rarely looked in the rear view mirror. I’ve just kept pushing forward, doing what matters to me, and never compromising who I am. 20 years later I’m doing exactly what I want to be doing. I have an amazing kid of my own. I have an amazing partner in crime. I make a good living, and I’m making a positive impact on the world. If you don’t trust me, feel comfortable being around me, or want to work with me–no problem. Move right along. I’ve got things to do. You are the one missing out, not me. If you change your mind, I’m easy to find. Drop me a line anytime.</p>
+
+<p>I am proud of who I am. I’m not ashamed of the mistakes I’ve made. I’ll just keep moving forward in a world that does not want to forgive. It does make you wonder who is to blame for there being so many junkies–the world, or the individuals? Ponder that one…</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Moving Forward In A World That Does Not Want To Forgive&url=http://localhost:4000/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F04%2F25%2Fmoving-forward-in-a-world-that-does-not-want-to-forgive%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2018/04/20/my-white-male-spreadsheet/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2018/04/30/can-you-imagine-spending-your-life-focusing-on-the-world-ending/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

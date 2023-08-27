@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>My White Male Spreadsheet | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="My White Male Spreadsheet" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’ve been in search of analogy to help me work through and articulate some of self-reflection I’ve been doing since the election, and I’ve arrived at a spreadsheet analogy that is pretty dumb as fuck, but honestly I think that is one of the things that makes it work for me, and represents my condition fairly well. The spreadsheet represents my world view. What I see in the world, and reflects all the information I have access to, the calculations I need to make on a regular basis, and the visualizations I have available to me." />
+<meta property="og:description" content="I’ve been in search of analogy to help me work through and articulate some of self-reflection I’ve been doing since the election, and I’ve arrived at a spreadsheet analogy that is pretty dumb as fuck, but honestly I think that is one of the things that makes it work for me, and represents my condition fairly well. The spreadsheet represents my world view. What I see in the world, and reflects all the information I have access to, the calculations I need to make on a regular basis, and the visualizations I have available to me." />
+<link rel="canonical" href="http://localhost:4000/2018/04/20/my-white-male-spreadsheet/" />
+<meta property="og:url" content="http://localhost:4000/2018/04/20/my-white-male-spreadsheet/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/43_113_800_500_0_max_0_-5_-5.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-20T02:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2018/04/20/my-white-male-spreadsheet/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"My White Male Spreadsheet","dateModified":"2018-04-20T02:00:00-07:00","datePublished":"2018-04-20T02:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/04/20/my-white-male-spreadsheet/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/43_113_800_500_0_max_0_-5_-5.jpg","description":"I’ve been in search of analogy to help me work through and articulate some of self-reflection I’ve been doing since the election, and I’ve arrived at a spreadsheet analogy that is pretty dumb as fuck, but honestly I think that is one of the things that makes it work for me, and represents my condition fairly well. The spreadsheet represents my world view. What I see in the world, and reflects all the information I have access to, the calculations I need to make on a regular basis, and the visualizations I have available to me.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="My White Male Spreadsheet | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My White Male Spreadsheet | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">My White Male Spreadsheet</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2018-04-20T02:00:00-07:00" itemprop="datePublished">
+    
+    Apr 20, 2018
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/43_113_800_500_0_max_0_-5_-5.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img src="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/43_113_800_500_0_max_0_-5_-5.jpg" align="right" width="40%" style="padding: 15px;" /></p>
+<p>I’ve been in search of analogy to help me work through and articulate some of self-reflection I’ve been doing since the election, and I’ve arrived at a spreadsheet analogy that is pretty dumb as fuck, but honestly I think that is one of the things that makes it work for me, and represents my condition fairly well. The spreadsheet represents my world view. What I see in the world, and reflects all the information I have access to, the calculations I need to make on a regular basis, and the visualizations I have available to me.</p>
+
+<p>This white male spreadsheet represents my default mode of operation, kind of like the trusty spreadsheet used to operate a small business, but this one operates my reality. This is my spreadsheet, but for this analogy to work everyone must have a spreadsheet which they operate from. Everyone would have different columns, and information available to them, with different calculations they have to make on a regular basis. Other white men will actually operate from almost the exact same spreadsheet, with women, people of color, and different nationalities have their own variations, or entirely different versions of a spreadsheet to work from. Now, I hesitate defining other people’s world as a spreadsheet, but for western white people, I think it actually works pretty well.</p>
+
+<p>Growing up, my spreadsheet was pretty basic, with a limited number of columns, and information available. As I grew older and gained more experience new columns would appear, but my spreadsheet was very much crafted by my family and the world around me. I didn’t have any notion of the hidden columns, just that as I grew up, new columns would magically appear, and soon I learned if I traveled and expanded my reality other new columns would sometimes appear. However, if I stayed in my white world, and operate within my male reality, columns pretty much stayed as they were. My spreadsheet was mostly known knowns, with a handful of known unknowns appearing from time to time. My spreadsheet was pretty dialed in. Comfortable. Allowing me to operate in the world. It almost seems that if I stayed around other people with the similar spreadsheet configuration things were ok. Nothing seemed out of place. Everything was normal.</p>
+
+<p>Nobody ever told me there were hidden columns in the spreadsheet. Once I begun spending more time outside of my comfort zone, beyond where all spreadsheets were the same, and started looking over the shoulder of my partners spreadsheet, and other friends, I started noticing they had different columns, or entirely different spreadsheets. I had never noticed the male harassment column until I started watching my partners spreadsheet on a regular basis. I never really considered the calculations she had to make walking home from the bar after a conference, or how she would receive entirely different responses for exact same criticism about technology. I could say something and nobody would feel the need to tell me I was wrong, but if she said the same thing, 20 dudes would come out of the woodwork to let her know how out of line she was. She had a bunch of columns in her spreadsheet that I had never seen before.</p>
+<p><img src="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/43_145_800_500_0_max_0_-1_-5.jpg" align="right" width="40%" style="padding: 15px;" /></p>
+<p>I got curious. What else is going on? What are columns, calculations, and visualizations existed? Then I began learning about other columns, like the red line column for my black friends, which dictated where they could buy a house. The whole other set of calculations they had to make when it came to what they could or couldn’t do in public. Governing how they could behave in stores, the workplace, and on the streets. My spreadsheet had very little in common with my black friend’s spreadsheet, no matter how nice of a person I thought I was, and how completely NOT racist I might consider myself. I was able to operate by a completely different set of rules, and was privileged enough to have access to a whole bunch of columns and information that weren’t available to my friends. Many of the columns in my spreadsheet seemed linked together with other people in my white people network, giving me access to things I had always taken for granted, and just assumed everyone else had access to.</p>
+
+<p>Once I noticed things were different, I got freaked out. However, this quickly turned into curiosity regarding what other differences existed out there. I began inquiring about my latino friend’s spreadsheet, and those of my LGBTQ friends. Wait, white gay men have different spreadsheets than other transgender folks? Not all black people have the same spreadsheets? All of sudden I realize there are all these blind spots in my spreadsheet–hidden columns that were right beneath the surface. I realized nobody had ever showed me this feature. I seemed to have higher levels of privelege when it comes to access to unhide columns in my spreadsheet, over what some of my other friends have access to. There seemed to be some higher level platform level control, that dictates who gets access to what, and what information is available in our spreadsheets.</p>
+
+<p>When I tried explaining that there are hidden columns to some friends and family I’m made to feel like I’m crazy. There are no hidden columns! Quit gaslighting us! I know that we exist and operate in this spreadsheet with a limited set of columns, and known calculations, but THERE IS NO HIDDEN COLUMNS!!! There is no convincing folks that there is more to all this. They almost seem afraid and scared to have the conversation. The possibility of having to possibility acknowledge this and live in a reality where there might be more columns, the ability to hide and unhide columns, and that some other force might be controlling and limiting who gets access to what is just not possible, and I should just shut the hell up. We’ve operated using this spreadsheet for years just fine! Why change anything now? Don’t mess with the formulas we have in place. Don’t add any outside information. Don’t disrupt any of the visualizations that have been built. We don’t care if the spreadsheet is being controlled, surveilled, and orchestrated from up on high. Just don’t mess with it.</p>
+
+<p>I’ve been thinking about this analogy for about six months now, and I haven’t been able to shake it. It seems silly to use a spreadsheet as an analogy for something so serious, but honestly it is stiff, corporate, and white enough to just work. It is analogy that many of the people I’m secretly targeting with this story will understand. Not that they’ll possess enough self-reflection to understand what I’m talking about, but I still think it might have some effect. If nothing else, it is helping me think through all of this, and allowing me to think about how I can keep unhiding columns in my spreadsheet. As I walk through Harlem each day, and today as I leave Baltimore, I am using it to think through my reality, and what information I have available to me, and the calculations I have to make as a white man each day. This analogy, and this storytelling is helping me think about who I am, where I come from, and who I want to be. Who I want to have in my life, and the change I want to see in the world.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=My White Male Spreadsheet&url=http://localhost:4000/2018/04/20/my-white-male-spreadsheet/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F04%2F20%2Fmy-white-male-spreadsheet%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2018/04/02/demonstrating-again-how-your-guns-are-about-keeping-you-isolated-and-are-not-about-keeping-you-us-safe/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

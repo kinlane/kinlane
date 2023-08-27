@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A Fresh Look at What Amazon Brings to the Cloud | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="A Fresh Look at What Amazon Brings to the Cloud" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="One of the reasons I blog is to provide a focus to my research and learning. I use this research to help me revisit many of the technologies that I stay in tune with. With many of the top cloud providers I like to step back and look at what they offer from time to time to see if I have missed anything or may see things in a different light. Take a look at a a current overview of Amazon Web Services. Compute Amazon Elastic Compute Cloud (EC2) - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers. Amazon Elastic MapReduce - Amazon Elastic MapReduce is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. Auto Scaling - Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you&#39;re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs. Content Delivery Amazon CloudFront - Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments. Database Amazon SimpleDB - Amazon SimpleDB is a highly available, scalable, and flexible non-relational data store that offloads the work of database administration. Developers simply store and query data items via web services requests, and Amazon SimpleDB does the rest. Amazon Relational Database Service (RDS) - Amazon Relational Database Service (Amazon RDS) is a web service that makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while managing time-consuming database administration tasks, freeing you up to focus on your applications and business. E-Commerce Amazon Fulfillment Web Service (FWS) - Amazon Fulfillment Web Service (Amazon FWS) allows merchants to access Amazon.com&#39;s world-class fulfillment capabilities through a simple web services interface. Merchants can programmatically send order information to Amazon with instructions to physically fulfill customer orders on their behalf. Messaging Amazon Simple Queue Service (SQS) - Amazon Simple Queue Service (Amazon SQS) offers a reliable, highly scalable, hosted queue for storing messages as they travel between computers. By using Amazon SQS, developers can simply move data between distributed components of their applications that perform different tasks, without losing messages or requiring each component to be always available. Monitoring Amazon CloudWatch - Amazon CloudWatch is a web service that provides monitoring for AWS cloud resources, starting with Amazon EC2. It provides customers with visibility into resource utilization, operational performance, and overall demand patterns, including metrics such as CPU utilization, disk reads and writes, and network traffic. Networking Amazon Virtual Private Cloud (VPC) - Amazon Virtual Private Cloud (Amazon VPC) is a secure and seamless bridge between a company&#39;s existing IT infrastructure and the AWS cloud. Amazon VPC enables enterprises to connect their existing infrastructure to a set of isolated AWS compute resources via a Virtual Private Network (VPN) connection, and to extend their existing management capabilities such as security services, firewalls, and intrusion detection systems to include their AWS resources. Elastic Load Balancing - Elastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to achieve even greater fault tolerance in your applications, seamlessly providing the amount of load balancing capacity needed in response to incoming application traffic. Payments &amp; Billing Amazon Flexible Payments Service (FPS) - Amazon Flexible Payments ServiceTM (Amazon FPS) is the first payments service designed from the ground up for developers. It is built on top of Amazon&#39;s reliable and scalable payments infrastructure and provides developers with a convenient way to charge Amazon&#39;s tens of millions of customers (with their permission, of course!). Amazon DevPay - Amazon DevPay is a simple-to-use online billing and account management service that makes it easy for businesses to sell applications that are built in, or run on top of, Amazon Web Services. It is designed to make running applications in the cloud and on demand easier for developers. Storage Amazon Simple Storage Service (S3) - Amazon S3 is storage for the Internet. It is designed to make web-scale computing easier for developers. Amazon Elastic Block Storage (EBS) - Amazon Elastic Block Store (EBS) provides block level storage volumes for use with Amazon EC2 instances. Amazon EBS volumes are off-instance storage that persists independently from the life of an instance. AWS Import/Export - AWS Import/Export accelerates moving large amounts of data into and out of AWS using portable storage devices for transport. AWS transfers your data directly onto and off of storage devices using Amazon&#39;s high-speed internal network and bypassing the Internet. Support AWS Premium Support - AWS Premium Support is a one-on-one, fast-response support channel to help you build and run applications on AWS Infrastructure Services. It offers technical assistance from the Amazon Web Services team whenever and as frequently as your business demands. Web Traffic Alexa Web Information Service - The Alexa Web Information Service makes Alexa&#39;s vast repository of information about the traffic and structure of the web available to developers. Alexa Top Sites - The Alexa Top Sites web service provides access to lists of web sites ordered by Alexa Traffic Rank. Using the web service developers can understand traffic rankings from the largest to the smallest sites. Workforce Amazon Mechanical Turk - Amazon Mechanical Turk is a marketplace for work that requires human intelligence. The Mechanical Turk web service enables companies to programmatically access this marketplace and a diverse, on-demand workforce. Developers can leverage this service to build human intelligence directly into their applications. Amazon was one of the first movers in the Cloud Infrastructure as a Service (IaaS) arena. They have dominated this space and are providing backbone services to many of the top Software as a Service (SaaS) and even Platform as a Service (PaaS) providers. Most of their cloud offerings are available through the Amazon Console, and all of them through the Application Programming Interface (API) for full access. Amazon has addressed many of the pain points in developing platforms and software that runs in the clouds. A pretty impressive offering." />
+<meta property="og:description" content="One of the reasons I blog is to provide a focus to my research and learning. I use this research to help me revisit many of the technologies that I stay in tune with. With many of the top cloud providers I like to step back and look at what they offer from time to time to see if I have missed anything or may see things in a different light. Take a look at a a current overview of Amazon Web Services. Compute Amazon Elastic Compute Cloud (EC2) - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers. Amazon Elastic MapReduce - Amazon Elastic MapReduce is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. Auto Scaling - Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you&#39;re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs. Content Delivery Amazon CloudFront - Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments. Database Amazon SimpleDB - Amazon SimpleDB is a highly available, scalable, and flexible non-relational data store that offloads the work of database administration. Developers simply store and query data items via web services requests, and Amazon SimpleDB does the rest. Amazon Relational Database Service (RDS) - Amazon Relational Database Service (Amazon RDS) is a web service that makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while managing time-consuming database administration tasks, freeing you up to focus on your applications and business. E-Commerce Amazon Fulfillment Web Service (FWS) - Amazon Fulfillment Web Service (Amazon FWS) allows merchants to access Amazon.com&#39;s world-class fulfillment capabilities through a simple web services interface. Merchants can programmatically send order information to Amazon with instructions to physically fulfill customer orders on their behalf. Messaging Amazon Simple Queue Service (SQS) - Amazon Simple Queue Service (Amazon SQS) offers a reliable, highly scalable, hosted queue for storing messages as they travel between computers. By using Amazon SQS, developers can simply move data between distributed components of their applications that perform different tasks, without losing messages or requiring each component to be always available. Monitoring Amazon CloudWatch - Amazon CloudWatch is a web service that provides monitoring for AWS cloud resources, starting with Amazon EC2. It provides customers with visibility into resource utilization, operational performance, and overall demand patterns, including metrics such as CPU utilization, disk reads and writes, and network traffic. Networking Amazon Virtual Private Cloud (VPC) - Amazon Virtual Private Cloud (Amazon VPC) is a secure and seamless bridge between a company&#39;s existing IT infrastructure and the AWS cloud. Amazon VPC enables enterprises to connect their existing infrastructure to a set of isolated AWS compute resources via a Virtual Private Network (VPN) connection, and to extend their existing management capabilities such as security services, firewalls, and intrusion detection systems to include their AWS resources. Elastic Load Balancing - Elastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to achieve even greater fault tolerance in your applications, seamlessly providing the amount of load balancing capacity needed in response to incoming application traffic. Payments &amp; Billing Amazon Flexible Payments Service (FPS) - Amazon Flexible Payments ServiceTM (Amazon FPS) is the first payments service designed from the ground up for developers. It is built on top of Amazon&#39;s reliable and scalable payments infrastructure and provides developers with a convenient way to charge Amazon&#39;s tens of millions of customers (with their permission, of course!). Amazon DevPay - Amazon DevPay is a simple-to-use online billing and account management service that makes it easy for businesses to sell applications that are built in, or run on top of, Amazon Web Services. It is designed to make running applications in the cloud and on demand easier for developers. Storage Amazon Simple Storage Service (S3) - Amazon S3 is storage for the Internet. It is designed to make web-scale computing easier for developers. Amazon Elastic Block Storage (EBS) - Amazon Elastic Block Store (EBS) provides block level storage volumes for use with Amazon EC2 instances. Amazon EBS volumes are off-instance storage that persists independently from the life of an instance. AWS Import/Export - AWS Import/Export accelerates moving large amounts of data into and out of AWS using portable storage devices for transport. AWS transfers your data directly onto and off of storage devices using Amazon&#39;s high-speed internal network and bypassing the Internet. Support AWS Premium Support - AWS Premium Support is a one-on-one, fast-response support channel to help you build and run applications on AWS Infrastructure Services. It offers technical assistance from the Amazon Web Services team whenever and as frequently as your business demands. Web Traffic Alexa Web Information Service - The Alexa Web Information Service makes Alexa&#39;s vast repository of information about the traffic and structure of the web available to developers. Alexa Top Sites - The Alexa Top Sites web service provides access to lists of web sites ordered by Alexa Traffic Rank. Using the web service developers can understand traffic rankings from the largest to the smallest sites. Workforce Amazon Mechanical Turk - Amazon Mechanical Turk is a marketplace for work that requires human intelligence. The Mechanical Turk web service enables companies to programmatically access this marketplace and a diverse, on-demand workforce. Developers can leverage this service to build human intelligence directly into their applications. Amazon was one of the first movers in the Cloud Infrastructure as a Service (IaaS) arena. They have dominated this space and are providing backbone services to many of the top Software as a Service (SaaS) and even Platform as a Service (PaaS) providers. Most of their cloud offerings are available through the Amazon Console, and all of them through the Application Programming Interface (API) for full access. Amazon has addressed many of the pain points in developing platforms and software that runs in the clouds. A pretty impressive offering." />
+<link rel="canonical" href="http://localhost:4000/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/" />
+<meta property="og:url" content="http://localhost:4000/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://awsmedia.s3.amazonaws.com/logo_aws.gif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2010-04-05T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"A Fresh Look at What Amazon Brings to the Cloud","dateModified":"2010-04-05T00:00:00-07:00","datePublished":"2010-04-05T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://awsmedia.s3.amazonaws.com/logo_aws.gif","description":"One of the reasons I blog is to provide a focus to my research and learning. I use this research to help me revisit many of the technologies that I stay in tune with. With many of the top cloud providers I like to step back and look at what they offer from time to time to see if I have missed anything or may see things in a different light. Take a look at a a current overview of Amazon Web Services. Compute Amazon Elastic Compute Cloud (EC2) - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers. Amazon Elastic MapReduce - Amazon Elastic MapReduce is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. Auto Scaling - Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you&#39;re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs. Content Delivery Amazon CloudFront - Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments. Database Amazon SimpleDB - Amazon SimpleDB is a highly available, scalable, and flexible non-relational data store that offloads the work of database administration. Developers simply store and query data items via web services requests, and Amazon SimpleDB does the rest. Amazon Relational Database Service (RDS) - Amazon Relational Database Service (Amazon RDS) is a web service that makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while managing time-consuming database administration tasks, freeing you up to focus on your applications and business. E-Commerce Amazon Fulfillment Web Service (FWS) - Amazon Fulfillment Web Service (Amazon FWS) allows merchants to access Amazon.com&#39;s world-class fulfillment capabilities through a simple web services interface. Merchants can programmatically send order information to Amazon with instructions to physically fulfill customer orders on their behalf. Messaging Amazon Simple Queue Service (SQS) - Amazon Simple Queue Service (Amazon SQS) offers a reliable, highly scalable, hosted queue for storing messages as they travel between computers. By using Amazon SQS, developers can simply move data between distributed components of their applications that perform different tasks, without losing messages or requiring each component to be always available. Monitoring Amazon CloudWatch - Amazon CloudWatch is a web service that provides monitoring for AWS cloud resources, starting with Amazon EC2. It provides customers with visibility into resource utilization, operational performance, and overall demand patterns, including metrics such as CPU utilization, disk reads and writes, and network traffic. Networking Amazon Virtual Private Cloud (VPC) - Amazon Virtual Private Cloud (Amazon VPC) is a secure and seamless bridge between a company&#39;s existing IT infrastructure and the AWS cloud. Amazon VPC enables enterprises to connect their existing infrastructure to a set of isolated AWS compute resources via a Virtual Private Network (VPN) connection, and to extend their existing management capabilities such as security services, firewalls, and intrusion detection systems to include their AWS resources. Elastic Load Balancing - Elastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to achieve even greater fault tolerance in your applications, seamlessly providing the amount of load balancing capacity needed in response to incoming application traffic. Payments &amp; Billing Amazon Flexible Payments Service (FPS) - Amazon Flexible Payments ServiceTM (Amazon FPS) is the first payments service designed from the ground up for developers. It is built on top of Amazon&#39;s reliable and scalable payments infrastructure and provides developers with a convenient way to charge Amazon&#39;s tens of millions of customers (with their permission, of course!). Amazon DevPay - Amazon DevPay is a simple-to-use online billing and account management service that makes it easy for businesses to sell applications that are built in, or run on top of, Amazon Web Services. It is designed to make running applications in the cloud and on demand easier for developers. Storage Amazon Simple Storage Service (S3) - Amazon S3 is storage for the Internet. It is designed to make web-scale computing easier for developers. Amazon Elastic Block Storage (EBS) - Amazon Elastic Block Store (EBS) provides block level storage volumes for use with Amazon EC2 instances. Amazon EBS volumes are off-instance storage that persists independently from the life of an instance. AWS Import/Export - AWS Import/Export accelerates moving large amounts of data into and out of AWS using portable storage devices for transport. AWS transfers your data directly onto and off of storage devices using Amazon&#39;s high-speed internal network and bypassing the Internet. Support AWS Premium Support - AWS Premium Support is a one-on-one, fast-response support channel to help you build and run applications on AWS Infrastructure Services. It offers technical assistance from the Amazon Web Services team whenever and as frequently as your business demands. Web Traffic Alexa Web Information Service - The Alexa Web Information Service makes Alexa&#39;s vast repository of information about the traffic and structure of the web available to developers. Alexa Top Sites - The Alexa Top Sites web service provides access to lists of web sites ordered by Alexa Traffic Rank. Using the web service developers can understand traffic rankings from the largest to the smallest sites. Workforce Amazon Mechanical Turk - Amazon Mechanical Turk is a marketplace for work that requires human intelligence. The Mechanical Turk web service enables companies to programmatically access this marketplace and a diverse, on-demand workforce. Developers can leverage this service to build human intelligence directly into their applications. Amazon was one of the first movers in the Cloud Infrastructure as a Service (IaaS) arena. They have dominated this space and are providing backbone services to many of the top Software as a Service (SaaS) and even Platform as a Service (PaaS) providers. Most of their cloud offerings are available through the Amazon Console, and all of them through the Application Programming Interface (API) for full access. Amazon has addressed many of the pain points in developing platforms and software that runs in the clouds. A pretty impressive offering.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Fresh Look at What Amazon Brings to the Cloud | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Fresh Look at What Amazon Brings to the Cloud | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">A Fresh Look at What Amazon Brings to the Cloud</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2010-04-05T00:00:00-07:00" itemprop="datePublished">
+    
+    Apr 5, 2010
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://awsmedia.s3.amazonaws.com/logo_aws.gif" width="90%" align="center" style="padding: 5px;"></center>
+                <img class="alignright" title="Amazon  Web Services" src="http://awsmedia.s3.amazonaws.com/logo_aws.gif" alt="" width="164" height="60" />One of the reasons I blog is to provide a focus to my research and  learning. I use this research to help me revisit many of the  technologies that I stay in tune with. With many of the top cloud  providers I like to step back and look at what they offer from time to  time to see if I have missed anything or may see things in a different  light.<p></p>
+Take a look at a a current overview of Amazon Web Services.<p></p>
+<strong>Compute</strong>
+<ul class="mainlist">
+	<li><a href="http://aws.amazon.com/ec2/"><strong>Amazon  Elastic Compute Cloud (EC2)</strong></a> - Amazon Elastic Compute Cloud (Amazon EC2)  is a  web service that       provides resizable compute capacity in the cloud. It is designed       to make web-scale computing easier for developers.</li>
+	<li><a href="http://aws.amazon.com/elasticmapreduce/"><strong>Amazon  Elastic MapReduce</strong></a> - Amazon Elastic MapReduce is a web service that  enables businesses,  researchers, data analysts, and developers to easily and  cost-effectively process vast amounts of data.</li>
+	<li><a href="http://aws.amazon.com/autoscaling/"><strong>Auto Scaling</strong></a> - Auto Scaling allows you to automatically scale your Amazon EC2  capacity up or down according to conditions you  define.  With Auto Scaling, you can ensure that the number of Amazon EC2  instances you're using scales up seamlessly  during demand spikes to maintain performance, and  scales down  automatically during demand lulls to minimize costs.</li>
+</ul>
+<strong>Content  Delivery</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/cloudfront/">Amazon CloudFront</a> </strong>- Amazon CloudFront is  a web service for content delivery. It integrates  with other Amazon Web Services to give developers and businesses an easy  way to distribute content to end users with low latency, high data  transfer speeds, and no commitments.</li>
+</ul>
+<strong>Database</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/simpledb/">Amazon  SimpleDB</a> - </strong>Amazon SimpleDB is a highly available, scalable, and  flexible  non-relational data store that offloads the work of database  administration.  Developers simply store and query data items via web  services requests, and Amazon SimpleDB does the rest.</li>
+	<li><strong><a href="http://aws.amazon.com/rds/">Amazon  Relational Database Service (RDS)</a> </strong>- Amazon Relational Database  Service (Amazon RDS)  is a web service that makes it easy to set up, operate, and scale a  relational database in the cloud. It provides cost-efficient and  resizable capacity while managing time-consuming database administration  tasks, freeing you up to focus on your applications and business.</li>
+</ul>
+<strong>E-Commerce</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/fws/">Amazon  Fulfillment Web Service (FWS) </a>-</strong> Amazon Fulfillment Web Service  (Amazon FWS)  allows merchants to access Amazon.com's world-class fulfillment  capabilities through a simple web services interface. Merchants can  programmatically send order information to Amazon with instructions to  physically fulfill customer orders on their behalf.</li>
+</ul>
+<strong>Messaging</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/sqs/">Amazon  Simple Queue Service (SQS)</a> -</strong> Amazon Simple Queue Service (Amazon SQS)   offers a reliable, highly scalable, hosted queue for storing messages as  they travel between computers. By using Amazon SQS,  developers can simply move data between distributed components of their  applications that perform different tasks, without losing messages or  requiring each component to be always available.</li>
+</ul>
+<strong>Monitoring</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/cloudwatch/">Amazon  CloudWatch</a> - </strong>Amazon CloudWatch is a web service that provides  monitoring for AWS cloud resources, starting with Amazon EC2.  It provides customers with visibility into  resource utilization, operational performance, and overall demand  patterns, including metrics such as CPU  utilization, disk reads and writes, and network traffic.</li>
+</ul>
+<strong>Networking</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/vpc/">Amazon  Virtual Private Cloud (VPC)</a> - </strong>Amazon Virtual Private Cloud (Amazon VPC)  is a  secure and seamless bridge between a company's existing IT  infrastructure and the AWS cloud. Amazon VPC  enables enterprises to connect their existing  infrastructure to a set of isolated AWS  compute resources via a Virtual Private Network (VPN) connection, and to  extend their existing management capabilities such as security  services, firewalls, and intrusion detection systems to include their AWS  resources.</li>
+	<li><strong><a href="http://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancing</a> -</strong> Elastic Load  Balancing automatically distributes incoming application  traffic across multiple Amazon EC2 instances.  It enables you to achieve even greater fault tolerance in your  applications, seamlessly providing the amount of load balancing capacity  needed in response to incoming application traffic.</li>
+</ul>
+<strong>Payments  &amp; Billing</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/fps/">Amazon Flexible Payments Service (FPS)</a> </strong>-  Amazon Flexible Payments Service<sup>TM</sup> (Amazon FPS)  is the first payments service designed from the ground up for  developers. It is built on top of Amazon's reliable and scalable  payments infrastructure and provides developers with a convenient way to  charge Amazon's tens of millions of customers (with their permission,  of course!).</li>
+	<li><strong><a href="http://aws.amazon.com/devpay/">Amazon DevPay</a> </strong>- Amazon DevPay is a  simple-to-use online billing and account management  service that makes it easy for businesses to sell applications that are  built in, or run on top of, Amazon Web Services. It is designed to make  running applications in the cloud and on demand easier for developers.</li>
+</ul>
+<strong>Storage</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/s3/">Amazon  Simple Storage Service (S3)</a> -</strong> Amazon S3 is storage for the  Internet. It is designed to make web-scale  computing easier for developers.</li>
+	<li><strong><a href="http://aws.amazon.com/ebs/">Amazon Elastic Block Storage  (EBS) </a>- </strong>Amazon Elastic Block Store (EBS) provides block level  storage volumes  for use with Amazon EC2 instances. Amazon EBS  volumes are off-instance storage that persists  independently from the life of an instance.</li>
+	<li><strong><a href="http://aws.amazon.com/importexport/">AWS  Import/Export</a> -</strong> AWS Import/Export accelerates moving  large  amounts of data into and out of AWS using  portable storage devices for transport. AWS  transfers your data directly onto and off of storage devices using  Amazon's high-speed internal network and bypassing the Internet.</li>
+</ul>
+<strong>Support</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/premiumsupport/">AWS  Premium Support</a> -</strong> AWS Premium Support is a one-on-one,   fast-response support channel to help you build and run applications on AWS  Infrastructure Services.  It offers technical  assistance from the Amazon Web Services team whenever and as frequently  as your business demands.</li>
+</ul>
+<strong>Web Traffic</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/awis/">Alexa  Web Information Service</a> -</strong> The Alexa Web Information Service makes  Alexa's vast repository of  information about the traffic and structure of the web available to  developers.</li>
+	<li><a href="http://aws.amazon.com/alexatopsites/"><strong>Alexa Top Sites</strong></a> - The Alexa Top Sites web service  provides access to lists of web sites  ordered by Alexa Traffic Rank. Using the web service developers can  understand traffic rankings from the largest to the smallest sites.</li>
+</ul>
+<strong>Workforce</strong>
+<ul class="mainlist">
+	<li><strong><a href="http://aws.amazon.com/mturk/">Amazon  Mechanical Turk</a> - </strong>Amazon Mechanical Turk is a marketplace for work  that requires human  intelligence. The Mechanical Turk web service enables companies to  programmatically access this marketplace and a diverse, on-demand  workforce. Developers can leverage this service to build human  intelligence directly into their applications.</li>
+</ul>
+Amazon was one  of the first movers in the Cloud Infrastructure as a Service (IaaS)  arena. They have dominated this space and are providing backbone  services to many of the top Software as a Service (SaaS) and even  Platform as a Service (PaaS) providers.<p></p>
+Most of their cloud offerings are available through the <a href="http://aws.amazon.com/console/"><strong>Amazon Console</strong></a>,  and all of them through the Application Programming Interface (API) for  full access. Amazon has addressed many of the pain points in developing platforms and software that runs in the clouds. A pretty impressive offering.
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=A Fresh Look at What Amazon Brings to the Cloud&url=http://localhost:4000/2010/04/05/a-fresh-look-at-what-amazon-brings-to-the-cloud/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2010%2F04%2F05%2Fa-fresh-look-at-what-amazon-brings-to-the-cloud%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2010/03/31/making-a-few-changes/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2010/05/03/speed-of-your-web-site-google-and-the-cloud/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

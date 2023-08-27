@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Helping Folks Make Sense Of The Algorithmic Distortions All Around Us | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Helping Folks Make Sense Of The Algorithmic Distortions All Around Us" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I know that few people understand what it is that I do as the API Evangelist, or see the Internet-connected world as I do. While I’m not trying to influence people to see things as I do, I do want to help them see some of the algorithmic automation, distortion, and noise that is all around us. I do this through my storytelling, my photography, and any other possible means. Its tough to get people’s attention over the noise, especially when you sound like the parents in Charlie Brown, wah wahing on about the technology they depend on each day, but makes almost no sense to them when it comes to seeing the profound effect it is having on their lives." />
+<meta property="og:description" content="I know that few people understand what it is that I do as the API Evangelist, or see the Internet-connected world as I do. While I’m not trying to influence people to see things as I do, I do want to help them see some of the algorithmic automation, distortion, and noise that is all around us. I do this through my storytelling, my photography, and any other possible means. Its tough to get people’s attention over the noise, especially when you sound like the parents in Charlie Brown, wah wahing on about the technology they depend on each day, but makes almost no sense to them when it comes to seeing the profound effect it is having on their lives." />
+<link rel="canonical" href="http://localhost:4000/2018/03/22/helping-folks-see-the-algorithmic-distortions-all-around-us/" />
+<meta property="og:url" content="http://localhost:4000/2018/03/22/helping-folks-see-the-algorithmic-distortions-all-around-us/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/62_75_800_500_0_max_0_-5_-1.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-22T02:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2018/03/22/helping-folks-see-the-algorithmic-distortions-all-around-us/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Helping Folks Make Sense Of The Algorithmic Distortions All Around Us","dateModified":"2018-03-22T02:00:00-07:00","datePublished":"2018-03-22T02:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/03/22/helping-folks-see-the-algorithmic-distortions-all-around-us/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/62_75_800_500_0_max_0_-5_-1.jpg","description":"I know that few people understand what it is that I do as the API Evangelist, or see the Internet-connected world as I do. While I’m not trying to influence people to see things as I do, I do want to help them see some of the algorithmic automation, distortion, and noise that is all around us. I do this through my storytelling, my photography, and any other possible means. Its tough to get people’s attention over the noise, especially when you sound like the parents in Charlie Brown, wah wahing on about the technology they depend on each day, but makes almost no sense to them when it comes to seeing the profound effect it is having on their lives.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Helping Folks Make Sense Of The Algorithmic Distortions All Around Us | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Helping Folks Make Sense Of The Algorithmic Distortions All Around Us | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Helping Folks Make Sense Of The Algorithmic Distortions All Around Us</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2018-03-22T02:00:00-07:00" itemprop="datePublished">
+    
+    Mar 22, 2018
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/62_75_800_500_0_max_0_-5_-1.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>I know that few people understand what it is that I do as the API Evangelist, or see the Internet-connected world as I do. While I’m not trying to influence people to see things as I do, I do want to help them see some of the algorithmic automation, distortion, and noise that is all around us. I do this through my storytelling, my photography, and any other possible means. Its tough to get people’s attention over the noise, especially when you sound like the parents in Charlie Brown, wah wahing on about the technology they depend on each day, but makes almost no sense to them when it comes to seeing the profound effect it is having on their lives.</p>
+
+<p>I’m always looking for analogies that help people understand how pervasive algorithms are, and how they are shaping everything in our daily lives. This is why I distort the photos I use in my storytelling with machine learning. I’m always working to find movie references like Neo poking at the Matrix around him with his finger, or maybe like glacial run-off in a meadow, or the undertow at the beach. Algorithms are right under our feet, at our fingertips, profiling us, assessing us, routing, directing, and influencing us at every turn. So much so, we don’t notice, and when people talk about the influence platforms like Facebook, Twitter, Instagram, Youtube, and others have on us, we just do not see it.</p>
+
+<p>Algorithms are being used to understand everything we do, so that the platforms and applications we have on our computers and mobile phone can sell advertising that targets us. These mechanisms have been hijacked by a select few of savvy actors, to manipulate folks beyond just commercial objectives, but because they are in alignment with these platforms business models, they have been embraced. Savvy technologist have learned they can manipulate people into buying their products, shifting markets, influence elections, and much more. Through the algorithmic assault and manipulation of individuals online, and specifically people who are pretty unaware that any of this manipulation is occurring. Completely unaware of the degree they are being profiled, influenced, and manipulated–invisible, algorithmic puppet strings.</p>
+
+<p><strong>First Amendment Distortions</strong>
+Let’s take a regularly recurring conversation I see on my Facebook, regarding the Facebook algorithms, APIs, and the first amendment. I see many folks chiming in regarding Facebook’s move to censor, or lack of moves to censor, fake news and extremism on the platform. That this would be a slippery slope when it comes to the 1st amendment. No, no it wouldn’t. As a business, Facebook isn’t beholden to the first amendment, but it exemplifies the dangerous place we find ourselves in with algorithmic influence and manipulation. <a href="https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution">Taken from Wikipedia</a>:</p>
+
+<p><em>The First Amendment to the United States Constitution prevents Congress from making any law respecting an establishment of religion, prohibiting the free exercise of religion, or abridging the freedom of speech, the freedom of the press, the right to peaceably assemble, or to petition for a governmental redress of grievances.</em></p>
+
+<p>The first amendment does focus on restricting companies like Facebook when it comes to free speech. However, this doesn’t stop the conversation from occurring on Facebook, and being framed like it is an actual debate. Making it a very rich, and fertile ground for algorithmic, API driven distortion.</p>
+
+<p><strong>Algorithmic Profiling</strong>
+First, if you are participating in this conversation you’ve been profiled, and targeted. You have shared and commented on conversations related to 1st amendment, and most likely because of where you live, your levels of education, and working status, you been identified for manipulation on this subject. Identifying that you probably have long forgotten your 7th grade social studies class, and haven’t refreshed your knowledge of the constitution or the amendments in many years. An opportunity to further manipulate, shift your opinion on this subject, and many others.</p>
+
+<p><strong>Algorithmic Automation</strong>
+Now that you are targeted as having specific beliefs, and fit a certain demographic, you will be targeted with advertising, articles, trends, and  comments that reinforce your beliefs. The articles you see are automatically written, published, and syndicated by “bots” or scripts that bring them to life. They are trending because of automated networks of “bots” or fake accounts that only purpose are to vote up, spread, and syndicate content. Trends are only trends in your view because of algorithmic targeting and automation. Throw in a flurry of comments that either support your views, or harass you because of your dissent, and you are easily nudged and kept in line. I mean, so many other “people” feel this way, it must be the truth.</p>
+
+<p><strong>Repeat &amp; Repeat &amp; Repeat</strong>
+After you see enough articles on your timeline, and conversations that your friends are having about this first amendment overreach by Facebook with their algorithmic changes–it becomes truth. It becomes “many different perspectives” on the first amendment. These many perspectives drown out any reasonable thoughts you might have had on the subject. The facts of your 7th grade class become distant memories, while the immediate algorithmic distortion becomes the truth. Hell yeah, Facebook is stomping on our first amendment rights! Hell yeah, this is a slippery slope! Next they are going to go after our 2nd amendment rights! Filter out real stories and facts about gun ownership, and other truths.</p>
+
+<p>This becomes the normal view in our Facebook bubbles, and then gets reinforced when we head over to Youtube, or Google anything via search. When we check our Twitter accounts, the stories there back up this reality too! Often with zero awareness regarding the ad network, and behavioral targeting game that is happening. How the videos, images, articles, and trends I’m seeing are all gamed, and target my belief system. Working to keep us on an isolated journey, while simultaneously thinking we have done the hard work to find the truth. Despite everything we see being algorithmic profiled, filtered, and automated to manipulate me. If we don’t see the algorithms or ad networks, we will never see what is happening. If we don’t know what an API is, we will never see how scripted my world has become. It is just reality.</p>
+
+<p>Take the topic of the first amendment, and apply to net neutrality. Tax reform. Stock markets.  Banking regulations. Apply it to the list of topics you either care about, or feel you have a grasp on. That the videos, audio, images, and articles you’ve tuned into are all tailored to influence you. Not everyone wants to influence you as part of some deep state plot. Most just want to get you to buy their product, service, and ideology. It just happens though that a very dangerous minority have seen how exploitable you are. They’ve targeted you, and have figured out how to pull the puppet strings. This isn’t just a left or right thing. This is a digital and market driven thing. This is about keeping you in your bubble. This is amount artificially amplifying the things that scare you, frustrate you, and keep you from leaving your bubble. This is to keep you ignorant of the bigger picture. Resist. Get offline. Read Books. Talk to people. Don’t trust anyone online.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Helping Folks Make Sense Of The Algorithmic Distortions All Around Us&url=http://localhost:4000/2018/03/22/helping-folks-see-the-algorithmic-distortions-all-around-us/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F03%2F22%2Fhelping-folks-see-the-algorithmic-distortions-all-around-us%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2018/03/20/it-is-a-slippery-slope/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2018/03/26/your-guns-keep-you-properly-controlled/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>I Am Building More Single Repo Apps | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="I Am Building More Single Repo Apps" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Github has been playing a central role in my existence as the API Evangelist for a number of years now. I began migrating all my side project to use Github Pages back in January of 2013, something I continued to evolve throughout the year, resulting in an approach to running applications entirely on Github Pages and uses the Github master repo as the backend.&nbsp; This approach to building using Github repos, Github Pages is not a design approach you want to use in all use cases, but I&#39;m enjoying using it for some very simple, yet forkable applications: CSV Converter - A CSV to JSON, and back again converter, with ability to store converted data in the master repo via the Github API. RSS Aggregator - A multi-RSS feed aggregator, which pulls RSS feeds of URLs in a central JSON file, then writes the aggregate posts to another JSON file -- with RSS feed of aggregate. These are just two examples of simple client-side solutions I&#39;m developing. I&#39;m further solidifying my approach to what I was going to just label simply as Single Page Apps (SPA), but really they are more of a Single Repo App (SRA) -- because we need another fucking acronym. Seriously though, I&#39;m going to dial this in, and use to develop an army of apps, that do one thing and does it well. I like this approach because it allows me to keep the apps I develop small, and easy to design, develop, operate, and then also easily thrown away and /or replaced. Or not throw away, and just let them live on, with minimal maintenance. Part of what makes this possible is that these apps run 100% on Github, with the following architecture: Github Master Branch - This acts as the starting point for every app, using Github as its OS, but also the master branch as its central public or private data store.&nbsp; Github Pages Branch - This acts as the UI for each application, providing a public, SSL enabled URL for engaging with each application that is made available. Jekyll - This provides content and data management system for the application, allowing for the app to be published, using Markdown, Markup, with a central YAML data store.&nbsp; YAML / JSON / CSV Data Store - By using Jekyll, you immediately get an _data folder which turns any YAML, CSV, and JSON file into a data store for each application. Liquid - Jekyll employs Liquid for rendering data and content to each site page, allowing for the publishing of any data you have available in the _data folder. Github API - The Github API provides access to all the moving parts of each app that is developed in this way, allowing for programmable control over all architecture. Github.js - A Github API JavaScript client which allows you to enage with the Githbu API within any application using Github Oauth and personal tokens.&nbsp; Github Oauth - Each app leverages the existing Github authentication infrastructure for managing user profiles, as well as authentication needed to use API for reading and writing of content or data. Github Issues - Each app uses the Github issue management as its central support and communication channel, allowing for engagement with key stakeholders, as well as end-users. Each application runs 100% on Github, and works to minimize its dependencies on external resources. If it does work with outside elements, it uses RSS, an API, or other open approach to operate. I&#39;m seeing more API providers also leverage Github authentication, when they have API management providers like 3Scale, making authenticated API access a reality, as well as using resources from publicly available APIs. What I like most about this approach to developing apps, is that they can be forked and run by anyone who uses Github. I watched my GF Audrey Watters fork the RSS Aggregator in about 5 minutes with just a couple of hiccups, which I will smooth out. The goal is to make them easily forkable, minimizing its dependencies, and empowering any users to put to work to solve a single problem they have. (aka convert CSV to JSON, aggregate RSS feeds). Anytime data or content needs to be written to the underlying data store, you just have to have an OAuth token or personal token issued from a Github account who has permission to the Github repo in which an app operates in. Github makes it easy to generate and manage these within your Github account, but I also use OAuth.io to help streamline this when needed. Ultimately, I try to minimize the dependencies when I can. I want to get better at minimizing all external dependencies, and being more clear about which ones end up needing built in. I have a whole list of Single Repo Apps I&#39;d like to see become a reality. Now that I&#39;m seeing some agility in my infrastructure after going API first for all my Kin Lane and API Evangelist operations, I&#39;m able to focus more energy on extending this way of life to how I build out tools and apps. This is why I&#39;m formalizing my approach, drawing a line in the sand, and making sure every new UI, tool, or app I build from here forward, is developed in this way. Eventually I&#39;d like every aspect of my UI to operate as Single Repo App, providing me (and anyone else) with a lego box of UI goodness." />
+<meta property="og:description" content="Github has been playing a central role in my existence as the API Evangelist for a number of years now. I began migrating all my side project to use Github Pages back in January of 2013, something I continued to evolve throughout the year, resulting in an approach to running applications entirely on Github Pages and uses the Github master repo as the backend.&nbsp; This approach to building using Github repos, Github Pages is not a design approach you want to use in all use cases, but I&#39;m enjoying using it for some very simple, yet forkable applications: CSV Converter - A CSV to JSON, and back again converter, with ability to store converted data in the master repo via the Github API. RSS Aggregator - A multi-RSS feed aggregator, which pulls RSS feeds of URLs in a central JSON file, then writes the aggregate posts to another JSON file -- with RSS feed of aggregate. These are just two examples of simple client-side solutions I&#39;m developing. I&#39;m further solidifying my approach to what I was going to just label simply as Single Page Apps (SPA), but really they are more of a Single Repo App (SRA) -- because we need another fucking acronym. Seriously though, I&#39;m going to dial this in, and use to develop an army of apps, that do one thing and does it well. I like this approach because it allows me to keep the apps I develop small, and easy to design, develop, operate, and then also easily thrown away and /or replaced. Or not throw away, and just let them live on, with minimal maintenance. Part of what makes this possible is that these apps run 100% on Github, with the following architecture: Github Master Branch - This acts as the starting point for every app, using Github as its OS, but also the master branch as its central public or private data store.&nbsp; Github Pages Branch - This acts as the UI for each application, providing a public, SSL enabled URL for engaging with each application that is made available. Jekyll - This provides content and data management system for the application, allowing for the app to be published, using Markdown, Markup, with a central YAML data store.&nbsp; YAML / JSON / CSV Data Store - By using Jekyll, you immediately get an _data folder which turns any YAML, CSV, and JSON file into a data store for each application. Liquid - Jekyll employs Liquid for rendering data and content to each site page, allowing for the publishing of any data you have available in the _data folder. Github API - The Github API provides access to all the moving parts of each app that is developed in this way, allowing for programmable control over all architecture. Github.js - A Github API JavaScript client which allows you to enage with the Githbu API within any application using Github Oauth and personal tokens.&nbsp; Github Oauth - Each app leverages the existing Github authentication infrastructure for managing user profiles, as well as authentication needed to use API for reading and writing of content or data. Github Issues - Each app uses the Github issue management as its central support and communication channel, allowing for engagement with key stakeholders, as well as end-users. Each application runs 100% on Github, and works to minimize its dependencies on external resources. If it does work with outside elements, it uses RSS, an API, or other open approach to operate. I&#39;m seeing more API providers also leverage Github authentication, when they have API management providers like 3Scale, making authenticated API access a reality, as well as using resources from publicly available APIs. What I like most about this approach to developing apps, is that they can be forked and run by anyone who uses Github. I watched my GF Audrey Watters fork the RSS Aggregator in about 5 minutes with just a couple of hiccups, which I will smooth out. The goal is to make them easily forkable, minimizing its dependencies, and empowering any users to put to work to solve a single problem they have. (aka convert CSV to JSON, aggregate RSS feeds). Anytime data or content needs to be written to the underlying data store, you just have to have an OAuth token or personal token issued from a Github account who has permission to the Github repo in which an app operates in. Github makes it easy to generate and manage these within your Github account, but I also use OAuth.io to help streamline this when needed. Ultimately, I try to minimize the dependencies when I can. I want to get better at minimizing all external dependencies, and being more clear about which ones end up needing built in. I have a whole list of Single Repo Apps I&#39;d like to see become a reality. Now that I&#39;m seeing some agility in my infrastructure after going API first for all my Kin Lane and API Evangelist operations, I&#39;m able to focus more energy on extending this way of life to how I build out tools and apps. This is why I&#39;m formalizing my approach, drawing a line in the sand, and making sure every new UI, tool, or app I build from here forward, is developed in this way. Eventually I&#39;d like every aspect of my UI to operate as Single Repo App, providing me (and anyone else) with a lego box of UI goodness." />
+<link rel="canonical" href="http://localhost:4000/2016/04/04/i-am-building-more-single-repo-apps/" />
+<meta property="og:url" content="http://localhost:4000/2016/04/04/i-am-building-more-single-repo-apps/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-04-04T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2016/04/04/i-am-building-more-single-repo-apps/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"I Am Building More Single Repo Apps","dateModified":"2016-04-04T00:00:00-07:00","datePublished":"2016-04-04T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/04/04/i-am-building-more-single-repo-apps/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"Github has been playing a central role in my existence as the API Evangelist for a number of years now. I began migrating all my side project to use Github Pages back in January of 2013, something I continued to evolve throughout the year, resulting in an approach to running applications entirely on Github Pages and uses the Github master repo as the backend.&nbsp; This approach to building using Github repos, Github Pages is not a design approach you want to use in all use cases, but I&#39;m enjoying using it for some very simple, yet forkable applications: CSV Converter - A CSV to JSON, and back again converter, with ability to store converted data in the master repo via the Github API. RSS Aggregator - A multi-RSS feed aggregator, which pulls RSS feeds of URLs in a central JSON file, then writes the aggregate posts to another JSON file -- with RSS feed of aggregate. These are just two examples of simple client-side solutions I&#39;m developing. I&#39;m further solidifying my approach to what I was going to just label simply as Single Page Apps (SPA), but really they are more of a Single Repo App (SRA) -- because we need another fucking acronym. Seriously though, I&#39;m going to dial this in, and use to develop an army of apps, that do one thing and does it well. I like this approach because it allows me to keep the apps I develop small, and easy to design, develop, operate, and then also easily thrown away and /or replaced. Or not throw away, and just let them live on, with minimal maintenance. Part of what makes this possible is that these apps run 100% on Github, with the following architecture: Github Master Branch - This acts as the starting point for every app, using Github as its OS, but also the master branch as its central public or private data store.&nbsp; Github Pages Branch - This acts as the UI for each application, providing a public, SSL enabled URL for engaging with each application that is made available. Jekyll - This provides content and data management system for the application, allowing for the app to be published, using Markdown, Markup, with a central YAML data store.&nbsp; YAML / JSON / CSV Data Store - By using Jekyll, you immediately get an _data folder which turns any YAML, CSV, and JSON file into a data store for each application. Liquid - Jekyll employs Liquid for rendering data and content to each site page, allowing for the publishing of any data you have available in the _data folder. Github API - The Github API provides access to all the moving parts of each app that is developed in this way, allowing for programmable control over all architecture. Github.js - A Github API JavaScript client which allows you to enage with the Githbu API within any application using Github Oauth and personal tokens.&nbsp; Github Oauth - Each app leverages the existing Github authentication infrastructure for managing user profiles, as well as authentication needed to use API for reading and writing of content or data. Github Issues - Each app uses the Github issue management as its central support and communication channel, allowing for engagement with key stakeholders, as well as end-users. Each application runs 100% on Github, and works to minimize its dependencies on external resources. If it does work with outside elements, it uses RSS, an API, or other open approach to operate. I&#39;m seeing more API providers also leverage Github authentication, when they have API management providers like 3Scale, making authenticated API access a reality, as well as using resources from publicly available APIs. What I like most about this approach to developing apps, is that they can be forked and run by anyone who uses Github. I watched my GF Audrey Watters fork the RSS Aggregator in about 5 minutes with just a couple of hiccups, which I will smooth out. The goal is to make them easily forkable, minimizing its dependencies, and empowering any users to put to work to solve a single problem they have. (aka convert CSV to JSON, aggregate RSS feeds). Anytime data or content needs to be written to the underlying data store, you just have to have an OAuth token or personal token issued from a Github account who has permission to the Github repo in which an app operates in. Github makes it easy to generate and manage these within your Github account, but I also use OAuth.io to help streamline this when needed. Ultimately, I try to minimize the dependencies when I can. I want to get better at minimizing all external dependencies, and being more clear about which ones end up needing built in. I have a whole list of Single Repo Apps I&#39;d like to see become a reality. Now that I&#39;m seeing some agility in my infrastructure after going API first for all my Kin Lane and API Evangelist operations, I&#39;m able to focus more energy on extending this way of life to how I build out tools and apps. This is why I&#39;m formalizing my approach, drawing a line in the sand, and making sure every new UI, tool, or app I build from here forward, is developed in this way. Eventually I&#39;d like every aspect of my UI to operate as Single Repo App, providing me (and anyone else) with a lego box of UI goodness.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2016/04/04/i-am-building-more-single-repo-apps/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="I Am Building More Single Repo Apps | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2016/04/04/i-am-building-more-single-repo-apps/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="I Am Building More Single Repo Apps | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">I Am Building More Single Repo Apps</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2016-04-04T00:00:00-07:00" itemprop="datePublished">
+    
+    Apr 4, 2016
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github-icon.png" alt="" width="150" align="right" /></p>
+<p>Github has been playing a central role in my existence as the API Evangelist for a number of years now. <a href="http://kinlane.com/2013/01/02/all-side-projects-are-now-hosted-on-github">I began migrating all my side project to use Github Pages back in January of 2013</a>, something <a href="http://kinlane.com/2013/03/21/continuing-the-migration-of-projects-over-to-github">I continued to evolve throughout the year</a>, resulting in <a href="http://kinlane.com/2013/10/15/securing-site-that-runs-on-github-pages-with-json-backend-in-private-repository">an approach to running applications entirely on Github Pages and uses the Github master repo as the backend</a>.&nbsp;</p>
+<p>This approach to building using Github repos, Github Pages is not a design approach you want to use in all use cases, but I'm enjoying using it for some very simple, yet forkable applications:</p>
+<ul>
+<li><strong><a href="http://kinlane.github.io/csv-converter/converter.html">CSV Converter</a> </strong>- A CSV to JSON, and back again converter, with ability to store converted data in the master repo via the Github API.</li>
+<li><strong><a href="http://indieedtech.github.io/rss-aggregator/">RSS Aggregator</a> -</strong> A multi-RSS feed aggregator, which pulls RSS feeds of URLs in a central JSON file, then writes the aggregate posts to another JSON file -- with RSS feed of aggregate.</li>
+</ul>
+<p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-lego-two-thin.png" alt="" width="115" align="right" /></p>
+<p>These are just two examples of simple client-side solutions I'm developing. I'm further solidifying my approach to what I was going to just label simply as Single Page Apps (SPA), but really they are more of a Single Repo App (SRA) -- because we need another fucking acronym. Seriously though, I'm going to dial this in, and use to develop an army of apps, that do one thing and does it well.</p>
+<p>I like this approach because it allows me to keep the apps I develop small, and easy to design, develop, operate, and then also easily thrown away and /or replaced. Or not throw away, and just let them live on, with minimal maintenance. Part of what makes this possible is that these apps run 100% on Github, with the following architecture:</p>
+<ul>
+<li><strong>Github Master Branch -</strong> This acts as the starting point for every app, using Github as its OS, but also the master branch as its central public or private data store.&nbsp;</li>
+<li><strong>Github Pages Branch - </strong>This acts as the UI for each application, providing a public, SSL enabled URL for engaging with each application that is made available.</li>
+<li><strong><a href="https://jekyllrb.com/">Jekyll</a> - </strong>This provides content and data management system for the application, allowing for the app to be published, using Markdown, Markup, with a central YAML data store.&nbsp;</li>
+<li><strong>YAML / JSON / CSV Data Store -</strong> By using Jekyll, you immediately get an _data folder which turns any YAML, CSV, and JSON file into a data store for each application.</li>
+<li><strong><a href="https://shopify.github.io/liquid/">Liquid</a> -</strong> Jekyll employs Liquid for rendering data and content to each site page, allowing for the publishing of any data you have available in the _data folder.</li>
+<li><strong><a href="https://developer.github.com/v3/">Github API</a> -</strong> The Github API provides access to all the moving parts of each app that is developed in this way, allowing for programmable control over all architecture.</li>
+<li><strong><a href="https://github.com/michael/github">Github.js</a> -</strong> A Github API JavaScript client which allows you to enage with the Githbu API within any application using Github Oauth and personal tokens.&nbsp;</li>
+<li><strong>Github Oauth </strong>- Each app leverages the existing Github authentication infrastructure for managing user profiles, as well as authentication needed to use API for reading and writing of content or data.</li>
+<li><strong>Github Issues</strong> - Each app uses the Github issue management as its central support and communication channel, allowing for engagement with key stakeholders, as well as end-users.</li>
+</ul>
+<p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-leg-two-tall.png" alt="" width="100" align="right" /></p>
+<p>Each application runs 100% on Github, and works to minimize its dependencies on external resources. If it does work with outside elements, it uses RSS, an API, or other open approach to operate. I'm seeing more API providers also leverage Github authentication, <a href="http://3scale.net">when they have API management providers like 3Scale</a>, making authenticated API access a reality, as well as using resources from publicly available APIs.</p>
+<p>What I like most about this approach to developing apps, is that they can be forked and run by anyone who uses Github. I watched my GF Audrey Watters fork the RSS Aggregator in about 5 minutes with just a couple of hiccups, which I will smooth out. The goal is to make them easily forkable, minimizing its dependencies, and empowering any users to put to work to solve a single problem they have. (aka convert CSV to JSON, aggregate RSS feeds).</p>
+<p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-leg-six-brick.png" alt="" width="150" align="right" /></p>
+<p>Anytime data or content needs to be written to the underlying data store, you just have to have an OAuth token or personal token issued from a Github account who has permission to the Github repo in which an app operates in. Github makes it easy to generate and manage these within your Github account, but I also use <a href="http://OAuth.io">OAuth.io</a> to help streamline this when needed. Ultimately, I try to minimize the dependencies when I can. I want to get better at minimizing all external dependencies, and being more clear about which ones end up needing built in.</p>
+<p>I have a whole list of Single Repo Apps I'd like to see become a reality. Now that I'm seeing some agility in my infrastructure after going API first for all my <a href="http://developer.kinlane.com/">Kin Lane</a> and <a href="http://developer.apievangelist.com/">API Evangelist</a> operations, I'm able to focus more energy on extending this way of life to how I build out tools and apps. This is why I'm formalizing my approach, drawing a line in the sand, and making sure every new UI, tool, or app I build from here forward, is developed in this way. Eventually I'd like every aspect of my UI to operate as Single Repo App, providing me (and anyone else) with a lego box of UI goodness.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=I Am Building More Single Repo Apps&url=http://localhost:4000/2016/04/04/i-am-building-more-single-repo-apps/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2016%2F04%2F04%2Fi-am-building-more-single-repo-apps%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2016/03/30/indie-edtech-the-university-and-personal-apis-drawing-lines-in-the-sand-to-define-our-digital-self/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2016/04/13/it-will-be-all-about-doing-bots-selling-picks-shovels-providing-platforms-or-the-antibot-technology/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

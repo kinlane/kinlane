@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'With Open Data There Is No Way To Submit Back'
+source: http://kinlane.com/2014/01/20/with-open-data-there-is-no-way-to-submit-back/
+domain: kinlane.com
+image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-gift.png
+---
+<p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-gift.png" alt="" width="250" align="right" /></p>
+<p>I have been doing some work on a project to <a href="http://ed-data.github.io/fafsa-api/index.html">develop an API for the Free Application for Federal Student Aid (FAFSA) form</a>. After getting the core API designed and published, I wanted to provide several supporting APIs that would help developers be more successful when building their apps on the API.</p>
+<p>One example is a list of colleges and universities in the United States. This dataset is available at Data.gov, under the education section. Except for it is just a tab separated text file, which is machine readable, but a little more work for me than if it was available in JSON.</p>
+<p>The <a href="http://catalog.data.gov/dataset/list-of-public-elementary-and-secondary-schools-1986-present">txt file of all schools</a> was 25.7 MB and contained all elementary as well as secondary schools. For this project i'm just interested in secondary schools, but I need to process the whole file to get at what I needed.</p>
+<p>I imported the file into MySQL. Next I was able to filter by type of school, and get the resulting data set I was looking for, with a couple hours of work.</p>
+<p>Now I have two JSON files, one for elementary and one for secondary schools. The whole FAFSA project is a working example of what can be done with government data, outside of the government, but I wanted to highlight the number of hours put into pulling, cleaning up the school data. The federal government most likely does not have the capacity to accept this work back from me, forcing it to remain external.</p>
+<p>I would love to see a way to link up the original list of public elementary and secondary schools with this JSON data set I've produced, so that we can take advantage of the cycles I've spent evolving this data. I'm sure there are other individuals and companies like me who have cleaned up data, and would be happy to submit it back--there is just now way to do it.</p>
+<p>This is why there has to be a sort of DMZ for the public and private sector to interact, allowing the federal government to take advantage of work being done by the numerous folks like me who are working to improve government and build applications using government generated open data.</p>

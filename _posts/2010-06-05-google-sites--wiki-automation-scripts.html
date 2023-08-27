@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Google Sites / Wiki Automation Scripts'
+source: http://kinlane.com/2010/06/05/google-sites--wiki-automation-scripts/
+domain: kinlane.com
+image: http://code.google.com/apis/sites/images/gdata-sites-150.png
+---
+Having fun playing with <a href="http://code.google.com/apis/sites/">Google Sites API</a> today.  Audrey is setting up Wikis for different research areas to support her new <a href="http://www.hackeducation.com/">Hack Education</a> site.  I am reviving my <a href="http://cloud.kinlane.com">cloud computing research wiki</a>.  I am looking for new ways to keep sections of the wiki alive programatically.  A couple ways I've brainstormed:<img class="alignnone" style="padding: 25px;" title="Google Sites" src="http://code.google.com/apis/sites/images/gdata-sites-150.png" alt="" width="150" height="150" align="right" />
+<ul class="mainlist">
+	<li><strong>Links Page</strong> - Automatically update a page with links.  Links would be pulled hourly from a <a href="http://delicious.com/">Delicious</a> account, or any other social bookmarking site with RSS feed or API.  It would auto generate the page with all links alphabetically.  It could either link directly to the URL of the bookmark or create a static page with title of link and add Title, Description, Tags and URL to the static wiki page on Google Sites.</li>
+	<li><strong>Blog Section</strong> - Automatically pull the RSS feed from a desired blog or set of blogs and pull / update every hour and when new blog entry is found it adds to master list and creates a detail page for that blog.  Then it would publish the blog entry to the static page with Title, Body, Tags, etc.</li>
+	<li><strong>Image Gallery</strong> - Automatically update an image gallery page / section.  Images would be pulled hourly from a <a href="http://www.flickr.com">Flickr</a> account, or any other image sharing site with RSS feed or API.  It would auto generate the page with all images with thumbnail and title sorted by popularity on the Google Sites page.  It would then create a static page with image title and full size image, Title, Description, Tags and URL to the page on <a href="http://sites.google.com">Google Sites</a>.</li>
+</ul>
+These are just a couple of quick ideas for <strong>Google Site Automation Scripts</strong> that could be created using <a href="http://code.google.com/apis/sites/">Google Sites API</a> to help make <a href="http://sites.google.com">Google Site / Wiki</a> management easier.

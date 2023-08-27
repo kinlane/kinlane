@@ -1,0 +1,97 @@
+title:              Kin Lane
+description:        The ramblings, thoughts, and channeling of Kin Lane.
+lang:               en
+
+# Site subpath, e.g. /blog
+baseurl:            ""
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:year/:month/:day/:title/
+
+# Site base hostname & protocol, e.g. http://example.com
+url:                "http://kinlane.com"
+
+# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
+logo:               https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png
+
+navbar:
+    sticky:         true
+    search:         true
+  
+# Default author settings
+author:
+    name:           Kin Lane
+    title:          Chief Evangelist
+    avatar:         https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
+
+# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
+authors:
+    kin:
+      name:         Kin Lane
+      title:        Chief Evangelist 
+      avatar:       https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
+      email:       'kinlane@postman.com'
+      affiliation: 'Postman Open Technologies'
+      github:      'kinlane'
+      linkedin:    'in/kinlane'
+      twitter:     'kinlane'           
+
+# Social icons displayed in footer
+social:
+    email:
+    website:
+    facebook:       https://www.facebook.com/kinlane
+    flickr:
+    dribbble:
+    github:         https://github.com/kinlane
+    googleplus:
+    instagram:     
+    linkedin:       https://www.linkedin.com/in/kinlane/
+    pinterest:
+    twitter:        https://twitter.com/kinlane
+    vimeo:          
+    youtube:        
+    mastodon:       https://mastodon.kinlane.com/web/@kin 
+
+# Share button
+share:
+    post:           true # Display share buttons on a post page
+    doc:            true # Display share buttons on a doc page
+    twitter:        username # Enable by adding Twitter handle 
+    facebook:       true # Enable by setting true (Facebook handle not required)
+
+# Default footer image settings
+footer:
+    copyright:      Kin Lane
+
+# Number of posts displayed on blog page
+paginate:           25
+
+# Blog path
+paginate_path:      "/blog/:num/"
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+sass:
+  style:            compressed
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path:         ""
+      type:         posts
+    values:
+      layout:       post

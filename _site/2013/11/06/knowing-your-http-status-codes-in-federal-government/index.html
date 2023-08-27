@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Knowing Your HTTP Status Codes In Federal Government | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Knowing Your HTTP Status Codes In Federal Government" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Photo Credit: Runscope I&#39;ve been working on open data and APIs pretty heavily since Barack Obama directed all federal agencies to go machine readable by default, back in May of 2012. The White House directive told agencies to publish a copy their digital strategy at their website in the following location: [agency].gov/digitalstrategy. There was also supposed to be an HTML, XML and JSON representation of their digital strategy. Pretty cool request. I immediately got busy writing a script that I could run each night and let me know which federal agency had published their digital strategy. To be fair, the White House mandate was for top level agencies, not really all 246 as I showcase. However, I think it is a process that all agencies can learn from, so I leave it up. Back to pulling the digital strategy for each agency. First I needed all the agencies website addresses, which I pulled from the federal agency directory API. I then appended /digitalstrategy.html, and /digitalstrategy.xml, and /digitalstrategy.json to each agency URL. Now remember, I am a script or piece of code trying to determine if one of 246 x 3 pages exist. I&#39;m not a human looking at each page load with my eyeballs. The only think I have to tell me what is happening is the HTTP status code(s): 200 - Ok, The request has succeeded.&nbsp; 301 - Moved Permanently&nbsp; 404 - Not Found What the government agency sends to me as a status code triggers one of three responses in my code: 200 - They have published their digital strategy&nbsp; 301 - They have published their strategy but it is located somewhere else&nbsp; 404 - They have NOT published their digital strategy After you run the script you see most of the agencies return a 404--not published. Ok, but then I started seeing 301 without an actual URL that redirected me to existing location. I saw published digital strategies return 404 and unpublished strategies return 200. While most agencies adhered to basic HTTP principles, some I just had to hard code. I had to manually code a section saying IF agency = XX then assume this response code. This is a pretty basic problem, something you won&#39;t see unless you actually write some code against the situation (which I assume agencies aren&#39;t doing). Fast-forward two years you have the Office of Management and Budget (OMB) directing that government agencies post .data.json files in a similiar way to the earlier digital strategy. I hope someday they will also require /api.son files, /roadmap.json and other machine readable goodies, but that is another story. This story is about proper HTTP status codes. Each government agencies should be publishing their /digitalstrategy and /data.json files at their website, and they should be properly returning 200 OK or a 301 with proper URI of where you put your digitalstrategy.json or data.json (or other resource). It is acceptable to have these files in an alternate location, but you must provide a complete 301 status code so that my code or script can properly make a decision and properly locate your digitalstrategy.json or data.json files. I thought I wrote this story last year, but apparently the story in my head didn&#39;t match what I actually published to my blog. So I wanted to make sure there was a fresh copy to help government agencies understand this simple, but very important aspect of their digital strategy." />
+<meta property="og:description" content="Photo Credit: Runscope I&#39;ve been working on open data and APIs pretty heavily since Barack Obama directed all federal agencies to go machine readable by default, back in May of 2012. The White House directive told agencies to publish a copy their digital strategy at their website in the following location: [agency].gov/digitalstrategy. There was also supposed to be an HTML, XML and JSON representation of their digital strategy. Pretty cool request. I immediately got busy writing a script that I could run each night and let me know which federal agency had published their digital strategy. To be fair, the White House mandate was for top level agencies, not really all 246 as I showcase. However, I think it is a process that all agencies can learn from, so I leave it up. Back to pulling the digital strategy for each agency. First I needed all the agencies website addresses, which I pulled from the federal agency directory API. I then appended /digitalstrategy.html, and /digitalstrategy.xml, and /digitalstrategy.json to each agency URL. Now remember, I am a script or piece of code trying to determine if one of 246 x 3 pages exist. I&#39;m not a human looking at each page load with my eyeballs. The only think I have to tell me what is happening is the HTTP status code(s): 200 - Ok, The request has succeeded.&nbsp; 301 - Moved Permanently&nbsp; 404 - Not Found What the government agency sends to me as a status code triggers one of three responses in my code: 200 - They have published their digital strategy&nbsp; 301 - They have published their strategy but it is located somewhere else&nbsp; 404 - They have NOT published their digital strategy After you run the script you see most of the agencies return a 404--not published. Ok, but then I started seeing 301 without an actual URL that redirected me to existing location. I saw published digital strategies return 404 and unpublished strategies return 200. While most agencies adhered to basic HTTP principles, some I just had to hard code. I had to manually code a section saying IF agency = XX then assume this response code. This is a pretty basic problem, something you won&#39;t see unless you actually write some code against the situation (which I assume agencies aren&#39;t doing). Fast-forward two years you have the Office of Management and Budget (OMB) directing that government agencies post .data.json files in a similiar way to the earlier digital strategy. I hope someday they will also require /api.son files, /roadmap.json and other machine readable goodies, but that is another story. This story is about proper HTTP status codes. Each government agencies should be publishing their /digitalstrategy and /data.json files at their website, and they should be properly returning 200 OK or a 301 with proper URI of where you put your digitalstrategy.json or data.json (or other resource). It is acceptable to have these files in an alternate location, but you must provide a complete 301 status code so that my code or script can properly make a decision and properly locate your digitalstrategy.json or data.json files. I thought I wrote this story last year, but apparently the story in my head didn&#39;t match what I actually published to my blog. So I wanted to make sure there was a fresh copy to help government agencies understand this simple, but very important aspect of their digital strategy." />
+<link rel="canonical" href="http://localhost:4000/2013/11/06/knowing-your-http-status-codes-in-federal-government/" />
+<meta property="og:url" content="http://localhost:4000/2013/11/06/knowing-your-http-status-codes-in-federal-government/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/runscope-200-ok.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-11-06T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2013/11/06/knowing-your-http-status-codes-in-federal-government/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Knowing Your HTTP Status Codes In Federal Government","dateModified":"2013-11-06T00:00:00-08:00","datePublished":"2013-11-06T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/11/06/knowing-your-http-status-codes-in-federal-government/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/runscope-200-ok.jpeg","description":"Photo Credit: Runscope I&#39;ve been working on open data and APIs pretty heavily since Barack Obama directed all federal agencies to go machine readable by default, back in May of 2012. The White House directive told agencies to publish a copy their digital strategy at their website in the following location: [agency].gov/digitalstrategy. There was also supposed to be an HTML, XML and JSON representation of their digital strategy. Pretty cool request. I immediately got busy writing a script that I could run each night and let me know which federal agency had published their digital strategy. To be fair, the White House mandate was for top level agencies, not really all 246 as I showcase. However, I think it is a process that all agencies can learn from, so I leave it up. Back to pulling the digital strategy for each agency. First I needed all the agencies website addresses, which I pulled from the federal agency directory API. I then appended /digitalstrategy.html, and /digitalstrategy.xml, and /digitalstrategy.json to each agency URL. Now remember, I am a script or piece of code trying to determine if one of 246 x 3 pages exist. I&#39;m not a human looking at each page load with my eyeballs. The only think I have to tell me what is happening is the HTTP status code(s): 200 - Ok, The request has succeeded.&nbsp; 301 - Moved Permanently&nbsp; 404 - Not Found What the government agency sends to me as a status code triggers one of three responses in my code: 200 - They have published their digital strategy&nbsp; 301 - They have published their strategy but it is located somewhere else&nbsp; 404 - They have NOT published their digital strategy After you run the script you see most of the agencies return a 404--not published. Ok, but then I started seeing 301 without an actual URL that redirected me to existing location. I saw published digital strategies return 404 and unpublished strategies return 200. While most agencies adhered to basic HTTP principles, some I just had to hard code. I had to manually code a section saying IF agency = XX then assume this response code. This is a pretty basic problem, something you won&#39;t see unless you actually write some code against the situation (which I assume agencies aren&#39;t doing). Fast-forward two years you have the Office of Management and Budget (OMB) directing that government agencies post .data.json files in a similiar way to the earlier digital strategy. I hope someday they will also require /api.son files, /roadmap.json and other machine readable goodies, but that is another story. This story is about proper HTTP status codes. Each government agencies should be publishing their /digitalstrategy and /data.json files at their website, and they should be properly returning 200 OK or a 301 with proper URI of where you put your digitalstrategy.json or data.json (or other resource). It is acceptable to have these files in an alternate location, but you must provide a complete 301 status code so that my code or script can properly make a decision and properly locate your digitalstrategy.json or data.json files. I thought I wrote this story last year, but apparently the story in my head didn&#39;t match what I actually published to my blog. So I wanted to make sure there was a fresh copy to help government agencies understand this simple, but very important aspect of their digital strategy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2013/11/06/knowing-your-http-status-codes-in-federal-government/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Knowing Your HTTP Status Codes In Federal Government | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2013/11/06/knowing-your-http-status-codes-in-federal-government/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Knowing Your HTTP Status Codes In Federal Government | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Knowing Your HTTP Status Codes In Federal Government</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2013-11-06T00:00:00-08:00" itemprop="datePublished">
+    
+    Nov 6, 2013
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/runscope-200-ok.jpeg" width="90%" align="center" style="padding: 5px;"></center>
+                <table cellspacing="5" cellpadding="5" align="right">
+<tbody>
+<tr>
+<td align="center"><a href="https://www.runscope.com/"><img src="https://s3.amazonaws.com/kinlane-productions2/api-evangelist/runscope/runscope-200-ok.jpeg" alt="" align="right" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.runscope.com/">Photo Credit: Runscope</a></td>
+</tr>
+</tbody>
+</table>
+<p>I've been working on open data and APIs pretty heavily since <a href="http://apievangelist.com/2012/06/01/barack-obama-directs-all-federal-agencies-to-have-an-api/">Barack Obama directed all federal agencies to go machine readable by default</a>, back in May of 2012.  The White House directive told agencies to publish a copy their digital strategy at their website in the following location: [agency].gov/digitalstrategy. There was also supposed to be an HTML, XML and JSON representation of their digital strategy.</p>
+<p>Pretty cool request. I immediately <a href="http://apievangelist.com/2012/09/21/pulling-a-federal-agencies-digital-strategy/">got busy writing a script that I could run each night and let me know which federal agency had published their digital strategy</a>. To be fair, the White House mandate was for top level agencies, not really all <a href="http://federal-government.apievangelist.com/federal-agencies.html">246 as I showcase</a>. However, I think it is a process that all agencies can learn from, so I leave it up.</p>
+<p>Back to pulling the digital strategy for each agency.  First I needed all the agencies website addresses, which I pulled from the <a href="http://www.usa.gov/About/developer-resources/federal-agency-directory/">federal agency directory API</a>. I then appended /digitalstrategy.html, and /digitalstrategy.xml, and /digitalstrategy.json to each agency URL. Now remember, I am a script or piece of code trying to determine if one of 246 x 3 pages exist. I'm not a human looking at each page load with my eyeballs. The only think I have to tell me what is happening is the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">HTTP status code(s)</a>:</p>
+<ul>
+<li>200 - Ok, The request has succeeded.&nbsp;</li>
+<li>301  - Moved Permanently&nbsp;</li>
+<li>404 - Not Found</li>
+</ul>
+<p>What the government agency sends to me as a status code triggers one of three responses in my code:</p>
+<ul>
+<li>200 - They have published their digital strategy&nbsp;</li>
+<li>301 - They have published their strategy but it is located somewhere else&nbsp;</li>
+<li>404 - They have NOT published their digital strategy</li>
+</ul>
+<p>After you run the script you see most of the agencies return a 404--not published. Ok, but then I started seeing 301 without an actual URL that redirected me to existing location. I saw published digital strategies return 404 and unpublished strategies return 200. While most agencies adhered to basic HTTP principles, some I just had to hard code.  I had to manually code a section saying IF agency = XX then assume this response code. This is a pretty basic problem, something you won't see unless you actually write some code against the situation (which I assume agencies aren't doing).</p>
+<p>Fast-forward two years you have the <a href="http://www.whitehouse.gov/omb">Office of Management and Budget (OMB)</a> directing that <a href="http://www.whitehouse.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-">government agencies post .data.json</a> files in a similiar way to the earlier digital strategy. I hope someday they will also require /api.son files, /roadmap.json and other machine readable goodies, but that is another story. This story is about proper HTTP status codes.</p>
+<p>Each government agencies should be publishing their /digitalstrategy and /data.json files at their website, and they should be properly returning 200 OK or a 301 with proper URI of where you put your digitalstrategy.json or data.json (or other resource). It is acceptable to have these files in an alternate location, but you must provide a complete 301 status code so that my code or script can properly make a decision and properly locate your digitalstrategy.json or data.json files.</p>
+<p>I thought I wrote this story last year, but apparently the story in my head didn't match what I actually published to my blog.  So I wanted to make sure there was a fresh copy to help government agencies understand this simple, but very important aspect of their digital strategy.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Knowing Your HTTP Status Codes In Federal Government&url=http://localhost:4000/2013/11/06/knowing-your-http-status-codes-in-federal-government/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2013%2F11%2F06%2Fknowing-your-http-status-codes-in-federal-government%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2013/10/19/transparency-is-not-just-about-github-crowdsourcing-open-source-and-open-apis/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2013/11/06/private-web-application-running-on-github/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

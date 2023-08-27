@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A Sustainable Relationship with Technology | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="A Sustainable Relationship with Technology" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="My world is pretty wrapped with Internet technology. My career centers around it, my mind thrives on thinking about it, but I am also painfully aware how much damage Internet technology is inflicting around the world, as well as how too much focus on the digital world can leave my physical and mental self in a weakened state. I have wrestled with all of this heavily over the last five years as I was forced to come to terms with just how exploitative much of the world I am a champion for has been. However, in the last two years I have found a mew balance that I feel will help me keep my relationship with technology sustainable, allowing me to make a living, have a successful and enjoyable career, but also stay physically and mentally healthy, and most importantly maintain my soul when it comes to being an enabler of Internet technology. Moving forward I undoubtedly will have moments where I will be blind to exploitation around me, as well as moments where I dwell too much on the negative of technology, but this is part of the tides of this relationship with technology I am navigating." />
+<meta property="og:description" content="My world is pretty wrapped with Internet technology. My career centers around it, my mind thrives on thinking about it, but I am also painfully aware how much damage Internet technology is inflicting around the world, as well as how too much focus on the digital world can leave my physical and mental self in a weakened state. I have wrestled with all of this heavily over the last five years as I was forced to come to terms with just how exploitative much of the world I am a champion for has been. However, in the last two years I have found a mew balance that I feel will help me keep my relationship with technology sustainable, allowing me to make a living, have a successful and enjoyable career, but also stay physically and mentally healthy, and most importantly maintain my soul when it comes to being an enabler of Internet technology. Moving forward I undoubtedly will have moments where I will be blind to exploitation around me, as well as moments where I dwell too much on the negative of technology, but this is part of the tides of this relationship with technology I am navigating." />
+<link rel="canonical" href="http://localhost:4000/2021/05/21/a-sustainable-relationship-with-technology/" />
+<meta property="og:url" content="http://localhost:4000/2021/05/21/a-sustainable-relationship-with-technology/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/blue-circuit-statue-thinking.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-21T05:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2021/05/21/a-sustainable-relationship-with-technology/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"A Sustainable Relationship with Technology","dateModified":"2021-05-21T05:00:00-07:00","datePublished":"2021-05-21T05:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2021/05/21/a-sustainable-relationship-with-technology/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/blue-circuit-statue-thinking.jpg","description":"My world is pretty wrapped with Internet technology. My career centers around it, my mind thrives on thinking about it, but I am also painfully aware how much damage Internet technology is inflicting around the world, as well as how too much focus on the digital world can leave my physical and mental self in a weakened state. I have wrestled with all of this heavily over the last five years as I was forced to come to terms with just how exploitative much of the world I am a champion for has been. However, in the last two years I have found a mew balance that I feel will help me keep my relationship with technology sustainable, allowing me to make a living, have a successful and enjoyable career, but also stay physically and mentally healthy, and most importantly maintain my soul when it comes to being an enabler of Internet technology. Moving forward I undoubtedly will have moments where I will be blind to exploitation around me, as well as moments where I dwell too much on the negative of technology, but this is part of the tides of this relationship with technology I am navigating.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Sustainable Relationship with Technology | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Sustainable Relationship with Technology | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">A Sustainable Relationship with Technology</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2021-05-21T05:00:00-07:00" itemprop="datePublished">
+    
+    May 21, 2021
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/blue-circuit-statue-thinking.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>My world is pretty wrapped with Internet technology. My career centers around it, my mind thrives on thinking about it, but I am also painfully aware how much damage Internet technology is inflicting around the world, as well as how too much focus on the digital world can leave my physical and mental self in a weakened state. I have wrestled with all of this heavily over the last five years as I was forced to come to terms with just how exploitative much of the world I am a champion for has been. However, in the last two years I have found a mew balance that I feel will help me keep my relationship with technology sustainable, allowing me to make a living, have a successful and enjoyable career, but also stay physically and mentally healthy, and most importantly maintain my soul when it comes to being an enabler of Internet technology. Moving forward I undoubtedly will have moments where I will be blind to exploitation around me, as well as moments where I dwell too much on the negative of technology, but this is part of the tides of this relationship with technology I am navigating.</p>
+
+<p>I am good at understanding the world of APIs, the layer beneath the desktop, web, mobile, and device applications we use to operate each day. My brain enjoys thinking about complex technical solutions. It keeps me busy. It keeps me out of trouble. It keeps my overactive mind focused on something that is hopefully positive. However, I also struggle with being online too much. I get caught up in having to work seven days a week. I focus on the negative that Internet enabled technology introduces into the world. It all makes for quite a roller coaster ride if I let it. That is always the trick. How do I dance with technology, but then also still be a well adjusted human being. There is no perfect answer to this dilemma and there is no single configuration that just works all the time. I have to ride the waves. I have to perpetually ask myself if I am making a difference with my work, and whether or not I am living a version of my personal life that I find fulfilling. Repeat. Repeat. Repeat. I don’t think my struggle with technology is unique, but I think the little dance I do to squeeze a living out of it, while also fighting so hard to stay human is pretty unique to the condition that is called Kin Lane. I am not just dramatic about it here as I write, this is how annoying it is in my head as each day plays out.</p>
+
+<p>One of the aspects of my relationship with technology that drives most things is that I make a good amount of money doing what I do. I am good at what I do, and over a decade I have managed to carve out a niche for myself. I get paid well, and there is a lot of opportunity doing what I do. I don’t know about you, but I like making money. I like being comfortable. Now, I don’t focus on the money of it to the extend where I start losing my soul. That just isn’t me. That isn’t how I do things. However, I do put up with things I don’t always like because I am paid well. It is the capitalist dance with the devil many of us find ourselves in. I don’t think most folks are honest about the dance, but it is one I am regularly thinking about and always looking for the right moves to make the dance more memorable, fun, and not something I just have to do to make someone else happy. I am not afraid to admit that the money is why I don’t just walk away and do something else. I make good money, and I am successful—-what else would I step away and do? This used to kind of terrify me, but it is also part of the sustainable relationship I have established with technology. I am going to make the most of my success, I am going to ride it, while also trying to minis the downside and anxiety about what I am doing, or not doing. I am just going to do what I do, make good money, have as much fun as I can, while remaining as flexible and adaptive as I possibly can.</p>
+
+<p>One of the reasons you do APIs as a business is that they help you be more agile, nimble, and adaptive in your relationship with technology. I have taken this to hear when it comes to my own personal relationship with technology. I am always trying to keep things small and manageable, while working to reduce dependencies along the way. I don’t get too married to any specific technology or emotional about technology being good, bad, nor even neutral. I like technology when it benefits me, and I am not afraid to criticize or hate it when it doesn’t. I am more than happy to use the Internet to solve a problem when it makes sense, and I am even more happy to question whether technology should be used at all. I am skeptical of Internet technology, but I can also enjoy a regular cadence of blah blah blah about APIs in service of bringing home the bacon. It is a game. It is one that I get paid to play. It is a game like to play in the evenings and sometimes on the weekends to keep my mind active. It is also a game I can easily put down to read a book, go for a walk, or just sit and stare out the window. The secret here isn’t to go all in with technology, or to completely step away–it is about maintaining a sustainable relationship with technology that will take me where I want to go in the next fifty years.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=A Sustainable Relationship with Technology&url=http://localhost:4000/2021/05/21/a-sustainable-relationship-with-technology/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F05%2F21%2Fa-sustainable-relationship-with-technology%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2021/05/21/leaving-the-past-behind/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2021/06/13/how-industry-categories-have-been-defined-and-continue-to-shape-us/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

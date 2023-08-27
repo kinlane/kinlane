@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Securing Site That Runs on Github Pages With JSON Backend In Private Repository'
+source: http://kinlane.com/2013/10/15/securing-site-that-runs-on-github-pages-with-json-backend-in-private-repository/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg
+---
+<p><a title="Github" href="http://github.com"><img class="c1" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github.jpg" alt="" width="200" align="right" /></a></p>
+<p>I have been <a href="http://kinlane.com/2013/03/21/continuing-the-migration-of-projects-over-to-github/">deploying websites that run 100% on Github, using Github Pages and Jekyll</a> for a while now.  I'm pushing forward with different approaches to deploying sites and applications using this model, and my recent evolution is securing a website, only allowing specific people to access and interact with the site or application.</p>
+<p>In this case, I have a web application that I am developing, and will run on Github, but I'm not ready for it to be public. So I created a private repository, then using the Automatic Page Generator under Github settings, I created a public site for the repository using Github Pages.</p>
+<p>Next I created a JSON file that contained the navigation for the site, and each page and its content:</p>
+<script src="https://gist.github.com/kinlane/6999042.js"></script>
+<p>I put this JSON file in the master branch of the repository, which is private.  After that, using <a title="Github.js" href="https://github.com/michael/github">Github.js</a> I wrote a little bit of JavaScript using Jquery that pulled the JSON from the master branch and built the navigation and page content on the page:</p>
+<script src="https://gist.github.com/kinlane/6999061.js"></script>
+<p>Before the page will build, you have to have a valid oAuth token for the repository. In this particular scenario I am just passing the oAuth token through URL as a parameter, and if the variable isn't present or is invalid, the request for the JSON file just returns a 404 and none of the navigation or site content is updated. For other version I will be using <a title="oAuth.io" href="http://oAuth.io">oAuth.io</a> to secure the application and just add people as Github team members if I want them to have access to the application.</p>
+<p>Once I'm done with this particular application, and I am ready to make public, I will just make the Github repository public and replace the pulling of master JSON file with a regular JQuery getJSON call, and use the JSON to build out the site just like I do now.</p>
+<p>This approach is definitely not for all applications, but easily allows me to run applications on Github while maintaining a private, secure back-end. I am just using Github OAuth security to access any files I want to keep private, and make only what I need public. In this case, unless I have granted you access, you will just see a splash page.</p>

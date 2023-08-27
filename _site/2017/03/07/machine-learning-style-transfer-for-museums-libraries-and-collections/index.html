@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Machine Learning Style Transfer For Museums, Libraries, and Collections | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Machine Learning Style Transfer For Museums, Libraries, and Collections" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I putting some thought into some next steps for my algorithmic rotoscope work, which is about the training and applying of image style transfer machine learning models. I&#39;m talking with Jason Toy (@jtoy) over at&nbsp;Somatic about the variety of use cases, and I want to spend some thinking about image style transfers, from the perspective of a collector or curator of images--brainstorming how they can organize, make available their work(s) for use in image style transfers. Ok, let&#39;s start with the basics--what am I talking about when I say image style transfer? &nbsp;I recommend starting with a basic definition of machine learning in this context, providing by my girlfriend, and partner in crime Audrey Watters. Beyond, that I am just referring to the training a machine learning model by directing it to scan an image. This model can then be applied to other images, essentially transferring the style of one image, to any other image. There are a handful of mobile applications out there right now that let you apply a handful of filters to images taken with your mobile phone--Somatic is looking to be the wholesale provider of these features.&nbsp; Training one of these models isn&#39;t cheap. It costs me about $20 per model in GPUs to create--this doesn&#39;t consider my time, just my hard compute costs (AWS bill). Not every model does anything interesting. Not all images, photos, and pieces of art translate&nbsp;into cool features when applied to images. I&#39;ve spent about $700 training 35 filters. Some of them are cool, and some of them are meh. I&#39;ve had the most luck focusing on dystopian landscapes, which I can use in my storytelling around topics like immigration, technology, and the election.&nbsp; This work ended up with Jason and I talking about museums and library collections, thinking about opportunities for them to think about their collections in terms of machine learning, and specifically algorithmic style transfer. Do you have images in your collection that would translate well for use in graphic design, print, and digital photo applications? I spend hours looking through art books for the right textures, colors and outlines. I also spend hours looking through graphic design archives for movie and gaming industry, as well as government collections. Looking for just the right set of images that will either transfer&nbsp;and produce an interesting look, as well as possible transfer something meaningful to the new images that I am applying styles to. Sometimes style transfers just make a photo look cool, bringing some general colors, textures, and other features to a new photo--there really isn&#39;t any value in knowing what image was behind the style transfer, it just looks cool. Other times, the image can be enhanced knowing about the image behind the machine learning model, and not just transferring&nbsp;styles between images, but also potentially transferring some meaning as well. You can see this in action when I took a nazi propaganda poster and applied to it to photo of Ellis Island, or I took an old Russian propaganda poster and applied to images of the White House. I a sense, I was able to transfer some of the 1000 words applied to the propaganda posters and transfer them to new photos I had taken. It&#39;s easy to think you will make a new image into a piece of art by training a model on a piece of art and transferring it&#39;s characteristics to a new image using machine learning. Where I find the real value is actually understanding collections of images, while also being aware of the style transfer process, and thinking about how images can be trained and applied. However, this only gets you so far, there has to still be some value or meaning in how it&#39;s being applied, accomplishing a specific objective and delivering some sort of meaning. If you are doing this as part of some graphic design work it will be different than if you are doing for fun on a mobile phone app with your friends. To further stimulate my imagination and awareness I&#39;m looking through a variety of open image collections, from a variety of institutions: Digital Public Library of America (DPLA) -&nbsp;The DPLA is a platform. Developers make apps that use the library&rsquo;s data in many different ways. The British Library&nbsp;-&nbsp;A collection of over 1 million public domain images from digitized copies of 17th, 18th, and 19th-century books. Europeana&nbsp;-&nbsp;Explore millions of items from a range of Europe&#39;s leading galleries, libraries, archives and museums. The Library of Congress Prints &amp; Photographs Reading Room&nbsp;- Photographs, historical prints, posters, cartoons, documentary drawings, fine prints, and architectural and engineering designs. Metropolitan Museum of Art&nbsp;-&nbsp;Selected artworks are available under the Open Access for Scholarly Content (OASC) license. National Aeronautics and Space Administration (NASA) Image Galleries: Public domain photos. The New York Public Library Digital Collections&nbsp;-&nbsp;Digital collections of&nbsp;high resolution&nbsp;prints, images, and maps with no known copyright restrictions. Rights statement included for individual items. The Ohio State University Health Sciences Library Digital Image Collections&nbsp;-&nbsp;A list of resources available through the OSU Health Science Library. Public Health Image Library (PHIL)&nbsp;-&nbsp;Provided by the Centers for Disease Control and Prevention.&nbsp; Samuel Zeller Archive&nbsp;-&nbsp;Professional photographs available under a Creative Commons Attribution (CC BY) license. U.S. Government Photos and Images&nbsp;-&nbsp;A collection of photo and image galleries for multiple federal government agencies.&nbsp; I am also using some of the usual suspects when it comes to searching for images on the web: Google Image Search&nbsp;-&nbsp;The old standby place to work through ideas. Flickr: Creative Commons&nbsp;-&nbsp;Many Flickr users have chosen to offer their work under a Creative Commons license, and you can browse or search through content under each type of license. Flickr: The Commons&nbsp;-&nbsp;Includes photos with&nbsp;&ldquo;no known copyright restrictions&rdquo;&nbsp;uploaded by participating cultural institutions. Internet Archive&nbsp;-&nbsp;Contains books, movies, software, music, and more. pond5 Public Domain Project&nbsp;-&nbsp;Public domain images. Registration/free account required to download materials.&nbsp; Wikimedia Commons&nbsp;-&nbsp;A database of&nbsp;freely usable&nbsp;media files to which&nbsp;anyone can contribute. I am working on developing specific categories that have relevance to the storytelling I&#39;m doing across my blogs, and sometimes to help power my&nbsp;partners work as well. I&#39;m currently mining the following areas, looking for interesting images to train style transfer machine learning models: Art - The obvious usage for all of this, finding interesting pieces of art that make your photos look cool. Video Game - I find video game imagery to provide a wealth of ideas for training and applying image style transfers. Science Fiction - Another rich source of imagery for the&nbsp;training of image style transfer models that do cool things. Electrical - I&#39;m finding circuit boards, lighting, and other electrical imagery to be useful in training models. Industrial - I&#39;m finding industrial images to work for both sides of the equation in training and applying models. Propaganda - These are great for training models, and then transferring the texture and the meaning behind them. Labor - Similar to propaganda posters, potentially some emotional work here that would transfer significant meaning. Space - A new one I&#39;m adding for finding interesting imagery that can train models, and experiencing what the effect is. As I look through more collections, and gain experience training style transfer models, and applying models, I have begun to develop an eye for what looks good. I also develop more ideas along the way of imagery that can help reinforce the storytelling I&#39;m doing across my work. It is a journey I am hoping more librarians, museum curators, and collection stewards will embark on. I don&#39;t think you need to learn the inner workings of machine learning, but at least develop enough of an understanding that you can think more critically about the collection you are knowledgeable about.&nbsp; I know Jason would like to help you, and I&#39;m more than happy to help you along in the process. Honestly, the biggest hurdle is money to afford the GPUs for training the image. After that, it is about spending the time finding images to train models, as well as to apply the models to a variety of imagery, as part of some sort of meaningful process. I can spend days looking through art collection, then spend a significant amount of AWS budget training machine learning models, but if I don&#39;t have a meaningful way to apply them, it doesn&#39;t bring any value to the table, and it&#39;s unlikely I will be able to justify the budget in the future. My algorithmic rotoscope work is used throughout my writing&nbsp;and helps influence the stories I tell on API Evangelist, Kin Lane, Drone Recovery, and now Contrafabulists. I invest about $150.00 / month training to image style transfer models, keeping a fresh number of models coming off the assembly line. I have a variety of tools that allow me to apply the models using Algorithmia and now Somatic. I&#39;m now looking for folks who have knowledge and access to interesting image collections, who would want to learn more about image style transfer, as well as graphic design and print shops, mobile application development shops, and other interested folks who are just curious about WTF image style transfers are all about." />
+<meta property="og:description" content="I putting some thought into some next steps for my algorithmic rotoscope work, which is about the training and applying of image style transfer machine learning models. I&#39;m talking with Jason Toy (@jtoy) over at&nbsp;Somatic about the variety of use cases, and I want to spend some thinking about image style transfers, from the perspective of a collector or curator of images--brainstorming how they can organize, make available their work(s) for use in image style transfers. Ok, let&#39;s start with the basics--what am I talking about when I say image style transfer? &nbsp;I recommend starting with a basic definition of machine learning in this context, providing by my girlfriend, and partner in crime Audrey Watters. Beyond, that I am just referring to the training a machine learning model by directing it to scan an image. This model can then be applied to other images, essentially transferring the style of one image, to any other image. There are a handful of mobile applications out there right now that let you apply a handful of filters to images taken with your mobile phone--Somatic is looking to be the wholesale provider of these features.&nbsp; Training one of these models isn&#39;t cheap. It costs me about $20 per model in GPUs to create--this doesn&#39;t consider my time, just my hard compute costs (AWS bill). Not every model does anything interesting. Not all images, photos, and pieces of art translate&nbsp;into cool features when applied to images. I&#39;ve spent about $700 training 35 filters. Some of them are cool, and some of them are meh. I&#39;ve had the most luck focusing on dystopian landscapes, which I can use in my storytelling around topics like immigration, technology, and the election.&nbsp; This work ended up with Jason and I talking about museums and library collections, thinking about opportunities for them to think about their collections in terms of machine learning, and specifically algorithmic style transfer. Do you have images in your collection that would translate well for use in graphic design, print, and digital photo applications? I spend hours looking through art books for the right textures, colors and outlines. I also spend hours looking through graphic design archives for movie and gaming industry, as well as government collections. Looking for just the right set of images that will either transfer&nbsp;and produce an interesting look, as well as possible transfer something meaningful to the new images that I am applying styles to. Sometimes style transfers just make a photo look cool, bringing some general colors, textures, and other features to a new photo--there really isn&#39;t any value in knowing what image was behind the style transfer, it just looks cool. Other times, the image can be enhanced knowing about the image behind the machine learning model, and not just transferring&nbsp;styles between images, but also potentially transferring some meaning as well. You can see this in action when I took a nazi propaganda poster and applied to it to photo of Ellis Island, or I took an old Russian propaganda poster and applied to images of the White House. I a sense, I was able to transfer some of the 1000 words applied to the propaganda posters and transfer them to new photos I had taken. It&#39;s easy to think you will make a new image into a piece of art by training a model on a piece of art and transferring it&#39;s characteristics to a new image using machine learning. Where I find the real value is actually understanding collections of images, while also being aware of the style transfer process, and thinking about how images can be trained and applied. However, this only gets you so far, there has to still be some value or meaning in how it&#39;s being applied, accomplishing a specific objective and delivering some sort of meaning. If you are doing this as part of some graphic design work it will be different than if you are doing for fun on a mobile phone app with your friends. To further stimulate my imagination and awareness I&#39;m looking through a variety of open image collections, from a variety of institutions: Digital Public Library of America (DPLA) -&nbsp;The DPLA is a platform. Developers make apps that use the library&rsquo;s data in many different ways. The British Library&nbsp;-&nbsp;A collection of over 1 million public domain images from digitized copies of 17th, 18th, and 19th-century books. Europeana&nbsp;-&nbsp;Explore millions of items from a range of Europe&#39;s leading galleries, libraries, archives and museums. The Library of Congress Prints &amp; Photographs Reading Room&nbsp;- Photographs, historical prints, posters, cartoons, documentary drawings, fine prints, and architectural and engineering designs. Metropolitan Museum of Art&nbsp;-&nbsp;Selected artworks are available under the Open Access for Scholarly Content (OASC) license. National Aeronautics and Space Administration (NASA) Image Galleries: Public domain photos. The New York Public Library Digital Collections&nbsp;-&nbsp;Digital collections of&nbsp;high resolution&nbsp;prints, images, and maps with no known copyright restrictions. Rights statement included for individual items. The Ohio State University Health Sciences Library Digital Image Collections&nbsp;-&nbsp;A list of resources available through the OSU Health Science Library. Public Health Image Library (PHIL)&nbsp;-&nbsp;Provided by the Centers for Disease Control and Prevention.&nbsp; Samuel Zeller Archive&nbsp;-&nbsp;Professional photographs available under a Creative Commons Attribution (CC BY) license. U.S. Government Photos and Images&nbsp;-&nbsp;A collection of photo and image galleries for multiple federal government agencies.&nbsp; I am also using some of the usual suspects when it comes to searching for images on the web: Google Image Search&nbsp;-&nbsp;The old standby place to work through ideas. Flickr: Creative Commons&nbsp;-&nbsp;Many Flickr users have chosen to offer their work under a Creative Commons license, and you can browse or search through content under each type of license. Flickr: The Commons&nbsp;-&nbsp;Includes photos with&nbsp;&ldquo;no known copyright restrictions&rdquo;&nbsp;uploaded by participating cultural institutions. Internet Archive&nbsp;-&nbsp;Contains books, movies, software, music, and more. pond5 Public Domain Project&nbsp;-&nbsp;Public domain images. Registration/free account required to download materials.&nbsp; Wikimedia Commons&nbsp;-&nbsp;A database of&nbsp;freely usable&nbsp;media files to which&nbsp;anyone can contribute. I am working on developing specific categories that have relevance to the storytelling I&#39;m doing across my blogs, and sometimes to help power my&nbsp;partners work as well. I&#39;m currently mining the following areas, looking for interesting images to train style transfer machine learning models: Art - The obvious usage for all of this, finding interesting pieces of art that make your photos look cool. Video Game - I find video game imagery to provide a wealth of ideas for training and applying image style transfers. Science Fiction - Another rich source of imagery for the&nbsp;training of image style transfer models that do cool things. Electrical - I&#39;m finding circuit boards, lighting, and other electrical imagery to be useful in training models. Industrial - I&#39;m finding industrial images to work for both sides of the equation in training and applying models. Propaganda - These are great for training models, and then transferring the texture and the meaning behind them. Labor - Similar to propaganda posters, potentially some emotional work here that would transfer significant meaning. Space - A new one I&#39;m adding for finding interesting imagery that can train models, and experiencing what the effect is. As I look through more collections, and gain experience training style transfer models, and applying models, I have begun to develop an eye for what looks good. I also develop more ideas along the way of imagery that can help reinforce the storytelling I&#39;m doing across my work. It is a journey I am hoping more librarians, museum curators, and collection stewards will embark on. I don&#39;t think you need to learn the inner workings of machine learning, but at least develop enough of an understanding that you can think more critically about the collection you are knowledgeable about.&nbsp; I know Jason would like to help you, and I&#39;m more than happy to help you along in the process. Honestly, the biggest hurdle is money to afford the GPUs for training the image. After that, it is about spending the time finding images to train models, as well as to apply the models to a variety of imagery, as part of some sort of meaningful process. I can spend days looking through art collection, then spend a significant amount of AWS budget training machine learning models, but if I don&#39;t have a meaningful way to apply them, it doesn&#39;t bring any value to the table, and it&#39;s unlikely I will be able to justify the budget in the future. My algorithmic rotoscope work is used throughout my writing&nbsp;and helps influence the stories I tell on API Evangelist, Kin Lane, Drone Recovery, and now Contrafabulists. I invest about $150.00 / month training to image style transfer models, keeping a fresh number of models coming off the assembly line. I have a variety of tools that allow me to apply the models using Algorithmia and now Somatic. I&#39;m now looking for folks who have knowledge and access to interesting image collections, who would want to learn more about image style transfer, as well as graphic design and print shops, mobile application development shops, and other interested folks who are just curious about WTF image style transfers are all about." />
+<link rel="canonical" href="http://localhost:4000/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/" />
+<meta property="og:url" content="http://localhost:4000/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/propaganda_poster_transfer_2.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-07T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Machine Learning Style Transfer For Museums, Libraries, and Collections","dateModified":"2017-03-07T00:00:00-08:00","datePublished":"2017-03-07T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/propaganda_poster_transfer_2.jpg","description":"I putting some thought into some next steps for my algorithmic rotoscope work, which is about the training and applying of image style transfer machine learning models. I&#39;m talking with Jason Toy (@jtoy) over at&nbsp;Somatic about the variety of use cases, and I want to spend some thinking about image style transfers, from the perspective of a collector or curator of images--brainstorming how they can organize, make available their work(s) for use in image style transfers. Ok, let&#39;s start with the basics--what am I talking about when I say image style transfer? &nbsp;I recommend starting with a basic definition of machine learning in this context, providing by my girlfriend, and partner in crime Audrey Watters. Beyond, that I am just referring to the training a machine learning model by directing it to scan an image. This model can then be applied to other images, essentially transferring the style of one image, to any other image. There are a handful of mobile applications out there right now that let you apply a handful of filters to images taken with your mobile phone--Somatic is looking to be the wholesale provider of these features.&nbsp; Training one of these models isn&#39;t cheap. It costs me about $20 per model in GPUs to create--this doesn&#39;t consider my time, just my hard compute costs (AWS bill). Not every model does anything interesting. Not all images, photos, and pieces of art translate&nbsp;into cool features when applied to images. I&#39;ve spent about $700 training 35 filters. Some of them are cool, and some of them are meh. I&#39;ve had the most luck focusing on dystopian landscapes, which I can use in my storytelling around topics like immigration, technology, and the election.&nbsp; This work ended up with Jason and I talking about museums and library collections, thinking about opportunities for them to think about their collections in terms of machine learning, and specifically algorithmic style transfer. Do you have images in your collection that would translate well for use in graphic design, print, and digital photo applications? I spend hours looking through art books for the right textures, colors and outlines. I also spend hours looking through graphic design archives for movie and gaming industry, as well as government collections. Looking for just the right set of images that will either transfer&nbsp;and produce an interesting look, as well as possible transfer something meaningful to the new images that I am applying styles to. Sometimes style transfers just make a photo look cool, bringing some general colors, textures, and other features to a new photo--there really isn&#39;t any value in knowing what image was behind the style transfer, it just looks cool. Other times, the image can be enhanced knowing about the image behind the machine learning model, and not just transferring&nbsp;styles between images, but also potentially transferring some meaning as well. You can see this in action when I took a nazi propaganda poster and applied to it to photo of Ellis Island, or I took an old Russian propaganda poster and applied to images of the White House. I a sense, I was able to transfer some of the 1000 words applied to the propaganda posters and transfer them to new photos I had taken. It&#39;s easy to think you will make a new image into a piece of art by training a model on a piece of art and transferring it&#39;s characteristics to a new image using machine learning. Where I find the real value is actually understanding collections of images, while also being aware of the style transfer process, and thinking about how images can be trained and applied. However, this only gets you so far, there has to still be some value or meaning in how it&#39;s being applied, accomplishing a specific objective and delivering some sort of meaning. If you are doing this as part of some graphic design work it will be different than if you are doing for fun on a mobile phone app with your friends. To further stimulate my imagination and awareness I&#39;m looking through a variety of open image collections, from a variety of institutions: Digital Public Library of America (DPLA) -&nbsp;The DPLA is a platform. Developers make apps that use the library&rsquo;s data in many different ways. The British Library&nbsp;-&nbsp;A collection of over 1 million public domain images from digitized copies of 17th, 18th, and 19th-century books. Europeana&nbsp;-&nbsp;Explore millions of items from a range of Europe&#39;s leading galleries, libraries, archives and museums. The Library of Congress Prints &amp; Photographs Reading Room&nbsp;- Photographs, historical prints, posters, cartoons, documentary drawings, fine prints, and architectural and engineering designs. Metropolitan Museum of Art&nbsp;-&nbsp;Selected artworks are available under the Open Access for Scholarly Content (OASC) license. National Aeronautics and Space Administration (NASA) Image Galleries: Public domain photos. The New York Public Library Digital Collections&nbsp;-&nbsp;Digital collections of&nbsp;high resolution&nbsp;prints, images, and maps with no known copyright restrictions. Rights statement included for individual items. The Ohio State University Health Sciences Library Digital Image Collections&nbsp;-&nbsp;A list of resources available through the OSU Health Science Library. Public Health Image Library (PHIL)&nbsp;-&nbsp;Provided by the Centers for Disease Control and Prevention.&nbsp; Samuel Zeller Archive&nbsp;-&nbsp;Professional photographs available under a Creative Commons Attribution (CC BY) license. U.S. Government Photos and Images&nbsp;-&nbsp;A collection of photo and image galleries for multiple federal government agencies.&nbsp; I am also using some of the usual suspects when it comes to searching for images on the web: Google Image Search&nbsp;-&nbsp;The old standby place to work through ideas. Flickr: Creative Commons&nbsp;-&nbsp;Many Flickr users have chosen to offer their work under a Creative Commons license, and you can browse or search through content under each type of license. Flickr: The Commons&nbsp;-&nbsp;Includes photos with&nbsp;&ldquo;no known copyright restrictions&rdquo;&nbsp;uploaded by participating cultural institutions. Internet Archive&nbsp;-&nbsp;Contains books, movies, software, music, and more. pond5 Public Domain Project&nbsp;-&nbsp;Public domain images. Registration/free account required to download materials.&nbsp; Wikimedia Commons&nbsp;-&nbsp;A database of&nbsp;freely usable&nbsp;media files to which&nbsp;anyone can contribute. I am working on developing specific categories that have relevance to the storytelling I&#39;m doing across my blogs, and sometimes to help power my&nbsp;partners work as well. I&#39;m currently mining the following areas, looking for interesting images to train style transfer machine learning models: Art - The obvious usage for all of this, finding interesting pieces of art that make your photos look cool. Video Game - I find video game imagery to provide a wealth of ideas for training and applying image style transfers. Science Fiction - Another rich source of imagery for the&nbsp;training of image style transfer models that do cool things. Electrical - I&#39;m finding circuit boards, lighting, and other electrical imagery to be useful in training models. Industrial - I&#39;m finding industrial images to work for both sides of the equation in training and applying models. Propaganda - These are great for training models, and then transferring the texture and the meaning behind them. Labor - Similar to propaganda posters, potentially some emotional work here that would transfer significant meaning. Space - A new one I&#39;m adding for finding interesting imagery that can train models, and experiencing what the effect is. As I look through more collections, and gain experience training style transfer models, and applying models, I have begun to develop an eye for what looks good. I also develop more ideas along the way of imagery that can help reinforce the storytelling I&#39;m doing across my work. It is a journey I am hoping more librarians, museum curators, and collection stewards will embark on. I don&#39;t think you need to learn the inner workings of machine learning, but at least develop enough of an understanding that you can think more critically about the collection you are knowledgeable about.&nbsp; I know Jason would like to help you, and I&#39;m more than happy to help you along in the process. Honestly, the biggest hurdle is money to afford the GPUs for training the image. After that, it is about spending the time finding images to train models, as well as to apply the models to a variety of imagery, as part of some sort of meaningful process. I can spend days looking through art collection, then spend a significant amount of AWS budget training machine learning models, but if I don&#39;t have a meaningful way to apply them, it doesn&#39;t bring any value to the table, and it&#39;s unlikely I will be able to justify the budget in the future. My algorithmic rotoscope work is used throughout my writing&nbsp;and helps influence the stories I tell on API Evangelist, Kin Lane, Drone Recovery, and now Contrafabulists. I invest about $150.00 / month training to image style transfer models, keeping a fresh number of models coming off the assembly line. I have a variety of tools that allow me to apply the models using Algorithmia and now Somatic. I&#39;m now looking for folks who have knowledge and access to interesting image collections, who would want to learn more about image style transfer, as well as graphic design and print shops, mobile application development shops, and other interested folks who are just curious about WTF image style transfers are all about.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Machine Learning Style Transfer For Museums, Libraries, and Collections | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Machine Learning Style Transfer For Museums, Libraries, and Collections | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Machine Learning Style Transfer For Museums, Libraries, and Collections</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-03-07T00:00:00-08:00" itemprop="datePublished">
+    
+    Mar 7, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/propaganda_poster_transfer_2.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/art_museum_kandinsky_bv.jpg" alt="" width="40%" align="right" /></p>
+<p>I putting some thought into some next steps for my <a href="http://algorithmic.rotoscope.work/">algorithmic rotoscope work</a>, which is about the training and applying of image style transfer machine learning models. I'm talking with Jason Toy (<a href="https://twitter.com/jtoy">@jtoy</a>) over at&nbsp;<a href="http://www.somatic.io/">Somatic</a> about the variety of use cases, and I want to spend some thinking about image style transfers, from the perspective of a collector or curator of images--brainstorming how they can organize, make available their work(s) for use in image style transfers.</p>
+<p>Ok, let's start with the basics--what am I talking about when I say image style transfer? &nbsp;<a href="http://kinlane.com/2017/02/15/what-do-you-mean-when-you-say-you-are-training-a-machine-learning-model/">I recommend starting with a basic definition of machine learning in this context, providing by my girlfriend, and partner in crime Audrey Watters</a>. Beyond, that I am just referring to the training a machine learning model by directing it to scan an image. This model can then be applied to other images, essentially transferring the style of one image, to any other image. There are a handful of mobile applications out there right now that let you apply a handful of filters to images taken with your mobile phone--<a href="http://www.somatic.io/">Somatic is looking to be the wholesale provider of these features</a>.&nbsp;</p>
+<p>Training one of these models isn't cheap. It costs me about $20 per model in GPUs to create--this doesn't consider my time, just my hard compute costs (AWS bill). Not every model does anything interesting. Not all images, photos, and pieces of art translate&nbsp;into cool features when applied to images. I've spent about $700 training 35 filters. Some of them are cool, and some of them are meh. I've had the most luck focusing on <a href="http://algorithmic.rotoscope.work/2017/01/03/finding-the-right-dystopian-filter-to-represent-the-world-unfolding-around-us/">dystopian landscapes</a>, which I can use in my storytelling around topics like <a href="http://algorithmic.rotoscope.work/2017/02/06/algorithmic-reflections-on-the-immigration-debate/">immigration</a>, technology, and the <a href="http://algorithmic.rotoscope.work/2017/02/14/the-russian-propaganda-distortion-field-around-the-white-house/">election</a>.&nbsp;</p>
+<p>This work ended up with Jason and I talking about museums and library collections, thinking about opportunities for them to think about their collections in terms of machine learning, and specifically algorithmic style transfer. Do you have images in your collection that would translate well for use in graphic design, print, and digital photo applications? I spend hours looking through art books for the right textures, colors and outlines. I also spend hours looking through graphic design archives for movie and gaming industry, as well as government collections. Looking for just the right set of images that will either transfer&nbsp;and produce an interesting look, as well as possible transfer something meaningful to the new images that I am applying styles to.</p>
+<p>Sometimes style transfers just make a photo look cool, bringing some general colors, textures, and other features to a new photo--there really isn't any value in knowing what image was behind the style transfer, it just looks cool. Other times, the image can be enhanced knowing about the image behind the machine learning model, and not just transferring&nbsp;styles between images, but also potentially transferring some meaning as well. You can see this in action when I took <a href="http://algorithmic.rotoscope.work/2017/02/06/algorithmic-reflections-on-the-immigration-debate/">a nazi propaganda poster and applied to it to photo of Ellis Island</a>, or I took an <a href="http://algorithmic.rotoscope.work/2017/02/14/the-russian-propaganda-distortion-field-around-the-white-house/">old Russian propaganda poster and applied to images of the White House</a>. I a sense, I was able to transfer some of the 1000 words applied to the propaganda posters and transfer them to new photos I had taken.</p>
+<p>It's easy to think you will make a new image into a piece of art by training a model on a piece of art and transferring it's characteristics to a new image using machine learning. Where I find the real value is actually understanding collections of images, while also being aware of the style transfer process, and thinking about how images can be trained and applied. However, this only gets you so far, there has to still be some value or meaning in how it's being applied, accomplishing a specific objective and delivering some sort of meaning. If you are doing this as part of some graphic design work it will be different than if you are doing for fun on a mobile phone app with your friends.</p>
+<p>To further stimulate my imagination and awareness I'm looking through a variety of open image collections, from a variety of institutions:</p>
+<ul>
+<li><strong><a href="https://dp.la/">Digital Public Library of America (DPLA)</a></strong> -&nbsp;The DPLA is a platform. Developers make apps that use the library&rsquo;s data in many different ways.</li>
+<li><strong><a href="https://www.flickr.com/photos/britishlibrary/">The British Library</a>&nbsp;-&nbsp;</strong>A collection of over 1 million public domain images from digitized copies of 17th, 18th, and 19th-century books.</li>
+<li><strong><a href="http://www.europeana.eu/portal/">Europeana</a>&nbsp;-&nbsp;</strong>Explore millions of items from a range of Europe's leading galleries, libraries, archives and museums.</li>
+<li><strong><a href="http://www.loc.gov/rr/print/">The Library of Congress Prints &amp; Photographs Reading Room</a>&nbsp;- </strong>Photographs, historical prints, posters, cartoons, documentary drawings, fine prints, and architectural and engineering designs.</li>
+<li><strong><a href="http://www.metmuseum.org/research/image-resources#scholarly">Metropolitan Museum of Art</a>&nbsp;-&nbsp;</strong>Selected artworks are available under the Open Access for Scholarly Content (OASC) license.</li>
+<li><a href="http://www.nasa.gov/multimedia/imagegallery/index.html"><strong>National Aeronautics and Space Administration (NASA) Image Galleries</strong></a>: Public domain photos.</li>
+<li><strong><a href="http://www.nypl.org/publicdomain">The New York Public Library Digital Collections</a>&nbsp;-&nbsp;</strong>Digital collections of&nbsp;high resolution&nbsp;prints, images, and maps with no known copyright restrictions. Rights statement included for individual items.</li>
+<li><strong><a href="https://hsl.osu.edu/resources/subject-guides/guide/digital-image-collections">The Ohio State University Health Sciences Library Digital Image Collections</a>&nbsp;-&nbsp;</strong>A list of resources available through the OSU Health Science Library.</li>
+<li><strong><a href="http://phil.cdc.gov/phil/">Public Health Image Library (PHIL)</a>&nbsp;-&nbsp;</strong>Provided by the Centers for Disease Control and Prevention.&nbsp;</li>
+<li><strong><a href="http://archive.samuelzeller.ch/">Samuel Zeller Archive</a>&nbsp;-&nbsp;</strong>Professional photographs available under a Creative Commons Attribution (CC BY) license.</li>
+<li><strong><a href="https://search.usa.gov/search/images?affiliate=usagov&amp;query=">U.S. Government Photos and Images</a>&nbsp;-&nbsp;</strong>A collection of photo and image galleries for multiple federal government agencies.&nbsp;</li>
+</ul>
+<p>I am also using some of the usual suspects when it comes to searching for images on the web:</p>
+<ul>
+<li><strong><a href="https://www.google.com/imghp">Google Image Search</a>&nbsp;-&nbsp;</strong>The old standby place to work through ideas.</li>
+<li><strong><a href="https://www.flickr.com/creativecommons/">Flickr: Creative Commons</a>&nbsp;-&nbsp;</strong>Many Flickr users have chosen to offer their work under a Creative Commons license, and you can browse or search through content under each type of license.</li>
+<li><strong><a href="https://www.flickr.com/commons">Flickr: The Commons</a>&nbsp;-&nbsp;</strong>Includes photos with&nbsp;<a href="https://www.flickr.com/commons/usage/">&ldquo;no known copyright restrictions&rdquo;</a>&nbsp;uploaded by participating cultural institutions.</li>
+<li><strong><a href="https://archive.org/index.php">Internet Archive</a>&nbsp;-&nbsp;</strong>Contains books, movies, software, music, and more.</li>
+<li><strong><a href="http://www.pond5.com/free">pond5 Public Domain Project</a>&nbsp;-&nbsp;</strong>Public domain images. Registration/free account required to download materials.&nbsp;</li>
+<li><strong><a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>&nbsp;-&nbsp;</strong>A database of&nbsp;<a href="https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia">freely usable</a>&nbsp;media files to which&nbsp;anyone can contribute.</li>
+</ul>
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/propaganda_poster_transfer_1.jpg" alt="" width="40%" align="right" /></p>
+<p>I am working on developing specific categories that have relevance to the storytelling I'm doing across my blogs, and sometimes to help power my&nbsp;partners work as well. I'm currently mining the following areas, looking for interesting images to train style transfer machine learning models:</p>
+<ul>
+<li><strong>Art</strong> - The obvious usage for all of this, finding interesting pieces of art that make your photos look cool.</li>
+<li><strong>Video Game -</strong> I find video game imagery to provide a wealth of ideas for training and applying image style transfers.</li>
+<li><strong>Science Fiction </strong>- Another rich source of imagery for the&nbsp;training of image style transfer models that do cool things.</li>
+<li><strong>Electrical</strong> - I'm finding circuit boards, lighting, and other electrical imagery to be useful in training models.</li>
+<li><strong>Industrial</strong> - I'm finding industrial images to work for both sides of the equation in training and applying models.</li>
+<li><strong>Propaganda</strong> - These are great for training models, and then transferring the texture and the meaning behind them.</li>
+<li><strong>Labor</strong> - Similar to propaganda posters, potentially some emotional work here that would transfer significant meaning.</li>
+<li><strong>Space</strong> - A new one I'm adding for finding interesting imagery that can train models, and experiencing what the effect is.</li>
+</ul>
+<p>As I look through more collections, and gain experience training style transfer models, and applying models, I have begun to develop an eye for what looks good. I also develop more ideas along the way of imagery that can help reinforce the storytelling I'm doing across my work. It is a journey I am hoping more librarians, museum curators, and collection stewards will embark on. I don't think you need to learn the inner workings of machine learning, but at least develop enough of an understanding that you can think more critically about the collection you are knowledgeable about.&nbsp;</p>
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/propaganda_poster_transfer_2.jpg" alt="" width="40%" align="right" /></p>
+<p>I know Jason would like to help you, and I'm more than happy to help you along in the process. Honestly, the biggest hurdle is money to afford the GPUs for training the image. After that, it is about spending the time finding images to train models, as well as to apply the models to a variety of imagery, as part of some sort of meaningful process. I can spend days looking through art collection, then spend a significant amount of AWS budget training machine learning models, but if I don't have a meaningful way to apply them, it doesn't bring any value to the table, and it's unlikely I will be able to justify the budget in the future.</p>
+<p>My algorithmic rotoscope work is used throughout my writing&nbsp;and helps influence the stories I tell on <a href="http://apievangelist.com">API Evangelist</a>, <a href="http://kinlane.com">Kin Lane</a>, <a href="http://dronerecovery.org">Drone Recovery</a>, and now <a href="http://contrafabulists.com">Contrafabulists</a>. I invest about $150.00 / month training to image style transfer models, keeping a fresh number of models coming off the assembly line. I have a variety of tools that allow me to apply the models using <a href="http://algorithmia.com">Algorithmia</a> and now <a href="http://somatic.io">Somatic</a>. I'm now looking for folks who have knowledge and access to interesting image collections, who would want to learn more about image style transfer, as well as graphic design and print shops, mobile application development shops, and other interested folks who are just curious about WTF image style transfers are all about.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Machine Learning Style Transfer For Museums, Libraries, and Collections&url=http://localhost:4000/2017/03/07/machine-learning-style-transfer-for-museums-libraries-and-collections/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F03%2F07%2Fmachine-learning-style-transfer-for-museums-libraries-and-collections%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/03/07/in-the-future-we-will-all-have-multiple-digital-personas/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/03/08/the-oberservability-of-uber/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

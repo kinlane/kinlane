@@ -1,0 +1,19 @@
+---
+published: true
+layout: post
+title: It Is A Slippery Slope
+date: 2018-03-20T09:00:00.000Z
+tags:
+  - Kin Lane
+image: >-
+  https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/window-mountain_dark_dali.jpg
+---
+I hear the "its a slippery slope" argument quite regularly when it comes to my work around algorithmic observability, censorship, filtering, and deplatforming, as applied to platforms like Facebook, Twitter, Youtube, Instagram, and others. It is a common middle of the road way for usually white people to respond when you bring up the censorship, filtering, and deplatforming of the worst of the worst forms of speech you find online. Anytime you bring up any proposed solutions, or even just looking to tell a simple story about the problem, you'll have waves of mainstream folks up in your timeline letting you know that this is a slippery slope.
+
+Usually these conversation start out with a first amendment declaration. If Facebook or Twitter starts to filter, censor, or deplatform, we are violating people's first amendment right to free speech. No, no we are not. Platforms are not government, and free speech doesn't apply. Businesses can refuse the right to do business with folks, unless you start doing based upon religion, race, and other dimensions, you are probably on safe ground. Platforms do not have to uphold your right to free speech within their place of business. The first amendment applies to government, not the technology platforms that are increasingly becoming the public commons (YET).
+
+Next, things alway go towards pointing out things being a slippery slope. Yes, yes, they are. But pointing out things are a slippery slope is a meaningless, lazy, armchair, obstructionist argument. Should conversations always occur on flat, firm ground? We never would climb any steep slope that might be slippery? Yes, one thing could lead to another, but if we actually have a constructive discussion about what is happening, maybe we can prevent anything else from sliding down the hill. Suppression of someone being racist, doesn't always equally mean now sensible opinions around racial justice, or other challenges we face will be censored. Why pretend like these things are a given? It seems like you are preventing discussion and meaningful change with this line of questioning.
+
+I find the slippery slope argument tends to exist as a defense mechanism from those who stand to benefit from racism, sexism, and these systemic illnesses existing. At least, having been programmed to defend this line, because of the communities they live in. I've seen people of color, and women defend this line, and get in the way of meaningful discussion and change, because  their own survival in their communities depends on publicly performing in this way. These people rarely ever pull a slippery slope in other sides of the slippery slopes that occur around social justice issues. Change is too uncomfortable, they'd rather keep things as they are, and stick to defending the slopes that will impact them the most.
+
+I think about all the slippery slopes I've had to walk to get where I'm at. To see the change I've wanted to see in the world. I'm perfectly willing to navigate a slippery slope or two to better understand the landscape, and see where the lines actually are. I'm willing to go up and down the mountain, and traverse side to side in even dangerous conditions, if it means a better understanding of where I would like to live. Politics and social justice issues rarely are worked out on flat ground, and I'm more than willing to strap on the proper equipment to make sure I can safely have discussions around privacy, security, surveillance, censorship, filtering, deplatforming, and observability at the platform level. If you aren't, I'm guessing that you are part of the problem, I perceive you as being in the way.

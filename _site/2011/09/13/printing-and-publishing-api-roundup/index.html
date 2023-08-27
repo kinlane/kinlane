@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Printing and Publishing API Roundup | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Printing and Publishing API Roundup" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m doing my monthly review of the printing API playing field, and wanted to share every API I could find that delivers print-on-demand and self-publishing services for developers. The Enthusem API- The Enthusem API allows you to use the backend functions of Enthusem from your own user interface. For example, if you have yor own CRM system and would like your users to send cards from it, you can use our API so your CRM system can talk back and forth with Enthusem. If you wanted to create a branded card store for your users, you could create your own user interface with your own branding, then tie into Enthusem&#39;s backend to handle the fulfillment. In order to correctly use our API, your developer must know how to create an HTTP form POST and how to parse an XML response. Google Cloud Print- Google Cloud Print (GCP) enables any app (web, mobile, desktop) on any device to print to any cloud-connected printer. This page provides an overview of GCP and links to all public developer documentation. If you are a physical or virtual printer maker and want to learn how to receive print jobs from Google Cloud Print or manage GCP printers, see the Receiving Print Jobs section. If you are an application developer looking to submit print jobs to Google Cloud Print, see the Submitting Print Jobs section. Finally, if you are a system administrator looking to set up GCP with your printer(s), please see this support site. Mimeo Connect Cloud Print API- Mimeo Connect Cloud Print API is a RESTful for interface for printing custom and pre-built documents using your Mimeo.com account. It provides access over your account, proofs, documents, print files, marketplaces, and to get print quotes and place orders via the web API, with response in XML. This API is generally for existing Mimeo.com customers who wish to print existing and print dynamici documents using Mimeo. Mimeo Card Printing API- The Mimeo Card Printing API provides card printing services for developers. It enables you to price and order commercially printed cards in different sizes, paper and coating from within your web and mobile applications. Mimeo Flyer &amp; Brochure Printing API- This API provides a flyer and brochure printing services for developers. It enables you to price and order commercially printed flyers and brochures with different folds, colors, paper, coating and with or without hold punches from within your web and mobile applications. Mimeo Spiral Notebook Printing API- The Mimeo Spiral Notebook Printing API provides spiral notebook printing services for developers. It enables you to price and order commercially printed notebooks in different sizes, covers, paper, color, with or without hole punches and binding from within your web and mobile applications. Mimeo Poster Printing API- This API provides poster printing services for developers. It enables you to price and order commercially printed posters in different sizes, paper, lamination and mounting from within your web and mobile applications. Moo.com- The MOO API is a set of methods for creating and modifying packs of MOO products such as MiniCards, StickerBooks, Postcards, Business Cards and Greeting Cards, and sending the user into the design process at any point from the image upload step, all the way to the shopping cart. Currently, method data must be provided (and is returned) in the JSON format. By using OAuth for authentication, users of API consuming services do not have to disclose their MOO account details to consuming services. Included in every response is a &quot;dropIns&quot; element that provides links to the MOO web site to allow further operations to be performed, for example choosing and cropping images, editing details, previewing and adding to the shopping cart. Shutterfly- The Shutterfly API provides an online photo printing service, enabling developers to create new applications using the Shutterfly service. The API can upload and organize images, authenticate Shutterfly users, and place orders for photos. The Shutterfly Open API attempts to follow an HTTP-REST architectural style. Data is exchanged primarily via XML that follows the Atom Syndication Format. The Shutterfly Open API currently offers no programming language-specific binding or library. PicWing- The Picwing API allows developers to integrate their applications with Picwing, providing access information on a user&#39;s album (number of used prints, number of available prints, next printing shipment date, etc), and submit photos to be printed. Picwing uses OAuth to authenticate API requests against Picwing users accounts. Newspaper Club API- The Newspaper Club API provides programmatic access to ARTHR, a layout tool created for building classic looking newspapers designed for print. The Newspaper Club API is RESTful, and provides access to manage newspapers, stories, users, pictures and stories. The API uses oAuth for authentication, and all requests and responses are in JSON. Snapfish Publisher- The Snapfish Publisher architecture and application interaction model is built upon open standards and protocols. The developer lab uses OAuth for web-service based authentication into Snapfish. The Publisher infrastructure utilizes JSON over RESTful APIs for access to resources. This RESTful implementation allows your app to access Snapfish resources such as albums, photos, and other media content, without draining system resources on your app or Snapfish&#39;s end. With OAuth, a user can give permission to your app to act on their behalf without directly disclosing Snapfish credentials to the app. SharedBook API- The SharedBook API is an on-demand, reverse publishing platform allowing data and content to be extracted from multiple sources, manipulated, formatted, augmented and finally output in book form, either professionally printed or in electronic format. ZetaPrints- The ZetaPrints API provides direct connection to its back-end via web-to-print API. ZetaPrint provides web to print and dynamic imaging software for businesses. Developer are authenticated by a unique key that can be found on web-to-print API page. Web to print API returns text/xml as per a schema for every type of call. The API delivers most functions available in the web application. If you have or know of any other printing APIs let me know so I can include in my printing API roundup each month." />
+<meta property="og:description" content="I’m doing my monthly review of the printing API playing field, and wanted to share every API I could find that delivers print-on-demand and self-publishing services for developers. The Enthusem API- The Enthusem API allows you to use the backend functions of Enthusem from your own user interface. For example, if you have yor own CRM system and would like your users to send cards from it, you can use our API so your CRM system can talk back and forth with Enthusem. If you wanted to create a branded card store for your users, you could create your own user interface with your own branding, then tie into Enthusem&#39;s backend to handle the fulfillment. In order to correctly use our API, your developer must know how to create an HTTP form POST and how to parse an XML response. Google Cloud Print- Google Cloud Print (GCP) enables any app (web, mobile, desktop) on any device to print to any cloud-connected printer. This page provides an overview of GCP and links to all public developer documentation. If you are a physical or virtual printer maker and want to learn how to receive print jobs from Google Cloud Print or manage GCP printers, see the Receiving Print Jobs section. If you are an application developer looking to submit print jobs to Google Cloud Print, see the Submitting Print Jobs section. Finally, if you are a system administrator looking to set up GCP with your printer(s), please see this support site. Mimeo Connect Cloud Print API- Mimeo Connect Cloud Print API is a RESTful for interface for printing custom and pre-built documents using your Mimeo.com account. It provides access over your account, proofs, documents, print files, marketplaces, and to get print quotes and place orders via the web API, with response in XML. This API is generally for existing Mimeo.com customers who wish to print existing and print dynamici documents using Mimeo. Mimeo Card Printing API- The Mimeo Card Printing API provides card printing services for developers. It enables you to price and order commercially printed cards in different sizes, paper and coating from within your web and mobile applications. Mimeo Flyer &amp; Brochure Printing API- This API provides a flyer and brochure printing services for developers. It enables you to price and order commercially printed flyers and brochures with different folds, colors, paper, coating and with or without hold punches from within your web and mobile applications. Mimeo Spiral Notebook Printing API- The Mimeo Spiral Notebook Printing API provides spiral notebook printing services for developers. It enables you to price and order commercially printed notebooks in different sizes, covers, paper, color, with or without hole punches and binding from within your web and mobile applications. Mimeo Poster Printing API- This API provides poster printing services for developers. It enables you to price and order commercially printed posters in different sizes, paper, lamination and mounting from within your web and mobile applications. Moo.com- The MOO API is a set of methods for creating and modifying packs of MOO products such as MiniCards, StickerBooks, Postcards, Business Cards and Greeting Cards, and sending the user into the design process at any point from the image upload step, all the way to the shopping cart. Currently, method data must be provided (and is returned) in the JSON format. By using OAuth for authentication, users of API consuming services do not have to disclose their MOO account details to consuming services. Included in every response is a &quot;dropIns&quot; element that provides links to the MOO web site to allow further operations to be performed, for example choosing and cropping images, editing details, previewing and adding to the shopping cart. Shutterfly- The Shutterfly API provides an online photo printing service, enabling developers to create new applications using the Shutterfly service. The API can upload and organize images, authenticate Shutterfly users, and place orders for photos. The Shutterfly Open API attempts to follow an HTTP-REST architectural style. Data is exchanged primarily via XML that follows the Atom Syndication Format. The Shutterfly Open API currently offers no programming language-specific binding or library. PicWing- The Picwing API allows developers to integrate their applications with Picwing, providing access information on a user&#39;s album (number of used prints, number of available prints, next printing shipment date, etc), and submit photos to be printed. Picwing uses OAuth to authenticate API requests against Picwing users accounts. Newspaper Club API- The Newspaper Club API provides programmatic access to ARTHR, a layout tool created for building classic looking newspapers designed for print. The Newspaper Club API is RESTful, and provides access to manage newspapers, stories, users, pictures and stories. The API uses oAuth for authentication, and all requests and responses are in JSON. Snapfish Publisher- The Snapfish Publisher architecture and application interaction model is built upon open standards and protocols. The developer lab uses OAuth for web-service based authentication into Snapfish. The Publisher infrastructure utilizes JSON over RESTful APIs for access to resources. This RESTful implementation allows your app to access Snapfish resources such as albums, photos, and other media content, without draining system resources on your app or Snapfish&#39;s end. With OAuth, a user can give permission to your app to act on their behalf without directly disclosing Snapfish credentials to the app. SharedBook API- The SharedBook API is an on-demand, reverse publishing platform allowing data and content to be extracted from multiple sources, manipulated, formatted, augmented and finally output in book form, either professionally printed or in electronic format. ZetaPrints- The ZetaPrints API provides direct connection to its back-end via web-to-print API. ZetaPrint provides web to print and dynamic imaging software for businesses. Developer are authenticated by a unique key that can be found on web-to-print API page. Web to print API returns text/xml as per a schema for every type of call. The API delivers most functions available in the web application. If you have or know of any other printing APIs let me know so I can include in my printing API roundup each month." />
+<link rel="canonical" href="http://localhost:4000/2011/09/13/printing-and-publishing-api-roundup/" />
+<meta property="og:url" content="http://localhost:4000/2011/09/13/printing-and-publishing-api-roundup/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/mimeo/printing-press.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-09-13T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2011/09/13/printing-and-publishing-api-roundup/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Printing and Publishing API Roundup","dateModified":"2011-09-13T00:00:00-07:00","datePublished":"2011-09-13T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/09/13/printing-and-publishing-api-roundup/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/mimeo/printing-press.jpg","description":"I’m doing my monthly review of the printing API playing field, and wanted to share every API I could find that delivers print-on-demand and self-publishing services for developers. The Enthusem API- The Enthusem API allows you to use the backend functions of Enthusem from your own user interface. For example, if you have yor own CRM system and would like your users to send cards from it, you can use our API so your CRM system can talk back and forth with Enthusem. If you wanted to create a branded card store for your users, you could create your own user interface with your own branding, then tie into Enthusem&#39;s backend to handle the fulfillment. In order to correctly use our API, your developer must know how to create an HTTP form POST and how to parse an XML response. Google Cloud Print- Google Cloud Print (GCP) enables any app (web, mobile, desktop) on any device to print to any cloud-connected printer. This page provides an overview of GCP and links to all public developer documentation. If you are a physical or virtual printer maker and want to learn how to receive print jobs from Google Cloud Print or manage GCP printers, see the Receiving Print Jobs section. If you are an application developer looking to submit print jobs to Google Cloud Print, see the Submitting Print Jobs section. Finally, if you are a system administrator looking to set up GCP with your printer(s), please see this support site. Mimeo Connect Cloud Print API- Mimeo Connect Cloud Print API is a RESTful for interface for printing custom and pre-built documents using your Mimeo.com account. It provides access over your account, proofs, documents, print files, marketplaces, and to get print quotes and place orders via the web API, with response in XML. This API is generally for existing Mimeo.com customers who wish to print existing and print dynamici documents using Mimeo. Mimeo Card Printing API- The Mimeo Card Printing API provides card printing services for developers. It enables you to price and order commercially printed cards in different sizes, paper and coating from within your web and mobile applications. Mimeo Flyer &amp; Brochure Printing API- This API provides a flyer and brochure printing services for developers. It enables you to price and order commercially printed flyers and brochures with different folds, colors, paper, coating and with or without hold punches from within your web and mobile applications. Mimeo Spiral Notebook Printing API- The Mimeo Spiral Notebook Printing API provides spiral notebook printing services for developers. It enables you to price and order commercially printed notebooks in different sizes, covers, paper, color, with or without hole punches and binding from within your web and mobile applications. Mimeo Poster Printing API- This API provides poster printing services for developers. It enables you to price and order commercially printed posters in different sizes, paper, lamination and mounting from within your web and mobile applications. Moo.com- The MOO API is a set of methods for creating and modifying packs of MOO products such as MiniCards, StickerBooks, Postcards, Business Cards and Greeting Cards, and sending the user into the design process at any point from the image upload step, all the way to the shopping cart. Currently, method data must be provided (and is returned) in the JSON format. By using OAuth for authentication, users of API consuming services do not have to disclose their MOO account details to consuming services. Included in every response is a &quot;dropIns&quot; element that provides links to the MOO web site to allow further operations to be performed, for example choosing and cropping images, editing details, previewing and adding to the shopping cart. Shutterfly- The Shutterfly API provides an online photo printing service, enabling developers to create new applications using the Shutterfly service. The API can upload and organize images, authenticate Shutterfly users, and place orders for photos. The Shutterfly Open API attempts to follow an HTTP-REST architectural style. Data is exchanged primarily via XML that follows the Atom Syndication Format. The Shutterfly Open API currently offers no programming language-specific binding or library. PicWing- The Picwing API allows developers to integrate their applications with Picwing, providing access information on a user&#39;s album (number of used prints, number of available prints, next printing shipment date, etc), and submit photos to be printed. Picwing uses OAuth to authenticate API requests against Picwing users accounts. Newspaper Club API- The Newspaper Club API provides programmatic access to ARTHR, a layout tool created for building classic looking newspapers designed for print. The Newspaper Club API is RESTful, and provides access to manage newspapers, stories, users, pictures and stories. The API uses oAuth for authentication, and all requests and responses are in JSON. Snapfish Publisher- The Snapfish Publisher architecture and application interaction model is built upon open standards and protocols. The developer lab uses OAuth for web-service based authentication into Snapfish. The Publisher infrastructure utilizes JSON over RESTful APIs for access to resources. This RESTful implementation allows your app to access Snapfish resources such as albums, photos, and other media content, without draining system resources on your app or Snapfish&#39;s end. With OAuth, a user can give permission to your app to act on their behalf without directly disclosing Snapfish credentials to the app. SharedBook API- The SharedBook API is an on-demand, reverse publishing platform allowing data and content to be extracted from multiple sources, manipulated, formatted, augmented and finally output in book form, either professionally printed or in electronic format. ZetaPrints- The ZetaPrints API provides direct connection to its back-end via web-to-print API. ZetaPrint provides web to print and dynamic imaging software for businesses. Developer are authenticated by a unique key that can be found on web-to-print API page. Web to print API returns text/xml as per a schema for every type of call. The API delivers most functions available in the web application. If you have or know of any other printing APIs let me know so I can include in my printing API roundup each month.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2011/09/13/printing-and-publishing-api-roundup/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Printing and Publishing API Roundup | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2011/09/13/printing-and-publishing-api-roundup/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Printing and Publishing API Roundup | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Printing and Publishing API Roundup</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2011-09-13T00:00:00-07:00" itemprop="datePublished">
+    
+    Sep 13, 2011
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/mimeo/printing-press.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <img src="http://kinlane-productions2.s3.amazonaws.com/mimeo/printing-press.jpg" alt="" width="300" align="right" />I'm doing my monthly review of the printing API playing field, and wanted to share every API I could find that delivers print-on-demand and self-publishing services for developers.
+<p style="padding-left: 30px;"><strong><a title="The Enthusem API" href="http://enthusem.com/developer">The Enthusem API</a></strong>- The Enthusem API allows you to use the backend functions of Enthusem from your own user interface. For example, if you have yor own CRM system and would like your users to send cards from it, you can use our API so your CRM system can talk back and forth with Enthusem. If you wanted to create a branded card store for your users, you could create your own user interface with your own branding, then tie into Enthusem's backend to handle the fulfillment. In order to correctly use our API, your developer must know how to create an HTTP form POST and how to parse an XML response.
+<p style="padding-left: 30px;"><strong><a title="Google Cloud Print" href="http://code.google.com/apis/cloudprint/docs/overview.html">Google Cloud Print</a></strong>- Google Cloud Print (GCP) enables any app (web, mobile, desktop) on any device to print to any cloud-connected printer. This page provides an overview of GCP and links to all public developer documentation. If you are a physical or virtual printer maker and want to learn how to receive print jobs from Google Cloud Print or manage GCP printers, see the Receiving Print Jobs section. If you are an application developer looking to submit print jobs to Google Cloud Print, see the Submitting Print Jobs section. Finally, if you are a system administrator looking to set up GCP with your printer(s), please see this support site.
+<p style="padding-left: 30px;"><strong><a title="Mimeo Connect Cloud Print API" href="http://developer.mimeo.com/">Mimeo Connect Cloud Print API</a></strong>- Mimeo Connect Cloud Print API is a RESTful for interface for printing custom and pre-built documents using your Mimeo.com account. It provides access over your account, proofs, documents, print files, marketplaces, and to get print quotes and place orders via the web API, with response in XML. This API is generally for existing Mimeo.com customers who wish to print existing and print dynamici documents using Mimeo.
+<p style="padding-left: 30px;"><strong><a title="Mime Card Printing API" href="http://mimeoconnect.3scale.net/wiki/card-printing-api">Mimeo Card Printing API</a></strong>- The Mimeo Card Printing API provides card printing services for developers. It enables you to price and order commercially printed cards in different sizes, paper and coating from within your web and mobile applications.
+<p style="padding-left: 30px;"><strong><a title="Mimeo Flyer &amp; Brochure Printing API" href="http://mimeoconnect.3scale.net/wiki/flyer-brochure-printing-api">Mimeo Flyer &amp; Brochure Printing API</a></strong>- This API provides a flyer and brochure printing services for developers. It enables you to price and order commercially printed flyers and brochures with different folds, colors, paper, coating and with or without hold punches from within your web and mobile applications.
+<p style="padding-left: 30px;"><strong><a title="Mimeo Spiral Notebook Printing API" href="http://mimeoconnect.3scale.net/wiki/spiral-notebook-printing-api">Mimeo Spiral Notebook Printing API</a></strong>- The Mimeo Spiral Notebook Printing API provides spiral notebook printing services for developers. It enables you to price and order commercially printed notebooks in different sizes, covers, paper, color, with or without hole punches and binding from within your web and mobile applications.
+<p style="padding-left: 30px;"><strong><a title="Mimeo Poster Printing API" href="http://mimeoconnect.3scale.net/wiki/poster-printing-api">Mimeo Poster Printing API</a></strong>- This API provides poster printing services for developers. It enables you to price and order commercially printed posters in different sizes, paper, lamination and mounting from within your web and mobile applications.
+<p style="padding-left: 30px;"><strong><a title="Moo.com" href="http://us.moo.com/api/">Moo.com</a></strong>- The MOO API is a set of methods for creating and modifying packs of MOO products such as MiniCards, StickerBooks, Postcards, Business Cards and Greeting Cards, and sending the user into the design process at any point from the image upload step, all the way to the shopping cart. Currently, method data must be provided (and is returned) in the JSON format. By using OAuth for authentication, users of API consuming services do not have to disclose their MOO account details to consuming services. Included in every response is a "dropIns" element that provides links to the MOO web site to allow further operations to be performed, for example choosing and cropping images, editing details, previewing and adding to the shopping cart.
+<p style="padding-left: 30px;"><strong><a title="Shutterfly" href="http://www.shutterfly.com/documentation/start.sfly">Shutterfly</a></strong>- The Shutterfly API provides an online photo printing service, enabling developers to create new applications using the Shutterfly service. The API can upload and organize images, authenticate Shutterfly users, and place orders for photos. The Shutterfly Open API attempts to follow an HTTP-REST architectural style. Data is exchanged primarily via XML that follows the Atom Syndication Format. The Shutterfly Open API currently offers no programming language-specific binding or library.
+<p style="padding-left: 30px;"><strong><a title="PicWing" href="http://www.picwing.com/apidocs">PicWing</a></strong>- The Picwing API allows developers to integrate their applications with Picwing, providing access information on a user's album (number of used prints, number of available prints, next printing shipment date, etc), and submit photos to be printed. Picwing uses OAuth to authenticate API requests against Picwing users accounts.
+<p style="padding-left: 30px;"><strong><a title="Newspaper Club API" href="http://developer.newspaperclub.com/api/v1/">Newspaper Club API</a></strong>- The Newspaper Club API provides programmatic access to ARTHR, a layout tool created for building classic looking newspapers designed for print. The Newspaper Club API is RESTful, and provides access to manage newspapers, stories, users, pictures and stories. The API uses oAuth for authentication, and all requests and responses are in JSON.
+<p style="padding-left: 30px;"><strong><a title="Snapfish Publisher" href="http://publisher.snapfish.com/snapfish/fe/p/openplatform/b2bportal/docs/Developers">Snapfish Publisher</a></strong>- The Snapfish Publisher architecture and application interaction model is built upon open standards and protocols. The developer lab uses OAuth for web-service based authentication into Snapfish. The Publisher infrastructure utilizes JSON over RESTful APIs for access to resources. This RESTful implementation allows your app to access Snapfish resources such as albums, photos, and other media content, without draining system resources on your app or Snapfish's end. With OAuth, a user can give permission to your app to act on their behalf without directly disclosing Snapfish credentials to the app.
+<p style="padding-left: 30px;"><strong><a title="ShareBook API" href="http://www.sharedbook.com/dev/index.html">SharedBook API</a></strong>- The SharedBook API is an on-demand, reverse publishing platform allowing data and content to be extracted from multiple sources, manipulated, formatted, augmented and finally output in book form, either professionally printed or in electronic format.
+<p style="padding-left: 30px;"><strong><a title="ZetaPrints" href="http://www.zetaprints.com/help/about-web-to-print-api/">ZetaPrints</a></strong>- The ZetaPrints API provides direct connection to its back-end via web-to-print API. ZetaPrint provides web to print and dynamic imaging software for businesses. Developer are authenticated by a unique key that can be found on web-to-print API page. Web to print API returns text/xml as per a schema for every type of call. The API delivers most functions available in the web application.
+If you have or know of any other printing APIs let me know so I can include in my printing API roundup each month.
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Printing and Publishing API Roundup&url=http://localhost:4000/2011/09/13/printing-and-publishing-api-roundup/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2011%2F09%2F13%2Fprinting-and-publishing-api-roundup%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2011/09/13/google-reader-api/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2011/09/13/twitter-launches-new-web-analytics/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

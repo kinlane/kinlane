@@ -1,0 +1,19 @@
+---
+published: true
+layout: post
+title: The Privilege of Alternate Reality and Facts
+date: 2018-01-12T12:00:00.000Z
+tags:
+  - Kin Lane
+image: >-
+  https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/20_132_800_500_0_max_0_1_-1.jpg
+---
+I hear a lot of talk about folks looking to bridge the left with the right in this country. Trying to find common ground. Listen. Don't be so angry, and hostile to folks on the right. While I agree with these concepts, on the ground I just don't think they are always practical in the current environment. While this might work with the first layer of conservatives who walk the party line, are generally in denial because of white privilege, but might find themselves troubled by what is going on, I'm don't see this approach working deeper into the depths of the current right wing reality.
+
+While privilege allows us to ignore all the shadows of the society we've created for ourselves. We don't have to see the realities neighborhoods that are majority inhabited by people of color, let alone really understand the difference between El Salvador, Haiti, or a country in Africa--they are just poor brown people who live in the shadows we don't see. However the current conservative realm has constructed even more elaborate set of alternate realities that allow them to ignore obvious facts, and dismiss anything they don't agree with as fake, or as a conspiracy. This new elaborate alternate reality is often constructed and reenforced by the web, and this new virtual reality we exist in.
+
+I can't sit down and listen to lies built upon historic anti-semantic realities, applied to our entire economy, and used as blame for anything that seems related to government or big business. I can't listen to arguments that the moon landing didn't happen, or that the holocaust didn't happen. I can't be patient and listen to belief that the mass shooting right down the street was orchestrated by the government to justify taking our guns. The privilege to be able to sit in an armchair and spin any ol reality, then demand that it is the accepted version is truth isn't going to be fixed by a willingness to sit down and bridge our party differences. I am sorry, these aren't differences in economic theories. This is mental illness, isolation, and information starvation, and is only something healthcare and education can fix.
+
+This isn't being left behind. This is choosing to be left behind. They have chosen not to fly because of airport scanners. They have identified every danger in the world, and convinced themselves they are all coming for them, and the entire world is a hostile place, except for the reality they live in. This is right. You all are wrong. It isn't just a carefully crafted white reality, it is a carefully crafted delusional white reality designed to hide insecurity, pain, suffering, and deep racism that has no chance of ever being challenged. You are so privileged, you get to make up reality, and never face scrutiny, or have to leave your world to prove anything--everyone is expected to come to you.
+
+How can we ever expect to actually ever face this white patriarchal machine we've put in place, if white folks, especially men are allowed privilege to do whatever they want? Continue to create their own reality. Unchecked. Every time I process this reality, I come back to the fact that my time is better spent continuing to invest other ways that will benefit folks in their communities. I reckon I'm privileged that I can move to the city, ignore where I came from, and invest my energy in this way. However I feel it is a more sensible reality. One that is based in fact. Out in the world. Addressing my pain. My mental illness. Seeking to never stop learning, educating myself, and investing in a shared reality, not just the one that speaks to my privileged reality.

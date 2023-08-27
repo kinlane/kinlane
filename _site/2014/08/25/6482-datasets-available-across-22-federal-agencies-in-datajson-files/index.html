@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>6,482 Datasets Available Across 22 Federal Agencies In Data.json Files | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="6,482 Datasets Available Across 22 Federal Agencies In Data.json Files" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="It has been a few months since I ran any of my federal government data.json harvesting, so I picked back up my work, and will be doing more work around datasets that federal agnecies have been making available, and telling the stories across my network. I&#39;m still surprised at how many people are unaware that 22 of the top federal agencies have data inventories of their public data assets, available in the root of their domain as a data.json file. This means you can go to many example.gov/data.json and there is a machine readable list of that agencies current inventory of public datasets. I currently know of 22 federal agencies who have published data.json files: Consumer Financial Protection Bureau Department of Agriculture (USDA) Department of Defense (DOD) Department of Energy (DOE) Department of Justice (DOJ) Department of State Department of the Treasury Department of Transportation (DOT) Department of Veterans Affairs (VA) Environmental Protection Agency (EPA) General Services Administration (GSA) Institute of Museum and Library Services (IMLS) Millennium Challenge Corporation (MCC) National Aeronautics and Space Administration (NASA) National Archives and Records Administration (NARA) National Institute of Standards and Technology (NIST) National Science Foundation (NSF) National Transportation Safety Board (NTSB) Nuclear Regulatory Commission (NRC) Office of Personnel Management (OPM) Social Security Administration (SSA) United States Agency for International Development (USAID) You can click on the logo or name, and view the full data.json files. You can also visit my Federal Agency Dataset Adoption work to see all of the datasets listed for each agency. There is stil one bug I notice in the adoption process, so don&#39;t adopt anything quite yet. The goal of this just to highlight again, that there is a wealth of open data resources just waiting for all of us open gov hackers to take advantage of, and work make sense of. Federal agencies need our help, so get involved, there is a lot of work to be done." />
+<meta property="og:description" content="It has been a few months since I ran any of my federal government data.json harvesting, so I picked back up my work, and will be doing more work around datasets that federal agnecies have been making available, and telling the stories across my network. I&#39;m still surprised at how many people are unaware that 22 of the top federal agencies have data inventories of their public data assets, available in the root of their domain as a data.json file. This means you can go to many example.gov/data.json and there is a machine readable list of that agencies current inventory of public datasets. I currently know of 22 federal agencies who have published data.json files: Consumer Financial Protection Bureau Department of Agriculture (USDA) Department of Defense (DOD) Department of Energy (DOE) Department of Justice (DOJ) Department of State Department of the Treasury Department of Transportation (DOT) Department of Veterans Affairs (VA) Environmental Protection Agency (EPA) General Services Administration (GSA) Institute of Museum and Library Services (IMLS) Millennium Challenge Corporation (MCC) National Aeronautics and Space Administration (NASA) National Archives and Records Administration (NARA) National Institute of Standards and Technology (NIST) National Science Foundation (NSF) National Transportation Safety Board (NTSB) Nuclear Regulatory Commission (NRC) Office of Personnel Management (OPM) Social Security Administration (SSA) United States Agency for International Development (USAID) You can click on the logo or name, and view the full data.json files. You can also visit my Federal Agency Dataset Adoption work to see all of the datasets listed for each agency. There is stil one bug I notice in the adoption process, so don&#39;t adopt anything quite yet. The goal of this just to highlight again, that there is a wealth of open data resources just waiting for all of us open gov hackers to take advantage of, and work make sense of. Federal agencies need our help, so get involved, there is a lot of work to be done." />
+<link rel="canonical" href="http://localhost:4000/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/" />
+<meta property="og:url" content="http://localhost:4000/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/gov-data-json.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-08-25T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"6,482 Datasets Available Across 22 Federal Agencies In Data.json Files","dateModified":"2014-08-25T00:00:00-07:00","datePublished":"2014-08-25T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/gov-data-json.png","description":"It has been a few months since I ran any of my federal government data.json harvesting, so I picked back up my work, and will be doing more work around datasets that federal agnecies have been making available, and telling the stories across my network. I&#39;m still surprised at how many people are unaware that 22 of the top federal agencies have data inventories of their public data assets, available in the root of their domain as a data.json file. This means you can go to many example.gov/data.json and there is a machine readable list of that agencies current inventory of public datasets. I currently know of 22 federal agencies who have published data.json files: Consumer Financial Protection Bureau Department of Agriculture (USDA) Department of Defense (DOD) Department of Energy (DOE) Department of Justice (DOJ) Department of State Department of the Treasury Department of Transportation (DOT) Department of Veterans Affairs (VA) Environmental Protection Agency (EPA) General Services Administration (GSA) Institute of Museum and Library Services (IMLS) Millennium Challenge Corporation (MCC) National Aeronautics and Space Administration (NASA) National Archives and Records Administration (NARA) National Institute of Standards and Technology (NIST) National Science Foundation (NSF) National Transportation Safety Board (NTSB) Nuclear Regulatory Commission (NRC) Office of Personnel Management (OPM) Social Security Administration (SSA) United States Agency for International Development (USAID) You can click on the logo or name, and view the full data.json files. You can also visit my Federal Agency Dataset Adoption work to see all of the datasets listed for each agency. There is stil one bug I notice in the adoption process, so don&#39;t adopt anything quite yet. The goal of this just to highlight again, that there is a wealth of open data resources just waiting for all of us open gov hackers to take advantage of, and work make sense of. Federal agencies need our help, so get involved, there is a lot of work to be done.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="6,482 Datasets Available Across 22 Federal Agencies In Data.json Files | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="6,482 Datasets Available Across 22 Federal Agencies In Data.json Files | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">6,482 Datasets Available Across 22 Federal Agencies In Data.json Files</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2014-08-25T00:00:00-07:00" itemprop="datePublished">
+    
+    Aug 25, 2014
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/gov-data-json.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/gov-data-json.png" alt="" width="325" align="right" /></p>
+<p>It has been a few months since I ran any of my federal government data.json harvesting, so I picked back up my work, and will be doing more work around datasets that federal agnecies have been making available, and telling the stories across my network.</p>
+<p>I'm still surprised at how many people are unaware that 22 of the top federal agencies have data inventories of their public data assets, available in the root of their domain as a data.json file. This means you can go to many example.gov/data.json and there is a machine readable list of that agencies current inventory of public datasets.</p>
+<p>I currently know of 22 federal agencies who have published data.json files:</p>
+<table style="padding-left: 50px;" width="75%">
+<tbody>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.consumerfinance.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/cfpb.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.consumerfinance.gov/data.json"><strong>Consumer Financial Protection Bureau</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.usda.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/usda.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.usda.gov/data.json"><strong>Department of Agriculture (USDA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.defense.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/defense.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.defense.gov/data.json"><strong>Department of Defense (DOD)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.energy.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/energy.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.energy.gov/data.json"><strong>Department of Energy (DOE)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.justice.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/justice.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.justice.gov/data.json"><strong>Department of Justice (DOJ)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.state.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/state.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.state.gov/data.json"><strong>Department of State</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.treasury.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/treasury.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.treasury.gov/data.json"><strong>Department of the Treasury</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.dot.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/dot.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.dot.gov/data.json"><strong>Department of Transportation (DOT)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.va.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/va.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.va.gov/data.json"><strong>Department of Veterans Affairs (VA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.epa.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/epa.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.epa.gov/data.json"><strong>Environmental Protection Agency (EPA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.gsa.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/gsa.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.gsa.gov/data.json"><strong>General Services Administration (GSA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.imls.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/imls.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.imls.gov/data.json"><strong>Institute of Museum and Library Services (IMLS)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.mcc.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/mcc.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.mcc.gov/data.json"><strong>Millennium Challenge Corporation (MCC)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.nasa.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/nasa.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.nasa.gov/data.json"><strong>National Aeronautics and Space Administration (NASA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.archives.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/archives.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.archives.gov/data.json"><strong>National Archives and Records Administration (NARA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.nist.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/nist.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.nist.gov/data.json"><strong>National Institute of Standards and Technology (NIST)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.nsf.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/nsf.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.nsf.gov/data.json"><strong>National Science Foundation (NSF)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.ntsb.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/ntsb.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.ntsb.gov/data.json"><strong>National Transportation Safety Board (NTSB)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.nrc.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/nrc.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.nrc.gov/data.json"><strong>Nuclear Regulatory Commission (NRC)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.opm.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/opm.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.opm.gov/data.json"><strong>Office of Personnel Management (OPM)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.ssa.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/ssa.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.ssa.gov/data.json"><strong>Social Security Administration (SSA)</strong></a></td>
+</tr>
+<tr>
+<td width="100" align="center" valign="middle"><a href="http://www.usaid.gov/data.json"><img src="http://federal-government.apievangelist.com/images/logos/usaid.png" alt="" width="150" align="center" /></a></td>
+<td align="left" valign="middle"><a href="http://www.usaid.gov/data.json"><strong>United States Agency for International Development (USAID)</strong></a></td>
+</tr>
+</tbody>
+</table>
+<p>You can click on the logo or name, and view the full data.json files. You can also visit my <a href="http://federal-agency-dataset-adoption.publicprivatesector.org/">Federal Agency Dataset Adoption</a> work to see all of the datasets listed for each agency. There is stil one bug I notice in the adoption process, so don't adopt anything quite yet.</p>
+<p>The goal of this just to highlight again, that there is a wealth of open data resources just waiting for all of us open gov hackers to take advantage of, and work make sense of. Federal agencies need our help, so get involved, there is a lot of work to be done.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=6,482 Datasets Available Across 22 Federal Agencies In Data.json Files&url=http://localhost:4000/2014/08/25/6482-datasets-available-across-22-federal-agencies-in-datajson-files/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2014%2F08%2F25%2F6482-datasets-available-across-22-federal-agencies-in-datajson-files%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2014/08/20/sorry-google-your-programming-test-is-not-a-valid-measurement-of-my-skills/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2014/08/25/checkout-this-lineup-of-speakers-at-defrag-including-myself/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

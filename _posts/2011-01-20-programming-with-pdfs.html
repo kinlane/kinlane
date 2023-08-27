@@ -1,0 +1,22 @@
+---
+layout: post
+title: 'Programming with PDFs'
+source: http://kinlane.com/2011/01/20/programming-with-pdfs/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/mimeo/pdf-management/GPL-Ghostscript-Logo.png
+---
+When it comes to developing for <a href="http://www.kinlane.com/category/publishing/">Print</a> applications you need to be able to <a href="http://www.kinlane.com/2011/01/programming-with-images-using-imagemagick/">programmatically manipulate images</a>.  Currently with <a href="http://www.mimeo.com">Mimeo</a>, ultimately everything needs to be in a PDF format before it gets sent to the Mimeo Connect <a href="http://www.kinlane.com/category/cloud-computing/cloud-print/">Cloud Print</a> <a href="http://www.apievangelist.com/">API</a>.
+<a href="http://pages.cs.wisc.edu/~ghost/doc/intro.htm" target="_blank"><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/mimeo/pdf-management/GPL-Ghostscript-Logo.png" alt="" width="197" height="206" align="right" /></a>
+Whether its a report, <a href="http://www.kinlane.com/category/publishing/">book</a>, magazine, <a href="http://www.kinlane.com/category/publishing/">photo</a> or <a href="http://www.kinlane.com/category/publishing/">poster</a> it will have to be PDF document at some point.  Hopefully soon we will accept a wider range of formats. :)
+<p></p>
+I spent some time today looking to see what my options are when it comes to working with PDFs.  Supporting and advocating the usage of <a href="http://www.kinlane.com/category/open-source/">Open Source</a> projects is important to me, so I limited my search here. Another factor I consider is the overall stableness of the open source project.
+<p></p>
+I came across three separate projects to take care of 80% of my PDF manipulation needs:
+<ul class="mainlist">
+	<li><strong><a href="http://pages.cs.wisc.edu/~ghost/" target="_blank">GhostScript</a></strong> - Ghostscript is an interpreter for the PostScript language. A PostScript interpreter usually takes as input a set of graphics commands. The output is usually a page bitmap which is then sent to an output device such as a printer or display. PostScript is embedded in many printers.</li>
+	<li><a href="http://ghostword.sourceforge.net/" target="_blank"><strong>GhostWord</strong></a> - GhostWord is an interface for the GhostScript above package, and enables you to create PDF documents from <a href="http://www.kinlane.com/category/microsoft/">Microsoft</a> Word, Excel or PowerPoint documents.</li>
+	<li><a href="http://www.pdfsam.org/mediawiki/index.php?title=Main_Page" target="_blank"><strong>PDFSam</strong></a> - pdfsakinlane-productions2 tool for managing pdf files. It's written in Java and it runs on every platform where a Java Virtual Machine is available.</li>
+</ul>
+<a href="http://www.pdfsam.org/mediawiki/index.php?title=Main_Page" target="_blank"><img style="padding: 15px;" src="http://kinlane-productions.s3.amazonaws.com/mimeo/pdf-management/pdfsam_logo.png" alt="" align="right" /></a> These three open source tools are allowing me to convert and manipulate PDF documents as I need, and provide resources to my Print API developers. I will be digesting and providing documentation, how tos, and code samples helping developers become more efficient using PDF.
+<p></p>
+I am also going through the <a href="http://www.gnupdf.org/Library" target="_blank">GNU PDF Library</a>, but have not had time to full digest and integrate into my <a href="http://www.apievangelist.com" target="_blank">API strategy</a>.  I will be posting more as my API developer support strategy comes together.

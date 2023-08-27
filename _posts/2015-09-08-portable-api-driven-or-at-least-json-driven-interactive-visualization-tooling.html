@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Portable API Driven Or At Least JSON Driven Interactive Visualization Tooling'
+url: http://kinlane.com/2015/09/08/portable-api-driven-or-at-least-json-driven-interactive-visualization-tooling/
+source: http://kinlane.com/2015/09/08/portable-api-driven-or-at-least-json-driven-interactive-visualization-tooling/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/heroku-monitoring.png
+---
+
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/heroku-monitoring.png" alt="" width="35%" align="right" /></p>
+<p>As I am working on the API and JSON driven visualization strategy for my <a href="http://adopta.agency">Adopta.Agency</a> open data work, <a href="http://blog.librato.com/posts/spaces-heroku">I saw cloud monitoring platform Librato, publish their new "Space" interface as a Heroku add-on</a>. I like dashboards and visualization tooling that can live on multiple platforms, and engineered to be as portable and deployable as possible.</p>
+<p><a href="http://kinlane.com/2013/07/03/infographic-single-page-applications/">In a perfect world, infographics would be done using D3.js, and would all show their homework, with JSON or API definitions supporting any visualizations</a>. All of my Adopta.Agency projects will eventually possess a simple, embeddable, D3.js visualization layer that can be published anywhere. Each project will have its JSON localized in the publicly available Github repository, and be explorable via any browser using Github Pages.</p>
+<p>The Librato approach reminded me that I'd also like to see modular, containerized versions of more advanced tooling, dashboards, and visualizations around some projects. This would only apply in scenarios where a little more compute is needed behind the visualizations, that could be done with simple D3.js + JSON, hosted on Github. Essentially giving me two grades of portable visualization deployment: light and heavy duty. I like the idea that it could be a native add-on, whereever you are deploying an open API or dataset.</p>
+<p>I still have a lot of work to do when it comes to the light duty blueprint of JSON + D3.js, and API + D3.js, to support Adopta.Agency. I will focus on this, but keep in mind doing modular cloud deployments using Docker and Heroku for the datasets that require more heavy data lifting.</p>

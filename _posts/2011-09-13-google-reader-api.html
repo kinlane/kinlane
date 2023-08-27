@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Google Reader API'
+source: http://kinlane.com/2011/09/13/google-reader-api/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg
+---
+<a href="http://www.google.com/reader "><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg" alt="" width="290" align="right" /></a>One thing I love about Google, is the APIs. The apps I use most like Gmail, Calendar and Docs all have APIs, allowing me to write code that works my accounts and its data, and integrate it into other applications.
+<p></p>
+Well except for one application, <a href="http://www.google.com/reader ">Google Reader</a>. Google has never made an API for Google Reader. It onlyallowsyou to use RSS feeds and sharing them publicly. I've always wanted to get at thewealthof knowledge that is curated daily in my Google Reader.
+<p></p>
+So I tend to look regularly to see if they have put one out. Tonight I came across a <a href="http://code.google.com/p/google-reader-api/">Google Code project</a> that says it:
+<p style="padding-left: 30px;"><em>Hosts documentation and the issue tracker for the (unofficial) Google Reader API.</em>
+It has a <a href="https://plus.google.com/111567061469336027617/posts">Googler working on it</a>, that was from the reader team. It appears to be work in progress, but has activity in the last month.
+<p></p>
+Here are the pages currently up:
+<ul class="mainlist">
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ApiSubscriptionEdit">ApiSubscriptionEdit</a></strong> - Allows a stream to be subscribed to, unsubscribed from, or an existing subscription to be edited.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/StreamId">StreamId</a></strong> - Description of stream IDs exposed by the Google Reader API. "Streams" refer to collections of items in the Google Reader API. This includes feeds, items with a specific tag, or folders. Stream IDs are are string-based identifiers used to identify streams and are passed to many API methods.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ItemId">ItemId</a></strong> - Description of item IDs exposed by the Google Reader API. Items in Reader are referenced by globally unique item IDs. IDs are generally derived from the &lt;id&gt; attribute in Atom feeds and the &lt;guid&gt; attribute in RSS feeds. In the absence of those, the item URL may be used to generat the ID. In cases where the feed does not provide IDs or URLs (or they are not deemed "trustworthy", e.g. if more than one item in the feed response has the same ID or URL), then the ID will be computed from a signature of certain feed item properties (title, body, etc.).</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ApiStreamItemsIds">ApiStreamItemsIds</a></strong> - Given one or more StreamIds and fetching options, returns the IDs of the items in those Streams. Getting just item IDs is significantly cheaper than getting stream contents. If you need to do filtering of items, it is highly encouraged to do this at the ID level before fetching item contents for the subset of items that remain.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ApiStreamItemsContents">ApiStreamItemsContents</a></strong> - Given a collection of ItemIds and fetching options, returns the contents of those items.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ApiCommonInputs">ApiCommonInputs</a></strong> - Inputs that all API methods support</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ActionToken">ActionToken</a></strong> - Describes XSRF-preventing action tokens.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/ApiStreamContents">ApiStreamContents</a></strong> - Given a StreamId and fetching options, returns the contents of the items in that Stream.</li>
+	<li><strong><a href="http://code.google.com/p/google-reader-api/wiki/Authentication">Authentication</a></strong> - Making authenticated requests with OAuth and ClientLogin</li>
+</ul>
+I'm going to make some time this weekend to play with more and write some code. I would like to rework my tagging system in Google Reader and drive information for sites that run in my new content management system.
+<p></p>
+I'm excited to finally see a <a title="potential API for Google Reader" href="http://code.google.com/p/google-reader-api/">potential API for Google Reader</a>, and the possibility that they are not going to abandon one of my favorite tools.

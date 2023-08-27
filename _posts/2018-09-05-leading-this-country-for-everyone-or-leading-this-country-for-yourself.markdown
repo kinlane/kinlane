@@ -1,0 +1,19 @@
+---
+published: true
+layout: post
+title: Leading This Country For Everyone Or Leading This Country For Yourself
+date: 2018-09-05T09:00:00.000Z
+tags:
+  - Kin Lane
+image: >-
+  http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_33_700_500_0_max_0_1_-2.jpg
+---
+One thing that troubles me about the current (maybe its always been) state of conservatism, is their self-centered nature. Leading this country only for their vision, and their way of life, and not at all willing to lead this country for other people. I'm not delusional in thinking democrats lead for EVERYONE, or that it is even possible to lead for EVERYONE, but at least democrats try to ensure we all have healthcare, education, and everyone is given a certain amount of dignity as a US citizen.
+
+The current administration and crop of conservatives aren't even pretending that they care about all US citizens equally. They are actively calling out, targeting, and isolating certain groups, making it clear that whoever has power gets to dictate the vision for this country, and everyone else gets left behind. Defining the conservative vision of what government does in their eyes, ensuring it does not serve all the people equally, that it gets out of the way of business, even when it is steamrolling over people, hurting the environment, and generally making our country a harder place to make ends meet.
+
+I feel like the current tone of things is a historical version conservatism being augmented with technologically amplified libertarianism. It is very scared, racist, homophobic, sexist, and self-centered view of the world, where you get what is yours, and fuck everyone else. Where you distract everyone by saying all those brown people are coming for your stuff and your jobs, when you are just looking to get yours the way white people have always got theirs, by suppressing and taking from others. This is the only way white people can stay so advantaged, and well-off, is by keeping others down, while you take more than you deserve in this fabricated market environment you and your followers have subscribed to, and built up as a religion.
+
+Can you imagine looking out across America and thinking the people who look and act like you are the only true Americans? Can you imagine thinking that the police should look out for you, and it is ok for them to go after those people over there? Can you imagine thinking that it is OK for government to only serve and take care your needs, and the people who think and act like you? Then imagine how scare someone feels when people that don't look like them are in power. This is how terrified people were when Barack Obama was president. They felt they were being treated just like they have historically treated people. Being left behind. Not being listened to. They were a minority. Worse, those other people over there were getting equal treatment, which means taking more than their fair share in the self-centered speak of an entitle, privileged, white American.
+
+I do not agree with many of the views of conservatives in this country, but I do strongly believe they should be taken care of, just like the rest of us. They should have healthcare, education, and be able to make ends meet. While I'm really angry with many conservatives at the moment, I do not wish to hurt them, take away their rights, target, or punish them. They are my fellow Americans. I see this country as a mix of personalities, ethnicities, and belief systems. I don't think there is one that is uniquely American. I do not see America as white and christian. I strongly believe whoever is in power at the municipal, county, state, and federal levels should be leading for everyone, not just leading for your own personal beliefs, or of those who look just like you. The fuck you, I got mine mentality of the current conservatives needs to go away, otherwise we will never realize our full potential as a country again.

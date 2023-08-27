@@ -1,0 +1,17 @@
+---
+published: true
+layout: post
+title: Your Guns Keep You Properly Controlled
+date: 2018-03-26T09:00:00.000Z
+tags:
+  - Kin Lane
+image: >-
+  https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/fence_crabapple.jpg
+---
+As friends of mine mobilize in NYC, DC, and other cities as part of March For Our Lives, I sit at home working on a variety of public data policy projects, contemplating the roles each of play in how change occurs around us. As some of my friends mobilize, others are doubling down with their rhetoric around the 2nd amendment, and demonstrating how controlled they are by not just their guns, but the people who control policy by leveraging the gun debate. Demonstrating that their guns are more about control, than they'll ever be about freedom.
+
+While letting pass numerous opportunities to participate in shaping how government and our society works, gun believers cling to a possibility that they will need their guns to respond to an overreaching government. Despite never having had the need to rise up in their lifetimes, or their grandparents, they still hold true to this belief. Even with the knowledge that when government does come knocking at the door, that they most likely won't come out with guns a blazing, they still hold true to this belief. Despite endlessly funding a military with weapons that out "gun" their weapons, and a demanding respect for this military, they still hold to true to their belief that they'll need their guns to defend them against said military--never acknowledging this contradiction.
+
+Gun ownership will keep folks from ever leaving their hometown, flying on airplanes, and participating in a meaningful way in marches, debates, and public service. Despite evidence of change being made generation after generation by marching, and crafting public policy in government, they still believe that having a gun is the most meaningful action they can make. Never seeing how their dedication to the guns, and this way of life actually prevents them from getting out in the world and participating. They'd rather remain an armchair activist and pundits, telling people in a world they never visit how they should live, and that their way of taking action will never result in any change--despite having no event(s) to point to in their life where their guns has resulted in meaningful change in how the world works.
+
+The gun debate is all about control. It is all about keeping people believing it is the only power they have within their reach. When it is really about keeping them out of the way of how actual policy is made, and actual change occurs in the world, and having a gun be "the only" power they have within their reach. Name the last meaningful thing that changed at the hand of gun? Now name the last meaningful thing that changed because of marching, protesting, and influencing public policy and laws? If it comes to the point where we have to actually take up arms against our government, we have to acknowledge that they have planes, drones, bombs, and other things we do not. Then we have to also acknowledge that we have NEVER had to do this, all while numerous opportunities to vote, march, protest, and submit ourselves to public service have gone by. Once you recognize this, you'll see that your guns are more about keeping you under control, than they are ever about truly being in the service of freedom. Keep on staying out of the fight, oiling your gun, because you are never going to need it--you've let all your freedoms go, just to own your gun.

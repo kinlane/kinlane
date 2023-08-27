@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>This Administration Has Revealed To Me Just How Dependent We Are On Storytelling | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="This Administration Has Revealed To Me Just How Dependent We Are On Storytelling" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’ve learned a lot about storytelling over the last eight years as the API Evangelist. While still more art than science, I have learned a lot about the types of stories I need to tell to keep traffic flowing to my blog, and how you tell stories that make for real influence and change–two things that don’t always go hand in hand. While learning more about the types of API stories that I can tell across the API sector, I’ve also learned a lot about the storytelling that occurs as part of the startup investment ecosystem, out of the federal government, and a handful of specialized areas. If you want to be influencing the conversation today, you need to be telling stories on and offline." />
+<meta property="og:description" content="I’ve learned a lot about storytelling over the last eight years as the API Evangelist. While still more art than science, I have learned a lot about the types of stories I need to tell to keep traffic flowing to my blog, and how you tell stories that make for real influence and change–two things that don’t always go hand in hand. While learning more about the types of API stories that I can tell across the API sector, I’ve also learned a lot about the storytelling that occurs as part of the startup investment ecosystem, out of the federal government, and a handful of specialized areas. If you want to be influencing the conversation today, you need to be telling stories on and offline." />
+<link rel="canonical" href="http://localhost:4000/2018/09/07/this-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling/" />
+<meta property="og:url" content="http://localhost:4000/2018/09/07/this-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_41_800_500_0_max_0_-5_-1.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-07T02:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2018/09/07/this-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"This Administration Has Revealed To Me Just How Dependent We Are On Storytelling","dateModified":"2018-09-07T02:00:00-07:00","datePublished":"2018-09-07T02:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/09/07/this-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_41_800_500_0_max_0_-5_-1.jpg","description":"I’ve learned a lot about storytelling over the last eight years as the API Evangelist. While still more art than science, I have learned a lot about the types of stories I need to tell to keep traffic flowing to my blog, and how you tell stories that make for real influence and change–two things that don’t always go hand in hand. While learning more about the types of API stories that I can tell across the API sector, I’ve also learned a lot about the storytelling that occurs as part of the startup investment ecosystem, out of the federal government, and a handful of specialized areas. If you want to be influencing the conversation today, you need to be telling stories on and offline.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="This Administration Has Revealed To Me Just How Dependent We Are On Storytelling | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="This Administration Has Revealed To Me Just How Dependent We Are On Storytelling | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">This Administration Has Revealed To Me Just How Dependent We Are On Storytelling</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2018-09-07T02:00:00-07:00" itemprop="datePublished">
+    
+    Sep 7, 2018
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_41_800_500_0_max_0_-5_-1.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>I’ve learned a lot about storytelling over the last eight years as the API Evangelist. While still more art than science, I have learned a lot about the types of stories I need to tell to keep traffic flowing to my blog, and how you tell stories that make for real influence and change–two things that don’t always go hand in hand. While learning more about the types of API stories that I can tell across the API sector, I’ve also learned a lot about the storytelling that occurs as part of the startup investment ecosystem, out of the federal government, and a handful of specialized areas. If you want to be influencing the conversation today, you need to be telling stories on and offline.</p>
+
+<p>Having a front row seat to the storytelling going on out of this current administration, by actually working on projects and with people in DC, as well as having direct exposure to this administration’s believers in my personal life, has further shown me how important storytelling is, and across all of these scenarios, how powerful fabulism can be. It has been quite a shock to realize how little facts matter, and just how much the right storytelling can drive a group of people. I don’t think any of this is a revelation, I’m just sharing my own realization around what I’m seeing. We’ve always been under the influence of the stories we are told, I just feel like I’m waking up to the degree in which our realities are shaped by the stories we’ve been told over the years.</p>
+
+<p>Unpacking my own libertarian upbringing, and seeing it for what it is. Then watching people I grew up with foam at the mouth about Trump. Combined with my experiences in the tech sector for the last eight years, has shown me that stories aren’t just important. People depend on stories to prop up and justify their realities. Without them, their world can come crashing down. Which is why many people get so defensive about their technology, their religion, and their president. I’ve always suspected this was the case with people who claim to be religious, but now I just see it as the American dream–a kind of coma that people are in, kept in that state through an ongoing barrage of fabulist storytelling. A state I lived in for many years, and I’m only just beginning to wake up from.</p>
+
+<p>I feel the only antidote for this situation is more storytelling, as well as more general access to education, and (mental) healthcare. I’m not talking about just more social media, blogging, and the web. I’m not saying this won’t be part of the equation, as we have to reach the masses where they are, but I’m talking about in-person storytelling within our communities, access to libraries and schools, as well as through digital media. Corporations and their brands are winning the storytelling game, and a savvy group of politicians and racist sexist shit stirrers have learned how to leverage this fabulist marketing engine to amplify their own platform. We have to outpace all of this with more tangible, meaningful, and educational stories, otherwise we are just going to see things get worse, and things will keep spinning out of control.</p>
+
+<p>The narrative that this administration is using to manipulate people in this country isn’t anything new, it just has the volume turned up very loud because of the Internet. The reason this administration’s followers believe what they are being told, and the reasons why this administration is using this playbook go back to the founding of this country–we are just seeing the digital version of the playbook in action. I think we underestimated the grip people have on reality, and a mistaken perception that the web (and TV) equals knowledge is really beginning to take its toll. We clearly haven’t invested in education and healthcare we need in this country to make sure folks have the base they need, and we’ve done very little to address the racism in which this country was founded on, over the 240+ years of our existence as a nation.</p>
+
+<p>This is why people’s chain can still be yanked about those brown people over there. Stoking fears, and getting them to behave a certain way at the voting booth. This why people can still be told fabulist stories about the moon, mars, and utopian places where white people live the ideal life. This is why science can still be dismissed, questioned, and ignored. This is why people can think that schools put liberal or conservative ideas into your heads, instead of just exposing you to the real world around us. People just don’t always have the education needed to see the bigger picture. Pushing people too hard in ways that question their storytelling bubble simultaneously threatens their reality, and without the proper education, and access to (mental) healthcare, it is just going to freak them the fuck out–we are challenging the only reality they’ve ever known.</p>
+
+<p>I don’t think this is just a poor rural classic Trump support situation either. I think this isn’t just a mainstream left or right condition. This isn’t just about why people would not see the racism and sexism that exists in the current administration, this is why people get so foaming at the mouth about Bitcoin, and other technology. An inability to understand our history, why currency and markets work they do, and poking holes in a very fabricated, fabulist libertarian history our reality depends on. Our blind belief the magically organic nature of markets, and the tragically toxic nature of humans, and our inability to see that our belief in these things are more about us, than they are about markets or other human beings. There is so much overlap between why we have a Trump administration, and why we have social media, the blockchain, and artificial intelligence. We just aren’t equipped, or trained to see through the storytelling that is going on.</p>
+
+<p>When I see someone talk about the potential of APIs within a company, the potential of machine learning and the blockchain, <a href="https://en.wikipedia.org/wiki/Gell-Mann_amnesia_effect">I’m reminded of the Gell-Mann amnesia effect</a>. I’m just too informed, and close to how the sausage is being made, and what tech blogs, journalists, and other storytellers are saying, makes me cringe, rant, and angry in some situations. I find myself getting to a similar place when it comes to what goes on in Washington DC. When I hear someone on Facebook telling a story about how good this administration is for this country, and how he is draining the swamp, stopping regulations, and lowering taxes–I can’t help but think about what I’m seeing occur at the EPA, CFPB, Ed, VA, CMS, HHS, FDIC, Census, Commerce, Interior, and beyond. I get angry that Americans are so willing to just believe the stories, and even when there is evidence to the contrary, refuse to see any other view. So willing to be under the influence of the storytelling that is coming out of this administration, out of the technology sector, and the devices in our pockets.</p>
+
+<p>The real revelation for me isn’t just about how susceptible people are to storytelling, and how the people in power use stories to manipulate them. It really is about how defensive people get when this storytelling bubble gets threatened. People refusing to see the racism and sexism right around them. People refusing to think this administration is hurting them, despite it making the environment more toxic around them, taking away education and healthcare, slowing the Internet, hitting them in the bank account, and beyond. People believing so passionately that the blockchain and artificial intelligence will save our world from the problems we’ve created for ourselves (often with past technology). People believing in the deep state, and not seeing how it is a story that is used to regularly manipulate them. Creating an environment you could put the truth on the table, bring Jesus into the room, and take them to the moon, and they’d still believe the stories to the contrary.</p>
+
+<p>You can’t argue, debate, or reason with this reality. We just have to tell more truthful stories. More honest, mind expanding fictional stories–where we are transparent with our intentions. We have to invest in elementary, middle, and high schools. We have to make sure EVERYONE has the opportunity to go to community college or University. Every community should have a well-funded library. Ensure everyone has access to the physical and mental healthcare they need. And everyone should have the opportunity to travel to other cities, countries, and be exposed to other cultures at some point in their life. Only then will storytelling in this country find a balance, allowing us to provide our children with the future they deserve.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=This Administration Has Revealed To Me Just How Dependent We Are On Storytelling&url=http://localhost:4000/2018/09/07/this-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F09%2F07%2Fthis-administrations-has-revealed-to-just-how-dependent-we-are-on-storytelling%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2018/09/06/my-world-changed-once-i-realized-the-scope-of-things-in-this-country/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2018/09/07/voice-enablement-at-the-router-level-will-continue-to-push-surveilance-into-our-lives/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

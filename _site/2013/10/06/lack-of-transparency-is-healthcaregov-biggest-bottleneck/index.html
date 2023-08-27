@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lack of Transparency Is Healthcare.gov Biggest Bottleneck | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Lack of Transparency Is Healthcare.gov Biggest Bottleneck" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="If you pay attention to the news, you have probably heard about the technical trouble with the launch of the Affordable Care Act, 50 state marketplaces and the central Healthcare.gov site. People across the country are encountering show-stopping bugs in the sign up process, and if you go to the healthcare.gov site currently, you get a splash page that states, &quot;We have a lot of visitors on the site right now.&quot; If you stay on the page it will refresh every few seconds until, eventually you might get a successful registration form. I worked at it for hours last night was finally able to get into the registration process, only to get errors several steps in, but eventually got through the flow and successfully registered for an account, scrutinizing the code and network activity behind the scenes as I went along. There are numerous blog posts trying to break down what is going wrong with the Healthcare.gov registration process, but ultimately many of them are very superficial, making vague accusations of vendors involved, and the perceived technology at play. I think one of the better one&#39;s was A Programmer&#39;s Perspective On Healthcare.gov And ACA Marketplaces, by Paul Smith. Late last night, the Presidential Innovation Fellows (PIF), led by round one PIF Phillip Ashlock(@philipashlock), set out to try and develop our own opinion about what is happening behind the scenes. Working our way through the registration process, trying to identify potential bottlenecks. When you look at the flow of calls behind each registration page you see a myriad of calls to JavaScript libraries, internal and external services that support the flow. There definitely could have been more thought put into preparing this architecture for scaling, but a handful of calls really stands out: https://www.healthcare.gov/marketplace/global/en_US/registration.js https://www.healthcare.gov/ee-rest/ffe/en_US/MyAccountEIDMUnsecuredIntegration/createLiteEIDMAccount The second URL pretty clearly refers to the Center for Medicare and Medicaid Services(CMS) Enterprise Identity Management (EIDM) platform, which provides new user registration, access management, identity lifecycle management, giving users of the Healthcare Exchange Plan Management can register and get CMS credentials. Where the registration.js appears handles much of the registration process. Philip identified the createLiteEIDMAccount&nbsp;call as the most telling part of the payload and response, and would most likely be the least resilient portion of the architecture, standing out as a potentially severe bottleneck. The CMS EIDM platform is just one potential choke point, and isn&#39;t a bleeding edge solution, it is pretty straightforward enterprise architecture that may not have had adequate resources allocated to handle the load. I&#39;m guessing underallocated server and application resources is playing a rampant role across Healthcare.gov operations. Many of the articles I&#39;ve read over the last couple days make reference to the front-end of Healthcare.gov in using Jekyll and APIs, and refer to the dangers of open washing, and technological solution-ism. Where this is most likely an under-allocated, classic enterprise piece of the puzzle that can&#39;t keep up. I do agree with portions of the open washing arguments, and specifically around showcasing the project as &quot;open&quot;, when in reality the front-end is the only open piece, with the backend being a classic, closed architecture and process. Without transparency into the entire stack of Healthcare.gov and the marketplace rollouts, it is not an open project. I don&#39;t care if any part of it is--making it open-washing. The teams in charge of the front-end were very transparent in getting feedback on the front-end implementation and publishing the code to Github for review. It isn&#39;t guaranteed, but if the entire backend stack followed the same approach, publishing technology, architectural approaches and load testing numbers throughout a BETA cycle for the project--things might have been different on launch day. Transparency goes a long way into improving not just the technology and architecture, but can shed light on illnesses in the procurement, contracting and other business and political aspects of projects. Many technologists will default to thinking I&#39;m talking about open source, open tools or open APIs, but in reality I&#39;m talking about an open process. In the end, this story is just opinion and speculation. Without any transparency into exactly what the backend architecture of Healthcare.gov and the marketplaces are, we have no idea of actually what the problem is. I&#39;m just soapboxing my opinion like the authors of every other story published about this problem over the last couple days, making them no more factual than some of my other fictional pieces about this being an inside job or a cleverly disguised denial of service attack!" />
+<meta property="og:description" content="If you pay attention to the news, you have probably heard about the technical trouble with the launch of the Affordable Care Act, 50 state marketplaces and the central Healthcare.gov site. People across the country are encountering show-stopping bugs in the sign up process, and if you go to the healthcare.gov site currently, you get a splash page that states, &quot;We have a lot of visitors on the site right now.&quot; If you stay on the page it will refresh every few seconds until, eventually you might get a successful registration form. I worked at it for hours last night was finally able to get into the registration process, only to get errors several steps in, but eventually got through the flow and successfully registered for an account, scrutinizing the code and network activity behind the scenes as I went along. There are numerous blog posts trying to break down what is going wrong with the Healthcare.gov registration process, but ultimately many of them are very superficial, making vague accusations of vendors involved, and the perceived technology at play. I think one of the better one&#39;s was A Programmer&#39;s Perspective On Healthcare.gov And ACA Marketplaces, by Paul Smith. Late last night, the Presidential Innovation Fellows (PIF), led by round one PIF Phillip Ashlock(@philipashlock), set out to try and develop our own opinion about what is happening behind the scenes. Working our way through the registration process, trying to identify potential bottlenecks. When you look at the flow of calls behind each registration page you see a myriad of calls to JavaScript libraries, internal and external services that support the flow. There definitely could have been more thought put into preparing this architecture for scaling, but a handful of calls really stands out: https://www.healthcare.gov/marketplace/global/en_US/registration.js https://www.healthcare.gov/ee-rest/ffe/en_US/MyAccountEIDMUnsecuredIntegration/createLiteEIDMAccount The second URL pretty clearly refers to the Center for Medicare and Medicaid Services(CMS) Enterprise Identity Management (EIDM) platform, which provides new user registration, access management, identity lifecycle management, giving users of the Healthcare Exchange Plan Management can register and get CMS credentials. Where the registration.js appears handles much of the registration process. Philip identified the createLiteEIDMAccount&nbsp;call as the most telling part of the payload and response, and would most likely be the least resilient portion of the architecture, standing out as a potentially severe bottleneck. The CMS EIDM platform is just one potential choke point, and isn&#39;t a bleeding edge solution, it is pretty straightforward enterprise architecture that may not have had adequate resources allocated to handle the load. I&#39;m guessing underallocated server and application resources is playing a rampant role across Healthcare.gov operations. Many of the articles I&#39;ve read over the last couple days make reference to the front-end of Healthcare.gov in using Jekyll and APIs, and refer to the dangers of open washing, and technological solution-ism. Where this is most likely an under-allocated, classic enterprise piece of the puzzle that can&#39;t keep up. I do agree with portions of the open washing arguments, and specifically around showcasing the project as &quot;open&quot;, when in reality the front-end is the only open piece, with the backend being a classic, closed architecture and process. Without transparency into the entire stack of Healthcare.gov and the marketplace rollouts, it is not an open project. I don&#39;t care if any part of it is--making it open-washing. The teams in charge of the front-end were very transparent in getting feedback on the front-end implementation and publishing the code to Github for review. It isn&#39;t guaranteed, but if the entire backend stack followed the same approach, publishing technology, architectural approaches and load testing numbers throughout a BETA cycle for the project--things might have been different on launch day. Transparency goes a long way into improving not just the technology and architecture, but can shed light on illnesses in the procurement, contracting and other business and political aspects of projects. Many technologists will default to thinking I&#39;m talking about open source, open tools or open APIs, but in reality I&#39;m talking about an open process. In the end, this story is just opinion and speculation. Without any transparency into exactly what the backend architecture of Healthcare.gov and the marketplaces are, we have no idea of actually what the problem is. I&#39;m just soapboxing my opinion like the authors of every other story published about this problem over the last couple days, making them no more factual than some of my other fictional pieces about this being an inside job or a cleverly disguised denial of service attack!" />
+<link rel="canonical" href="http://localhost:4000/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/" />
+<meta property="og:url" content="http://localhost:4000/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/healthcare-gov.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-10-06T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Lack of Transparency Is Healthcare.gov Biggest Bottleneck","dateModified":"2013-10-06T00:00:00-07:00","datePublished":"2013-10-06T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/healthcare-gov.jpg","description":"If you pay attention to the news, you have probably heard about the technical trouble with the launch of the Affordable Care Act, 50 state marketplaces and the central Healthcare.gov site. People across the country are encountering show-stopping bugs in the sign up process, and if you go to the healthcare.gov site currently, you get a splash page that states, &quot;We have a lot of visitors on the site right now.&quot; If you stay on the page it will refresh every few seconds until, eventually you might get a successful registration form. I worked at it for hours last night was finally able to get into the registration process, only to get errors several steps in, but eventually got through the flow and successfully registered for an account, scrutinizing the code and network activity behind the scenes as I went along. There are numerous blog posts trying to break down what is going wrong with the Healthcare.gov registration process, but ultimately many of them are very superficial, making vague accusations of vendors involved, and the perceived technology at play. I think one of the better one&#39;s was A Programmer&#39;s Perspective On Healthcare.gov And ACA Marketplaces, by Paul Smith. Late last night, the Presidential Innovation Fellows (PIF), led by round one PIF Phillip Ashlock(@philipashlock), set out to try and develop our own opinion about what is happening behind the scenes. Working our way through the registration process, trying to identify potential bottlenecks. When you look at the flow of calls behind each registration page you see a myriad of calls to JavaScript libraries, internal and external services that support the flow. There definitely could have been more thought put into preparing this architecture for scaling, but a handful of calls really stands out: https://www.healthcare.gov/marketplace/global/en_US/registration.js https://www.healthcare.gov/ee-rest/ffe/en_US/MyAccountEIDMUnsecuredIntegration/createLiteEIDMAccount The second URL pretty clearly refers to the Center for Medicare and Medicaid Services(CMS) Enterprise Identity Management (EIDM) platform, which provides new user registration, access management, identity lifecycle management, giving users of the Healthcare Exchange Plan Management can register and get CMS credentials. Where the registration.js appears handles much of the registration process. Philip identified the createLiteEIDMAccount&nbsp;call as the most telling part of the payload and response, and would most likely be the least resilient portion of the architecture, standing out as a potentially severe bottleneck. The CMS EIDM platform is just one potential choke point, and isn&#39;t a bleeding edge solution, it is pretty straightforward enterprise architecture that may not have had adequate resources allocated to handle the load. I&#39;m guessing underallocated server and application resources is playing a rampant role across Healthcare.gov operations. Many of the articles I&#39;ve read over the last couple days make reference to the front-end of Healthcare.gov in using Jekyll and APIs, and refer to the dangers of open washing, and technological solution-ism. Where this is most likely an under-allocated, classic enterprise piece of the puzzle that can&#39;t keep up. I do agree with portions of the open washing arguments, and specifically around showcasing the project as &quot;open&quot;, when in reality the front-end is the only open piece, with the backend being a classic, closed architecture and process. Without transparency into the entire stack of Healthcare.gov and the marketplace rollouts, it is not an open project. I don&#39;t care if any part of it is--making it open-washing. The teams in charge of the front-end were very transparent in getting feedback on the front-end implementation and publishing the code to Github for review. It isn&#39;t guaranteed, but if the entire backend stack followed the same approach, publishing technology, architectural approaches and load testing numbers throughout a BETA cycle for the project--things might have been different on launch day. Transparency goes a long way into improving not just the technology and architecture, but can shed light on illnesses in the procurement, contracting and other business and political aspects of projects. Many technologists will default to thinking I&#39;m talking about open source, open tools or open APIs, but in reality I&#39;m talking about an open process. In the end, this story is just opinion and speculation. Without any transparency into exactly what the backend architecture of Healthcare.gov and the marketplaces are, we have no idea of actually what the problem is. I&#39;m just soapboxing my opinion like the authors of every other story published about this problem over the last couple days, making them no more factual than some of my other fictional pieces about this being an inside job or a cleverly disguised denial of service attack!","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lack of Transparency Is Healthcare.gov Biggest Bottleneck | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lack of Transparency Is Healthcare.gov Biggest Bottleneck | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Lack of Transparency Is Healthcare.gov Biggest Bottleneck</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2013-10-06T00:00:00-07:00" itemprop="datePublished">
+    
+    Oct 6, 2013
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/healthcare-gov.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/federal-government/healthcare-gov/healthcare-gov.jpg" alt="" align="right" /></p>
+<p>If you pay attention to the news, you have probably heard about the technical trouble with the launch of the Affordable Care Act, 50 state marketplaces and the central <a href="https://www.healthcare.gov">Healthcare.gov</a> site.</p>
+<p>People across the country are encountering show-stopping bugs in the sign up process, and if you go to the healthcare.gov site currently, you get a splash page that states, "We have a lot of visitors on the site right now." If you stay on the page it will refresh every few seconds until, eventually you might get a successful registration form.</p>
+<p>I worked at it for hours last night was finally able to get into the registration process, only to get errors several steps in, but eventually got through the flow and successfully registered for an account, scrutinizing the code and network activity behind the scenes as I went along.</p>
+<p>There are numerous blog posts trying to <a href="http://www.reuters.com/article/2013/10/05/us-usa-healthcare-technology-analysis-idUSBRE99407T20131005">break down what is going wrong with the Healthcare.gov registration process</a>, but ultimately many of them are very superficial, making vague accusations of vendors involved, and the perceived technology at play. I think one of the better one's was <a href="http://talkingpointsmemo.com/cafe/a-programmer-s-perspective-on-healthcare-gov-and-aca-marketplaces">A Programmer's Perspective On Healthcare.gov And ACA Marketplaces</a>, by Paul Smith.</p>
+<p>Late last night, the Presidential Innovation Fellows (PIF), led by round one PIF Phillip Ashlock(<a href="https://twitter.com/philipashlock">@philipashlock</a>), set out to try and develop our own opinion about what is happening behind the scenes. Working our way through the registration process, trying to identify potential bottlenecks.</p>
+<p>When you look at the flow of calls behind each registration page you see a myriad of calls to JavaScript libraries, internal and external services that support the flow. There definitely could have been more thought put into preparing this architecture for scaling, but a handful of calls really stands out:</p>
+<blockquote>https://www.healthcare.gov/marketplace/global/en_US/registration.js<br /></blockquote>
+<blockquote><em>https://www.healthcare.gov/ee-rest/ffe/en_US/MyAccountEIDMUnsecuredIntegration/createLiteEIDMAccount</em></blockquote>
+<p>The second URL pretty clearly refers to the <a href="https://itdashboard.gov/investment/project-summary/1185">Center for Medicare and Medicaid Services(CMS) Enterprise Identity Management (EIDM) platform</a>, which provides new user registration, access management, identity lifecycle management, giving users of the Healthcare Exchange Plan Management can register and get CMS credentials. Where the registration.js appears handles much of the registration process.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/kinlane-productions2/federal-government/healthcare-gov/healthcare-reg-network-calls.png" alt="" width="525" /></p>
+<p>Philip identified the <em>createLiteEIDMAccount</em>&nbsp;call as the most telling part of the payload and response, and would most likely be the least resilient portion of the architecture, standing out as a potentially severe bottleneck. The CMS EIDM platform is just one potential choke point, and isn't a bleeding edge solution, it is pretty straightforward enterprise architecture that may not have had adequate resources allocated to handle the load. I'm guessing underallocated server and application resources is playing a rampant role across Healthcare.gov operations.</p>
+<p>Many of the articles I've read over the last couple days make reference to the front-end of Healthcare.gov in using Jekyll and APIs, and <a title="open-washing" href="http://govfresh.com/2013/10/openwashing-healthcare-gov/">refer to the dangers of open washing</a>, and technological solution-ism. Where this is most likely an under-allocated, classic enterprise piece of the puzzle that can't keep up.  I do agree with portions of the open washing arguments, and specifically around showcasing the project as "open", when in reality the front-end is the only open piece, with the backend being a classic, closed architecture and process.</p>
+<p>Without transparency into the entire stack of Healthcare.gov and the marketplace rollouts, it is not an open project. I don't care if any part of it is--making it open-washing. The teams in charge of the front-end were very transparent in getting feedback on the front-end implementation and publishing the code to Github for review.  It isn't guaranteed, but if the entire backend stack followed the same approach, publishing technology, architectural approaches and load testing numbers throughout a BETA cycle for the project--things might have been different on launch day.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/kinlane-productions2/federal-government/healthcare-gov/healthcare-gov-load.png" alt="" width="525" /></p>
+<p>Transparency goes a long way into improving not just the technology and architecture, but can shed light on illnesses in the procurement, contracting and other business and political aspects of projects. Many technologists will default to thinking I'm talking about open source, open tools or open APIs, but in reality I'm talking about an open process.</p>
+<p>In the end, this story is just opinion and speculation. Without any transparency into exactly what the backend architecture of Healthcare.gov and the marketplaces are, we have no idea of actually what the problem is. I'm just soapboxing my opinion like the authors of every other story published about this problem over the last couple days, making them no more factual than some of my other fictional pieces about this being an <a href="http://alternate.kinlane.com/2013/10/04/my-name-is-frank-and-i-work-at-cqi-cloud-providers/">inside job</a> or a c<a href="http://alternate.kinlane.com/2013/10/06/me-and-my-army-of-enthusiastic-obamacare-registrants/">leverly disguised denial of service attack</a>!</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Lack of Transparency Is Healthcare.gov Biggest Bottleneck&url=http://localhost:4000/2013/10/06/lack-of-transparency-is-healthcaregov-biggest-bottleneck/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2013%2F10%2F06%2Flack-of-transparency-is-healthcaregov-biggest-bottleneck%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2013/10/05/end-to-a-very-tough-week-in-washington-dc/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2013/10/08/thoughts-on-being-an-employee/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

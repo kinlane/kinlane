@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Scalr'
+source: http://kinlane.com/2010/03/03/scalr/
+domain: kinlane.com
+image: 
+---
+<strong>What is Scalr?</strong><p></p>
+Scalr is software that creates redundant, self-curing, and auto-scaling clusters to run your website. Using EC2 and Cloud Computing.<p></p>
+It allows you to create server farms through a web-based interface using prebuilt AMI's for load balancers (pound, nginx, or Amazon's load balancing service), app servers (apache, rails, others), databases (mysql master-slave, others), and a generic AMI to build on top of.<p></p>
+The health of the farm is continuously monitored and maintained. When the Load Average on a type of node goes above a configurable threshold a new node is inserted into the farm to spread the load and the cluster is reconfigured. When a node crashes a new machine of that type is inserted into the farm to replace it.<p></p>
+Multiple AMI's are provided for load balancers, mysql databases, application servers, and a generic base image to customize. Scalr allows you to further customize each image, bundle the image and use that for future nodes that are inserted into the farm. You can make changes to one machine and use that for a specific type of node. New machines of this type will be brought online to meet current levels and the old machines are terminated one by one.<p></p>
+The project is still young, but we're hoping that by open sourcing it the AWS development community can turn this into a robust hosting platform and give users an alternative to the current fee based services available.

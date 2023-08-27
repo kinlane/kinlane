@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The release of the the president&#39;s fiscal year 2016 budget in a machine readable format on Github was one of the most important things to come out of Washington D.C. in a while when it comes to open data and APIs. I was optimistic when the president mandated that all federal agencies need to go machine readable by default, but the release of the annual budget in this way is an important sign that the White House is following its own open data rhetoric, and something every agency should emulate. There is still a lot of work to be done to make sense of the federal budget, but having it published in a machine readable format on Github saves a lot of time, and energy in this process. As soon as I landed on the Github repository, clicked into the data folder, and saw the three CSV files, I got to work converting them to JSON format. Having the budget available in CSV is a huge step beyond the historic PDFs we&rsquo;ve had to process in the past, to get at the budget numbers, but having it in JSON by default, would be even better. What now? Well, I would like to make more sense of the budget, and to be able to slice and dice it in different ways, I&rsquo;m going to need an API. Using a Swagger definition, I generated a simple server framework using Slim &amp; PHP, with an endpoint for each file, budauth, outlays, and receipts. Now I just need to add some searching, filtering, paging, and other essential functionality, and it will be ready for public consumption--then I can get to work slicing and dicing the budget, and previous years budgets in different ways. I already have my eye on a couple D3.js visualizations to help me make sense of the budget. First I want to be able to show the scope of budget for different areas of government, to help make the argument against bloat in areas like military. Second, I want to provide some sort of interactive tool that will help me express what my priorities are when it comes to the federal budget--something I&#39;ve done in the past. It makes me very happy to see the federal government budget expressed in a machine readable way on Github. Every city, county, state, and federal government agency should be publishing their budgets in this way. PDF is not longer acceptable, in 2015, the minimum bar for government budget is a CSV on Github&mdash;let&rsquo;s all get to work!" />
+<meta property="og:description" content="The release of the the president&#39;s fiscal year 2016 budget in a machine readable format on Github was one of the most important things to come out of Washington D.C. in a while when it comes to open data and APIs. I was optimistic when the president mandated that all federal agencies need to go machine readable by default, but the release of the annual budget in this way is an important sign that the White House is following its own open data rhetoric, and something every agency should emulate. There is still a lot of work to be done to make sense of the federal budget, but having it published in a machine readable format on Github saves a lot of time, and energy in this process. As soon as I landed on the Github repository, clicked into the data folder, and saw the three CSV files, I got to work converting them to JSON format. Having the budget available in CSV is a huge step beyond the historic PDFs we&rsquo;ve had to process in the past, to get at the budget numbers, but having it in JSON by default, would be even better. What now? Well, I would like to make more sense of the budget, and to be able to slice and dice it in different ways, I&rsquo;m going to need an API. Using a Swagger definition, I generated a simple server framework using Slim &amp; PHP, with an endpoint for each file, budauth, outlays, and receipts. Now I just need to add some searching, filtering, paging, and other essential functionality, and it will be ready for public consumption--then I can get to work slicing and dicing the budget, and previous years budgets in different ways. I already have my eye on a couple D3.js visualizations to help me make sense of the budget. First I want to be able to show the scope of budget for different areas of government, to help make the argument against bloat in areas like military. Second, I want to provide some sort of interactive tool that will help me express what my priorities are when it comes to the federal budget--something I&#39;ve done in the past. It makes me very happy to see the federal government budget expressed in a machine readable way on Github. Every city, county, state, and federal government agency should be publishing their budgets in this way. PDF is not longer acceptable, in 2015, the minimum bar for government budget is a CSV on Github&mdash;let&rsquo;s all get to work!" />
+<link rel="canonical" href="http://localhost:4000/2015/02/03/a-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github/" />
+<meta property="og:url" content="http://localhost:4000/2015/02/03/a-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/2016_budget_header.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-02-03T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2015/02/03/a-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github","dateModified":"2015-02-03T00:00:00-08:00","datePublished":"2015-02-03T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2015/02/03/a-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/2016_budget_header.jpg","description":"The release of the the president&#39;s fiscal year 2016 budget in a machine readable format on Github was one of the most important things to come out of Washington D.C. in a while when it comes to open data and APIs. I was optimistic when the president mandated that all federal agencies need to go machine readable by default, but the release of the annual budget in this way is an important sign that the White House is following its own open data rhetoric, and something every agency should emulate. There is still a lot of work to be done to make sense of the federal budget, but having it published in a machine readable format on Github saves a lot of time, and energy in this process. As soon as I landed on the Github repository, clicked into the data folder, and saw the three CSV files, I got to work converting them to JSON format. Having the budget available in CSV is a huge step beyond the historic PDFs we&rsquo;ve had to process in the past, to get at the budget numbers, but having it in JSON by default, would be even better. What now? Well, I would like to make more sense of the budget, and to be able to slice and dice it in different ways, I&rsquo;m going to need an API. Using a Swagger definition, I generated a simple server framework using Slim &amp; PHP, with an endpoint for each file, budauth, outlays, and receipts. Now I just need to add some searching, filtering, paging, and other essential functionality, and it will be ready for public consumption--then I can get to work slicing and dicing the budget, and previous years budgets in different ways. I already have my eye on a couple D3.js visualizations to help me make sense of the budget. First I want to be able to show the scope of budget for different areas of government, to help make the argument against bloat in areas like military. Second, I want to provide some sort of interactive tool that will help me express what my priorities are when it comes to the federal budget--something I&#39;ve done in the past. It makes me very happy to see the federal government budget expressed in a machine readable way on Github. Every city, county, state, and federal government agency should be publishing their budgets in this way. PDF is not longer acceptable, in 2015, the minimum bar for government budget is a CSV on Github&mdash;let&rsquo;s all get to work!","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2015-02-03T00:00:00-08:00" itemprop="datePublished">
+    
+    Feb 3, 2015
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/2016_budget_header.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="https://github.com/WhiteHouse/2016-budget-data"><img style="padding: 10px;" src="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/2016_budget_header.jpg" alt="" width="300" align="right" /></a></p>
+<p>The release of the the <a href="https://github.com/WhiteHouse/2016-budget-data">president's fiscal year 2016 budget in a machine readable format on Github</a> was one of the most important things to come out of Washington D.C. in a while when it comes to open data and APIs. I was optimistic when <a href="http://apievangelist.com/2012/06/01/barack-obama-directs-all-federal-agencies-to-have-an-api/">the president mandated that all federal agencies need to go machine readable by default</a>, but the release of the annual budget in this way is an important sign that the White House is following its own open data rhetoric, and something every agency should emulate.</p>
+<p>There is still a lot of work to be done to make sense of the federal budget, but having it published in a machine readable format on Github saves a lot of time, and energy in this process. As soon as I landed on the Github repository, clicked into the <a href="https://github.com/kinlane/2016-budget-data/tree/master/data">data folder, and saw the three CSV files, I got to work converting them to JSON format</a>. Having the budget available in CSV is a huge step beyond the historic PDFs we&rsquo;ve had to process in the past, to get at the budget numbers, but having it in JSON by default, would be even better.</p>
+<p>What now? Well, I would like to make more sense of the budget, and to be able to slice and dice it in different ways, I&rsquo;m going to need an API. Using a Swagger definition, I generated a simple server framework using Slim &amp; PHP, with an endpoint for each file, budauth, outlays, and receipts. Now I just need to add some searching, filtering, paging, and other essential functionality, and it will be ready for public consumption--then I can get to work slicing and dicing the budget, and previous years budgets in different ways.</p>
+<p>I already have my eye on a couple <a href="http://d3js.org/">D3.js visualizations</a> to help me make sense of the budget. First I want to be able to show the scope of budget for different areas of government, to help make the argument against bloat in areas like military. Second, I want to provide some sort of interactive tool that will help me express what my priorities are when it comes to the federal budget--something I've done in the past.</p>
+<p>It makes me very happy to see the federal government budget expressed in a machine readable way on Github. Every city, county, state, and federal government agency should be publishing their budgets in this way. PDF is not longer acceptable, in 2015, the minimum bar for government budget is a CSV on Github&mdash;let&rsquo;s all get to work!</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=A Machine Readable Version of The Presidents Fiscal Year 2016 Budget On Github&url=http://localhost:4000/2015/02/03/a-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2015%2F02%2F03%2Fa-machine-readable-version-of-the-presidents-fiscal-year-2016-budget-on-github%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2015/01/31/my-smart-little-big-brother-and-programmatically-making-sense-of-pdfs/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2015/02/06/an-archiveorg-for-email-newsletters-using-contextio/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

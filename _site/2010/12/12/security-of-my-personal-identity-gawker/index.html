@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Security of My Personal Identity [Gawker] | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Security of My Personal Identity [Gawker]" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’m watching the scene unfold with Gawker media, and thinking about the security of my personal identity. The security of our personal online identities has ALWAYS been important, it just has a spotlight on it currently with Wikileaks and all the high profile DDOS and intrusive attacks in the last couple of weeks. My first thought is how thankful I am I use a 3 tier username / password structure for all of my accounts. This means I have 3 different sets of username / passwords I use: 3rd Party Accounts - These are all external 3rd party services I use. External / Public Facing Accounts - These are accounts I host but have public facing logins, like Wordpress, etc. Financial Accounts - These are online banking, credit card, and load type accounts. Any account I have attached to $$$$. I have commented on Lifehacker, a Gawker Media property. So my username / login identity for 3rd party accounts might be compromised. I run down my personal list of 3rd party accounts and change these. But my other 2 tiers are not compromised. This is a benefit of having a strategy for my personal account management My second thought is around OpenID. I have started using my Twitter OpenID to login to many 3rd party services. This keeps my accounts centralized. 3rd party services NEVER have access to my username / password. Gawker media would never have my login information that I potentially use at other third party services. I can’t be sure I’ve always used my Twitter account to authenticate across any one the Gawker real estate: Gawker Jezebel Gizmodo Lifehacker Deadspin io9 Kotaku Jalopnik So I need to go to ALL my third party accounts and change my passwords. What a pain!! Maybe the time is ripe for everyone to take another look at OpenID and NOT signing up for service that don’t give you an OpenID option for using their service?" />
+<meta property="og:description" content="I’m watching the scene unfold with Gawker media, and thinking about the security of my personal identity. The security of our personal online identities has ALWAYS been important, it just has a spotlight on it currently with Wikileaks and all the high profile DDOS and intrusive attacks in the last couple of weeks. My first thought is how thankful I am I use a 3 tier username / password structure for all of my accounts. This means I have 3 different sets of username / passwords I use: 3rd Party Accounts - These are all external 3rd party services I use. External / Public Facing Accounts - These are accounts I host but have public facing logins, like Wordpress, etc. Financial Accounts - These are online banking, credit card, and load type accounts. Any account I have attached to $$$$. I have commented on Lifehacker, a Gawker Media property. So my username / login identity for 3rd party accounts might be compromised. I run down my personal list of 3rd party accounts and change these. But my other 2 tiers are not compromised. This is a benefit of having a strategy for my personal account management My second thought is around OpenID. I have started using my Twitter OpenID to login to many 3rd party services. This keeps my accounts centralized. 3rd party services NEVER have access to my username / password. Gawker media would never have my login information that I potentially use at other third party services. I can’t be sure I’ve always used my Twitter account to authenticate across any one the Gawker real estate: Gawker Jezebel Gizmodo Lifehacker Deadspin io9 Kotaku Jalopnik So I need to go to ALL my third party accounts and change my passwords. What a pain!! Maybe the time is ripe for everyone to take another look at OpenID and NOT signing up for service that don’t give you an OpenID option for using their service?" />
+<link rel="canonical" href="http://localhost:4000/2010/12/12/security-of-my-personal-identity-gawker/" />
+<meta property="og:url" content="http://localhost:4000/2010/12/12/security-of-my-personal-identity-gawker/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/gawker_logo.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2010-12-12T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2010/12/12/security-of-my-personal-identity-gawker/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Security of My Personal Identity [Gawker]","dateModified":"2010-12-12T00:00:00-08:00","datePublished":"2010-12-12T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/12/12/security-of-my-personal-identity-gawker/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/gawker_logo.jpg","description":"I’m watching the scene unfold with Gawker media, and thinking about the security of my personal identity. The security of our personal online identities has ALWAYS been important, it just has a spotlight on it currently with Wikileaks and all the high profile DDOS and intrusive attacks in the last couple of weeks. My first thought is how thankful I am I use a 3 tier username / password structure for all of my accounts. This means I have 3 different sets of username / passwords I use: 3rd Party Accounts - These are all external 3rd party services I use. External / Public Facing Accounts - These are accounts I host but have public facing logins, like Wordpress, etc. Financial Accounts - These are online banking, credit card, and load type accounts. Any account I have attached to $$$$. I have commented on Lifehacker, a Gawker Media property. So my username / login identity for 3rd party accounts might be compromised. I run down my personal list of 3rd party accounts and change these. But my other 2 tiers are not compromised. This is a benefit of having a strategy for my personal account management My second thought is around OpenID. I have started using my Twitter OpenID to login to many 3rd party services. This keeps my accounts centralized. 3rd party services NEVER have access to my username / password. Gawker media would never have my login information that I potentially use at other third party services. I can’t be sure I’ve always used my Twitter account to authenticate across any one the Gawker real estate: Gawker Jezebel Gizmodo Lifehacker Deadspin io9 Kotaku Jalopnik So I need to go to ALL my third party accounts and change my passwords. What a pain!! Maybe the time is ripe for everyone to take another look at OpenID and NOT signing up for service that don’t give you an OpenID option for using their service?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2010/12/12/security-of-my-personal-identity-gawker/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Security of My Personal Identity [Gawker] | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2010/12/12/security-of-my-personal-identity-gawker/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Security of My Personal Identity [Gawker] | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Security of My Personal Identity [Gawker]</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2010-12-12T00:00:00-08:00" itemprop="datePublished">
+    
+    Dec 12, 2010
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/gawker_logo.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <a href="http://www.nytimes.com/2010/12/13/business/media/13gawker.html"><img src="http://kinlane-productions2.s3.amazonaws.com/gawker_logo.jpg" alt="" width="300" align="right" /></a>I'm watching the <a href="http://www.nytimes.com/2010/12/13/business/media/13gawker.html?partner=rss&amp;emc=rss" target="_blank">scene unfold with Gawker media</a>, and thinking about the security of my personal identity. The security of our personal online identities has <strong>ALWAYS</strong> been important, it just has a spotlight on it currently with Wikileaks and all the high profile DDOS and intrusive attacks in the last couple of weeks.
+<p></p>
+My first thought is how thankful I am I use a 3 tier username / password structure for all of my accounts. This means I have 3 different sets of username / passwords I use:
+<ul class="mainlist">
+	<li><strong>3rd Party Accounts</strong> - These are all external 3rd party services I use.</li>
+	<li><strong>External / Public Facing Accounts</strong> - These are accounts I host but have public facing logins, like Wordpress, etc.</li>
+	<li><strong>Financial Accounts </strong>- These are online banking, credit card, and load type accounts. Any account I have attached to $$$$.</li>
+</ul>
+I have commented on Lifehacker, a Gawker Media property. So my username / login identity for 3rd party accounts might be compromised. I run down my personal list of 3rd party accounts and change these. But my other 2 tiers are not compromised. This is a benefit of having a strategy for my personal account management
+<p></p>
+My second thought is around OpenID. I have started using my <a href="http://twitter.com/#!/openid" target="_blank">Twitter OpenID</a> to login to many 3rd party services. This keeps my accounts centralized. 3rd party services NEVER have access to my username / password. Gawker media would never have my login information that I potentially use at other third party services.
+<p></p>
+I can't be sure I've always used my Twitter account to authenticate across any one the Gawker real estate:
+<ul class="mainlist">
+	<li><a href="http://advertising.gawker.com/titles/gawker">Gawker</a></li>
+	<li><a href="http://advertising.gawker.com/titles/jezebel">Jezebel</a></li>
+	<li><a href="http://advertising.gawker.com/titles/gizmodo">Gizmodo</a></li>
+	<li><a href="http://advertising.gawker.com/titles/lifehacker">Lifehacker</a></li>
+	<li><a href="http://advertising.gawker.com/titles/deadspin">Deadspin</a></li>
+	<li><a href="http://advertising.gawker.com/titles/io9">io9</a></li>
+	<li><a href="http://advertising.gawker.com/titles/kotaku">Kotaku</a></li>
+	<li><a href="http://advertising.gawker.com/titles/jalopnik">Jalopnik</a></li>
+</ul>
+So I need to go to ALL my third party accounts and change my passwords. What a pain!!
+<p></p>
+Maybe the time is ripe for everyone to take another look at <a href="http://openid.net/" target="_blank">OpenID</a> and NOT signing up for service that don't give you an OpenID option for using their service?
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Security of My Personal Identity [Gawker]&url=http://localhost:4000/2010/12/12/security-of-my-personal-identity-gawker/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2010%2F12%2F12%2Fsecurity-of-my-personal-identity-gawker%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2010/12/10/amazon-s3-object-size-limit-now-5tb/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2010/12/13/api-evangelist-weekly-review/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

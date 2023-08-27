@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>I Spent Some Time Evaluating The Fake News Problem | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="I Spent Some Time Evaluating The Fake News Problem" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="There was a lot of fake news swirling around during the election, and like I do with other ways that technology (APIs) are impacting our world, I wanted to better understand it before I opened my mouth telling people there was or was not a problem here--let alone talk about any possible solution. Building on my friend Mike Caulfield&#39;s work, I set out to understand how &quot;fake news&quot; was being shared, compared to &quot;regular news&quot;. I seeded my list of &quot;fake news&quot; domains with just a handful that are making the rounds in the press&nbsp;and kept adding to it, resulting in 327 separate&nbsp;domains I was evaluating as of yesterday when I spun down the servers. I fired up an Amazon server and began pulling all of the URLs that make up these sites, and passing those URLs to Facebook so that I could better understand how these sites were being shared, compared to other more recognized news outlets. Establishing a list of these domains, and harvesting their sites isn&#39;t that hard, but understanding their virality on Facebook and Twitter is more costly, as these platforms are in the business of monetizing this information, which contributes to why this is a problem in the first place. I was able to get around some of the limitations of the Facebook and Twitter APIs by launching many different servers (30 as of yesterday), that allows me to pull data with a unique IP address--something that is proving to be more costly than any value I generated. I am shutting down the servers, and leaving my research on Github for others to build on. I am just unsure of what would be next, uneasy about spending money I do not have on this, and be in the business of generating lists of domains that say this is &quot;good&quot; or this is &quot;bad&quot;. The reasoning behind these websites spreading information or disinformation vary, and honestly it is very difficult to draw a line regarding what is good or bad--something I&#39;m not very interested in spending my time doing. I will keep working on evolving the code for this project to keep profiling domains, hopefully providing a fingerprint of healthy and unhealthy behavior. Honestly, this world is very very toxic. These folks are obviously very scared of people of color, government, god, and much, much more, and I&#39;m not really interested in spending my days wading through this stuff. In my opinion, there is no technological solution to this problem. We can encourage the platforms to filter better, and the advertising networks to cut off the revenue generation, but they will continue. This group of disinformation peddlers are extremely resourceful and will find new domains if they are blacklisted, leverage alternative advertising networks when they are cut-off, and launch new social media accounts when cut-off. In short, it would be technology whack-a-mole, and I&#39;m not interested&nbsp;in playing. The diversity in the number of sites I came across presented the biggest challenge, with the only common goal across them being capitalist in nature. Many sites speak to the alt-right, or right, but many were crafty at finding affinity with often left-leaning causes like herbal products, marijuana, aliens, and beyond. They are all very search engine optimization (SEO), and social media marketing (SMM) savvy. They leverage all the top social and seo services, and were obviously very adept at purchasing new domains, and scaling content generation, cross-posting, and gaming Google, Facebook, and Twitter along the way. You could dedicate your life to counteracting this world, and die having never accomplished your mission.&nbsp; There is plenty of interesting work to be conducted in this area, but it is all work that will cost money to fire up servers, crunch, store, and process the data. Being an independent operation I just can&#39;t afford spending money doing this, and after spending upwards of $500.00 on computing&nbsp;and storage costs, I didn&#39;t see any light at the end of the tunnel. I&#39;d be happy to continue indexing domains, or evaluating which social services and advertising network these disinformation sites are using, but I can&#39;t continue doing it without any funding assistance, I have better things to spend my time and money on, that provide a measurable impact on digital literacy. In the end,we have to focus on a more digitally literate society. People who are willing to question who is behind any news item they share. Who individually is responsible any piece of information, as well as which company&#39;s, government agencies, and ideology exists behind anything being shared. I just do not feel like technology can get us out of this mess. It is humans and educated humans that can get us out of this quagmire. A lack of education is why people voted for Donald Trump, and it is why they believe in fake news, propaganda, and disinformation. No amount of filters, or domain black or white lists will make that better--we need people to be curious, inquisitive, and to want to understand what is behind.&nbsp; I&#39;m hoping others will continue to work on other data projects and tooling to help push back on this problem. I want all of us to push back on Facebook and Google to help provide solutions. Ultimately I do not hold out much hope because it is the advertising driven incentive model that will drive this. The clueless white dudes behind these efforts, like the guy who NPR found to be behind the Denver Guardian fake new site, are the problem...they don&#39;t care about left or right, they care about making money. This is why fake news, cybersecurity, and any other cesspool of the Internet will keep bubbling up and burning all of us--until we address this incentive model for building out the Internet, very little will change." />
+<meta property="og:description" content="There was a lot of fake news swirling around during the election, and like I do with other ways that technology (APIs) are impacting our world, I wanted to better understand it before I opened my mouth telling people there was or was not a problem here--let alone talk about any possible solution. Building on my friend Mike Caulfield&#39;s work, I set out to understand how &quot;fake news&quot; was being shared, compared to &quot;regular news&quot;. I seeded my list of &quot;fake news&quot; domains with just a handful that are making the rounds in the press&nbsp;and kept adding to it, resulting in 327 separate&nbsp;domains I was evaluating as of yesterday when I spun down the servers. I fired up an Amazon server and began pulling all of the URLs that make up these sites, and passing those URLs to Facebook so that I could better understand how these sites were being shared, compared to other more recognized news outlets. Establishing a list of these domains, and harvesting their sites isn&#39;t that hard, but understanding their virality on Facebook and Twitter is more costly, as these platforms are in the business of monetizing this information, which contributes to why this is a problem in the first place. I was able to get around some of the limitations of the Facebook and Twitter APIs by launching many different servers (30 as of yesterday), that allows me to pull data with a unique IP address--something that is proving to be more costly than any value I generated. I am shutting down the servers, and leaving my research on Github for others to build on. I am just unsure of what would be next, uneasy about spending money I do not have on this, and be in the business of generating lists of domains that say this is &quot;good&quot; or this is &quot;bad&quot;. The reasoning behind these websites spreading information or disinformation vary, and honestly it is very difficult to draw a line regarding what is good or bad--something I&#39;m not very interested in spending my time doing. I will keep working on evolving the code for this project to keep profiling domains, hopefully providing a fingerprint of healthy and unhealthy behavior. Honestly, this world is very very toxic. These folks are obviously very scared of people of color, government, god, and much, much more, and I&#39;m not really interested in spending my days wading through this stuff. In my opinion, there is no technological solution to this problem. We can encourage the platforms to filter better, and the advertising networks to cut off the revenue generation, but they will continue. This group of disinformation peddlers are extremely resourceful and will find new domains if they are blacklisted, leverage alternative advertising networks when they are cut-off, and launch new social media accounts when cut-off. In short, it would be technology whack-a-mole, and I&#39;m not interested&nbsp;in playing. The diversity in the number of sites I came across presented the biggest challenge, with the only common goal across them being capitalist in nature. Many sites speak to the alt-right, or right, but many were crafty at finding affinity with often left-leaning causes like herbal products, marijuana, aliens, and beyond. They are all very search engine optimization (SEO), and social media marketing (SMM) savvy. They leverage all the top social and seo services, and were obviously very adept at purchasing new domains, and scaling content generation, cross-posting, and gaming Google, Facebook, and Twitter along the way. You could dedicate your life to counteracting this world, and die having never accomplished your mission.&nbsp; There is plenty of interesting work to be conducted in this area, but it is all work that will cost money to fire up servers, crunch, store, and process the data. Being an independent operation I just can&#39;t afford spending money doing this, and after spending upwards of $500.00 on computing&nbsp;and storage costs, I didn&#39;t see any light at the end of the tunnel. I&#39;d be happy to continue indexing domains, or evaluating which social services and advertising network these disinformation sites are using, but I can&#39;t continue doing it without any funding assistance, I have better things to spend my time and money on, that provide a measurable impact on digital literacy. In the end,we have to focus on a more digitally literate society. People who are willing to question who is behind any news item they share. Who individually is responsible any piece of information, as well as which company&#39;s, government agencies, and ideology exists behind anything being shared. I just do not feel like technology can get us out of this mess. It is humans and educated humans that can get us out of this quagmire. A lack of education is why people voted for Donald Trump, and it is why they believe in fake news, propaganda, and disinformation. No amount of filters, or domain black or white lists will make that better--we need people to be curious, inquisitive, and to want to understand what is behind.&nbsp; I&#39;m hoping others will continue to work on other data projects and tooling to help push back on this problem. I want all of us to push back on Facebook and Google to help provide solutions. Ultimately I do not hold out much hope because it is the advertising driven incentive model that will drive this. The clueless white dudes behind these efforts, like the guy who NPR found to be behind the Denver Guardian fake new site, are the problem...they don&#39;t care about left or right, they care about making money. This is why fake news, cybersecurity, and any other cesspool of the Internet will keep bubbling up and burning all of us--until we address this incentive model for building out the Internet, very little will change." />
+<link rel="canonical" href="http://localhost:4000/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/" />
+<meta property="og:url" content="http://localhost:4000/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_11_28_at_11.28.02_am.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-11-28T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"I Spent Some Time Evaluating The Fake News Problem","dateModified":"2016-11-28T00:00:00-08:00","datePublished":"2016-11-28T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_11_28_at_11.28.02_am.png","description":"There was a lot of fake news swirling around during the election, and like I do with other ways that technology (APIs) are impacting our world, I wanted to better understand it before I opened my mouth telling people there was or was not a problem here--let alone talk about any possible solution. Building on my friend Mike Caulfield&#39;s work, I set out to understand how &quot;fake news&quot; was being shared, compared to &quot;regular news&quot;. I seeded my list of &quot;fake news&quot; domains with just a handful that are making the rounds in the press&nbsp;and kept adding to it, resulting in 327 separate&nbsp;domains I was evaluating as of yesterday when I spun down the servers. I fired up an Amazon server and began pulling all of the URLs that make up these sites, and passing those URLs to Facebook so that I could better understand how these sites were being shared, compared to other more recognized news outlets. Establishing a list of these domains, and harvesting their sites isn&#39;t that hard, but understanding their virality on Facebook and Twitter is more costly, as these platforms are in the business of monetizing this information, which contributes to why this is a problem in the first place. I was able to get around some of the limitations of the Facebook and Twitter APIs by launching many different servers (30 as of yesterday), that allows me to pull data with a unique IP address--something that is proving to be more costly than any value I generated. I am shutting down the servers, and leaving my research on Github for others to build on. I am just unsure of what would be next, uneasy about spending money I do not have on this, and be in the business of generating lists of domains that say this is &quot;good&quot; or this is &quot;bad&quot;. The reasoning behind these websites spreading information or disinformation vary, and honestly it is very difficult to draw a line regarding what is good or bad--something I&#39;m not very interested in spending my time doing. I will keep working on evolving the code for this project to keep profiling domains, hopefully providing a fingerprint of healthy and unhealthy behavior. Honestly, this world is very very toxic. These folks are obviously very scared of people of color, government, god, and much, much more, and I&#39;m not really interested in spending my days wading through this stuff. In my opinion, there is no technological solution to this problem. We can encourage the platforms to filter better, and the advertising networks to cut off the revenue generation, but they will continue. This group of disinformation peddlers are extremely resourceful and will find new domains if they are blacklisted, leverage alternative advertising networks when they are cut-off, and launch new social media accounts when cut-off. In short, it would be technology whack-a-mole, and I&#39;m not interested&nbsp;in playing. The diversity in the number of sites I came across presented the biggest challenge, with the only common goal across them being capitalist in nature. Many sites speak to the alt-right, or right, but many were crafty at finding affinity with often left-leaning causes like herbal products, marijuana, aliens, and beyond. They are all very search engine optimization (SEO), and social media marketing (SMM) savvy. They leverage all the top social and seo services, and were obviously very adept at purchasing new domains, and scaling content generation, cross-posting, and gaming Google, Facebook, and Twitter along the way. You could dedicate your life to counteracting this world, and die having never accomplished your mission.&nbsp; There is plenty of interesting work to be conducted in this area, but it is all work that will cost money to fire up servers, crunch, store, and process the data. Being an independent operation I just can&#39;t afford spending money doing this, and after spending upwards of $500.00 on computing&nbsp;and storage costs, I didn&#39;t see any light at the end of the tunnel. I&#39;d be happy to continue indexing domains, or evaluating which social services and advertising network these disinformation sites are using, but I can&#39;t continue doing it without any funding assistance, I have better things to spend my time and money on, that provide a measurable impact on digital literacy. In the end,we have to focus on a more digitally literate society. People who are willing to question who is behind any news item they share. Who individually is responsible any piece of information, as well as which company&#39;s, government agencies, and ideology exists behind anything being shared. I just do not feel like technology can get us out of this mess. It is humans and educated humans that can get us out of this quagmire. A lack of education is why people voted for Donald Trump, and it is why they believe in fake news, propaganda, and disinformation. No amount of filters, or domain black or white lists will make that better--we need people to be curious, inquisitive, and to want to understand what is behind.&nbsp; I&#39;m hoping others will continue to work on other data projects and tooling to help push back on this problem. I want all of us to push back on Facebook and Google to help provide solutions. Ultimately I do not hold out much hope because it is the advertising driven incentive model that will drive this. The clueless white dudes behind these efforts, like the guy who NPR found to be behind the Denver Guardian fake new site, are the problem...they don&#39;t care about left or right, they care about making money. This is why fake news, cybersecurity, and any other cesspool of the Internet will keep bubbling up and burning all of us--until we address this incentive model for building out the Internet, very little will change.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="I Spent Some Time Evaluating The Fake News Problem | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="I Spent Some Time Evaluating The Fake News Problem | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">I Spent Some Time Evaluating The Fake News Problem</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2016-11-28T00:00:00-08:00" itemprop="datePublished">
+    
+    Nov 28, 2016
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_11_28_at_11.28.02_am.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="http://domain-literacy.com"><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_11_28_at_11.28.02_am.png" alt="" width="45%" align="right" /></a></p>
+<p>There was a lot of fake news swirling around during the election, and like I do with other ways that technology (APIs) are impacting our world, I wanted to better understand it before I opened my mouth telling people there was or was not a problem here--let alone talk about any possible solution. Building on <a href="https://hapgood.us/2016/11/13/fake-news-does-better-on-facebook-than-real-news/">my friend Mike Caulfield's work</a>, I set out to understand how "fake news" was being shared, compared to "regular news".</p>
+<p>I seeded my list of "fake news" domains with just a handful that are making the rounds in the press&nbsp;and kept adding to it, <a href="http://domain-literacy.com/other/">resulting in 327 separate&nbsp;domains I was evaluating as of yesterday when I spun down the servers</a>. I fired up an Amazon server and began pulling all of the URLs that make up these sites, and passing those URLs to Facebook so that I could better understand how these sites were being shared, compared to other more recognized news outlets.</p>
+<p>Establishing a list of these domains, and harvesting their sites isn't that hard, but understanding their virality on Facebook and Twitter is more costly, as these platforms are in the business of monetizing this information, which contributes to why this is a problem in the first place. I was able to get around some of the limitations of the Facebook and Twitter APIs by launching many different servers (30 as of yesterday), that allows me to pull data with a unique IP address--something that is proving to be more costly than any value I generated.</p>
+<p><a href="http://domain-literacy.com/">I am shutting down the servers, and leaving my research on Github for others to build on</a>. I am just unsure of what would be next, uneasy about spending money I do not have on this, and be in the business of generating lists of domains that say this is "good" or this is "bad". The reasoning behind these websites spreading information or disinformation vary, and honestly it is very difficult to draw a line regarding what is good or bad--something I'm not very interested in spending my time doing. I will keep working on evolving the code for this project to keep profiling domains, hopefully providing a fingerprint of healthy and unhealthy behavior.</p>
+<p>Honestly, this world is very very toxic. These folks are obviously very scared of people of color, government, god, and much, much more, and I'm not really interested in spending my days wading through this stuff. In my opinion, there is no technological solution to this problem. We can encourage the platforms to filter better, and the advertising networks to cut off the revenue generation, but they will continue. This group of disinformation peddlers are extremely resourceful and will find new domains if they are blacklisted, leverage alternative advertising networks when they are cut-off, and launch new social media accounts when cut-off. In short, it would be technology whack-a-mole, and I'm not interested&nbsp;in playing.</p>
+<p>The diversity in the number of sites I came across presented the biggest challenge, with the only common goal across them being capitalist in nature. Many sites speak to the alt-right, or right, but many were crafty at finding affinity with often left-leaning causes like herbal products, marijuana, aliens, and beyond. They are all very search engine optimization (SEO), and social media marketing (SMM) savvy. They leverage all the top social and seo services, and were obviously very adept at purchasing new domains, and scaling content generation, cross-posting, and gaming Google, Facebook, and Twitter along the way. You could dedicate your life to counteracting this world, and die having never accomplished your mission.&nbsp;</p>
+<p>There is plenty of interesting work to be conducted in this area, but it is all work that will cost money to fire up servers, crunch, store, and process the data. Being an independent operation I just can't afford spending money doing this, and after spending upwards of $500.00 on computing&nbsp;and storage costs, I didn't see any light at the end of the tunnel. I'd be happy to continue indexing domains, or evaluating which social services and advertising network these disinformation sites are using, but I can't continue doing it without any funding assistance, I have better things to spend my time and money on, that provide a measurable impact on digital literacy.</p>
+<p>In the end,we have to focus on a more digitally literate society. People who are willing to question who is behind any news item they share. Who individually is responsible any piece of information, as well as which company's, government agencies, and ideology exists behind anything being shared. I just do not feel like technology can get us out of this mess. It is humans and educated humans that can get us out of this quagmire. A lack of education is why people voted for Donald Trump, and it is why they believe in fake news, propaganda, and disinformation. No amount of filters, or domain black or white lists will make that better--we need people to be curious, inquisitive, and to want to understand what is behind.&nbsp;</p>
+<p>I'm hoping others will continue to work on other data projects and tooling to help push back on this problem. I want all of us to push back on Facebook and Google to help provide solutions. Ultimately I do not hold out much hope because it is the advertising driven incentive model that will drive this. The clueless white dudes behind these efforts, <a href="http://www.npr.org/sections/alltechconsidered/2016/11/23/503146770/npr-finds-the-head-of-a-covert-fake-news-operation-in-the-suburbs">like the guy who NPR found to be behind the Denver Guardian fake new site, are the problem</a>...they don't care about left or right, they care about making money. This is why fake news, cybersecurity, and any other cesspool of the Internet will keep bubbling up and burning all of us--until we address this incentive model for building out the Internet, very little will change.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=I Spent Some Time Evaluating The Fake News Problem&url=http://localhost:4000/2016/11/28/i-spent-some-time-evaluating-the-fake-news-problem/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2016%2F11%2F28%2Fi-spent-some-time-evaluating-the-fake-news-problem%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2016/11/14/critical-of-facebook-lets-apply-this-thinking-to-all-tech-before-it-gets-too-big/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2016/11/28/the-assholes-are-better-equipped-when-it-comes-to-technology/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

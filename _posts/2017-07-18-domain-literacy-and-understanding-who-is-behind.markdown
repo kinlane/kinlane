@@ -1,0 +1,20 @@
+---
+published: false
+layout: post
+title: Domain Literacy And Understanding Who Is Behind
+date: 2017-07-18T12:00:00.000Z
+tags:
+  - Kin Lane
+  - Domain Literacy
+image: >-
+  https://s3.amazonaws.com/kinlane-productions2/century-foundation/the-century-foundation-screenshot.png
+---
+<p><a href="https://tcf.org/"><img src="https://s3.amazonaws.com/kinlane-productions2/century-foundation/the-century-foundation-screenshot.png" align="right" width="40%" style="padding: 15px;" /></a></p>[When I talk about domain literacy](http://kinlane.com/2017/01/06/what-i-mean-when-i-say-domain-literacy/), I feel like many folks eyes just gloss over. Many people have a weird switch in their brains with many abstract Internet concepts, where they seem to just switch off when confronted with concepts that I feel are relatable. I also feel like many tech folks I know have a similar but inverse reaction, where it is all about dismissing regular folks ability to think about this stuff, and I'm wasting my time talking about this stuff. I know these two are related, through some strange Internet technology voodoo, but I will explore that topic at another time.
+
+As I was working today I clicked into a story from my Twitter feed, and had me a domain literacy moment that I wanted to share with some folks who think I'm talking technical domain garbly gooop-when I'm not. [I had clicked into this story about traffic shaping by The Century Foundation](https://tcf.org/content/report/surveillance-without-borders-the-traffic-shaping-loophole-and-why-it-matters/). I'm interested in the story, the topic and general tone of what is being said, and I'm intrigued by the amount of data they provide. Immediately the critical side of my brain sends me a signal, and I need to be thinking about who is behind this foundation (tcf.org). Sure, the story resonated with me, but instead of leaving it there, I should be engaging is some domain literacy and awarness building, and becoming more aware who is behind the domain I find myself surfing -- tcf.org.
+
+Most domain literacy inquiries will begin with a Google Search to see the wider landscape for The Century Foundation. Something that will most often [return a Wikipedia results next, which should give me an external perspective of who is behind a domain](https://en.wikipedia.org/wiki/The_Century_Foundation)--if it doesn't, that is another signal in my book. After that, [I recommend hitting Source Watch to get another snapshot](http://www.sourcewatch.org/index.php/Century_Foundation), even if it overlaps with Wikipedia. SourceWatch helps connect the dots between any single domain and the other domains they operate under, as well as with the funders and people who are behind the organization.
+
+Usually within 5 minutes I can have a general feeling for who is behind a domain, and whether or not I want to curate and share the blog post I originally was reading. Just pausing for five minutes, Googling, and looking through Wikipedia and SourceWatch, I have a better idea if this is a domain I want to be associated with, and have linked to my Twitter or Facebook profile--which of course will always go on my permanent algorithmic record. I don't agree with everything the Century Foundation is doing, some of their terrorism focus is at odds with my views, but I find that their research on education, surveillance, healthcare, and other areas do overlap with some of mine.
+
+I will need more reinforcement from The Century Foundation before I feel that I can actually know and trust them, but I found the five minutes I spent doing some investigation into who is behind the domain to be extremely valuable. It isn't rocket science. It isn't super technical. Domain literacy starts with knowing more about the website you are operating on, potentially sharing with others, and associating with my social network. Helping me understand a little more about who is behind the domain, and being a little more literate about the people, ideology, and where the money is coming from.

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Google Spreadsheet To YAML On Jekyll'
+source: http://kinlane.com/2016/10/11/google-spreadsheet-to-yaml-on-jekyll/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png
+atomdate: 2016-10-11T12:00:00-07:00
+---
+<p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png" alt="" width="40%" align="right" /></p>
+<p><a href="https://github.com/api-evangelist-tools">I am building out a number of micro tools on Github lately</a>, and since I'm using a lot of the same features across many different projects, before I implement for any specific solution, I am making sure I develop it as a standalone component. I'm trying to encourage a much more modular approach to how I develop API-centric micro tools, building a whole toolbox of reusable components that I can use in my work and something that I can&nbsp;evolve over time, independently of each project.</p>
+<p><a href="https://api-evangelist-tools.github.io/spreadsheet-to-yaml-in-jekyll/">One of the modules I developed this last weekend was a Google Spreadsheet to YAML on Jekyll solution</a>. This solution is meant to take any Google Spreadsheet that has been made public, pull it via a simple JavaScript that runs on a Jekyll website running on Github Pages. Once it pulls the JSON from Google it converts it to YAML, and if a valid Github OAuth Token is present, it will save the YAML to the _data folder in the Github repository.&nbsp;</p>
+<p>I am using this component in a couple different websites and micro tools that I'm developing. Some of these projects involve a non-developer maintaining data and content via a Google Spreadsheet, then triggering the update of the Jekyll website that presents the data or content via website and application. I am increasingly <a href="http://apievangelist.com/2016/09/19/providing-yaml-driven-xml-json-and-atom-using-jekyll-and-github/">storing machine-readable data and content as YAML in the _data store of various Github hosted</a> research projects, <a href="http://apievangelist.com/2016/09/20/d3js-visualizations-using-yaml-and-jekyll/">visualizations</a>, and other applications--so opening up this work to be easily edited via a Google Spreadsheet is an important piece of the puzzle for me.</p>
+<p>As with each component, I am developing, <a href="https://github.com/api-evangelist-tools/spreadsheet-to-yaml-in-jekyll">you can find the code for this in the Github repository</a>, and leave any feedback <a href="https://github.com/api-evangelist-tools/spreadsheet-to-yaml-in-jekyll/issues">as an issue for the work</a>.</p>

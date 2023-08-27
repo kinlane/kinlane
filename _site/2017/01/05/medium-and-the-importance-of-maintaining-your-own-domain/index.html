@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Medium And The Importance Of Maintaining Your Own Domain | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Medium And The Importance Of Maintaining Your Own Domain" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I wanted to use the recent news about Medium downsizing&nbsp;as an opportunity to educate folks about the importance of maintaining your own domain. I like Medium. I am not as excited about it as some folks are, but I see enough value there that I make sure and make sure it is one of the channels I tend to on a regular basis. However, as I&#39;ve discussed before, its important to weigh the pros and cons of how much you depend on 3rd party platforms and services for essential pieces of your online presence--like your blog. I am always thinking deeply about which online services I adopt. Balancing my needs, my budget, how much control I have over my data, content, and algorithms, while also working to understand the motives of each platform, product, and service they offer. I find value in operating on Medium&nbsp;and have even showcased some API provider&#39;s usage of the platform for their blog presence, and Medium&#39;s own approach to delivering their API. However, I&#39;ve always been skeptical about Medium&#39;s viability, motivations, and what the future might hold. We should not stop playing with new services, and adopting those that add value to what we are trying to accomplish online, but we should always consider how deeply we want to depend on these companies, and be aware that their VC-fueled objectives might now always be alignment with our own. It is a good time to focus on this topic as we ponder the future of Medium, but I wanted to beat this drum again mainly because of the number of folks who felt they needed to tell me in 2016 that I should move my blog entirely to Medium, without considering that impact to my operations--it is cool man! I do not condemn folks running their blog on Medium, but at a minimum, you should make sure and set up your own subdomain, otherwise you are handing over all your content, power, and control to Medium. If you are blogging for fun, or just as a side to your career, this might not be a problem, but if you are like me, and depend on your blog to pay your rent, you have to put more thought into where your blog operates. I enjoy the network effect of Medium, but I also enjoy the 5-10K my blog makes each month through sponsorship and content creation--something I have been able to cultivate because I&#39;m maintained full control over my operations for seven years now. Startup centric folks love to push back on this way of thought, as they prefer all of us to be dependent on them, regardless of their objectives, exit strategies, or high risk of failure. I&#39;m perfectly happy to enter into partnership arrangements with platforms that bring value, but I want to make sure I can always get my data in, and my data out, and make sure all public URLs are reachable via a domain I have DNS control over. I&#39;m sorry, its just good business. In 2016, either you are working on someone else&#39;s farm (domain), or you are working on your own, enjoying the fruits of your labor, and profiting from the value you generated on a daily basis." />
+<meta property="og:description" content="I wanted to use the recent news about Medium downsizing&nbsp;as an opportunity to educate folks about the importance of maintaining your own domain. I like Medium. I am not as excited about it as some folks are, but I see enough value there that I make sure and make sure it is one of the channels I tend to on a regular basis. However, as I&#39;ve discussed before, its important to weigh the pros and cons of how much you depend on 3rd party platforms and services for essential pieces of your online presence--like your blog. I am always thinking deeply about which online services I adopt. Balancing my needs, my budget, how much control I have over my data, content, and algorithms, while also working to understand the motives of each platform, product, and service they offer. I find value in operating on Medium&nbsp;and have even showcased some API provider&#39;s usage of the platform for their blog presence, and Medium&#39;s own approach to delivering their API. However, I&#39;ve always been skeptical about Medium&#39;s viability, motivations, and what the future might hold. We should not stop playing with new services, and adopting those that add value to what we are trying to accomplish online, but we should always consider how deeply we want to depend on these companies, and be aware that their VC-fueled objectives might now always be alignment with our own. It is a good time to focus on this topic as we ponder the future of Medium, but I wanted to beat this drum again mainly because of the number of folks who felt they needed to tell me in 2016 that I should move my blog entirely to Medium, without considering that impact to my operations--it is cool man! I do not condemn folks running their blog on Medium, but at a minimum, you should make sure and set up your own subdomain, otherwise you are handing over all your content, power, and control to Medium. If you are blogging for fun, or just as a side to your career, this might not be a problem, but if you are like me, and depend on your blog to pay your rent, you have to put more thought into where your blog operates. I enjoy the network effect of Medium, but I also enjoy the 5-10K my blog makes each month through sponsorship and content creation--something I have been able to cultivate because I&#39;m maintained full control over my operations for seven years now. Startup centric folks love to push back on this way of thought, as they prefer all of us to be dependent on them, regardless of their objectives, exit strategies, or high risk of failure. I&#39;m perfectly happy to enter into partnership arrangements with platforms that bring value, but I want to make sure I can always get my data in, and my data out, and make sure all public URLs are reachable via a domain I have DNS control over. I&#39;m sorry, its just good business. In 2016, either you are working on someone else&#39;s farm (domain), or you are working on your own, enjoying the fruits of your labor, and profiting from the value you generated on a daily basis." />
+<link rel="canonical" href="http://localhost:4000/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/" />
+<meta property="og:url" content="http://localhost:4000/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2017_01_05_at_5.19.11_pm.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-05T00:00:00-08:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Medium And The Importance Of Maintaining Your Own Domain","dateModified":"2017-01-05T00:00:00-08:00","datePublished":"2017-01-05T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2017_01_05_at_5.19.11_pm.png","description":"I wanted to use the recent news about Medium downsizing&nbsp;as an opportunity to educate folks about the importance of maintaining your own domain. I like Medium. I am not as excited about it as some folks are, but I see enough value there that I make sure and make sure it is one of the channels I tend to on a regular basis. However, as I&#39;ve discussed before, its important to weigh the pros and cons of how much you depend on 3rd party platforms and services for essential pieces of your online presence--like your blog. I am always thinking deeply about which online services I adopt. Balancing my needs, my budget, how much control I have over my data, content, and algorithms, while also working to understand the motives of each platform, product, and service they offer. I find value in operating on Medium&nbsp;and have even showcased some API provider&#39;s usage of the platform for their blog presence, and Medium&#39;s own approach to delivering their API. However, I&#39;ve always been skeptical about Medium&#39;s viability, motivations, and what the future might hold. We should not stop playing with new services, and adopting those that add value to what we are trying to accomplish online, but we should always consider how deeply we want to depend on these companies, and be aware that their VC-fueled objectives might now always be alignment with our own. It is a good time to focus on this topic as we ponder the future of Medium, but I wanted to beat this drum again mainly because of the number of folks who felt they needed to tell me in 2016 that I should move my blog entirely to Medium, without considering that impact to my operations--it is cool man! I do not condemn folks running their blog on Medium, but at a minimum, you should make sure and set up your own subdomain, otherwise you are handing over all your content, power, and control to Medium. If you are blogging for fun, or just as a side to your career, this might not be a problem, but if you are like me, and depend on your blog to pay your rent, you have to put more thought into where your blog operates. I enjoy the network effect of Medium, but I also enjoy the 5-10K my blog makes each month through sponsorship and content creation--something I have been able to cultivate because I&#39;m maintained full control over my operations for seven years now. Startup centric folks love to push back on this way of thought, as they prefer all of us to be dependent on them, regardless of their objectives, exit strategies, or high risk of failure. I&#39;m perfectly happy to enter into partnership arrangements with platforms that bring value, but I want to make sure I can always get my data in, and my data out, and make sure all public URLs are reachable via a domain I have DNS control over. I&#39;m sorry, its just good business. In 2016, either you are working on someone else&#39;s farm (domain), or you are working on your own, enjoying the fruits of your labor, and profiting from the value you generated on a daily basis.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Medium And The Importance Of Maintaining Your Own Domain | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Medium And The Importance Of Maintaining Your Own Domain | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Medium And The Importance Of Maintaining Your Own Domain</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-01-05T00:00:00-08:00" itemprop="datePublished">
+    
+    Jan 5, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2017_01_05_at_5.19.11_pm.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="https://blog.medium.com/renewing-mediums-focus-98f374a960be#.jka0f8kbz"><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2017_01_05_at_5.19.11_pm.png" alt="" width="40%" align="right" /></a></p>
+<p>I wanted to use <a href="https://blog.medium.com/renewing-mediums-focus-98f374a960be#.jka0f8kbz">the recent news about Medium downsizing</a>&nbsp;as an opportunity to educate folks about the importance of maintaining your own domain. I like Medium. I am not as excited about it as some folks are, but I see enough value there that I make sure and make sure it is one of the channels I tend to on a regular basis. However, <a href="http://apievangelist.com/2016/03/30/i-am-seeing-more-api-platforms-manage-their-blog-presence-using-medium/">as I've discussed before, its important to weigh the pros and cons of how much you depend on 3rd party platforms and services for essential pieces of your online presence</a>--like your blog.</p>
+<p>I am always thinking deeply about which online services I adopt. Balancing my needs, my budget, how much control I have over my data, content, and algorithms, while also working to understand the motives of each platform, product, and service they offer. I find value in operating on Medium&nbsp;and have even showcased some API provider's usage of the platform for their blog presence, and Medium's own approach to delivering their API. However, I've always been skeptical about Medium's viability, motivations, and what the future might hold.</p>
+<p>We should not stop playing with new services, and adopting those that add value to what we are trying to accomplish online, but we should always consider how deeply we want to depend on these companies, and be aware that their VC-fueled objectives might now always be alignment with our own. It is a good time to focus on this topic <a href="https://m.signalvnoise.com/venture-capital-is-going-to-murder-medium-656cbccf4829#.o7jjxpokq">as we ponder the future of Medium</a>, but I wanted to beat this drum again mainly because of the number of folks who felt they needed to tell me in 2016 that I should move my blog entirely to Medium, without considering that impact to my operations--it is cool man!</p>
+<p>I do not condemn folks running their blog on Medium, but at a minimum, you should make sure and set up your own subdomain, otherwise you are handing over all your content, power, and control to Medium. If you are blogging for fun, or just as a side to your career, this might not be a problem, but if you are like me, and depend on your blog to pay your rent, you have to put more thought into where your blog operates. I enjoy the network effect of Medium, but I also enjoy the 5-10K my blog makes each month through sponsorship and content creation--something I have been able to cultivate because I'm maintained full control over my operations for seven years now.</p>
+<p>Startup centric folks love to push back on this way of thought, as they prefer all of us to be dependent on them, regardless of their objectives, exit strategies, or high risk of failure. I'm perfectly happy to enter into partnership arrangements with platforms that bring value, but I want to make sure I can always get my data in, and my data out, and make sure all public URLs are reachable via a domain I have DNS control over. I'm sorry, its just good business. In 2016, either you are working on someone else's farm (domain), or you are working on your own, enjoying the fruits of your labor, and profiting from the value you generated on a daily basis.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Medium And The Importance Of Maintaining Your Own Domain&url=http://localhost:4000/2017/01/05/medium-and-the-importance-of-maintaining-your-own-domain/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F05%2Fmedium-and-the-importance-of-maintaining-your-own-domain%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/01/03/my-plan-for-the-next-couple-of-years/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/01/06/what-i-mean-when-i-say-domain-literacy/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

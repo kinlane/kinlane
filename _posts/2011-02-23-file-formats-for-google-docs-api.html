@@ -1,0 +1,128 @@
+---
+layout: post
+title: 'File Formats for Google Docs API'
+source: http://kinlane.com/2011/02/23/file-formats-for-google-docs-api/
+domain: kinlane.com
+image: http://kinlane-productions2.s3.amazonaws.com/googleapps.jpg
+---
+<img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/googleapps.jpg" alt="" width="240" align="right" />I am defining various aspects of the <a href="http://docs.google.com" target="_blank">Google Docs</a> platform in conjunction with my <a href="http://www.kinlane.com/2011/02/google-cloud-print-proxy-cloud-printer/" target="_blank">Google Cloud Print Proxy</a> work.
+<p></p>
+I need to know what is possible via the <a href="http://code.google.com/apis/documents/" target="_blank">Google Docs Listing API</a> for managing documents prior to cloud printing.
+<p></p>
+I am focusing on what file types and sizes are viable through the Google Docs Web Interface, Google Docs Viewer and the Google Docs Listing API.
+<p></p>
+The following formats are available for use in the Google Docs Viewer:
+<ul class="mainlist">
+	<li>Microsoft Word (.DOC, .DOCX)</li>
+	<li>Microsoft Excel (.XLS, .XLSX)</li>
+	<li>Microsoft PowerPoint 2007 / 2010 (.PPT, .PPTX)</li>
+	<li>Apple Pages (.PAGES)</li>
+	<li>Adobe Illustrator (.AI)</li>
+	<li>Adobe Photoshop (.PSD)</li>
+	<li>Autodesk AutoCad (.DXF)</li>
+	<li><a class="zem_slink" title="Scalable Vector Graphics" rel="homepage" href="http://www.w3.org/Graphics/SVG/">Scalable Vector Graphics</a> (.SVG)</li>
+	<li>PostScript (.EPS, .PS)</li>
+	<li>TrueType (.TTF)</li>
+	<li>XML Paper Specification (.XPS)</li>
+</ul>
+With Google Docs Business Accounts any document type can be uploaded via the Google Doc Web Interface, and any document can be created or uploaded via the Google Docs List API.
+<p></p>kinlane-productions2kinlane-productions2
+There are specific documents types that can be uploaded as Google Documents.
+<p></p>
+<strong>Google Documents</strong>
+<p></p>
+You can import in the following file types for Google Docs:
+<ul class="mainlist"><img style="padding: 15px;" src="http://kinlane-productions.s3.amazonaws.com/PDF_red.jpg" alt="" width="150" align="right" />
+	<li>.gif - image/gif - <a class="zem_slink" title="Graphics Interchange Format" rel="wikipedia" href="http://en.wikipedia.org/wiki/Graphics_Interchange_Format">Graphics Interchange Format</a></li>
+	<li>.odt - application/vnd.openxmlformats-officedocument.wordprocessingml.document - Open Document Format</li>
+	<li>.doc - application/msword - Microsoft Word Format</li>
+	<li>.jpeg - image/jpeg - <a class="zem_slink" title="Joint Photographic Experts Group" rel="wikipedia" href="http://en.wikipedia.org/wiki/Joint_Photographic_Experts_Group">Joint Photographic Experts Group</a> Image Format</li>
+	<li>.html - text/html - HTML Format</li>
+	<li>.txt - text/plain - TXT File</li>
+	<li>.pdf - application/pdf - Portable Document Format</li>kikinlane-productions2
+	<li>.png - image/png - Portable Networks Graphic Image Format</li>
+	<li>.rtf - application/rtf - Rich Format</li>
+</ul>
+Google Docs have a maximum import file size of 512000 KB or 512 MB.
+<p></p>
+You can export in the following file types for Google Docs:
+<ul class="mainlist"><img style="padding: 15px;" src="http://kinlane-productions.s3.amazonaws.com/microsoft-powerpoint.png" alt="" width="150" align="right" />
+	<li>.doc - application/msword - Microsoft Word Format</li>
+	<li>.html - text/html - HTML Format</li>
+	<li>.jpeg - image/jpeg - Joint Photographic Experts Group Image Format</li>
+	<li>.odt - application/vnd.openxmlformats-officedocument.wordprocessingml.document - Open Document Forma</li>
+	<li>.pdf - application/pdf - Portable Document Format</li>
+	<li>.png - image/png - Portable Networks Graphic Image Format</li>
+	<li>.rtf - application/rtf - Rich Format</li>
+	<li>.svg 	Scalable Vector Graphics Image Format</li>
+	<li>.txt - text/plain - TXT File</li>
+	<li>zip 	ZIP archive. Contains the images (if any) used in the document</li>
+</ul>
+<strong>Google Drawings</strong>
+<p></p>
+You can import in the following file types for Google Drawings:
+<ul class="mainlist">
+	<li>.wmf - image/x-wmf - Windows Metafile</li>
+</ul>
+Google Drawings have a maximum import file size of 512000 KB or 512 MB.
+<p></p>
+You can export in the following file types for Google Drawings:
+<ul class="mainlist">
+	<li>.jpeg - image/jpeg - Joint Photographic Experts Group Image Format</li>
+	<li>.pdf - application/pdf - Portable Document Format</li>
+	<li>.png - image/png - Portable Networks Graphic Image Format</li>
+	<li>.svg - image/svg+xml - Scalable Vector Graphics Image Format</li>
+</ul>kinlane-productions2kinlane-productions2
+<strong>Google Presentations</strong>
+<p></p>
+You can import in the following file types for Google Presentations:
+<ul class="mainlist">
+	<li>.ppt  - application/vnd.ms-powerpoint - Powerpoint Format</li>
+	<li>.pps - application/vnd.ms-powerpoint - Powerpoint Format</li>
+</ul>
+Google Presentations have a maximum import file size of 1048576 KB or 1049 MB.
+<p></p>
+You can export in the following file types for Google Presentations:
+<ul class="mainlist"><img style="padding: 15px;" src="http://kinlane-productions.s3.amazonaws.com/google/google-doc-on-iphone.png" alt="" width="200" align="right" />
+	<li>.pdf - application/pdf - Portable Document Format</li>
+	<li>.png - image/png - Portable Networks Graphic Image Format</li>
+	<li>.ppt  - application/vnd.ms-powerpoint - Powerpoint Format</li>
+	<li>swf - application/x-shockwave-flash - Flash Format</li>
+	<li>.txt - text/plain - TXT File</li>
+</ul>
+<strong>Google Spreadsheets</strong>
+<p></p>
+You can import in the following file types for Google Spreadsheets:
+<ul class="mainlist">
+	<li>.ods - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet - ODS (Open Document Spreadsheet)</li>
+	<li>.xls - application/vnd.ms-excel - XLS (Microsoft Excel)</li>
+	<li>.txt - text/plain - TXT File</li>
+	<li>. tsv  - text/tab-separated-values kinlane-productions2d Value)</li>
+</ul>
+Google Spreadsheets have a maximum import file size of 10486760 KB or 10486 MB.
+<p></p>
+You can export in the following file types for Google Spreadsheets:
+<ul class="mainlist">
+	<li>.xls - application/vnd.ms-excel - XLS (Microsoft Excel)</li>
+	<li>.csv 	CSV (Comma Seperated Value)</li>
+	<li>.png - image/png - Portable Networks Graphic Image Format</li>
+	<li>.ods - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet - ODS (Open Document Spreadsheet)</li>
+	<li>. tsv  - text/tab-separated-values - TSV (Tab Separated Value)</li>
+	<li>.html - text/html - HTML Format</li>
+</ul>
+<img style="padding: 15px;" src="http://kinlane-productions.s3.amazonaws.com/google-cloud-print/google-cloud-print-mimeo.png" alt="" width="350" align="right" />
+All other types of files uploaded to Google Docs for storage, and if they are not converted into a Google Document, can be a maximum of 1GB. PDF documents uploaded to Google Docs can only be exported as PDF documents.
+<p></p>
+With the ability to upload ANY file type to Google Docs with a size of up to 1GB, it makes it a very viable Cloud Storage platform.
+<p></p>
+The number of documents Google has support for uploading and exporting via the Google Docs Listing API makes it an extremely viable document conversion platform.
+<p></p>
+Also Google provides advanced document management tools such as <a href="http://www.kinlane.com/2011/02/optical-character-recognition-ocr-with-google-docs-api/" target="_blank">OCR</a> and <a href="http://www.kinlane.com/2011/02/document-translation-with-google-docs-api/" target="_blank">language translation</a> on upload, along with resumable uploads.
+<p></p>
+Throw in mobile viewing, editing and cloud printing of documents.  You have thebuildingblocks for a pretty amazing cloud document management system.
+<h6 class="zemanta-related-title" style="font-size: 1em;">Related articles</h6>
+<ul class="zemanta-article-ul">
+	<li class="zemanta-article-ul-li"><a href="http://www.kinlane.com/2011/02/optical-character-recognition-ocr-with-google-docs-api/">Optical Character Recognition (OCR) with Google Docs API</a> (kinlane.com)</li>
+	<li class="zemanta-article-ul-li"><a href="http://gmailblog.blogspot.com/2011/02/12-new-file-formats-in-google-docs.html">12 new file formats in the Google Docs Viewer</a> (gmailblog.blogspot.com)</li>
+	<li class="zemanta-article-ul-li"><a href="http://www.kinlane.com/2011/02/google-docs-file-size-limitations/">Google Docs File Size Limitations</a> (kinlane.com)</li>
+</ul>

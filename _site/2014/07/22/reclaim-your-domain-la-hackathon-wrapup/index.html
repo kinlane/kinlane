@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Reclaim Your Domain LA Hackathon Wrap-up | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Reclaim Your Domain LA Hackathon Wrap-up" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I spent the weekend hacking away with a small group of very smart folks, at the Reclaim Your Domain Hackathon in Los Angeles. Fifteen of us gathered at Pepperdine University in west LA, looking to move forward the discussion around what we call &ldquo;Reclaim Your Domain&rdquo;. This conversation began last year, at the #ReclaimOpen Hackathon, continued earlier this year at Emory University, and we were looking to keep the momentum building this weekend at Pepperdine. Here is a breakdown of who was present this weekend: Jim Groom - University of Mary Washington (@jimgroom) Michael Caulfield - WSU Vancouver - http://hapgood.us/ - (@holden) Michael Berman - California State University Channel Islands (@amichaelberman) Chris Mattia - California State University Channel Islands (@cmmattia) Brian Lamb - Thompson Rivers University (@brlamb) Timothy Owens - University of Mary Washington (@timmmmyboy) Mikhail Gershovich - Vocat (@mgershovich) Amy Collier - Stanford (@amcollier) Rolin Moe - Pepperdine (@RMoeJo) Adam Croom - University of Oklahoma (@acroom) Mark C. Morvant - University of Oklahoma (@MarkMorvant) Ben Werdmuller &mdash; Withknown (@benwerd) Erin Richey &mdash; Withknown (@erinjo) Kin Lane &mdash; API Evangelist (@kinlane) Audrey Watters &mdash; Hack Education (@audreywatters) If you are unsure of what #Reclaim is all about, join the club, we are trying to define it as well. You can head over to Reclaim Your Domain, or you can also look at Reclaim Hosting, and the original Domain Of Ones Own at University of Mary Washington which has provided much of the initial spark behind the #Reclaim movement, for more information. Ultimately, #Reclaim will always be a very personal experience for each individual, but Reclaim Your Domain is primarily about:&nbsp; Educating, and empowering individual to define, reclaim, and manage their digital self The primary thing I got out of this weekend, beyond the opportunity to hang out with such a savvy group of educators, was the opportunity to talk through my own personal #Reclaim process, as well as my vision of how we can use Terms of Service Didn&rsquo;t Read as a framework for the #Reclaim process. The weekend&nbsp;re-enforced the importance of APIs in higher education, in not just my own API Evangelism work, but contributing to the overall health of the Internet (which I will talk about in a separate post). To recap what I said above, there are three domains, that you will need to learn about my current #Reclaim work: Reclaim Your Domain - The project site for all of this work, where you will find links to all information, calendar of events, and link to individual reclaim sites. Kin Lane Reclaim Your Domain - My personal #Reclaim website where I am working on reclaiming my domain, while I also work to define the overall process. Terms of Service Didn&rsquo;t Read - A website for establishing plain english, yet machine readable discussions around the terms of service for the platforms we depend on. During the weekend I was introduced to some other very import tools, which are essential to the #Reclaim process: Known - A publishing platform that empowers you to manage your online self, available as an open source tool, or available as cloud service. I&rsquo;m still setting up my own instance of Known, and will have more information after I get setup, and play with more. IndieAuth - IndieAuth is a way to use your own domain name to sign in to websites, which is a missing piece on the identity front for #Reclaim. Same as Known, I&rsquo;ll have more information on this after I play with. I also got some quality time, getting more up to speed on two other of tools that will be be important to #Reclaim: Smallest Federated Wiki - A simple, and powerful wiki implementation that uses the latest technology to collaborate around content, with a very interesting approach to using JSON, and plugins to significantly evolve the wiki experience. Reclaim Hosting - Reclaim Hosting provides educators and institutions with an easy way to offer their students domains and web hosting that they own and control. Over the course of two days I was able to share what I was working on, and learn about @withknown, and what @holden is up to with Smallest Federated Wiki, and get a closer look at what @timmmmyboy, @jimgroom, @mburtis are up to with Reclaim Hosting, while also explore some other areas I think are vital to #Reclaim moving forward. #WIN There were also some other really important takeways for me. POSSEE POSSE is an acronym for Publish (on your) Own Site, Syndicate Elsewhere. For the first time I saw an application that delivers on this concept, while also holding potential for the whole reclaim your domain philosophy--Known. I am excited to fire up my own instance of Known and see how I can actually use to manage my digital self, and add this slick piece of software to the #Reclaim stack of tools that everyone else can put to use. The Importance of API 101 During the second day of the hackathon, I was asked to give an API 101 talk. I headed to the other end of the meeting area, allowing anyone who wasn&rsquo;t interested in listening to me, to continue hacking on their own. I was surprised to see that everyone joined me to learn about APIs--well everyone except @audreywatters (API blah blah blah). I felt like everyone had a general sense of what an API was, but only a handful of folks possessed intimate knowledge. I used the separation of websites being for humans, and APIs being for other applications and systems as the basis for my talk&mdash;showing how websites return HTML for displaying to humans, and APIs return JSON meant to be used by applications. Later in the day I also wrote a little PHP script which made a call to an API (well JSON file), then displayed bulleted list of results, to help show how APIs can drive website content. Once again I am reminded of the importance of API 101 demos, and how I need to focus more in this area. The Importance of Github 101 One of the topics we covered was the basics of using Github. I walked through the basic concepts that surround Github usage like repositories, forks, commits, pull requests&mdash;demonstrating how multiple users can collaborate, and work together on not just code, but content. I demonstrated how issues, and milestones can also be used to manage conversation around the project, in addition to work with repository files. Lastly, I walked through Github Pages, and how using a separate branch, you can publish HTML, CSS, JavaScript and JSON for projects, turning Github into not just a code and content management platform, but also a publishing endpoint. APIs.json Playing a Role in #Reclaim After hearing @timmmmyboy talk about how Reclaim Hosting aggregates domain users within each university, I brought up APIs.json and how I&rsquo;m using this as a index for APIs in both the public and private sector. While it may not be something that is in the immediate roadmap for #Reclaim, I think APIs.json will play a significant role in #Reclaim process down the road, and is worth noting here. Containerization Movement One pattern I saw across the Reclaim Hosting and Domain of One&rsquo;s Own work from @timmmmyboy,&nbsp;@jimgroom, and&nbsp;@mburtis, is that they are mimicking what is currently happening in the @docker dominated containerization movement we are seeing from tech leaders like Amazon, Google, Microsoft, and Red Hat. Then only difference is Reclaim Hosting is doing it as apps that can be deployed across a known set of domains, spanning physical servers, within a particular institution. Containers offer portability for the #Reclaim lifecycle, for when students leave institutions, as well as for the wider public space, when people are looking to #Reclaim their digital self. Importance of APIs in Higher Ed APIs are central to everything about #Reclaim. It is how users will take control over their digital self, driving solutions like Known. With #Reclaim being born, and propagated via universities, the API stakes are raised across higher education. Universities need to adopt an API way of life, to drive all aspects of campus operations, but also to expose all students to the concept of APIs, making part of the university experience--teaching students to #Reclaim their own course schedule, student data, and other portfolio, and other aspects of the campus experience. Universities are ground zero, when it comes to exposing the next generation of corporate employees, government workers, and #Reclaim informed citizens--we have a lot of work to do to get insitutions up to speed. Evolving the Hackathon Format The Reclaim Your Domain LA Hackathon has moved forward the hackathon definition for me. There were no applications built over the weekend, and there were no prizes given away to winners, but there was significant movement that will live beyond just this single event&mdash;something that the previous definition of hackathon didn&rsquo;t possess for me. Fifteen of us came together Friday night for food and drink at @amichaelberman house. Saturday morning we came together at Pepperdine and spent the day working through ideas and tool demonstrations, which included a lot of open discussion. Saturday night we came together at our house in Hermosa Beach, where we drank, continued conversations from the day, and Jazzercised on the roof until wee hours of the morning. Then Sunday we came together for breakfast, and went back to work at Pepperdine for the rest of the day. Once done, some folks headed to airport, and the rest of headed back to Hermosa Beach for dinner, more drinks, and conversation until late in the evening. Over the two days, there was plenty of hacking, setting up Known and Smallest Federated Wiki, as part of Reclaim Your Domain. Most attendees got to work on their #Reclaim definitions, and POSSEE workflow using Known, and learned how to generate API keys, commit to Github, and other essential #Reclaim tasks. At many other hackathons I&rsquo;ve been to, there were tangible projects that came out of the event, but were always abandoned after the short weekend. #Reclaim didn&rsquo;t produce any single startup or application, but deployed and evolved on top of existing work, and processes, that will continue long after this single event, and will continue to build momentum with each event we do--capturing much more of the exhaust from a weekend hackathon. The Time Is Right For #Reclaim I feel #Reclaim is in motion, and there is no stopping it now. Each of the three events I&rsquo;ve done, have been extremely fruitful, and the ideas, conversation, and code just flows. I see signs across the Internet, that some people are beginning to care more about about their digital self, in light of exploitation from government, and technology companies. It is not an accident that this movement is coming out of higher education institutions, and will continue to spread, and build momentum at universities. The time is right for #Reclaim, I can feel it." />
+<meta property="og:description" content="I spent the weekend hacking away with a small group of very smart folks, at the Reclaim Your Domain Hackathon in Los Angeles. Fifteen of us gathered at Pepperdine University in west LA, looking to move forward the discussion around what we call &ldquo;Reclaim Your Domain&rdquo;. This conversation began last year, at the #ReclaimOpen Hackathon, continued earlier this year at Emory University, and we were looking to keep the momentum building this weekend at Pepperdine. Here is a breakdown of who was present this weekend: Jim Groom - University of Mary Washington (@jimgroom) Michael Caulfield - WSU Vancouver - http://hapgood.us/ - (@holden) Michael Berman - California State University Channel Islands (@amichaelberman) Chris Mattia - California State University Channel Islands (@cmmattia) Brian Lamb - Thompson Rivers University (@brlamb) Timothy Owens - University of Mary Washington (@timmmmyboy) Mikhail Gershovich - Vocat (@mgershovich) Amy Collier - Stanford (@amcollier) Rolin Moe - Pepperdine (@RMoeJo) Adam Croom - University of Oklahoma (@acroom) Mark C. Morvant - University of Oklahoma (@MarkMorvant) Ben Werdmuller &mdash; Withknown (@benwerd) Erin Richey &mdash; Withknown (@erinjo) Kin Lane &mdash; API Evangelist (@kinlane) Audrey Watters &mdash; Hack Education (@audreywatters) If you are unsure of what #Reclaim is all about, join the club, we are trying to define it as well. You can head over to Reclaim Your Domain, or you can also look at Reclaim Hosting, and the original Domain Of Ones Own at University of Mary Washington which has provided much of the initial spark behind the #Reclaim movement, for more information. Ultimately, #Reclaim will always be a very personal experience for each individual, but Reclaim Your Domain is primarily about:&nbsp; Educating, and empowering individual to define, reclaim, and manage their digital self The primary thing I got out of this weekend, beyond the opportunity to hang out with such a savvy group of educators, was the opportunity to talk through my own personal #Reclaim process, as well as my vision of how we can use Terms of Service Didn&rsquo;t Read as a framework for the #Reclaim process. The weekend&nbsp;re-enforced the importance of APIs in higher education, in not just my own API Evangelism work, but contributing to the overall health of the Internet (which I will talk about in a separate post). To recap what I said above, there are three domains, that you will need to learn about my current #Reclaim work: Reclaim Your Domain - The project site for all of this work, where you will find links to all information, calendar of events, and link to individual reclaim sites. Kin Lane Reclaim Your Domain - My personal #Reclaim website where I am working on reclaiming my domain, while I also work to define the overall process. Terms of Service Didn&rsquo;t Read - A website for establishing plain english, yet machine readable discussions around the terms of service for the platforms we depend on. During the weekend I was introduced to some other very import tools, which are essential to the #Reclaim process: Known - A publishing platform that empowers you to manage your online self, available as an open source tool, or available as cloud service. I&rsquo;m still setting up my own instance of Known, and will have more information after I get setup, and play with more. IndieAuth - IndieAuth is a way to use your own domain name to sign in to websites, which is a missing piece on the identity front for #Reclaim. Same as Known, I&rsquo;ll have more information on this after I play with. I also got some quality time, getting more up to speed on two other of tools that will be be important to #Reclaim: Smallest Federated Wiki - A simple, and powerful wiki implementation that uses the latest technology to collaborate around content, with a very interesting approach to using JSON, and plugins to significantly evolve the wiki experience. Reclaim Hosting - Reclaim Hosting provides educators and institutions with an easy way to offer their students domains and web hosting that they own and control. Over the course of two days I was able to share what I was working on, and learn about @withknown, and what @holden is up to with Smallest Federated Wiki, and get a closer look at what @timmmmyboy, @jimgroom, @mburtis are up to with Reclaim Hosting, while also explore some other areas I think are vital to #Reclaim moving forward. #WIN There were also some other really important takeways for me. POSSEE POSSE is an acronym for Publish (on your) Own Site, Syndicate Elsewhere. For the first time I saw an application that delivers on this concept, while also holding potential for the whole reclaim your domain philosophy--Known. I am excited to fire up my own instance of Known and see how I can actually use to manage my digital self, and add this slick piece of software to the #Reclaim stack of tools that everyone else can put to use. The Importance of API 101 During the second day of the hackathon, I was asked to give an API 101 talk. I headed to the other end of the meeting area, allowing anyone who wasn&rsquo;t interested in listening to me, to continue hacking on their own. I was surprised to see that everyone joined me to learn about APIs--well everyone except @audreywatters (API blah blah blah). I felt like everyone had a general sense of what an API was, but only a handful of folks possessed intimate knowledge. I used the separation of websites being for humans, and APIs being for other applications and systems as the basis for my talk&mdash;showing how websites return HTML for displaying to humans, and APIs return JSON meant to be used by applications. Later in the day I also wrote a little PHP script which made a call to an API (well JSON file), then displayed bulleted list of results, to help show how APIs can drive website content. Once again I am reminded of the importance of API 101 demos, and how I need to focus more in this area. The Importance of Github 101 One of the topics we covered was the basics of using Github. I walked through the basic concepts that surround Github usage like repositories, forks, commits, pull requests&mdash;demonstrating how multiple users can collaborate, and work together on not just code, but content. I demonstrated how issues, and milestones can also be used to manage conversation around the project, in addition to work with repository files. Lastly, I walked through Github Pages, and how using a separate branch, you can publish HTML, CSS, JavaScript and JSON for projects, turning Github into not just a code and content management platform, but also a publishing endpoint. APIs.json Playing a Role in #Reclaim After hearing @timmmmyboy talk about how Reclaim Hosting aggregates domain users within each university, I brought up APIs.json and how I&rsquo;m using this as a index for APIs in both the public and private sector. While it may not be something that is in the immediate roadmap for #Reclaim, I think APIs.json will play a significant role in #Reclaim process down the road, and is worth noting here. Containerization Movement One pattern I saw across the Reclaim Hosting and Domain of One&rsquo;s Own work from @timmmmyboy,&nbsp;@jimgroom, and&nbsp;@mburtis, is that they are mimicking what is currently happening in the @docker dominated containerization movement we are seeing from tech leaders like Amazon, Google, Microsoft, and Red Hat. Then only difference is Reclaim Hosting is doing it as apps that can be deployed across a known set of domains, spanning physical servers, within a particular institution. Containers offer portability for the #Reclaim lifecycle, for when students leave institutions, as well as for the wider public space, when people are looking to #Reclaim their digital self. Importance of APIs in Higher Ed APIs are central to everything about #Reclaim. It is how users will take control over their digital self, driving solutions like Known. With #Reclaim being born, and propagated via universities, the API stakes are raised across higher education. Universities need to adopt an API way of life, to drive all aspects of campus operations, but also to expose all students to the concept of APIs, making part of the university experience--teaching students to #Reclaim their own course schedule, student data, and other portfolio, and other aspects of the campus experience. Universities are ground zero, when it comes to exposing the next generation of corporate employees, government workers, and #Reclaim informed citizens--we have a lot of work to do to get insitutions up to speed. Evolving the Hackathon Format The Reclaim Your Domain LA Hackathon has moved forward the hackathon definition for me. There were no applications built over the weekend, and there were no prizes given away to winners, but there was significant movement that will live beyond just this single event&mdash;something that the previous definition of hackathon didn&rsquo;t possess for me. Fifteen of us came together Friday night for food and drink at @amichaelberman house. Saturday morning we came together at Pepperdine and spent the day working through ideas and tool demonstrations, which included a lot of open discussion. Saturday night we came together at our house in Hermosa Beach, where we drank, continued conversations from the day, and Jazzercised on the roof until wee hours of the morning. Then Sunday we came together for breakfast, and went back to work at Pepperdine for the rest of the day. Once done, some folks headed to airport, and the rest of headed back to Hermosa Beach for dinner, more drinks, and conversation until late in the evening. Over the two days, there was plenty of hacking, setting up Known and Smallest Federated Wiki, as part of Reclaim Your Domain. Most attendees got to work on their #Reclaim definitions, and POSSEE workflow using Known, and learned how to generate API keys, commit to Github, and other essential #Reclaim tasks. At many other hackathons I&rsquo;ve been to, there were tangible projects that came out of the event, but were always abandoned after the short weekend. #Reclaim didn&rsquo;t produce any single startup or application, but deployed and evolved on top of existing work, and processes, that will continue long after this single event, and will continue to build momentum with each event we do--capturing much more of the exhaust from a weekend hackathon. The Time Is Right For #Reclaim I feel #Reclaim is in motion, and there is no stopping it now. Each of the three events I&rsquo;ve done, have been extremely fruitful, and the ideas, conversation, and code just flows. I see signs across the Internet, that some people are beginning to care more about about their digital self, in light of exploitation from government, and technology companies. It is not an accident that this movement is coming out of higher education institutions, and will continue to spread, and build momentum at universities. The time is right for #Reclaim, I can feel it." />
+<link rel="canonical" href="http://localhost:4000/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/" />
+<meta property="og:url" content="http://localhost:4000/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-fist.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-07-22T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Reclaim Your Domain LA Hackathon Wrap-up","dateModified":"2014-07-22T00:00:00-07:00","datePublished":"2014-07-22T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-fist.png","description":"I spent the weekend hacking away with a small group of very smart folks, at the Reclaim Your Domain Hackathon in Los Angeles. Fifteen of us gathered at Pepperdine University in west LA, looking to move forward the discussion around what we call &ldquo;Reclaim Your Domain&rdquo;. This conversation began last year, at the #ReclaimOpen Hackathon, continued earlier this year at Emory University, and we were looking to keep the momentum building this weekend at Pepperdine. Here is a breakdown of who was present this weekend: Jim Groom - University of Mary Washington (@jimgroom) Michael Caulfield - WSU Vancouver - http://hapgood.us/ - (@holden) Michael Berman - California State University Channel Islands (@amichaelberman) Chris Mattia - California State University Channel Islands (@cmmattia) Brian Lamb - Thompson Rivers University (@brlamb) Timothy Owens - University of Mary Washington (@timmmmyboy) Mikhail Gershovich - Vocat (@mgershovich) Amy Collier - Stanford (@amcollier) Rolin Moe - Pepperdine (@RMoeJo) Adam Croom - University of Oklahoma (@acroom) Mark C. Morvant - University of Oklahoma (@MarkMorvant) Ben Werdmuller &mdash; Withknown (@benwerd) Erin Richey &mdash; Withknown (@erinjo) Kin Lane &mdash; API Evangelist (@kinlane) Audrey Watters &mdash; Hack Education (@audreywatters) If you are unsure of what #Reclaim is all about, join the club, we are trying to define it as well. You can head over to Reclaim Your Domain, or you can also look at Reclaim Hosting, and the original Domain Of Ones Own at University of Mary Washington which has provided much of the initial spark behind the #Reclaim movement, for more information. Ultimately, #Reclaim will always be a very personal experience for each individual, but Reclaim Your Domain is primarily about:&nbsp; Educating, and empowering individual to define, reclaim, and manage their digital self The primary thing I got out of this weekend, beyond the opportunity to hang out with such a savvy group of educators, was the opportunity to talk through my own personal #Reclaim process, as well as my vision of how we can use Terms of Service Didn&rsquo;t Read as a framework for the #Reclaim process. The weekend&nbsp;re-enforced the importance of APIs in higher education, in not just my own API Evangelism work, but contributing to the overall health of the Internet (which I will talk about in a separate post). To recap what I said above, there are three domains, that you will need to learn about my current #Reclaim work: Reclaim Your Domain - The project site for all of this work, where you will find links to all information, calendar of events, and link to individual reclaim sites. Kin Lane Reclaim Your Domain - My personal #Reclaim website where I am working on reclaiming my domain, while I also work to define the overall process. Terms of Service Didn&rsquo;t Read - A website for establishing plain english, yet machine readable discussions around the terms of service for the platforms we depend on. During the weekend I was introduced to some other very import tools, which are essential to the #Reclaim process: Known - A publishing platform that empowers you to manage your online self, available as an open source tool, or available as cloud service. I&rsquo;m still setting up my own instance of Known, and will have more information after I get setup, and play with more. IndieAuth - IndieAuth is a way to use your own domain name to sign in to websites, which is a missing piece on the identity front for #Reclaim. Same as Known, I&rsquo;ll have more information on this after I play with. I also got some quality time, getting more up to speed on two other of tools that will be be important to #Reclaim: Smallest Federated Wiki - A simple, and powerful wiki implementation that uses the latest technology to collaborate around content, with a very interesting approach to using JSON, and plugins to significantly evolve the wiki experience. Reclaim Hosting - Reclaim Hosting provides educators and institutions with an easy way to offer their students domains and web hosting that they own and control. Over the course of two days I was able to share what I was working on, and learn about @withknown, and what @holden is up to with Smallest Federated Wiki, and get a closer look at what @timmmmyboy, @jimgroom, @mburtis are up to with Reclaim Hosting, while also explore some other areas I think are vital to #Reclaim moving forward. #WIN There were also some other really important takeways for me. POSSEE POSSE is an acronym for Publish (on your) Own Site, Syndicate Elsewhere. For the first time I saw an application that delivers on this concept, while also holding potential for the whole reclaim your domain philosophy--Known. I am excited to fire up my own instance of Known and see how I can actually use to manage my digital self, and add this slick piece of software to the #Reclaim stack of tools that everyone else can put to use. The Importance of API 101 During the second day of the hackathon, I was asked to give an API 101 talk. I headed to the other end of the meeting area, allowing anyone who wasn&rsquo;t interested in listening to me, to continue hacking on their own. I was surprised to see that everyone joined me to learn about APIs--well everyone except @audreywatters (API blah blah blah). I felt like everyone had a general sense of what an API was, but only a handful of folks possessed intimate knowledge. I used the separation of websites being for humans, and APIs being for other applications and systems as the basis for my talk&mdash;showing how websites return HTML for displaying to humans, and APIs return JSON meant to be used by applications. Later in the day I also wrote a little PHP script which made a call to an API (well JSON file), then displayed bulleted list of results, to help show how APIs can drive website content. Once again I am reminded of the importance of API 101 demos, and how I need to focus more in this area. The Importance of Github 101 One of the topics we covered was the basics of using Github. I walked through the basic concepts that surround Github usage like repositories, forks, commits, pull requests&mdash;demonstrating how multiple users can collaborate, and work together on not just code, but content. I demonstrated how issues, and milestones can also be used to manage conversation around the project, in addition to work with repository files. Lastly, I walked through Github Pages, and how using a separate branch, you can publish HTML, CSS, JavaScript and JSON for projects, turning Github into not just a code and content management platform, but also a publishing endpoint. APIs.json Playing a Role in #Reclaim After hearing @timmmmyboy talk about how Reclaim Hosting aggregates domain users within each university, I brought up APIs.json and how I&rsquo;m using this as a index for APIs in both the public and private sector. While it may not be something that is in the immediate roadmap for #Reclaim, I think APIs.json will play a significant role in #Reclaim process down the road, and is worth noting here. Containerization Movement One pattern I saw across the Reclaim Hosting and Domain of One&rsquo;s Own work from @timmmmyboy,&nbsp;@jimgroom, and&nbsp;@mburtis, is that they are mimicking what is currently happening in the @docker dominated containerization movement we are seeing from tech leaders like Amazon, Google, Microsoft, and Red Hat. Then only difference is Reclaim Hosting is doing it as apps that can be deployed across a known set of domains, spanning physical servers, within a particular institution. Containers offer portability for the #Reclaim lifecycle, for when students leave institutions, as well as for the wider public space, when people are looking to #Reclaim their digital self. Importance of APIs in Higher Ed APIs are central to everything about #Reclaim. It is how users will take control over their digital self, driving solutions like Known. With #Reclaim being born, and propagated via universities, the API stakes are raised across higher education. Universities need to adopt an API way of life, to drive all aspects of campus operations, but also to expose all students to the concept of APIs, making part of the university experience--teaching students to #Reclaim their own course schedule, student data, and other portfolio, and other aspects of the campus experience. Universities are ground zero, when it comes to exposing the next generation of corporate employees, government workers, and #Reclaim informed citizens--we have a lot of work to do to get insitutions up to speed. Evolving the Hackathon Format The Reclaim Your Domain LA Hackathon has moved forward the hackathon definition for me. There were no applications built over the weekend, and there were no prizes given away to winners, but there was significant movement that will live beyond just this single event&mdash;something that the previous definition of hackathon didn&rsquo;t possess for me. Fifteen of us came together Friday night for food and drink at @amichaelberman house. Saturday morning we came together at Pepperdine and spent the day working through ideas and tool demonstrations, which included a lot of open discussion. Saturday night we came together at our house in Hermosa Beach, where we drank, continued conversations from the day, and Jazzercised on the roof until wee hours of the morning. Then Sunday we came together for breakfast, and went back to work at Pepperdine for the rest of the day. Once done, some folks headed to airport, and the rest of headed back to Hermosa Beach for dinner, more drinks, and conversation until late in the evening. Over the two days, there was plenty of hacking, setting up Known and Smallest Federated Wiki, as part of Reclaim Your Domain. Most attendees got to work on their #Reclaim definitions, and POSSEE workflow using Known, and learned how to generate API keys, commit to Github, and other essential #Reclaim tasks. At many other hackathons I&rsquo;ve been to, there were tangible projects that came out of the event, but were always abandoned after the short weekend. #Reclaim didn&rsquo;t produce any single startup or application, but deployed and evolved on top of existing work, and processes, that will continue long after this single event, and will continue to build momentum with each event we do--capturing much more of the exhaust from a weekend hackathon. The Time Is Right For #Reclaim I feel #Reclaim is in motion, and there is no stopping it now. Each of the three events I&rsquo;ve done, have been extremely fruitful, and the ideas, conversation, and code just flows. I see signs across the Internet, that some people are beginning to care more about about their digital self, in light of exploitation from government, and technology companies. It is not an accident that this movement is coming out of higher education institutions, and will continue to spread, and build momentum at universities. The time is right for #Reclaim, I can feel it.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reclaim Your Domain LA Hackathon Wrap-up | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reclaim Your Domain LA Hackathon Wrap-up | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Reclaim Your Domain LA Hackathon Wrap-up</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2014-07-22T00:00:00-07:00" itemprop="datePublished">
+    
+    Jul 22, 2014
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-fist.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-fist.png" alt="" width="150" align="right" /></p>
+<p>I spent the weekend hacking away with a small group of very smart folks, at the <a href="http://lahackathon.reclaimyourdomain.org/">Reclaim Your Domain Hackathon in Los Angeles</a>. Fifteen of us gathered at Pepperdine University in west LA, looking to move forward the discussion around what we call &ldquo;Reclaim Your Domain&rdquo;. This conversation began last year, at the <a href="http://bavatuesdays.com/reclaim-open-learning/">#ReclaimOpen Hackathon</a>, continued earlier this year at <a href="http://kinlane.com/2014/05/01/exploring-the-domain-universe-at-emory-university/">Emory University</a>, and we were looking to keep the momentum building this weekend at Pepperdine.</p>
+<p>Here is a breakdown of who was present this weekend:</p>
+<ul class="mainlist">
+<li><strong>Jim Groom</strong> - University of Mary Washington (<a href="https://twitter.com/jimgroom">@jimgroom</a>)</li>
+<li><strong>Michael Caulfield</strong> - WSU Vancouver - http://hapgood.us/ - (<a href="https://twitter.com/holden">@holden</a>)</li>
+<li><strong>Michael Berman</strong> - California State University Channel Islands (<a href="https://twitter.com/amichaelberman">@amichaelberman</a>)</li>
+<li><strong>Chris Mattia</strong> - California State University Channel Islands (<a href="https://twitter.com/cmmattia">@cmmattia</a>)</li>
+<li><strong>Brian Lamb</strong> - Thompson Rivers University (<a href="https://twitter.com/brlamb">@brlamb</a>)</li>
+<li><strong>Timothy Owens</strong> - University of Mary Washington (<a href="https://twitter.com/timmmmyboy">@timmmmyboy</a>)</li>
+<li><strong>Mikhail Gershovich</strong> - Vocat (<a href="https://twitter.com/mgershovich">@mgershovich</a>)</li>
+<li><strong>Amy Collier</strong> - Stanford (<a href="https://twitter.com/amcollier">@amcollier</a>)</li>
+<li><strong>Rolin Moe</strong> - Pepperdine (<a href="https://twitter.com/RMoeJo">@RMoeJo</a>)</li>
+<li><strong>Adam Croom</strong> - University of Oklahoma (<a href="https://twitter.com/acroom">@acroom</a>)</li>
+<li><strong>Mark C. Morvant</strong> - University of Oklahoma (<a href="https://twitter.com/MarkMorvant">@MarkMorvant</a>)</li>
+<li><strong>Ben Werdmuller</strong> &mdash; Withknown (<a href="https://twitter.com/benwerd">@benwerd</a>)</li>
+<li><strong>Erin Richey </strong> &mdash; Withknown (<a href="https://twitter.com/erinjo">@erinjo</a>)</li>
+<li><strong>Kin Lane </strong>&mdash; API Evangelist (<a href="https://twitter.com/kinlane">@kinlane</a>)</li>
+<li><strong>Audrey Watters</strong> &mdash; Hack Education (<a href="https://twitter.com/audreywatters">@audreywatters</a>)</li>
+</ul>
+<p>If you are unsure of what #Reclaim is all about, join the club, we are trying to define it as well. You can head over to <a href="http://reclaimyourdomain.org/">Reclaim Your Domain</a>, or you can also look at <a href="http://reclaimhosting.com/">Reclaim Hosting</a>, and the original <a href="http://umw.domains/">Domain Of Ones Own at University of Mary Washington</a> which has provided much of the initial spark behind the #Reclaim movement, for more information. Ultimately, #Reclaim will always be a very personal experience for each individual, but Reclaim Your Domain is primarily about:&nbsp;</p>
+<blockquote><em>Educating, and empowering individual to define, reclaim, and manage their digital self</em></blockquote>
+<p>The primary thing I got out of this weekend, beyond the opportunity to hang out with such a savvy group of educators, was the opportunity to talk through <a href="http://kinlane.reclaimyourdomain.org/">my own personal #Reclaim process</a>, as well as my vision of how we can use <a href="http://kinlane.com/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/">Terms of Service Didn&rsquo;t Read as a framework for the #Reclaim process</a>. The weekend&nbsp;re-enforced the importance of APIs in higher education, in not just my own API Evangelism work, but contributing to the overall health of the Internet (which I will talk about in a separate post).</p>
+<p>To recap what I said above, there are three domains, that you will need to learn about my current #Reclaim work:</p>
+<ul class="mainlist">
+<li><strong><a href="http://reclaimyourdomain.org">Reclaim Your Domain</a></strong> - The project site for all of this work, where you will find links to all information, calendar of events, and link to individual reclaim sites.</li>
+<li><strong><a href="http://kinlane.reclaimyourdomain.org/">Kin Lane Reclaim Your Domain</a></strong> - My personal #Reclaim website where I am working on reclaiming my domain, while I also work to define the overall process.</li>
+<li><strong><a href="http://tosdr.org">Terms of Service Didn&rsquo;t Read</a></strong> - A website for establishing plain english, yet machine readable discussions around the terms of service for the platforms we depend on.</li>
+</ul>
+<p>During the weekend I was introduced to some other very import tools, which are essential to the #Reclaim process:</p>
+<ul class="mainlist">
+<li><strong><a href="http://withknown.com/">Known</a></strong> - A publishing platform that empowers you to manage your online self, available as an open source tool, or available as cloud service. I&rsquo;m still setting up my own instance of Known, and will have more information after I get setup, and play with more.</li>
+<li><strong><a href="https://indieauth.com/">IndieAuth</a></strong> - IndieAuth is a way to use your own domain name to sign in to websites, which is a missing piece on the identity front for #Reclaim. Same as Known, I&rsquo;ll have more information on this after I play with.</li>
+</ul>
+<p>I also got some quality time, getting more up to speed on two other of tools that will be be important to #Reclaim:</p>
+<ul class="mainlist">
+<li><strong><a href="http://fed.wiki.org/view/welcome-visitors">Smallest Federated Wiki</a></strong> - A simple, and powerful wiki implementation that uses the latest technology to collaborate around content, with a very interesting approach to using JSON, and plugins to significantly evolve the wiki experience.</li>
+<li><strong><a href="http://reclaimhosting.com/">Reclaim Hosting</a></strong> - Reclaim Hosting provides educators and institutions with an easy way to offer their students domains and web hosting that they own and control.</li>
+</ul>
+<p>Over the course of two days I was able to share what I was working on, and learn about <a href="https://twitter.com/withknown">@withknown</a>, and what <a href="https://twitter.com/holden">@holden</a> is up to with Smallest Federated Wiki, and get a closer look at what <a href="https://twitter.com/timmmmyboy">@timmmmyboy</a>, <a href="https://twitter.com/jimgroom">@jimgroom</a>, <a href="https://twitter.com/">@mburtis</a> are up to with Reclaim Hosting, while also explore some other areas I think are vital to #Reclaim moving forward. #WIN There were also some other really important takeways for me.</p>
+<p><img style="padding: 10px;" src="https://s3.amazonaws.com/kinlane-productions2/events/reclaim-your-domain-la-hackathon/reclaim-hackathon.png" alt="" width="325" align="right" /></p>
+<p><strong>POSSEE</strong><br /><a href="http://indiewebcamp.com/POSSE"> POSSE</a> is an acronym for Publish (on your) Own Site, Syndicate Elsewhere. For the first time I saw an application that delivers on this concept, while also holding potential for the whole reclaim your domain philosophy--<a href="http://withknown.com/">Known</a>. I am excited to fire up my own instance of Known and see how I can actually use to manage my digital self, and add this slick piece of software to the #Reclaim stack of tools that everyone else can put to use.</p>
+<p><strong>The Importance of API 101</strong><br /> During the second day of the hackathon, I was asked to give an API 101 talk. I headed to the other end of the meeting area, allowing anyone who wasn&rsquo;t interested in listening to me, to continue hacking on their own. I was surprised to see that everyone joined me to learn about APIs--well everyone except <a href="https://twitter.com/audreywatters">@audreywatters</a> (API blah blah blah). I felt like everyone had a general sense of what an API was, but only a handful of folks possessed intimate knowledge. I used the separation of websites being for humans, and APIs being for other applications and systems as the basis for my talk&mdash;showing how websites return HTML for displaying to humans, and APIs return JSON meant to be used by applications. Later in the day I also wrote a little PHP script which made a call to an API (well JSON file), then displayed bulleted list of results, to help show how APIs can drive website content. Once again I am reminded of the importance of API 101 demos, and how I need to focus more in this area.</p>
+<p><strong>The Importance of Github 101</strong><br /> One of the topics we covered was the basics of using Github. I walked through the basic concepts that surround Github usage like repositories, forks, commits, pull requests&mdash;demonstrating how multiple users can collaborate, and work together on not just code, but content. I demonstrated how issues, and milestones can also be used to manage conversation around the project, in addition to work with repository files. Lastly, I walked through Github Pages, and how using a separate branch, you can publish HTML, CSS, JavaScript and JSON for projects, turning Github into not just a code and content management platform, but also a publishing endpoint.</p>
+<p><strong>APIs.json Playing a Role in #Reclaim</strong><br /> After hearing <a href="https://twitter.com/timmmmyboy">@timmmmyboy</a> talk about how Reclaim Hosting aggregates domain users within each university, I brought up <a href="http://apisjson.org">APIs.json</a> and how I&rsquo;m using this as a index for APIs in both the public and private sector. While it may not be something that is in the immediate roadmap for #Reclaim, I think APIs.json will play a significant role in #Reclaim process down the road, and is worth noting here.</p>
+<p><img style="padding: 10px;" src="https://s3.amazonaws.com/kinlane-productions2/events/reclaim-your-domain-la-hackathon/kin-lan-reclaim-hackathon-la.png" alt="" width="325" align="right" /></p>
+<p><strong>Containerization Movement</strong><br /> One pattern I saw across the Reclaim Hosting and Domain of One&rsquo;s Own work from <a href="https://twitter.com/timmmmyboy">@timmmmyboy</a>,&nbsp;<a href="https://twitter.com/jimgroom">@jimgroom</a>, and&nbsp;<a href="https://twitter.com/">@mburtis</a>, is that they are mimicking what is currently happening in the <a href="https://twitter.com/docker">@docker</a> dominated containerization movement we are seeing from tech leaders like Amazon, Google, Microsoft, and Red Hat. Then only difference is Reclaim Hosting is doing it as apps that can be deployed across a known set of domains, spanning physical servers, within a particular institution. Containers offer portability for the #Reclaim lifecycle, for when students leave institutions, as well as for the wider public space, when people are looking to #Reclaim their digital self.</p>
+<p><strong>Importance of APIs in Higher Ed</strong><br /> APIs are central to everything about #Reclaim. It is how users will take control over their digital self, driving solutions like Known. With #Reclaim being born, and propagated via universities, the API stakes are raised across higher education. Universities need to adopt an API way of life, to drive all aspects of campus operations, but also to expose all students to the concept of APIs, making part of the university experience--teaching students to #Reclaim their own course schedule, student data, and other portfolio, and other aspects of the campus experience. Universities are ground zero, when it comes to exposing the next generation of corporate employees, government workers, and #Reclaim informed citizens--we have a lot of work to do to get insitutions up to speed.</p>
+<p><strong>Evolving the Hackathon Format</strong><br /> The Reclaim Your Domain LA Hackathon has moved forward the hackathon definition for me. There were no applications built over the weekend, and there were no prizes given away to winners, but there was significant movement that will live beyond just this single event&mdash;something that the previous definition of hackathon didn&rsquo;t possess for me. Fifteen of us came together Friday night for food and drink at <a href="https://twitter.com/amichaelberman">@amichaelberman</a> house. Saturday morning we came together at Pepperdine and spent the day working through ideas and tool demonstrations, which included a lot of open discussion. Saturday night we came together at our house in Hermosa Beach, where we drank, continued conversations from the day, and Jazzercised on the roof until wee hours of the morning. Then Sunday we came together for breakfast, and went back to work at Pepperdine for the rest of the day. Once done, some folks headed to airport, and the rest of headed back to Hermosa Beach for dinner, more drinks, and conversation until late in the evening.</p>
+<p><img style="padding: 10px;" src="https://s3.amazonaws.com/kinlane-productions2/events/reclaim-your-domain-la-hackathon/reclaim-hackathon-beers.png" alt="" width="325" align="right" /></p>
+<p>Over the two days, there was plenty of hacking, setting up Known and Smallest Federated Wiki, as part of Reclaim Your Domain. Most attendees got to work on their #Reclaim definitions, and POSSEE workflow using Known, and learned how to generate API keys, commit to Github, and other essential #Reclaim tasks. At many other hackathons I&rsquo;ve been to, there were tangible projects that came out of the event, but were always abandoned after the short weekend. #Reclaim didn&rsquo;t produce any single startup or application, but deployed and evolved on top of existing work, and processes, that will continue long after this single event, and will continue to build momentum with each event we do--capturing much more of the exhaust from a weekend hackathon.</p>
+<p><strong>The Time Is Right For #Reclaim</strong><br /> I feel #Reclaim is in motion, and there is no stopping it now. Each of the three events I&rsquo;ve done, have been extremely fruitful, and the ideas, conversation, and code just flows. I see signs across the Internet, that some people are beginning to care more about about their digital self, in light of exploitation from government, and technology companies. It is not an accident that this movement is coming out of higher education institutions, and will continue to spread, and build momentum at universities. The time is right for #Reclaim, I can feel it.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Reclaim Your Domain LA Hackathon Wrap-up&url=http://localhost:4000/2014/07/22/reclaim-your-domain-la-hackathon-wrapup/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2014%2F07%2F22%2Freclaim-your-domain-la-hackathon-wrapup%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2014/07/16/hello-world/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2014/08/01/please-provide-an-easy-to-copy-logo-and-description-of-what-you-do/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

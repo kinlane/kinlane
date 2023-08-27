@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Driving The #Reclaim Process Using Terms Of Service Didn&#39;t Read | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Driving The #Reclaim Process Using Terms Of Service Didn&#39;t Read" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I&rsquo;m thinking through some of the next steps for my Reclaim Your Domain process, in preparation for a hackathon we have going on this weekend. Based upon defining, and executing on my own #Reclaim process, I want to come up with a v1 proposal, for one possible vision for the larger #Reclaim lifecycle. My vision for Reclaim Your Domain, is to not create yet another system, we have to become slave to. I want #Reclaim to be an open framework, that helps guide people through reclaiming their own domain, and encourages them to manage and improve their digital identity through the process. With this in mind I want to make sure I don&rsquo;t re-invent the wheel, and build off of any existing work that I can. One of the catalysts behind Reclaim Your Domain for me, was watching the Terms of Service Didn&rsquo;t Read project, aimed at building understanding of the terms of service, for the online services we depend on. Since the terms of service of my platforms, is the driving force behind #Reclaim decisions that I make, I figured that we should make sure and incorporate TOS Didn&rsquo;t Read into our #Reclaim efforts--why re-invent the wheel! There is a lot going on at TOS Didn&rsquo;t Read, but basically they have come up with a tracking, and rating system for making sense of the very legalese TOS of services that we depend on. They have three machine readable elements, that make of their tracking and rating system: Services (specification) (listing) - Online service providers that we all depend on. Topics (specification) (listing) - A list of topics being applied and discussed at the TOS level. Points (specification) (listing) - A list of specific points, within various topics, that applied directly to services TOS. This gives me the valuable data I need for each persons reclaim process, and insight into their actual terms of service, allowing me to educate myself, as well as anyone else who embarks on reclaiming their domain. I can drive the list of services, driven by TOS Didn&rsquo;t Read, as well as educate users on topics, and the points that are included. As part of #Reclaim, we will have our own services, topics, and points that we may, or may not, commit back to the master TOS Didn&rsquo;t Read project&mdash;allowing us to build upon, augment, and contribute back to this very important work, already in progress. Next, as part of the #Reclaim process, I will add in two other elements: Lifebits - Definitions of specific type of content and data that we manage as part of our digital life. Actions - Actions that we take against reclaiming our lifebits, from the services we depend on. I will use a similar, machine readable, Github driven format like what the TOS Didn&rsquo;t Read group has used. I don&rsquo;t even have a v1 draft of what the specification for life bits and actions will look like, I just know I want to track on my lifebits, as well as the services they are associated with these lifebits, and ultimately be able to take actions against the services--one time, or on regular basis. I want to add to the number of TOS Didn&#39;t Read points available, but provided in a #Reclaim context. I think that once we beta test a group of individuals on the #Reclaim process, we will produce some pretty interesting topics, and points that will matter the most to the average Internet user. With each #Reclaim, the overall #Reclaim process will get better, while also contributing to a wider understanding of how leading technology providers are crafting their terms of service (TOS), and ultimately working with or against the #Reclaim process. These are just my preliminary thoughts on this. I&rsquo;ve forked the TOS Didn&rsquo;t Read repository into the #Reclaim Github organization. Next I will make the services &nbsp;available in machine readable JSON, and driven using TOS Didn&rsquo;t Read services within my personal #Reclaim project. Then I will be able to display existing topics, points and even the TOS Didn&rsquo;t Read ranking for each of the services I depend on. Not sure what is after that, we&rsquo;ll tackle this first, then I feel I&rsquo;ll have a new understanding to move forward from." />
+<meta property="og:description" content="I&rsquo;m thinking through some of the next steps for my Reclaim Your Domain process, in preparation for a hackathon we have going on this weekend. Based upon defining, and executing on my own #Reclaim process, I want to come up with a v1 proposal, for one possible vision for the larger #Reclaim lifecycle. My vision for Reclaim Your Domain, is to not create yet another system, we have to become slave to. I want #Reclaim to be an open framework, that helps guide people through reclaiming their own domain, and encourages them to manage and improve their digital identity through the process. With this in mind I want to make sure I don&rsquo;t re-invent the wheel, and build off of any existing work that I can. One of the catalysts behind Reclaim Your Domain for me, was watching the Terms of Service Didn&rsquo;t Read project, aimed at building understanding of the terms of service, for the online services we depend on. Since the terms of service of my platforms, is the driving force behind #Reclaim decisions that I make, I figured that we should make sure and incorporate TOS Didn&rsquo;t Read into our #Reclaim efforts--why re-invent the wheel! There is a lot going on at TOS Didn&rsquo;t Read, but basically they have come up with a tracking, and rating system for making sense of the very legalese TOS of services that we depend on. They have three machine readable elements, that make of their tracking and rating system: Services (specification) (listing) - Online service providers that we all depend on. Topics (specification) (listing) - A list of topics being applied and discussed at the TOS level. Points (specification) (listing) - A list of specific points, within various topics, that applied directly to services TOS. This gives me the valuable data I need for each persons reclaim process, and insight into their actual terms of service, allowing me to educate myself, as well as anyone else who embarks on reclaiming their domain. I can drive the list of services, driven by TOS Didn&rsquo;t Read, as well as educate users on topics, and the points that are included. As part of #Reclaim, we will have our own services, topics, and points that we may, or may not, commit back to the master TOS Didn&rsquo;t Read project&mdash;allowing us to build upon, augment, and contribute back to this very important work, already in progress. Next, as part of the #Reclaim process, I will add in two other elements: Lifebits - Definitions of specific type of content and data that we manage as part of our digital life. Actions - Actions that we take against reclaiming our lifebits, from the services we depend on. I will use a similar, machine readable, Github driven format like what the TOS Didn&rsquo;t Read group has used. I don&rsquo;t even have a v1 draft of what the specification for life bits and actions will look like, I just know I want to track on my lifebits, as well as the services they are associated with these lifebits, and ultimately be able to take actions against the services--one time, or on regular basis. I want to add to the number of TOS Didn&#39;t Read points available, but provided in a #Reclaim context. I think that once we beta test a group of individuals on the #Reclaim process, we will produce some pretty interesting topics, and points that will matter the most to the average Internet user. With each #Reclaim, the overall #Reclaim process will get better, while also contributing to a wider understanding of how leading technology providers are crafting their terms of service (TOS), and ultimately working with or against the #Reclaim process. These are just my preliminary thoughts on this. I&rsquo;ve forked the TOS Didn&rsquo;t Read repository into the #Reclaim Github organization. Next I will make the services &nbsp;available in machine readable JSON, and driven using TOS Didn&rsquo;t Read services within my personal #Reclaim project. Then I will be able to display existing topics, points and even the TOS Didn&rsquo;t Read ranking for each of the services I depend on. Not sure what is after that, we&rsquo;ll tackle this first, then I feel I&rsquo;ll have a new understanding to move forward from." />
+<link rel="canonical" href="http://localhost:4000/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/" />
+<meta property="og:url" content="http://localhost:4000/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://s3.amazonaws.com/kinlane-productions2/api-evangelist/terms-of-service-didnt-read/tos-didnt-read-logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-07-16T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Driving The #Reclaim Process Using Terms Of Service Didn&#39;t Read","dateModified":"2014-07-16T00:00:00-07:00","datePublished":"2014-07-16T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"https://s3.amazonaws.com/kinlane-productions2/api-evangelist/terms-of-service-didnt-read/tos-didnt-read-logo.png","description":"I&rsquo;m thinking through some of the next steps for my Reclaim Your Domain process, in preparation for a hackathon we have going on this weekend. Based upon defining, and executing on my own #Reclaim process, I want to come up with a v1 proposal, for one possible vision for the larger #Reclaim lifecycle. My vision for Reclaim Your Domain, is to not create yet another system, we have to become slave to. I want #Reclaim to be an open framework, that helps guide people through reclaiming their own domain, and encourages them to manage and improve their digital identity through the process. With this in mind I want to make sure I don&rsquo;t re-invent the wheel, and build off of any existing work that I can. One of the catalysts behind Reclaim Your Domain for me, was watching the Terms of Service Didn&rsquo;t Read project, aimed at building understanding of the terms of service, for the online services we depend on. Since the terms of service of my platforms, is the driving force behind #Reclaim decisions that I make, I figured that we should make sure and incorporate TOS Didn&rsquo;t Read into our #Reclaim efforts--why re-invent the wheel! There is a lot going on at TOS Didn&rsquo;t Read, but basically they have come up with a tracking, and rating system for making sense of the very legalese TOS of services that we depend on. They have three machine readable elements, that make of their tracking and rating system: Services (specification) (listing) - Online service providers that we all depend on. Topics (specification) (listing) - A list of topics being applied and discussed at the TOS level. Points (specification) (listing) - A list of specific points, within various topics, that applied directly to services TOS. This gives me the valuable data I need for each persons reclaim process, and insight into their actual terms of service, allowing me to educate myself, as well as anyone else who embarks on reclaiming their domain. I can drive the list of services, driven by TOS Didn&rsquo;t Read, as well as educate users on topics, and the points that are included. As part of #Reclaim, we will have our own services, topics, and points that we may, or may not, commit back to the master TOS Didn&rsquo;t Read project&mdash;allowing us to build upon, augment, and contribute back to this very important work, already in progress. Next, as part of the #Reclaim process, I will add in two other elements: Lifebits - Definitions of specific type of content and data that we manage as part of our digital life. Actions - Actions that we take against reclaiming our lifebits, from the services we depend on. I will use a similar, machine readable, Github driven format like what the TOS Didn&rsquo;t Read group has used. I don&rsquo;t even have a v1 draft of what the specification for life bits and actions will look like, I just know I want to track on my lifebits, as well as the services they are associated with these lifebits, and ultimately be able to take actions against the services--one time, or on regular basis. I want to add to the number of TOS Didn&#39;t Read points available, but provided in a #Reclaim context. I think that once we beta test a group of individuals on the #Reclaim process, we will produce some pretty interesting topics, and points that will matter the most to the average Internet user. With each #Reclaim, the overall #Reclaim process will get better, while also contributing to a wider understanding of how leading technology providers are crafting their terms of service (TOS), and ultimately working with or against the #Reclaim process. These are just my preliminary thoughts on this. I&rsquo;ve forked the TOS Didn&rsquo;t Read repository into the #Reclaim Github organization. Next I will make the services &nbsp;available in machine readable JSON, and driven using TOS Didn&rsquo;t Read services within my personal #Reclaim project. Then I will be able to display existing topics, points and even the TOS Didn&rsquo;t Read ranking for each of the services I depend on. Not sure what is after that, we&rsquo;ll tackle this first, then I feel I&rsquo;ll have a new understanding to move forward from.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://kinlane.com/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Driving The #Reclaim Process Using Terms Of Service Didn&amp;#039;t Read | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://kinlane.com/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Driving The #Reclaim Process Using Terms Of Service Didn&amp;#039;t Read | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Driving The #Reclaim Process Using Terms Of Service Didn&amp;#039;t Read</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2014-07-16T00:00:00-07:00" itemprop="datePublished">
+    
+    Jul 16, 2014
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://s3.amazonaws.com/kinlane-productions2/api-evangelist/terms-of-service-didnt-read/tos-didnt-read-logo.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><a href="http://tosdr.org/"><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/api-evangelist/terms-of-service-didnt-read/tos-didnt-read-logo.png" alt="" width="325" align="right" /></a></p>
+<p>I&rsquo;m thinking through some of the next steps for <a href="http://kinlane.reclaimyourdomain.org/">my Reclaim Your Domain process</a>, in preparation for a hackathon we have going on this weekend. Based upon defining, and executing on my own #Reclaim process, I want to come up with a v1 proposal, for one possible vision for the larger #Reclaim lifecycle.</p>
+<p>My vision for <a href="http://reclaimyourdomain.org/">Reclaim Your Domain</a>, is to not create yet another system, we have to become slave to. I want #Reclaim to be an open framework, that helps guide people through reclaiming their own domain, and encourages them to manage and improve their digital identity through the process. With this in mind I want to make sure I don&rsquo;t re-invent the wheel, and build off of any existing work that I can.</p>
+<p>One of the catalysts behind Reclaim Your Domain for me, was watching the <a href="http://tosdr.org/">Terms of Service Didn&rsquo;t Read</a> project, aimed at building understanding of the terms of service, for the online services we depend on. Since the terms of service of my platforms, is the driving force behind #Reclaim decisions that I make, I figured that we should make sure and incorporate TOS Didn&rsquo;t Read into our #Reclaim efforts--why re-invent the wheel!</p>
+<p>There is a lot going on at TOS Didn&rsquo;t Read, but basically they have come up with a tracking, and rating system for making sense of the very legalese TOS of services that we depend on. They have three machine readable elements, that make of their tracking and rating system:</p>
+<ul class="mainlist">
+<li><strong>Services</strong> (<a href="https://github.com/tosdr/tosdr.org/wiki/Specification:-services">specification</a>) (<a href="https://github.com/tosdr/tosdr.org/tree/master/services">listing</a>)  - Online service providers that we all depend on.</li>
+<li><strong>Topics</strong> (<a href="https://github.com/tosdr/tosdr.org/tree/master/topics">specification</a>) (<a href="https://github.com/tosdr/tosdr.org/tree/master/topics">listing</a>)  - A list of topics being applied and discussed at the TOS level.</li>
+<li><strong>Points</strong> (<a href="https://github.com/tosdr/tosdr.org/wiki/Specification:-points">specification</a>) (<a href="https://github.com/tosdr/tosdr.org/tree/master/points">listing</a>)  -  A list of specific points, within various topics, that applied directly to services TOS.</li>
+</ul>
+<p>This gives me the valuable data I need for each persons reclaim process, and insight into their actual terms of service, allowing me to educate myself, as well as anyone else who embarks on reclaiming their domain. I can drive the list of services, driven by TOS Didn&rsquo;t Read, as well as educate users on topics, and the points that are included. As part of #Reclaim, we will have our own services, topics, and points that we may, or may not, commit back to the master TOS Didn&rsquo;t Read project&mdash;allowing us to build upon, augment, and contribute back to this very important work, already in progress.</p>
+<p>Next, as part of the #Reclaim process, I will add in two other elements:</p>
+<ul class="mainlist">
+<li><strong>Lifebits</strong> - Definitions of specific type of content and data that we manage as part of our digital life.</li>
+<li><strong>Actions</strong> - Actions that we take against reclaiming our lifebits, from the services we depend on.</li>
+</ul>
+<p><a href="https://github.com/reclaim-your-domain"><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github.jpg" alt="" width="150" align="right" /></a></p>
+<p>I will use a similar, machine readable, Github driven format like what the TOS Didn&rsquo;t Read group has used. I don&rsquo;t even have a v1 draft of what the specification for life bits and actions will look like, I just know I want to track on my lifebits, as well as the services they are associated with these lifebits, and ultimately be able to take actions against the services--one time, or on regular basis.</p>
+<p>I want to add to the number of TOS Didn't Read points available, but provided in a #Reclaim context. I think that once we beta test a group of individuals on the #Reclaim process, we will produce some pretty interesting topics, and points that will matter the most to the average Internet user. With each #Reclaim, the overall #Reclaim process will get better, while also contributing to a wider understanding of how leading technology providers are crafting their terms of service (TOS), and ultimately working with or against the #Reclaim process.</p>
+<p>These are just my preliminary thoughts on this. I&rsquo;ve forked the TOS Didn&rsquo;t Read repository into the #Reclaim Github organization. Next I will make the services &nbsp;available in machine readable JSON, and driven using TOS Didn&rsquo;t Read services within <a href="http://kinlane.reclaimyourdomain.org/index.html">my personal #Reclaim project</a>. Then I will be able to display existing topics, points and even the TOS Didn&rsquo;t Read ranking for each of the services I depend on. Not sure what is after that, we&rsquo;ll tackle this first, then I feel I&rsquo;ll have a new understanding to move forward from.</p>
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Driving The #Reclaim Process Using Terms Of Service Didn&#039;t Read&url=http://localhost:4000/2014/07/16/driving-the-reclaim-process-using-terms-of-service-didnt-read/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2014%2F07%2F16%2Fdriving-the-reclaim-process-using-terms-of-service-didnt-read%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2014/07/15/considering-amazon-web-services-continued-push-into-mobile/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2014/07/16/hello-world/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

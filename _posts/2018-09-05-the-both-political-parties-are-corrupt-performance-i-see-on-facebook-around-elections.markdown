@@ -1,0 +1,19 @@
+---
+published: true
+layout: post
+title: >-
+  The Both Political Parties Are Corrupt Theater Performance I See On Facebook
+  Around Elections
+date: 2018-09-05T09:00:00.000Z
+tags:
+  - Kin Lane
+image: >-
+  http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/49_127_800_500_0_max_0_-5_-1.jpg
+---
+It is interesting to watch people perform the both sides (Republicans & Democrats) are corrupt act leading up to this mid term election. I think about how I used to perform this act, and thinking I was doing the right thing, when I was just playing into the hands of the powers that be. The most important tool in the toolbox of the people in power is to get you to stay home on election day. If you are a conservative and you stay home, you are giving power to liberals, and if you are a liberal staying home, you are giving power to the conservatives. When you don't identify in either camp, you are giving away power to whoever happens to be dominating in this latest cycle.
+
+The belief that you have to identify and agree with everything a candidate or party has to say and do before you'll vote for them, makes you an easy target for manipulation during any election cycle. You are the type of person that politicians will pander to, tell stories and try to convince you to be on their team, only to then shift course once in office, and stick with the party line. If your party has elements that you do not agree with, then get out and begin working on changing this. Sure, many of us would like to have more than two parties, with better representation, but we have the system we have, and until we get up and start being the change we want to see, nothing will ever change. We'll just be a tool in the toolbox of those who do get out, and who are actively working to make the change they believe in.
+
+Yes, there is corruption within both the Democrat and Republican parties. Yes, there are many aspects of government that does not work for the people. But, how does sitting at home and not voting do anything about this? How does rejecting both parties make any change at all? By taking this stance you are allowing yourself to become a disenfranchised voter, and ceding any power you have as an individual to those who are already in power, or poised to take power. I thought for many years that I was in control, I was retaining my power, by not supporting either Democrats or Republicans, because neither entirely reflected my values. I thought I was resisting corruption, by holding back my vote, when in reality I had been ceding my power to the Republicans. I realized this in the 2000 election, after my conservative step-father asked to mail in my ballot for me (illegal), but was still satisfied with me choosing not to mail at all--I was giving his party my vote by allowing myself to be disenfranchised, which is what conservatives thrive upon.
+
+18 years later I am still finding my voice. Voting is never enough for me. I actively work to shine a light on corruption in both parties, and provide data intelligence for election workers and journalists at all levels. I rarely agree with the capital D Democratic party, but in response I've chosen to spend at least 20% of my career pushing back on their bullshit policies in DC. I've also chose to continue this while the Republicans are in party, holding my nose while traveling to DC to support the good people still there doing the hard work of running this country. I'm regularly working to retain and exercise my individual power, while working to expand it beyond just voting every two or four years. I will never again give up my voice, cede my power, and do the little choreographed jig about both sides are corrupt, and just stay home. Whenever I see my friends do this little dance on Facebook, it makes me very sad to think they are so willingly giving up their power as an American citizen.

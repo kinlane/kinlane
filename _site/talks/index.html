@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Talks | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Talks" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The ramblings, thoughts, and channeling of Kin Lane." />
+<meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane." />
+<link rel="canonical" href="http://localhost:4000/talks/" />
+<meta property="og:url" content="http://localhost:4000/talks/" />
+<meta property="og:site_name" content="Kin Lane" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/talks/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Talks","author":{"@type":"Person","name":"Kin Lane"},"description":"The ramblings, thoughts, and channeling of Kin Lane.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Talks | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Talks | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    
+<div class="uk-section">
+    <div class="uk-container">
+
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Talks</h1>
+
+            <div class="article-content link-primary">
+                <p>In the last two years I have been publishing each of my talks to Github. Since I started using <a href="http://talks.kinlane.com/http://talks.kinlane.com/http://lab.hakim.se/reveal-js/" target="_blank">reveal.js</a> for the presentation framework, it has made it easier to publish my presentations online, using Github by default.</p>
+
+<p>Over time I will find older talks and publish here as well, but or now you will only find my talks from after 2012.</p>
+
+<ul>
+	<li><a href="http://talks.kinlane.com/engie-workshop/api-trends.html">Engie Workshop Paris, France, April 2018 - API Trends</a></li>
+	<li><a href="http://talks.kinlane.com/ws-rest/a-transit-model-for-api-governance-using-a-hypermedia-engine/">WS-REST in Lyon, France, April 2018 - A Transit Model For API Governance Using A Hypermedia Engine</a></li>
+	<li><a href="http://talks.kinlane.com/api-conference/looking-at-the-api-life-cycle-through-the-lens-of-a-municipal-transit-system.html">API Conference, London 2018 - Looking At The API Life Cycle Through The Lens Of A Municipal Transit System</a></li>
+	<li><a href="http://talks.kinlane.com/red-hat-transforming-government-it/">Red Hat - Transforming Government IT with Containers, API’s and Integration</a></li>
+	<li><a href="http://talks.kinlane.com/gsa-api/">GSA - Quarterly API Meeting</a></li>
+	<li><a href="http://talks.kinlane.com/defrag/attention/">Defrag 2016 - Drone Recovery In The Attention Economy</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat/boston/attention/">APIStrat Boston 2016 -  - Drone Recovery In The Attention Economy</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat/austin/the-api-lifecycle-workshop.html">APIStrat - The API Lifecycle Workshop</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat/austin/the-api-lifecycle.html">APIStrat - API Lifecycle Keynote</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat/austin/api-discovery.html">APIStrat - API Discovery</a></li>
+	<li><a href="http://talks.kinlane.com/defrag/the-api-lifecycle.html">Defrag - The API Lifecycle</a></li>
+	<li><a href="http://talks.kinlane.com/idx/the-api-opportunity-in-the-real-estate-industry/">IDX Dev Summit - The API Opportunity In The Real Estate Industry</a></li>
+	<li><a href="http://talks.kinlane.com/apiware/the-developer-opportunity-in-the-global-api-economy/">APIWare Webinar - The Developer Opportunity in the Global API Economy</a></li>
+	<li><a href="http://talks.kinlane.com/restlet/summer-of-apis-workshop/">Restlet Summer of APIs Workshop</a></li>
+	<li><a href="http://talks.kinlane.com/api-days-san-francisco/the-internet-is-coming-for-our-things-a-practical-guide-on-how-to-defend-ourselves/">The Internet Is Coming For Our Things: A Practical Guide On How To Defend Ourselves</a></li>
+	<li><a href="http://talks.kinlane.com/brigham-young-university/apis-in-edu-at-byu/">APIs in Edu at BYU</a></li>
+	<li><a href="http://talks.kinlane.com/gluecon/the-tech-business-and-politics-of-apis-in-2015/index.html">The Tech, Business, and Politics of APIs in 2015</a></li>
+	<li><a href="http://talks.kinlane.com/gluecon/swagger-api-meetup-quantifying-the-swagger-community/index.html">Swagger API Meetup - Quantifying the Swagger Community</a></li>
+	<li><a href="http://talks.kinlane.com/api-days-mediterranea/community-driven-api-lifecycle/index.html">APIDays Mediterranea - A Community Driven API Lifecycle</a></li>
+	<li><a href="http://talks.kinlane.com/restlet/picking-the-low-hanging-fruit-in-api-deployment/index.html">Restlet - Picking the Low Hanging Fruit In API Deployment </a></li>
+	<li><a href="http://talks.kinlane.com/api-days-sydney/the-programmable-world-with-apis-and-containers/index.html">API Days Sydney - The Programmable World With APIs And Containers</a></li>
+	<li><a href="http://talks.kinlane.com/brigham-young-university/understanding-the-api-driven-world-around-you.html">BYU - Understanding The API Driven World Around You</a></li>
+	<li><a href="http://talks.kinlane.com/defrag/containers-will-do-for-apis-what-apis-do-for-companies.html">Defrag 2014 - Containers Will Do For APIs What APIs Do For Companies</a></li>
+	<li><a href="http://talks.kinlane.com/nordic-apis/the-global-trend-of-platformification.html">2014 Nordic APIs - The Global Trend of Platformification</a></li>
+	<li><a href="http://talks.kinlane.com/nordic-apis/history-of-apis.html">2014 Nordic APIs - History of APIs</a></li>
+	<li><a href="http://talks.kinlane.com/nordic-apis/api-lifecycle.html">2014 Nordic APIs - API Lifecycle</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat-chicago-2014/internal-apis-will-be-the-secret-to-you-success.html">@APIStrat Chicago 2014 - Internal APIs Will Be The Secret To Your Success Session</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat-chicago-2014/civic-session.html">@APIStrat Chicago 2014 - Civic Session</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat-chicago-2014/civic-workshop.html">@APIStrat Chicago 2014 - Civic Workshop</a></li>
+	<li><a href="http://talks.kinlane.com/apistrat-chicago-2014/api-101-workshop.html">@APIStrat Chicago 2014 - API 101 Workshop</a></li>
+	<li><a href="http://talks.kinlane.com/chicago-amazon-web-services-group/apis-and-big-data-in-aws.html">Chicago Amazon Web Services Group - APIs and Big Data in AWS</a></li>
+  <li><a href="http://talks.kinlane.com/api-summit-edmunds/index.html">Edmunds.com API Summit</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/disrupting-the-car-industry-and-driver-experience-with-apis/index.html">API Days San Francisco 2014 - Disrupting Auto Industry</a></li>
+    <li><a href="http://talks.kinlane.com/api-days-mediterranea/business-of-apis-2014/index.html">API Days Mediterranea 2014 - Busines of APIs</a></li>
+    <li><a href="http://talks.kinlane.com/api-days-mediterranea/open-data-apis-2014/index.html">API Days Mediterranea 2014 - Open Data & APIs</a></li>
+    <li><a href="http://talks.kinlane.com/gluecon/apis-json/index.html">Gluecon 2014 - APIs.json</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/remembering-why-it-all-works/index.html">API Days Berlin - May 2014</a></li>
+    <li>edX @ UT Arlington (<a href="http://talks.kinlane.com/edx-ut-arlington/index.html">1</a>) (<a href="http://talks.kinlane.com/edx-ut-arlington/index2.html">2</a>)</li>
+    <li><a href="http://talks.kinlane.com/ibm/impact-2014/">IBM Impact 2014</a></li>
+    <li><a href="http://talks.kinlane.com/apistrat/amsterdam-service-descriptions/">API Service Descriptions</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/bringing-api-design-out-of-the-shadows-and-into-the-commons/">Bringing API Design Out Of The Shadows And Into The Commons</a></li>
+    <li><a href="http://talks.kinlane.com/open-va/future-of-edu/">Open VA - Future of Education</a></li>
+    <li><a href="http://talks.kinlane.com/api-meetup-washington-dc/api-design/">DC API Meetup</a></li>
+    <li><a href="http://talks.kinlane.com/api-days-mediterranea/business-of-apis/">API Days - Mediterrane</a></li>
+    <li><a href="http://talks.kinlane.com/api-meetup-dallas-tx/web-to-programmableweb-to-programmableworld/index.html">DFW API Professionals Meetup</a></li>
+    <li><a href="http://talks.kinlane.com/bizspark-sfo/three-faces-of-apis/index.html">BizSpark - SF @ Mulesoft</a></li>
+    <li><a href="http://talks.kinlane.com/apistrat/api101/index.html">API Strategy & Practice - API 101</a></li>
+    <li><a href="http://talks.kinlane.com/apps-world/building-the-enterprise-app-factory/index.html">Apps World - Building the Enterprise App Factory Workshop</a></li>
+    <li><a href="http://talks.kinlane.com/api-meetup-san-francisco/web-to-programmableweb-to-programmableworld/index.html">San Francisco, CA API Meetup (February 2013)</a></li>
+    <li><a href="http://talks.kinlane.com/api-meetup-washington-dc/web-to-programmableweb-to-programmableworld/index.html">Washington, DC API Meetup (January 2013)</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/building-blocks/index.html">API Days - Building Blocks</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/business-models/index.html">API Days - Business Models</a></li>
+    <li><a href="http://talks.kinlane.com/apidays/interal-apis/index.html">API Days - Internal APIs</a></li>
+    <li><a href="http://talks.kinlane.com/innovation-fellows/index.html">White House Innovation Fellows</a></li>
+</ul>
+<p>All my talks are licensed CC-BY, feel free to use, as long as you attribute me.</p>
+
+            </div>
+
+        </article>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div>
+    <a rel="me" title="Mastodon" href="https://mastodon.kinlane.com/web/@kin" target="_blank"><img src="https://kinlane-productions2.s3.amazonaws.com/icons/mastodon-icon.png" width="18"></a>
+</div>
+
+
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" title="Twitter" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" title="Facebook" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>
