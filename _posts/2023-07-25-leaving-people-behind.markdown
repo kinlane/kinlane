@@ -9,7 +9,7 @@ tags:
   - Programming
   - History
   - Baggage
-image: https://algorithmic.rotoscope.work/images/collections/the-persistence-of-memory/old-barn.jpgg
+image: https://algorithmic.rotoscope.work/images/collections/the-persistence-of-memory/old-barn.jpg
 ---
 I have long struggled and written about the people I leave behind in my life. There are a long list of people I have moved away from, severed communication with, and just evolved beyond over the years. Honestly, very, very, very few people can keep up with my mercurial approach to living, my appetite for travel and learning things, and more recently my determination to do the hard work of unraveling the programming of my youth has left even more people behind. 
 
