@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>http://localhost:4000/2023/07/25/deprogramming-the-last-forty-years/</loc>
+      
+        <lastmod>2023-07-25T08:00:00-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/2023/07/25/leaving-people-behind/</loc>
       
         <lastmod>2023-07-25T08:00:00-04:00</lastmod>
@@ -21261,7 +21276,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21276,7 +21291,7 @@
     <url>
       <loc>http://localhost:4000/atom.xml</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21291,7 +21306,7 @@
     <url>
       <loc>http://localhost:4000/contact/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21306,7 +21321,7 @@
     <url>
       <loc>http://localhost:4000/talks/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21321,7 +21336,7 @@
     <url>
       <loc>http://localhost:4000/archives/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21336,7 +21351,7 @@
     <url>
       <loc>http://localhost:4000/blog/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21351,7 +21366,7 @@
     <url>
       <loc>http://localhost:4000/experiences/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21366,7 +21381,7 @@
     <url>
       <loc>http://localhost:4000/videos/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21381,7 +21396,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21396,7 +21411,7 @@
     <url>
       <loc>http://localhost:4000/bio/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21411,7 +21426,7 @@
     <url>
       <loc>http://localhost:4000/deprogramming/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21426,7 +21441,7 @@
     <url>
       <loc>http://localhost:4000/images/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21441,7 +21456,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21456,7 +21471,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/main.css</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21471,7 +21486,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21488,7 +21503,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/style.css</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21503,7 +21518,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21518,7 +21533,7 @@
     <url>
       <loc>http://localhost:4000/blog/2/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21533,7 +21548,7 @@
     <url>
       <loc>http://localhost:4000/blog/3/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21548,7 +21563,7 @@
     <url>
       <loc>http://localhost:4000/blog/4/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21563,7 +21578,7 @@
     <url>
       <loc>http://localhost:4000/blog/5/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21578,7 +21593,7 @@
     <url>
       <loc>http://localhost:4000/blog/6/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21593,7 +21608,7 @@
     <url>
       <loc>http://localhost:4000/blog/7/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21608,7 +21623,7 @@
     <url>
       <loc>http://localhost:4000/blog/8/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21623,7 +21638,7 @@
     <url>
       <loc>http://localhost:4000/blog/9/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21638,7 +21653,7 @@
     <url>
       <loc>http://localhost:4000/blog/10/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21653,7 +21668,7 @@
     <url>
       <loc>http://localhost:4000/blog/11/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21668,7 +21683,7 @@
     <url>
       <loc>http://localhost:4000/blog/12/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21683,7 +21698,7 @@
     <url>
       <loc>http://localhost:4000/blog/13/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21698,7 +21713,7 @@
     <url>
       <loc>http://localhost:4000/blog/14/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21713,7 +21728,7 @@
     <url>
       <loc>http://localhost:4000/blog/15/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21728,7 +21743,7 @@
     <url>
       <loc>http://localhost:4000/blog/16/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21743,7 +21758,7 @@
     <url>
       <loc>http://localhost:4000/blog/17/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21758,7 +21773,7 @@
     <url>
       <loc>http://localhost:4000/blog/18/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21773,7 +21788,7 @@
     <url>
       <loc>http://localhost:4000/blog/19/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21788,7 +21803,7 @@
     <url>
       <loc>http://localhost:4000/blog/20/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21803,7 +21818,7 @@
     <url>
       <loc>http://localhost:4000/blog/21/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21818,7 +21833,7 @@
     <url>
       <loc>http://localhost:4000/blog/22/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21833,7 +21848,7 @@
     <url>
       <loc>http://localhost:4000/blog/23/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21848,7 +21863,7 @@
     <url>
       <loc>http://localhost:4000/blog/24/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21863,7 +21878,7 @@
     <url>
       <loc>http://localhost:4000/blog/25/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21878,7 +21893,7 @@
     <url>
       <loc>http://localhost:4000/blog/26/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21893,7 +21908,7 @@
     <url>
       <loc>http://localhost:4000/blog/27/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21908,7 +21923,7 @@
     <url>
       <loc>http://localhost:4000/blog/28/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21923,7 +21938,7 @@
     <url>
       <loc>http://localhost:4000/blog/29/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21938,7 +21953,7 @@
     <url>
       <loc>http://localhost:4000/blog/30/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21953,7 +21968,7 @@
     <url>
       <loc>http://localhost:4000/blog/31/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21968,7 +21983,7 @@
     <url>
       <loc>http://localhost:4000/blog/32/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21983,7 +21998,7 @@
     <url>
       <loc>http://localhost:4000/blog/33/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21998,7 +22013,7 @@
     <url>
       <loc>http://localhost:4000/blog/34/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22013,7 +22028,7 @@
     <url>
       <loc>http://localhost:4000/blog/35/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22028,7 +22043,7 @@
     <url>
       <loc>http://localhost:4000/blog/36/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22043,7 +22058,7 @@
     <url>
       <loc>http://localhost:4000/blog/37/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22058,7 +22073,7 @@
     <url>
       <loc>http://localhost:4000/blog/38/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22073,7 +22088,7 @@
     <url>
       <loc>http://localhost:4000/blog/39/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22088,7 +22103,7 @@
     <url>
       <loc>http://localhost:4000/blog/40/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22103,7 +22118,7 @@
     <url>
       <loc>http://localhost:4000/blog/41/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22118,7 +22133,7 @@
     <url>
       <loc>http://localhost:4000/blog/42/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22133,7 +22148,7 @@
     <url>
       <loc>http://localhost:4000/blog/43/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22148,7 +22163,7 @@
     <url>
       <loc>http://localhost:4000/blog/44/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22163,7 +22178,7 @@
     <url>
       <loc>http://localhost:4000/blog/45/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22178,7 +22193,7 @@
     <url>
       <loc>http://localhost:4000/blog/46/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22193,7 +22208,7 @@
     <url>
       <loc>http://localhost:4000/blog/47/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22208,7 +22223,7 @@
     <url>
       <loc>http://localhost:4000/blog/48/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22223,7 +22238,7 @@
     <url>
       <loc>http://localhost:4000/blog/49/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22238,7 +22253,7 @@
     <url>
       <loc>http://localhost:4000/blog/50/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22253,7 +22268,7 @@
     <url>
       <loc>http://localhost:4000/blog/51/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22268,7 +22283,7 @@
     <url>
       <loc>http://localhost:4000/blog/52/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22283,7 +22298,7 @@
     <url>
       <loc>http://localhost:4000/blog/53/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22298,7 +22313,7 @@
     <url>
       <loc>http://localhost:4000/blog/54/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22313,7 +22328,7 @@
     <url>
       <loc>http://localhost:4000/blog/55/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22328,7 +22343,7 @@
     <url>
       <loc>http://localhost:4000/blog/56/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -22343,7 +22358,7 @@
     <url>
       <loc>http://localhost:4000/blog/57/</loc>
       
-        <lastmod>2023-09-16T13:28:17-04:00</lastmod>
+        <lastmod>2023-09-16T18:23:48-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
