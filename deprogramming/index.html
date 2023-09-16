@@ -1,0 +1,19 @@
+---
+layout: page
+title: Deprogramming Kin Lane
+---
+<p>I have done a good job over the last decade at deprogramming from the previous four decades, with the essential ingredient being the injection of more diverse voices into my head, reading the stories of all of these amazing authors. I am very thankful for being able to decouple myself from the television and the Internet to make my way through these nourishing stories. </p>
+{% assign books = site.data.deprogramming %}
+<table align="center" style="width: 70%">
+{% for books in books %}
+    <tr>
+        <td width="175" align="center">
+            <img src="{{ books.image }}" width="150" style="border: 3px solid #000;">
+        </td>
+        <td>
+            <a href="{{ books.url }}">{{ books.title }}</a> by {{ books.author }} - {{ books.description }}
+        </td>
+    </tr>
+{% endfor %}
+</table>
+<p>It takes work to de-program oneself. If you are serious about understanding how the United States works, and why we are in the state we are in, I highly recommend working your way through these titles. These stories have saved my soul, given me enough momentum to keep going in this messed up world, and begin to be more optimistic about how I can live my life in the most meaningful way possible.

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Real-Time API Updates with XMPP | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Real-Time API Updates with XMPP" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/xmpp_logo.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-02-20T00:00:00-08:00" />
+<meta property="article:published_time" content="2011-02-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/xmpp_logo.png" />
+<meta property="twitter:title" content="Real-Time API Updates with XMPP" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2011/02/20/realtime-api-updates-with-xmpp/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Real-Time API Updates with XMPP","dateModified":"2011-02-20T00:00:00-08:00","datePublished":"2011-02-20T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/02/20/realtime-api-updates-with-xmpp/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/xmpp_logo.png","description":"I’m working on my prototype for a Google cloud printer that runs on a server. To set the stage, I want to get cloud print jobs sent from Google Docs using the Google Cloud Print Services Interface. You can retrieve a print job from the Google Cloud Print Services interface using /fetch. All it takes to get a new job is making a call to the Google Cloud Print (GCP) API on a regular schedule. The problem with this method is that it isn’t rkinlane-productions2en if you poll the GCP API every minute…it isn’t real-time. To make it real time Google uses a separate XMPP connection for sending print notifications to cloud printers. Each cloud printer has to register with the service and get a ClientLogin token, then establish a perseistent connection with the GTalk server to receive updates. With a cloud printer authenticated, and a persisistent XMPP connection established a cloud print server can then wait for print job notifications. Two benefits from this method: Real-Time - XMPP makes the GCP API requests truly real-time. As the print job comes in, an XMPP message is sent outnotifyingthe cloud printer. Resources - This is a much more efficient usage of network and compute resources. Cloud Printers only poll the GCP API /fetch end point when it receives job update. As I’m working with the GCP API and building the XMPP notification system I start thinking about this outside of print and the Google Cloud Print API. XMPP notifications is a great way to make APIs truly real-time, as well as reduce the request load on an API. It reduces the need to constantly poll an API for updates. Think if Twitter provided XMPP updates for applications looking for search updates. They would getnotifiedto make an API request when there is truly an update. Related articles Printing with Google Cloud Print and XMPP (kinlane.com) Email, XMPP, and Task Queues in Google AppEngine (oreilly.com) Google Cloud Print - Fetch (kinlane.com)","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2011-02-20T00:00:00-05:00","datePublished":"2011-02-20T00:00:00-05:00","description":"I’m working on my prototype for a Google cloud printer that runs on a server. To set the stage, I want to get cloud print jobs sent from Google Docs using the Google Cloud Print Services Interface. You can retrieve a print job from the Google Cloud Print Services interface using /fetch. All it takes to get a new job is making a call to the Google Cloud Print (GCP) API on a regular schedule. The problem with this method is that it isn’t rkinlane-productions2en if you poll the GCP API every minute…it isn’t real-time. To make it real time Google uses a separate XMPP connection for sending print notifications to cloud printers. Each cloud printer has to register with the service and get a ClientLogin token, then establish a perseistent connection with the GTalk server to receive updates. With a cloud printer authenticated, and a persisistent XMPP connection established a cloud print server can then wait for print job notifications. Two benefits from this method: Real-Time - XMPP makes the GCP API requests truly real-time. As the print job comes in, an XMPP message is sent outnotifyingthe cloud printer. Resources - This is a much more efficient usage of network and compute resources. Cloud Printers only poll the GCP API /fetch end point when it receives job update. As I’m working with the GCP API and building the XMPP notification system I start thinking about this outside of print and the Google Cloud Print API. XMPP notifications is a great way to make APIs truly real-time, as well as reduce the request load on an API. It reduces the need to constantly poll an API for updates. Think if Twitter provided XMPP updates for applications looking for search updates. They would getnotifiedto make an API request when there is truly an update. Related articles Printing with Google Cloud Print and XMPP (kinlane.com) Email, XMPP, and Task Queues in Google AppEngine (oreilly.com) Google Cloud Print - Fetch (kinlane.com)","headline":"Real-Time API Updates with XMPP","image":"http://kinlane-productions2.s3.amazonaws.com/xmpp_logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/02/20/realtime-api-updates-with-xmpp/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2011/02/20/realtime-api-updates-with-xmpp/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2011-02-20T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2011-02-20T00:00:00-05:00" itemprop="datePublished">
     
     Feb 20, 2011
   </time>

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Adding Methods to my Amazon EC2 Object | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Adding Methods to my Amazon EC2 Object" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2010-08-23T00:00:00-07:00" />
+<meta property="article:published_time" content="2010-08-23T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg" />
+<meta property="twitter:title" content="Adding Methods to my Amazon EC2 Object" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2010/08/23/adding-methods-to-my-amazon-ec2-object/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Adding Methods to my Amazon EC2 Object","dateModified":"2010-08-23T00:00:00-07:00","datePublished":"2010-08-23T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/08/23/adding-methods-to-my-amazon-ec2-object/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg","description":"I am needing more programmatic control over my Amazon EC2 environment. I am rebuilding all server instances on my Amazon Web Services network. I needed to reconfigure using EBS Volumes for file and data storage, and upgrade the operating systems and some applications while I’m at it. So I’m creating all new AMI as well as reconfiguring my snapshot strategy. The central object I use for programmatic manipulation of Amazon was limited. I need to add some methods for managing the Amazon EC2 Volumes: CreateVolume DescribeVolumes AttachVolume DetachVolume DeleteVolume I’m going to need to automate the create of snapshots as well, so I added the following methods: CreateSnapshot DescribeSnapshots DescribeSnapshotAttribute DeleteSnapshot This will give me additional control beyond just creating and managing instances. With my new EBS framework I have more granular control over different file and data stores for taking snapshots, etc. With this more granular control over drives and their files and data, plus I was just able to offload a lot of “heavy files” like audio, flash, pdf, images, etc. storing all the files at Amazon S3.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2010-08-23T00:00:00-04:00","datePublished":"2010-08-23T00:00:00-04:00","description":"I am needing more programmatic control over my Amazon EC2 environment. I am rebuilding all server instances on my Amazon Web Services network. I needed to reconfigure using EBS Volumes for file and data storage, and upgrade the operating systems and some applications while I’m at it. So I’m creating all new AMI as well as reconfiguring my snapshot strategy. The central object I use for programmatic manipulation of Amazon was limited. I need to add some methods for managing the Amazon EC2 Volumes: CreateVolume DescribeVolumes AttachVolume DetachVolume DeleteVolume I’m going to need to automate the create of snapshots as well, so I added the following methods: CreateSnapshot DescribeSnapshots DescribeSnapshotAttribute DeleteSnapshot This will give me additional control beyond just creating and managing instances. With my new EBS framework I have more granular control over different file and data stores for taking snapshots, etc. With this more granular control over drives and their files and data, plus I was just able to offload a lot of “heavy files” like audio, flash, pdf, images, etc. storing all the files at Amazon S3.","headline":"Adding Methods to my Amazon EC2 Object","image":"http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/08/23/adding-methods-to-my-amazon-ec2-object/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2010/08/23/adding-methods-to-my-amazon-ec2-object/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2010-08-23T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2010-08-23T00:00:00-04:00" itemprop="datePublished">
     
     Aug 23, 2010
   </time>

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Google Spreadsheet To YAML On Jekyll | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Google Spreadsheet To YAML On Jekyll" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-10-11T00:00:00-07:00" />
+<meta property="article:published_time" content="2016-10-11T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png" />
+<meta property="twitter:title" content="Google Spreadsheet To YAML On Jekyll" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2016/10/11/google-spreadsheet-to-yaml-on-jekyll/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Google Spreadsheet To YAML On Jekyll","dateModified":"2016-10-11T00:00:00-07:00","datePublished":"2016-10-11T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/10/11/google-spreadsheet-to-yaml-on-jekyll/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png","description":"I am building out a number of micro tools on Github lately, and since I&#39;m using a lot of the same features across many different projects, before I implement for any specific solution, I am making sure I develop it as a standalone component. I&#39;m trying to encourage a much more modular approach to how I develop API-centric micro tools, building a whole toolbox of reusable components that I can use in my work and something that I can&nbsp;evolve over time, independently of each project. One of the modules I developed this last weekend was a Google Spreadsheet to YAML on Jekyll solution. This solution is meant to take any Google Spreadsheet that has been made public, pull it via a simple JavaScript that runs on a Jekyll website running on Github Pages. Once it pulls the JSON from Google it converts it to YAML, and if a valid Github OAuth Token is present, it will save the YAML to the _data folder in the Github repository.&nbsp; I am using this component in a couple different websites and micro tools that I&#39;m developing. Some of these projects involve a non-developer maintaining data and content via a Google Spreadsheet, then triggering the update of the Jekyll website that presents the data or content via website and application. I am increasingly storing machine-readable data and content as YAML in the _data store of various Github hosted research projects, visualizations, and other applications--so opening up this work to be easily edited via a Google Spreadsheet is an important piece of the puzzle for me. As with each component, I am developing, you can find the code for this in the Github repository, and leave any feedback as an issue for the work.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2016-10-11T00:00:00-04:00","datePublished":"2016-10-11T00:00:00-04:00","description":"I am building out a number of micro tools on Github lately, and since I&#39;m using a lot of the same features across many different projects, before I implement for any specific solution, I am making sure I develop it as a standalone component. I&#39;m trying to encourage a much more modular approach to how I develop API-centric micro tools, building a whole toolbox of reusable components that I can use in my work and something that I can&nbsp;evolve over time, independently of each project. One of the modules I developed this last weekend was a Google Spreadsheet to YAML on Jekyll solution. This solution is meant to take any Google Spreadsheet that has been made public, pull it via a simple JavaScript that runs on a Jekyll website running on Github Pages. Once it pulls the JSON from Google it converts it to YAML, and if a valid Github OAuth Token is present, it will save the YAML to the _data folder in the Github repository.&nbsp; I am using this component in a couple different websites and micro tools that I&#39;m developing. Some of these projects involve a non-developer maintaining data and content via a Google Spreadsheet, then triggering the update of the Jekyll website that presents the data or content via website and application. I am increasingly storing machine-readable data and content as YAML in the _data store of various Github hosted research projects, visualizations, and other applications--so opening up this work to be easily edited via a Google Spreadsheet is an important piece of the puzzle for me. As with each component, I am developing, you can find the code for this in the Github repository, and leave any feedback as an issue for the work.","headline":"Google Spreadsheet To YAML On Jekyll","image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/screen_shot_2016_10_10_at_10.50.52_pm.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/10/11/google-spreadsheet-to-yaml-on-jekyll/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2016/10/11/google-spreadsheet-to-yaml-on-jekyll/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2016-10-11T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2016-10-11T00:00:00-04:00" itemprop="datePublished">
     
     Oct 11, 2016
   </time>

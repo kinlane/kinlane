@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>SEO Friendly, Static Local Directory Without Caching Data | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="SEO Friendly, Static Local Directory Without Caching Data" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/seo-google-yahoo-bing.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2012-02-05T00:00:00-08:00" />
+<meta property="article:published_time" content="2012-02-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/seo-google-yahoo-bing.jpg" />
+<meta property="twitter:title" content="SEO Friendly, Static Local Directory Without Caching Data" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2012/02/05/seo-friendly-static-local-directory-without-caching-data/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"SEO Friendly, Static Local Directory Without Caching Data","dateModified":"2012-02-05T00:00:00-08:00","datePublished":"2012-02-05T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2012/02/05/seo-friendly-static-local-directory-without-caching-data/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/seo-google-yahoo-bing.jpg","description":"I&rsquo;m working on several prototypes for building CityGrid local directories, demonstrating best practices when building web and mobile apps using CityGrid APIs. One question I&rsquo;ve gotten a lot lately is how are developers supposed to build SEO friendly local directories with static pages if they aren&rsquo;t allowed to cache businesses and places from the CityGrid API? It is true, per the&nbsp;CityGrid Usage Requirements,&nbsp;you aren&rsquo;t allowed to store places data in a local database or cache locally. But if you think about this, it isn&rsquo;t a negative, its a positive. You don&rsquo;t have to manage the potentially millions of business listings (which isn&rsquo;t easy), and when a business updates their profile you don&rsquo;t have to worry about having out of date information. If you can&rsquo;t store the data, then how do you build out local directories, with static pages? To begin I would start with the root of all places search with CityGrid, the what and the where. I recommend building a folder structure that looks like this /where/what/, for example /newyorkcity/pubs/. Then in the root of this folder, put a single index page that parses the folder structure and sets your where and what variables, before making a live search using the CityGrid places API. Now with the results of your places API search you can list the results for the user to select from. For each business listing you will get back a CityGrid places ID and public ID. The public ID is a pretty SEO friendly representation of the business, such as macs-irish-pub-new-york-city. This should work as your SEO detail, and you have two options: you can either use a mod_rewrite that will interpret this as next folder or page, or you have to statically build out a folder or page that represents each places listing. Either way your page should have a way to interpret the public ID into a numeric CityGrid ID and then make a call to the CityGrid Places API and make a detail request, returning back the full detail of a business listing. As I write this, I realize how tough this is to explain, even though it is a pretty simple approach. The basic concept is you use your folder structure to provide the what, where and places SEO friendly detail ID. These are all the core elements you will need to make searches and detail requests against CityGrid API. I&rsquo;m working on two separate prototypes to demonstrate this, one is a mod_rewrite version and the other will statically build out pages that actually don&rsquo;t store any data, except for the places ID--then make live calls again the CityGrid Places API to get what you need in real-time. Stay tuned and I will post the prototypes with accompanying blog posts, this week.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2012-02-05T00:00:00-05:00","datePublished":"2012-02-05T00:00:00-05:00","description":"I&rsquo;m working on several prototypes for building CityGrid local directories, demonstrating best practices when building web and mobile apps using CityGrid APIs. One question I&rsquo;ve gotten a lot lately is how are developers supposed to build SEO friendly local directories with static pages if they aren&rsquo;t allowed to cache businesses and places from the CityGrid API? It is true, per the&nbsp;CityGrid Usage Requirements,&nbsp;you aren&rsquo;t allowed to store places data in a local database or cache locally. But if you think about this, it isn&rsquo;t a negative, its a positive. You don&rsquo;t have to manage the potentially millions of business listings (which isn&rsquo;t easy), and when a business updates their profile you don&rsquo;t have to worry about having out of date information. If you can&rsquo;t store the data, then how do you build out local directories, with static pages? To begin I would start with the root of all places search with CityGrid, the what and the where. I recommend building a folder structure that looks like this /where/what/, for example /newyorkcity/pubs/. Then in the root of this folder, put a single index page that parses the folder structure and sets your where and what variables, before making a live search using the CityGrid places API. Now with the results of your places API search you can list the results for the user to select from. For each business listing you will get back a CityGrid places ID and public ID. The public ID is a pretty SEO friendly representation of the business, such as macs-irish-pub-new-york-city. This should work as your SEO detail, and you have two options: you can either use a mod_rewrite that will interpret this as next folder or page, or you have to statically build out a folder or page that represents each places listing. Either way your page should have a way to interpret the public ID into a numeric CityGrid ID and then make a call to the CityGrid Places API and make a detail request, returning back the full detail of a business listing. As I write this, I realize how tough this is to explain, even though it is a pretty simple approach. The basic concept is you use your folder structure to provide the what, where and places SEO friendly detail ID. These are all the core elements you will need to make searches and detail requests against CityGrid API. I&rsquo;m working on two separate prototypes to demonstrate this, one is a mod_rewrite version and the other will statically build out pages that actually don&rsquo;t store any data, except for the places ID--then make live calls again the CityGrid Places API to get what you need in real-time. Stay tuned and I will post the prototypes with accompanying blog posts, this week.","headline":"SEO Friendly, Static Local Directory Without Caching Data","image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/seo-google-yahoo-bing.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2012/02/05/seo-friendly-static-local-directory-without-caching-data/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2012/02/05/seo-friendly-static-local-directory-without-caching-data/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2012-02-05T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2012-02-05T00:00:00-05:00" itemprop="datePublished">
     
     Feb 5, 2012
   </time>

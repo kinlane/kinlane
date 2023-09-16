@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Amazon EC2 Recovery | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Amazon EC2 Recovery" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/05/06/amazon-ec2-recovery/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-05-06T00:00:00-07:00" />
+<meta property="article:published_time" content="2009-05-06T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Amazon EC2 Recovery" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/05/06/amazon-ec2-recovery/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Amazon EC2 Recovery","dateModified":"2009-05-06T00:00:00-07:00","datePublished":"2009-05-06T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/05/06/amazon-ec2-recovery/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"I just finished a recovery of an amazon EC2 instance that failed. It failed not due to anything related to the Amazon EC2 instance. It was something Java related in the ColdFusion environment, and still trying to figure out. Anwyays, as soon as I saw I couldn’t recover the services necessary to run the application I quickly deployed a new instance from the AMI I had created of the production isntance a couple weeks ago. Once up I copied all web site files. This frustrated me and took 25 minutes to copy because the D: always restores as empty drive with new instance. Gonna play with using volumes for production storage and see how this works. Then I reinstalled certificates from backups. Then we were backup and running. It wasn’t a perfect process, but did it in about an hour. Work to do to make perfect. And of course need to get the load-balancer working for this domain.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-05-06T00:00:00-04:00","datePublished":"2009-05-06T00:00:00-04:00","description":"I just finished a recovery of an amazon EC2 instance that failed. It failed not due to anything related to the Amazon EC2 instance. It was something Java related in the ColdFusion environment, and still trying to figure out. Anwyays, as soon as I saw I couldn’t recover the services necessary to run the application I quickly deployed a new instance from the AMI I had created of the production isntance a couple weeks ago. Once up I copied all web site files. This frustrated me and took 25 minutes to copy because the D: always restores as empty drive with new instance. Gonna play with using volumes for production storage and see how this works. Then I reinstalled certificates from backups. Then we were backup and running. It wasn’t a perfect process, but did it in about an hour. Work to do to make perfect. And of course need to get the load-balancer working for this domain.","headline":"Amazon EC2 Recovery","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/05/06/amazon-ec2-recovery/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/05/06/amazon-ec2-recovery/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-05-06T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2009-05-06T00:00:00-04:00" itemprop="datePublished">
     
     May 6, 2009
   </time>

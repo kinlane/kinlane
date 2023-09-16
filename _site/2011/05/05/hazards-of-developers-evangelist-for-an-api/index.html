@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Hazards of Developers Evangelist for an API. | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Hazards of Developers Evangelist for an API." />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-05-05T00:00:00-07:00" />
+<meta property="article:published_time" content="2011-05-05T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg" />
+<meta property="twitter:title" content="Hazards of Developers Evangelist for an API." />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2011/05/05/hazards-of-developers-evangelist-for-an-api/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Hazards of Developers Evangelist for an API.","dateModified":"2011-05-05T00:00:00-07:00","datePublished":"2011-05-05T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/05/05/hazards-of-developers-evangelist-for-an-api/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg","description":"I’m working to make it easier to get up and running using the Mimeo Connect Cloud Print API. One concept that is tough to understand at first, is that all printing starts with a Mimeo document. Then using the API you can either order that document as is, or merge one or many PDF documents with it, generate a dynamic document, then order this new document. As part of our API, we have a Document Listing Service, except it only pulls documents from a central account I have control of. So if you want to pull one of the documents you created, you have to actually pull the Document ID from your My Mimeo account. Sounds easy right? Well its available in the URL, and in a properties screen for the document. The Document ID is a GUID, for those of you who don’t know what a GUID is: A globally unique identifier or GUID (pronounced /??u??d/ or /??w?d/) is a unique reference number used as an identifier in computer software So a Document ID looks like this: 3F2504E0-4F89-11D3-9A0C-0305E82C3301 Except for some reason the one that shows in My Mimeo is missing the dashes, and doesn&#39;t work when you pass through the API. So I ask my API developer, where is the easiest place to get the Document ID? He says, &quot;In the URL or as property of document&quot;. I explain it doesn&#39;t work without dashes. His response is, Developers will understand, and know to put dashes back in. And that is a hazard of putting developers as the public face of your API. They make a lot of assumptions based upon what they know. API Evangelists and developer advocates should definitely have programming skills, but ideally they should have a balance of proramming, business and marketing skills.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2011-05-05T00:00:00-04:00","datePublished":"2011-05-05T00:00:00-04:00","description":"I’m working to make it easier to get up and running using the Mimeo Connect Cloud Print API. One concept that is tough to understand at first, is that all printing starts with a Mimeo document. Then using the API you can either order that document as is, or merge one or many PDF documents with it, generate a dynamic document, then order this new document. As part of our API, we have a Document Listing Service, except it only pulls documents from a central account I have control of. So if you want to pull one of the documents you created, you have to actually pull the Document ID from your My Mimeo account. Sounds easy right? Well its available in the URL, and in a properties screen for the document. The Document ID is a GUID, for those of you who don’t know what a GUID is: A globally unique identifier or GUID (pronounced /??u??d/ or /??w?d/) is a unique reference number used as an identifier in computer software So a Document ID looks like this: 3F2504E0-4F89-11D3-9A0C-0305E82C3301 Except for some reason the one that shows in My Mimeo is missing the dashes, and doesn&#39;t work when you pass through the API. So I ask my API developer, where is the easiest place to get the Document ID? He says, &quot;In the URL or as property of document&quot;. I explain it doesn&#39;t work without dashes. His response is, Developers will understand, and know to put dashes back in. And that is a hazard of putting developers as the public face of your API. They make a lot of assumptions based upon what they know. API Evangelists and developer advocates should definitely have programming skills, but ideally they should have a balance of proramming, business and marketing skills.","headline":"Hazards of Developers Evangelist for an API.","image":"http://kinlane-productions2.s3.amazonaws.com/mimeo/mimeo_connect_logo.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/05/05/hazards-of-developers-evangelist-for-an-api/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2011/05/05/hazards-of-developers-evangelist-for-an-api/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2011-05-05T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2011-05-05T00:00:00-04:00" itemprop="datePublished">
     
     May 5, 2011
   </time>

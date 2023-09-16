@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Google Reader API | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Google Reader API" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-09-13T00:00:00-07:00" />
+<meta property="article:published_time" content="2011-09-13T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg" />
+<meta property="twitter:title" content="Google Reader API" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2011/09/13/google-reader-api/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Google Reader API","dateModified":"2011-09-13T00:00:00-07:00","datePublished":"2011-09-13T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/09/13/google-reader-api/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg","description":"One thing I love about Google, is the APIs. The apps I use most like Gmail, Calendar and Docs all have APIs, allowing me to write code that works my accounts and its data, and integrate it into other applications. Well except for one application, Google Reader. Google has never made an API for Google Reader. It onlyallowsyou to use RSS feeds and sharing them publicly. I’ve always wanted to get at thewealthof knowledge that is curated daily in my Google Reader. So I tend to look regularly to see if they have put one out. Tonight I came across a Google Code project that says it: Hosts documentation and the issue tracker for the (unofficial) Google Reader API. It has a Googler working on it, that was from the reader team. It appears to be work in progress, but has activity in the last month. Here are the pages currently up: ApiSubscriptionEdit - Allows a stream to be subscribed to, unsubscribed from, or an existing subscription to be edited. StreamId - Description of stream IDs exposed by the Google Reader API. &quot;Streams&quot; refer to collections of items in the Google Reader API. This includes feeds, items with a specific tag, or folders. Stream IDs are are string-based identifiers used to identify streams and are passed to many API methods. ItemId - Description of item IDs exposed by the Google Reader API. Items in Reader are referenced by globally unique item IDs. IDs are generally derived from the &lt;id&gt; attribute in Atom feeds and the &lt;guid&gt; attribute in RSS feeds. In the absence of those, the item URL may be used to generat the ID. In cases where the feed does not provide IDs or URLs (or they are not deemed &quot;trustworthy&quot;, e.g. if more than one item in the feed response has the same ID or URL), then the ID will be computed from a signature of certain feed item properties (title, body, etc.). ApiStreamItemsIds - Given one or more StreamIds and fetching options, returns the IDs of the items in those Streams. Getting just item IDs is significantly cheaper than getting stream contents. If you need to do filtering of items, it is highly encouraged to do this at the ID level before fetching item contents for the subset of items that remain. ApiStreamItemsContents - Given a collection of ItemIds and fetching options, returns the contents of those items. ApiCommonInputs - Inputs that all API methods support ActionToken - Describes XSRF-preventing action tokens. ApiStreamContents - Given a StreamId and fetching options, returns the contents of the items in that Stream. Authentication - Making authenticated requests with OAuth and ClientLogin I&#39;m going to make some time this weekend to play with more and write some code. I would like to rework my tagging system in Google Reader and drive information for sites that run in my new content management system. I&#39;m excited to finally see a potential API for Google Reader, and the possibility that they are not going to abandon one of my favorite tools.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2011-09-13T00:00:00-04:00","datePublished":"2011-09-13T00:00:00-04:00","description":"One thing I love about Google, is the APIs. The apps I use most like Gmail, Calendar and Docs all have APIs, allowing me to write code that works my accounts and its data, and integrate it into other applications. Well except for one application, Google Reader. Google has never made an API for Google Reader. It onlyallowsyou to use RSS feeds and sharing them publicly. I’ve always wanted to get at thewealthof knowledge that is curated daily in my Google Reader. So I tend to look regularly to see if they have put one out. Tonight I came across a Google Code project that says it: Hosts documentation and the issue tracker for the (unofficial) Google Reader API. It has a Googler working on it, that was from the reader team. It appears to be work in progress, but has activity in the last month. Here are the pages currently up: ApiSubscriptionEdit - Allows a stream to be subscribed to, unsubscribed from, or an existing subscription to be edited. StreamId - Description of stream IDs exposed by the Google Reader API. &quot;Streams&quot; refer to collections of items in the Google Reader API. This includes feeds, items with a specific tag, or folders. Stream IDs are are string-based identifiers used to identify streams and are passed to many API methods. ItemId - Description of item IDs exposed by the Google Reader API. Items in Reader are referenced by globally unique item IDs. IDs are generally derived from the &lt;id&gt; attribute in Atom feeds and the &lt;guid&gt; attribute in RSS feeds. In the absence of those, the item URL may be used to generat the ID. In cases where the feed does not provide IDs or URLs (or they are not deemed &quot;trustworthy&quot;, e.g. if more than one item in the feed response has the same ID or URL), then the ID will be computed from a signature of certain feed item properties (title, body, etc.). ApiStreamItemsIds - Given one or more StreamIds and fetching options, returns the IDs of the items in those Streams. Getting just item IDs is significantly cheaper than getting stream contents. If you need to do filtering of items, it is highly encouraged to do this at the ID level before fetching item contents for the subset of items that remain. ApiStreamItemsContents - Given a collection of ItemIds and fetching options, returns the contents of those items. ApiCommonInputs - Inputs that all API methods support ActionToken - Describes XSRF-preventing action tokens. ApiStreamContents - Given a StreamId and fetching options, returns the contents of the items in that Stream. Authentication - Making authenticated requests with OAuth and ClientLogin I&#39;m going to make some time this weekend to play with more and write some code. I would like to rework my tagging system in Google Reader and drive information for sites that run in my new content management system. I&#39;m excited to finally see a potential API for Google Reader, and the possibility that they are not going to abandon one of my favorite tools.","headline":"Google Reader API","image":"http://kinlane-productions2.s3.amazonaws.com/google/google-reader.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/09/13/google-reader-api/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2011/09/13/google-reader-api/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2011-09-13T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2011-09-13T00:00:00-04:00" itemprop="datePublished">
     
     Sep 13, 2011
   </time>

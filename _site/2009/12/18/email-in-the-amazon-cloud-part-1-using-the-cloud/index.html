@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email in the Amazon Cloud Part 1 - Using the Cloud | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email in the Amazon Cloud Part 1 - Using the Cloud" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-1-using-the-cloud/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-12-18T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Email in the Amazon Cloud Part 1 - Using the Cloud" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-1-using-the-cloud/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email in the Amazon Cloud Part 1 - Using the Cloud","dateModified":"2009-12-18T00:00:00-08:00","datePublished":"2009-12-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-1-using-the-cloud/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"Amazon is a great place to really take care of business when it comes to IT. First order of business at my new job last year was to take care of a really troubling “hostage” situation with their current server co-location contract. My boss said, “move us to the cloud”. I had used Amazon Web Services before, I thought I should check out other providers as well. So I toured a handful of cloud providers, but ended up back with Amazon Web Services. They just offered the computing and storage power I needed with Amazon EC2 and Amazon S3. Plus the opportunity of using more services like Amazon SimpleDB and Amazon Cloudfront. So I moved us over. It took me 2 months to migrate from three extremely overloaded servers a platform that we could grow from. Amazon EC2 and Amazon S3 let me really balance out our load and really get a solid base up and running quickly. Beyond our base need for web, databases, ftp, version control, and web services, we had high needs for volume email and more specifically SMTP services. So I started evaluating how we sent mail and got to work at optimizing this process for scaling email for large blasts. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-12-18T00:00:00-05:00","datePublished":"2009-12-18T00:00:00-05:00","description":"Amazon is a great place to really take care of business when it comes to IT. First order of business at my new job last year was to take care of a really troubling “hostage” situation with their current server co-location contract. My boss said, “move us to the cloud”. I had used Amazon Web Services before, I thought I should check out other providers as well. So I toured a handful of cloud providers, but ended up back with Amazon Web Services. They just offered the computing and storage power I needed with Amazon EC2 and Amazon S3. Plus the opportunity of using more services like Amazon SimpleDB and Amazon Cloudfront. So I moved us over. It took me 2 months to migrate from three extremely overloaded servers a platform that we could grow from. Amazon EC2 and Amazon S3 let me really balance out our load and really get a solid base up and running quickly. Beyond our base need for web, databases, ftp, version control, and web services, we had high needs for volume email and more specifically SMTP services. So I started evaluating how we sent mail and got to work at optimizing this process for scaling email for large blasts. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","headline":"Email in the Amazon Cloud Part 1 - Using the Cloud","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-1-using-the-cloud/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-1-using-the-cloud/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-12-18T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-12-18T00:00:00-05:00" itemprop="datePublished">
     
     Dec 18, 2009
   </time>

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email in the Amazon Cloud Part 2 - Scaling Email for Large Blasts | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email in the Amazon Cloud Part 2 - Scaling Email for Large Blasts" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-2-scaling-email-for-large-blasts/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-12-18T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Email in the Amazon Cloud Part 2 - Scaling Email for Large Blasts" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-2-scaling-email-for-large-blasts/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email in the Amazon Cloud Part 2 - Scaling Email for Large Blasts","dateModified":"2009-12-18T00:00:00-08:00","datePublished":"2009-12-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-2-scaling-email-for-large-blasts/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"I needed to send a large amounts of email. We are talking 500,000 to 1 million emails in each send. These are emails being sent to encourage event attendance or interaction, so they need to go out quickly. The powers that be wanted to have emails go out in 24 hours. In the past we would send emails and then sit and watch servers for 24-72 hours, with constant server restarts and other problems. I came up with a new base configuration that involved using a single blast server for queuing up and sending the personalized emails. This blast server would alternate between several SMTP servers to balance the load and increase the volume at which we could send the emails out. I ran some tests and to achieve the results I wanted it required an SMTP server per 50K emails. I could guarantee emails would go out in about 4-6 hours with remaining trickling out over the next 24 hours. So for a 500k email blast I would fire up an x-large blast instance and 10 large SMTP instances using Amazon EC2. I had all the log files for the SMTP servers writing to a common EBS volume that I could maintain the records even after I shut down the instances. I was getting closer to being ready for business. I need to make sure the IP addresses and DNS infrastructure for the email blasts was 100% next. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-12-18T00:00:00-05:00","datePublished":"2009-12-18T00:00:00-05:00","description":"I needed to send a large amounts of email. We are talking 500,000 to 1 million emails in each send. These are emails being sent to encourage event attendance or interaction, so they need to go out quickly. The powers that be wanted to have emails go out in 24 hours. In the past we would send emails and then sit and watch servers for 24-72 hours, with constant server restarts and other problems. I came up with a new base configuration that involved using a single blast server for queuing up and sending the personalized emails. This blast server would alternate between several SMTP servers to balance the load and increase the volume at which we could send the emails out. I ran some tests and to achieve the results I wanted it required an SMTP server per 50K emails. I could guarantee emails would go out in about 4-6 hours with remaining trickling out over the next 24 hours. So for a 500k email blast I would fire up an x-large blast instance and 10 large SMTP instances using Amazon EC2. I had all the log files for the SMTP servers writing to a common EBS volume that I could maintain the records even after I shut down the instances. I was getting closer to being ready for business. I need to make sure the IP addresses and DNS infrastructure for the email blasts was 100% next. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","headline":"Email in the Amazon Cloud Part 2 - Scaling Email for Large Blasts","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-2-scaling-email-for-large-blasts/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-2-scaling-email-for-large-blasts/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-12-18T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-12-18T00:00:00-05:00" itemprop="datePublished">
     
     Dec 18, 2009
   </time>

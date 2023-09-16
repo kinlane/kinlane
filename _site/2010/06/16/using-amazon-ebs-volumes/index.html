@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Using Amazon EBS Volumes | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Using Amazon EBS Volumes" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://d1nqddva888cns.cloudfront.net/EBS_Free_Monitoring_Console.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2010-06-16T00:00:00-07:00" />
+<meta property="article:published_time" content="2010-06-16T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://d1nqddva888cns.cloudfront.net/EBS_Free_Monitoring_Console.png" />
+<meta property="twitter:title" content="Using Amazon EBS Volumes" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2010/06/16/using-amazon-ebs-volumes/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Using Amazon EBS Volumes","dateModified":"2010-06-16T00:00:00-07:00","datePublished":"2010-06-16T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/06/16/using-amazon-ebs-volumes/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://d1nqddva888cns.cloudfront.net/EBS_Free_Monitoring_Console.png","description":"I’m increasing my usage of Amazon EBS volumes. I tend to use objects I’ve written in PHP or ColdFusion for writing data to Amazon S3. I haven’t historically used EBS volumes much, because data tends to be needed across multiple instances. I’m taking another look at them. I’m going to use in a couple different scenarios: AMI Root Device Type - I&#39;m switching all of my Amazon Machine Images to be EBS Root Device Type. This will help with faster launching and persistence of the AMI. Second Instance Drive - Many of the instances I deploy use the C: drive as the system, and D:, E: and other drives as secondary data storage. I will start using EBS Volumes for all secondary drives. I will still be using key Amazon S3 buckets for global storage of images, video, audio and other files that I use across servers and deliver to different availability zones worldwide. Amazon just released CloudWatch Metrics for Amazon EBS Volumes, which should make my EBS deployments much easier to manage. More to come as I further integrate Amazon EBS Volumes into my cloud IT infrastructure strategy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2010-06-16T00:00:00-04:00","datePublished":"2010-06-16T00:00:00-04:00","description":"I’m increasing my usage of Amazon EBS volumes. I tend to use objects I’ve written in PHP or ColdFusion for writing data to Amazon S3. I haven’t historically used EBS volumes much, because data tends to be needed across multiple instances. I’m taking another look at them. I’m going to use in a couple different scenarios: AMI Root Device Type - I&#39;m switching all of my Amazon Machine Images to be EBS Root Device Type. This will help with faster launching and persistence of the AMI. Second Instance Drive - Many of the instances I deploy use the C: drive as the system, and D:, E: and other drives as secondary data storage. I will start using EBS Volumes for all secondary drives. I will still be using key Amazon S3 buckets for global storage of images, video, audio and other files that I use across servers and deliver to different availability zones worldwide. Amazon just released CloudWatch Metrics for Amazon EBS Volumes, which should make my EBS deployments much easier to manage. More to come as I further integrate Amazon EBS Volumes into my cloud IT infrastructure strategy.","headline":"Using Amazon EBS Volumes","image":"http://d1nqddva888cns.cloudfront.net/EBS_Free_Monitoring_Console.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/06/16/using-amazon-ebs-volumes/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2010/06/16/using-amazon-ebs-volumes/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2010-06-16T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2010-06-16T00:00:00-04:00" itemprop="datePublished">
     
     Jun 16, 2010
   </time>

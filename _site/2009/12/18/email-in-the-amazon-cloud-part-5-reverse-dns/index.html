@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email in the Amazon Cloud Part 5 - Reverse DNS | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email in the Amazon Cloud Part 5 - Reverse DNS" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-5-reverse-dns/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-12-18T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Email in the Amazon Cloud Part 5 - Reverse DNS" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-5-reverse-dns/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email in the Amazon Cloud Part 5 - Reverse DNS","dateModified":"2009-12-18T00:00:00-08:00","datePublished":"2009-12-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-5-reverse-dns/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"I was really excited when I got this email response on my ticket from Amazon Web Services: We&#39;ve reached out to the Amazon EC2 team and here are the next steps. In order for us to proceed, we&#39;ll need to setup DNS PTR records for EIPs (incl xxx.xxx.xxx.xxx) under your AWS account. Hence could you provide us with the names you would like to use and the corresponding EIPs (being used for email purposes)? I believe the DNS PTR names should match the DNS &#39;A&#39; records you may currently have resolving to these addresses. Provide us with the name you would like to use and we&#39;ll start the process on our end. This was not the response I had expected. I thought either Amazon would negotiate a deal with Trend Micro MAPS to de-list their IP blocks and allow email to be sent or Trend Micro MAPS would back down from the pressure of everyone harassing them. I really didn’t think Amazon would start designating reverse DNS for their IP addresses. Even though this is the response that makes the most sense. I just thought they were too large to do this. After some discussion and convincing of them that we were deserving of reverse DNS on 10 IP addresses I got it! I got an email telling me it was done. I did a reverse DNS lookup on all my reserved IP addresses and they reflected my core network domain. I immediately approached Trend Micro MAPS and asked them one more time to de-list my IP addresses. They immediately responded and said it was done. I found my faith in the cloud coming back. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud http://www.mail-abuse.com/","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-12-18T00:00:00-05:00","datePublished":"2009-12-18T00:00:00-05:00","description":"I was really excited when I got this email response on my ticket from Amazon Web Services: We&#39;ve reached out to the Amazon EC2 team and here are the next steps. In order for us to proceed, we&#39;ll need to setup DNS PTR records for EIPs (incl xxx.xxx.xxx.xxx) under your AWS account. Hence could you provide us with the names you would like to use and the corresponding EIPs (being used for email purposes)? I believe the DNS PTR names should match the DNS &#39;A&#39; records you may currently have resolving to these addresses. Provide us with the name you would like to use and we&#39;ll start the process on our end. This was not the response I had expected. I thought either Amazon would negotiate a deal with Trend Micro MAPS to de-list their IP blocks and allow email to be sent or Trend Micro MAPS would back down from the pressure of everyone harassing them. I really didn’t think Amazon would start designating reverse DNS for their IP addresses. Even though this is the response that makes the most sense. I just thought they were too large to do this. After some discussion and convincing of them that we were deserving of reverse DNS on 10 IP addresses I got it! I got an email telling me it was done. I did a reverse DNS lookup on all my reserved IP addresses and they reflected my core network domain. I immediately approached Trend Micro MAPS and asked them one more time to de-list my IP addresses. They immediately responded and said it was done. I found my faith in the cloud coming back. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud http://www.mail-abuse.com/","headline":"Email in the Amazon Cloud Part 5 - Reverse DNS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-5-reverse-dns/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-5-reverse-dns/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-12-18T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-12-18T00:00:00-05:00" itemprop="datePublished">
     
     Dec 18, 2009
   </time>

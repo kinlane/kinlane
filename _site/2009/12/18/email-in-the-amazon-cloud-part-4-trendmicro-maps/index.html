@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email in the Amazon Cloud Part 4 - TrendMicro Maps | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email in the Amazon Cloud Part 4 - TrendMicro Maps" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-4-trendmicro-maps/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-12-18T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Email in the Amazon Cloud Part 4 - TrendMicro Maps" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-4-trendmicro-maps/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email in the Amazon Cloud Part 4 - TrendMicro Maps","dateModified":"2009-12-18T00:00:00-08:00","datePublished":"2009-12-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-4-trendmicro-maps/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"I woke up one morning and got an email from a project manager. The original email from a client had a returned email with the following email server response: Remote server replied: 550 5.7.1 ... Mail from xxx.xxx.xxx.xxx blocked using Trend Micro RBL+. Please see http://www.mail-abuse.com/cgi-bin/lookup?ip_address=xx.xxx.xxx.xxx We were black listed. So I went to their removal page, entered my IP address and waited. Later that day I get an email from them: xxx.xxx.xxx.xxx is listed on the DUL because it is not defined in rDNS as static or dynamic. Upon checking, here is the rDNS: xxx.xxx.xxx.xxx (ec2-1xxx.xxx.xxx.xxx.compute-1.amazonaws.com) You will need to work with your ISP to correctly define the IP, then ask them to contact us at dul@mail-abuse.com Then we can work with the ISP to resolve the issue and remove your IP. They put the responsibility on Amazon to get the IP address de-listed, since they owned it. So after doing much research I found that this same problem had happened with SpamHaus. Since so many spammers are also taking advantage of the cloud, top SPAM black lists were just blocking entire Amazon IP blocks. Not taking into considering the hundreds or thousands of valid Amazon Web Services customers sending email legitimately. I can understand that spammers are a problem and that black lists have value in the SPAM game. However I viewed this as an attack on cloud computing. Everyone I talked to about the situation from TrendMicro to SAP IT in Germany all said the same thing. Why don’t you just use a real infrastructure that isn’t in the cloud. They just dismissed the cloud as the problem. Trend Micro decided to just list the entire Amazon blocks rather than listing individual offenders. So I needed to just wait for Amazon to do something or Trend Micro MAPS. So I just started lobbying both sides. Heavily! They both pointed the finger at the other side. I escalated my ticket with Amazon Web Services and emailed Trend Micro MAPS on a daily basis asking them to not hold our business hostage any more. Then I got a response on my Amazon Web Services support ticket one day about reverse DNS on our IP addresses. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-12-18T00:00:00-05:00","datePublished":"2009-12-18T00:00:00-05:00","description":"I woke up one morning and got an email from a project manager. The original email from a client had a returned email with the following email server response: Remote server replied: 550 5.7.1 ... Mail from xxx.xxx.xxx.xxx blocked using Trend Micro RBL+. Please see http://www.mail-abuse.com/cgi-bin/lookup?ip_address=xx.xxx.xxx.xxx We were black listed. So I went to their removal page, entered my IP address and waited. Later that day I get an email from them: xxx.xxx.xxx.xxx is listed on the DUL because it is not defined in rDNS as static or dynamic. Upon checking, here is the rDNS: xxx.xxx.xxx.xxx (ec2-1xxx.xxx.xxx.xxx.compute-1.amazonaws.com) You will need to work with your ISP to correctly define the IP, then ask them to contact us at dul@mail-abuse.com Then we can work with the ISP to resolve the issue and remove your IP. They put the responsibility on Amazon to get the IP address de-listed, since they owned it. So after doing much research I found that this same problem had happened with SpamHaus. Since so many spammers are also taking advantage of the cloud, top SPAM black lists were just blocking entire Amazon IP blocks. Not taking into considering the hundreds or thousands of valid Amazon Web Services customers sending email legitimately. I can understand that spammers are a problem and that black lists have value in the SPAM game. However I viewed this as an attack on cloud computing. Everyone I talked to about the situation from TrendMicro to SAP IT in Germany all said the same thing. Why don’t you just use a real infrastructure that isn’t in the cloud. They just dismissed the cloud as the problem. Trend Micro decided to just list the entire Amazon blocks rather than listing individual offenders. So I needed to just wait for Amazon to do something or Trend Micro MAPS. So I just started lobbying both sides. Heavily! They both pointed the finger at the other side. I escalated my ticket with Amazon Web Services and emailed Trend Micro MAPS on a daily basis asking them to not hold our business hostage any more. Then I got a response on my Amazon Web Services support ticket one day about reverse DNS on our IP addresses. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","headline":"Email in the Amazon Cloud Part 4 - TrendMicro Maps","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-4-trendmicro-maps/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-4-trendmicro-maps/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-12-18T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-12-18T00:00:00-05:00" itemprop="datePublished">
     
     Dec 18, 2009
   </time>

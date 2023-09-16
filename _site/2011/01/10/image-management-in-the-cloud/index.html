@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Image Management in the Cloud | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Image Management in the Cloud" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-01-10T00:00:00-08:00" />
+<meta property="article:published_time" content="2011-01-10T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg" />
+<meta property="twitter:title" content="Image Management in the Cloud" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2011/01/10/image-management-in-the-cloud/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Image Management in the Cloud","dateModified":"2011-01-10T00:00:00-08:00","datePublished":"2011-01-10T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/01/10/image-management-in-the-cloud/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg","description":"I am taking some time and writing down my image management strategy to share with Audrey. I have a specific process and set of tools I use to manage images I use across my Kin Lane Blog, API Evangelist Blog and my Twitter, LinkedIn, Facebook and other online properties. I store all my images centrally at Amazon S3. This may not be an ideal solution for everyone, but it works for me. Its a complete storage area for all my images, audio, video and other documents. I use a combination of Amazon Console, S3Fox for Firefox, Cyberduck and Jungle Disk to manage my Amazon S3 files. No time to explain the madness, it just works. I have a central bucket at Amazon S3 for storing ALL images I need to support my public online properties. I have set a bucket policy for this bucket enforcing that all objects within are automatically publicly available. This saves me time in having to set the ACL for each object. When I have a screenshot or creative commons image that I have found that I need to use in my blog I download, crop, resize, download and rename. Then I immediately upload to my Amazon S3 public bucket, and then copy the location to my clipboard. With the URL of the image on Amazon S3 I go back to Wordpress and paste the URL in my blog content as an image. Amazon S3 in conjunction with S3Fox, Cyberduck, Jungle Disk and this process allows me to store ALL images I need for my public work in a central location that I own. My Amazon Web Services account is the center of my cloud storage world. It is important that I store all my vital files here. In the future I know where to find them and won’t lost any valuable images I’ve used in content I have created.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2011-01-10T00:00:00-05:00","datePublished":"2011-01-10T00:00:00-05:00","description":"I am taking some time and writing down my image management strategy to share with Audrey. I have a specific process and set of tools I use to manage images I use across my Kin Lane Blog, API Evangelist Blog and my Twitter, LinkedIn, Facebook and other online properties. I store all my images centrally at Amazon S3. This may not be an ideal solution for everyone, but it works for me. Its a complete storage area for all my images, audio, video and other documents. I use a combination of Amazon Console, S3Fox for Firefox, Cyberduck and Jungle Disk to manage my Amazon S3 files. No time to explain the madness, it just works. I have a central bucket at Amazon S3 for storing ALL images I need to support my public online properties. I have set a bucket policy for this bucket enforcing that all objects within are automatically publicly available. This saves me time in having to set the ACL for each object. When I have a screenshot or creative commons image that I have found that I need to use in my blog I download, crop, resize, download and rename. Then I immediately upload to my Amazon S3 public bucket, and then copy the location to my clipboard. With the URL of the image on Amazon S3 I go back to Wordpress and paste the URL in my blog content as an image. Amazon S3 in conjunction with S3Fox, Cyberduck, Jungle Disk and this process allows me to store ALL images I need for my public work in a central location that I own. My Amazon Web Services account is the center of my cloud storage world. It is important that I store all my vital files here. In the future I know where to find them and won’t lost any valuable images I’ve used in content I have created.","headline":"Image Management in the Cloud","image":"http://kinlane-productions2.s3.amazonaws.com/AWS_LOGO_CMYK.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/01/10/image-management-in-the-cloud/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2011/01/10/image-management-in-the-cloud/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2011-01-10T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2011-01-10T00:00:00-05:00" itemprop="datePublished">
     
     Jan 10, 2011
   </time>

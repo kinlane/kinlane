@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Multiple Domains using Multiple IIS Web Sites using One Certificate and One IP Address | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Multiple Domains using Multiple IIS Web Sites using One Certificate and One IP Address" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/01/06/multiple-domains-using-multiple-iis-web-sites-using-one-certificate-and-one-ip-address/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-01-06T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-01-06T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Multiple Domains using Multiple IIS Web Sites using One Certificate and One IP Address" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/01/06/multiple-domains-using-multiple-iis-web-sites-using-one-certificate-and-one-ip-address/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Multiple Domains using Multiple IIS Web Sites using One Certificate and One IP Address","dateModified":"2009-01-06T00:00:00-08:00","datePublished":"2009-01-06T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/01/06/multiple-domains-using-multiple-iis-web-sites-using-one-certificate-and-one-ip-address/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"I haven’t researched this one in a while, I am glad I had the chance to research for a new project. I need to be able to setup many sites using a single domain. So each site will be a subdomain within this chose domain. I have always used one web site on Windows Server because I would need multiple IP Addreses and SSL certificates. I had research the wildcard certificates a couple of times, but the multiple IP address need always trumped. IP Addresses aren’t as cheap as they used to be. I remember paying $5.00 / month for a whole C Block. So tonight I was researching and I came across Wildcard SSL Certificates from Digicert. They rock!! Their process is easy and smooth. I highly recommend them. Then I saw as one of their features is you could do multiple sites with one IP Address on IIS 6.0. Something I have been asking for for a while. Then I found this page on how to do it on IIS and Apache - http://www.sslshopper.com/article-how-to-configure-ssl-host-headers-in-iis-6.html Good stuff….really enjoy the discovery and changes I find on a daily basis.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-01-06T00:00:00-05:00","datePublished":"2009-01-06T00:00:00-05:00","description":"I haven’t researched this one in a while, I am glad I had the chance to research for a new project. I need to be able to setup many sites using a single domain. So each site will be a subdomain within this chose domain. I have always used one web site on Windows Server because I would need multiple IP Addreses and SSL certificates. I had research the wildcard certificates a couple of times, but the multiple IP address need always trumped. IP Addresses aren’t as cheap as they used to be. I remember paying $5.00 / month for a whole C Block. So tonight I was researching and I came across Wildcard SSL Certificates from Digicert. They rock!! Their process is easy and smooth. I highly recommend them. Then I saw as one of their features is you could do multiple sites with one IP Address on IIS 6.0. Something I have been asking for for a while. Then I found this page on how to do it on IIS and Apache - http://www.sslshopper.com/article-how-to-configure-ssl-host-headers-in-iis-6.html Good stuff….really enjoy the discovery and changes I find on a daily basis.","headline":"Multiple Domains using Multiple IIS Web Sites using One Certificate and One IP Address","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/01/06/multiple-domains-using-multiple-iis-web-sites-using-one-certificate-and-one-ip-address/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/01/06/multiple-domains-using-multiple-iis-web-sites-using-one-certificate-and-one-ip-address/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-01-06T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-01-06T00:00:00-05:00" itemprop="datePublished">
     
     Jan 6, 2009
   </time>

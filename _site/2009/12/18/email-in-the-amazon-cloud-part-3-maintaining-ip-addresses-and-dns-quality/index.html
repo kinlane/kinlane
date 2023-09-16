@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email in the Amazon Cloud Part 3 - Maintaining IP Addresses and DNS Quality | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email in the Amazon Cloud Part 3 - Maintaining IP Addresses and DNS Quality" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-3-maintaining-ip-addresses-and-dns-quality/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2009-12-18T00:00:00-08:00" />
+<meta property="article:published_time" content="2009-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Email in the Amazon Cloud Part 3 - Maintaining IP Addresses and DNS Quality" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-3-maintaining-ip-addresses-and-dns-quality/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email in the Amazon Cloud Part 3 - Maintaining IP Addresses and DNS Quality","dateModified":"2009-12-18T00:00:00-08:00","datePublished":"2009-12-18T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-3-maintaining-ip-addresses-and-dns-quality/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"Sending large amounts of email and ensuring they get received requires a lot of work and you need to make sure your mail framework is setup correctly and is healthy. This takes a lot of work and maintenance. First off I reserve 11 IP addresses with Amazon Web Services. I reserve these 11 IP addresses and never let them back into the general pool. I setup DNS for my domain to reflect using 10 of the IP addresses as smtp1.mydomain.com through smtp10.mydomain.com and properly setup MX records accordingly. Now reverse DNS on IP addresses is nice, but in my experience is not mission critical for sending email. All last year we were fine, I sent probably 10-20 large email blasts using this setup, with no major problems with emails being received. Before doing any emailing I check all my IP addresses against major blacklists to see if we’ve been listed. We have been listed on blacklists before and easily was able to get removed with no problem. Then in November we encountered Trend Micro MAPS. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2009-12-18T00:00:00-05:00","datePublished":"2009-12-18T00:00:00-05:00","description":"Sending large amounts of email and ensuring they get received requires a lot of work and you need to make sure your mail framework is setup correctly and is healthy. This takes a lot of work and maintenance. First off I reserve 11 IP addresses with Amazon Web Services. I reserve these 11 IP addresses and never let them back into the general pool. I setup DNS for my domain to reflect using 10 of the IP addresses as smtp1.mydomain.com through smtp10.mydomain.com and properly setup MX records accordingly. Now reverse DNS on IP addresses is nice, but in my experience is not mission critical for sending email. All last year we were fine, I sent probably 10-20 large email blasts using this setup, with no major problems with emails being received. Before doing any emailing I check all my IP addresses against major blacklists to see if we’ve been listed. We have been listed on blacklists before and easily was able to get removed with no problem. Then in November we encountered Trend Micro MAPS. Email in the Amazon Cloud - Part 1 - Part 2 - Part 3 - Part 4 - Part 5 - Part 6 - Guide to Email in the Amazon Cloud","headline":"Email in the Amazon Cloud Part 3 - Maintaining IP Addresses and DNS Quality","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-3-maintaining-ip-addresses-and-dns-quality/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2009/12/18/email-in-the-amazon-cloud-part-3-maintaining-ip-addresses-and-dns-quality/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2009-12-18T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2009-12-18T00:00:00-05:00" itemprop="datePublished">
     
     Dec 18, 2009
   </time>

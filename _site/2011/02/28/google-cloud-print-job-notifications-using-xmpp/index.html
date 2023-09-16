@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Google Cloud Print Job Notifications Using XMPP | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Google Cloud Print Job Notifications Using XMPP" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print-mimeo.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2011-02-28T00:00:00-08:00" />
+<meta property="article:published_time" content="2011-02-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print-mimeo.png" />
+<meta property="twitter:title" content="Google Cloud Print Job Notifications Using XMPP" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2011/02/28/google-cloud-print-job-notifications-using-xmpp/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Google Cloud Print Job Notifications Using XMPP","dateModified":"2011-02-28T00:00:00-08:00","datePublished":"2011-02-28T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/02/28/google-cloud-print-job-notifications-using-xmpp/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print-mimeo.png","description":"I made it over the last hurdle building my Google Cloud Print Proxy in PHP. I have a prototype for the Google Cloud Print, XMPP Print Job Notification Service. Even though you can pull print jobs via the GCP /fetch interface, Google requires cloud print proxies to receive print job notifications via an XMPP push, rather than constantly polling the /fetch interface. It make sense. Using XMPP is a great way to receive API notifications, and minimize requests to an API. Companies like Superfeedr are usingPubSubHubbub for API notifications. I am building on top the XMPPHP library for my Google Cloud Print XMPP Service. First I authenticate with the Google Talk Service using Client Login and ChromiumSync Service. Then I setup a persistent XMPP connection with the Google Talk Service on behalf of my Google Cloud Print user, for my Printer Proxy. When you establish persistent connection with Google Talk Service using XMPP it will return a Full JID and Bare JID for your persistent XMPP connection. kinlane-productions2 Once the session begins you send the following subscription stanza: The service will acknowledge your subscription by returning the following: Once subscribed, my persistent XMPP will handle and process any messages from cloudprint.google.com notifying of new cloud print jobs for users. I still have a lot of work to do to make the Google Cloud Print Proxy handle jobs flawlessly. I need to setup the XMPP print jobs notifications to handle print jobs for all users that have a print proxy registered. The XMPP print job notification service has to be running 24 / 7 and initiate the print job /fetch via API, and the commercial print process for each job. Once I get this cleaned up a little more I will publish a PHP class for working with Google Cloud Print Services Interface and XMPP Print Job Notifications to Github.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2011-02-28T00:00:00-05:00","datePublished":"2011-02-28T00:00:00-05:00","description":"I made it over the last hurdle building my Google Cloud Print Proxy in PHP. I have a prototype for the Google Cloud Print, XMPP Print Job Notification Service. Even though you can pull print jobs via the GCP /fetch interface, Google requires cloud print proxies to receive print job notifications via an XMPP push, rather than constantly polling the /fetch interface. It make sense. Using XMPP is a great way to receive API notifications, and minimize requests to an API. Companies like Superfeedr are usingPubSubHubbub for API notifications. I am building on top the XMPPHP library for my Google Cloud Print XMPP Service. First I authenticate with the Google Talk Service using Client Login and ChromiumSync Service. Then I setup a persistent XMPP connection with the Google Talk Service on behalf of my Google Cloud Print user, for my Printer Proxy. When you establish persistent connection with Google Talk Service using XMPP it will return a Full JID and Bare JID for your persistent XMPP connection. kinlane-productions2 Once the session begins you send the following subscription stanza: The service will acknowledge your subscription by returning the following: Once subscribed, my persistent XMPP will handle and process any messages from cloudprint.google.com notifying of new cloud print jobs for users. I still have a lot of work to do to make the Google Cloud Print Proxy handle jobs flawlessly. I need to setup the XMPP print jobs notifications to handle print jobs for all users that have a print proxy registered. The XMPP print job notification service has to be running 24 / 7 and initiate the print job /fetch via API, and the commercial print process for each job. Once I get this cleaned up a little more I will publish a PHP class for working with Google Cloud Print Services Interface and XMPP Print Job Notifications to Github.","headline":"Google Cloud Print Job Notifications Using XMPP","image":"http://kinlane-productions2.s3.amazonaws.com/google-cloud-print/google-cloud-print-mimeo.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/02/28/google-cloud-print-job-notifications-using-xmpp/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2011/02/28/google-cloud-print-job-notifications-using-xmpp/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2011-02-28T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2011-02-28T00:00:00-05:00" itemprop="datePublished">
     
     Feb 28, 2011
   </time>

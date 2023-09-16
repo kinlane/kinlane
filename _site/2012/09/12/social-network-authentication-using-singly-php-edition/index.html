@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Social Network Authentication Using Singly (PHP Edition) | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Social Network Authentication Using Singly (PHP Edition)" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -17,9 +17,11 @@
 <meta property="og:url" content="http://localhost:4000/2012/09/12/social-network-authentication-using-singly-php-edition/" />
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2012-09-12T00:00:00-07:00" />
+<meta property="article:published_time" content="2012-09-12T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Social Network Authentication Using Singly (PHP Edition)" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2012/09/12/social-network-authentication-using-singly-php-edition/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Social Network Authentication Using Singly (PHP Edition)","dateModified":"2012-09-12T00:00:00-07:00","datePublished":"2012-09-12T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2012/09/12/social-network-authentication-using-singly-php-edition/"},"author":{"@type":"Person","name":"Kin Lane"},"description":"As an active user of a variety of cloud services I&rsquo;ve become very accustom to authenticating using my social networks, such as Facebook, Twitter, LInkedin or Github, rather than creating yet another new account. If I want access to an online service, and it allows me to authenticate using my social networks, I make a quick assumption on which one is best to use, click on link, give the application appropriate oAuth approval, and begin using the service. I can revoke their access at any time when I manage my oAuth permissions in the social network. I want to make this default for users of my websites, apps and APIs--allowing them authenticate using six social networks: Facebook Foursquare Github Instagram LinkedIn Twitter Singly has made this nice and easy! Step 1 - Sign up for Singly Step 2 - Create New Singly App Step 3 - Create Social Network Apps. This part seems like it is a lot of work, but once done...it is sweet. You need to create an app for each one of the six social networks you will be allowing authentication: Singly has great instructions to walk you through this process. It will only take you about 5-10 minutes. And once you are done, you will have one API key to access all six of these APIs. I built a prototype PHP application that demonstrates this process, you can download on Github. Once downloaded, all you need to do is add your Singly app keys, and Site URL into the config file. I provide six links with icons triggering the social network authentication via Singly: Then I provide six separate authentication callback handlers. I keep them separate, because I intend to do separate handling for each social network within these callbacks in the near future. All six callback handlers just set a session with your authentication information and redirect you back to home page for display. What&rsquo;s next is up to you. I will be adding more to this social network authentication prototype in the near future. A couple of things I would like to do is have a display profile widget and some sort of ranking of users by social network.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2012-09-12T00:00:00-04:00","datePublished":"2012-09-12T00:00:00-04:00","description":"As an active user of a variety of cloud services I&rsquo;ve become very accustom to authenticating using my social networks, such as Facebook, Twitter, LInkedin or Github, rather than creating yet another new account. If I want access to an online service, and it allows me to authenticate using my social networks, I make a quick assumption on which one is best to use, click on link, give the application appropriate oAuth approval, and begin using the service. I can revoke their access at any time when I manage my oAuth permissions in the social network. I want to make this default for users of my websites, apps and APIs--allowing them authenticate using six social networks: Facebook Foursquare Github Instagram LinkedIn Twitter Singly has made this nice and easy! Step 1 - Sign up for Singly Step 2 - Create New Singly App Step 3 - Create Social Network Apps. This part seems like it is a lot of work, but once done...it is sweet. You need to create an app for each one of the six social networks you will be allowing authentication: Singly has great instructions to walk you through this process. It will only take you about 5-10 minutes. And once you are done, you will have one API key to access all six of these APIs. I built a prototype PHP application that demonstrates this process, you can download on Github. Once downloaded, all you need to do is add your Singly app keys, and Site URL into the config file. I provide six links with icons triggering the social network authentication via Singly: Then I provide six separate authentication callback handlers. I keep them separate, because I intend to do separate handling for each social network within these callbacks in the near future. All six callback handlers just set a session with your authentication information and redirect you back to home page for display. What&rsquo;s next is up to you. I will be adding more to this social network authentication prototype in the near future. A couple of things I would like to do is have a display profile widget and some sort of ranking of users by social network.","headline":"Social Network Authentication Using Singly (PHP Edition)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2012/09/12/social-network-authentication-using-singly-php-edition/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2012/09/12/social-network-authentication-using-singly-php-edition/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -215,6 +217,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -320,7 +332,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2012-09-12T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2012-09-12T00:00:00-04:00" itemprop="datePublished">
     
     Sep 12, 2012
   </time>

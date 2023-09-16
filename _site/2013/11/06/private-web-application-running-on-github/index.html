@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Private Web Application Running on Github | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Private Web Application Running on Github" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2013-11-06T00:00:00-08:00" />
+<meta property="article:published_time" content="2013-11-06T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg" />
+<meta property="twitter:title" content="Private Web Application Running on Github" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2013/11/06/private-web-application-running-on-github/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Private Web Application Running on Github","dateModified":"2013-11-06T00:00:00-08:00","datePublished":"2013-11-06T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/11/06/private-web-application-running-on-github/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg","description":"I wanted to launch a small web application in stealth mode. I also wanted it to run completely on Github, using Github Pages. I was able to setup a Github repository, as a private repo, then was able to launch a Github Page for the same repository and make this branch public. This approach gives me two branches to work with. The master which is private and the gh-pages which is public. Using Jekyll I was able to quickly setup a basic website in the gh-pages brand of my repository. Once I had the basic site outline and index page setup, I needed a way to make content show on each page, but only for people who had access. To secure my website I did two things. First I setup a JSON file that was stored in the private, master branch of my site repository. Then I setup my site to pull the navigation of the site and the content for each page from this JSON file. My site would load the home page, about page and other pages from this private JSON file. Next I needed to provide a key to my private website, one that would allow the public gh-pages branch to pull the JSON file from the private master branch. I opted to use oAuth as the authentication layer. I went to my Github settings and generated an oAuth key for a specific application I set-up for my project. Using this key I can control who has access to my site. When you visit the website URL, then append the oAuth token as a variable, all the content shows on the website. Using Github.js I pass the oAuth token and authenticate with the master repository, pull the contents of the JSON file and publish to the page. My JSON file located in the private master repository acts as a sort of backend database to my public gh-pages repository which is actually viewed publicly at the website URL. Using JavaScript, the Github API and oAuth for security I&#39;m easily able to control access to the web application. A more advanced approach to this would be to require oAuth authentication using Github, allowing each user to be managed through Github team or collaborators settings. Then I could control each user who has access, but the approach applies to both scenarios, and is a pretty quick and dirty way to launch a private web site or application, that completely runs on Github.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2013-11-06T00:00:00-05:00","datePublished":"2013-11-06T00:00:00-05:00","description":"I wanted to launch a small web application in stealth mode. I also wanted it to run completely on Github, using Github Pages. I was able to setup a Github repository, as a private repo, then was able to launch a Github Page for the same repository and make this branch public. This approach gives me two branches to work with. The master which is private and the gh-pages which is public. Using Jekyll I was able to quickly setup a basic website in the gh-pages brand of my repository. Once I had the basic site outline and index page setup, I needed a way to make content show on each page, but only for people who had access. To secure my website I did two things. First I setup a JSON file that was stored in the private, master branch of my site repository. Then I setup my site to pull the navigation of the site and the content for each page from this JSON file. My site would load the home page, about page and other pages from this private JSON file. Next I needed to provide a key to my private website, one that would allow the public gh-pages branch to pull the JSON file from the private master branch. I opted to use oAuth as the authentication layer. I went to my Github settings and generated an oAuth key for a specific application I set-up for my project. Using this key I can control who has access to my site. When you visit the website URL, then append the oAuth token as a variable, all the content shows on the website. Using Github.js I pass the oAuth token and authenticate with the master repository, pull the contents of the JSON file and publish to the page. My JSON file located in the private master repository acts as a sort of backend database to my public gh-pages repository which is actually viewed publicly at the website URL. Using JavaScript, the Github API and oAuth for security I&#39;m easily able to control access to the web application. A more advanced approach to this would be to require oAuth authentication using Github, allowing each user to be managed through Github team or collaborators settings. Then I could control each user who has access, but the approach applies to both scenarios, and is a pretty quick and dirty way to launch a private web site or application, that completely runs on Github.","headline":"Private Web Application Running on Github","image":"http://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/blog/bw-github.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2013/11/06/private-web-application-running-on-github/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2013/11/06/private-web-application-running-on-github/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2013-11-06T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2013-11-06T00:00:00-05:00" itemprop="datePublished">
     
     Nov 6, 2013
   </time>

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Email Infrastructure in the Amazon Cloud | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="Email Infrastructure in the Amazon Cloud" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/email_icon.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2010-07-03T00:00:00-07:00" />
+<meta property="article:published_time" content="2010-07-03T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/email_icon.jpg" />
+<meta property="twitter:title" content="Email Infrastructure in the Amazon Cloud" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2010/07/03/email-infrastructure-in-the-amazon-cloud/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Email Infrastructure in the Amazon Cloud","dateModified":"2010-07-03T00:00:00-07:00","datePublished":"2010-07-03T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/07/03/email-infrastructure-in-the-amazon-cloud/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/email_icon.jpg","description":"I am playing with different ways of monetizing my skills and knowledge. I wrote a white paper on how to setup your core email infrastructure in the Amazon cloud. I haven’t spent a lot of time polishing, because I am not a writer. I have spent hundreds of hours polishing the approach. I am offering this white papers for $25.00. I will be spending more time in the next couple weeks to syndicate this white paper and probably increase the rate. Let me know if your interested. kinlane-productions2 Email is a mission critical business operation. It needs to work and your business needs to be able to control all aspects of your email chain. This guide offers a step by step guide to setting up your business email infrastructure running on Amazon Web Services. The Amazon cloud offers lots of advantages for email, but until recently wasn’t a complete solution for all your email sending and receiving needs. Now the Amazon cloud is ready for your core email infrastructure and this is the guide to help walk you through. This guide assumes: You truly want to understand all aspects of your companies email infrastructure. You wish to guarantee the send and receipt of all email through your infrastructure. You want to be able to diagnose, fix and scale your email infrastructure as needed You have a basic understanding of Amazon Web Services. You have full DNS control over your email domain(s) This guide also addresses several critical parts of your email infrastructure and how it runs in the Amazon Cloud: Your Domain Send Email (SMTP) Receiving Email Scaling and Consolidation Elastic IP Addresses (eIP) Domain Name System Email Infrastructure Health Subscribe / Unsubscribe Administrative Oversight Backup Maintenance Scaling Additionally I have included links to key definitions other vital tools for building your email infrastructure in the cloud. I have also included a basic worksheet for helping walk you through setting up their infrastructure. This email setup in the cloud guide is in its alpha format and offered for $25.00 at this point. Let me know if your looking for a guide to setting up your email in the amazon cloud as well as scaling it. I won’t keep it at this rate for long.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2010-07-03T00:00:00-04:00","datePublished":"2010-07-03T00:00:00-04:00","description":"I am playing with different ways of monetizing my skills and knowledge. I wrote a white paper on how to setup your core email infrastructure in the Amazon cloud. I haven’t spent a lot of time polishing, because I am not a writer. I have spent hundreds of hours polishing the approach. I am offering this white papers for $25.00. I will be spending more time in the next couple weeks to syndicate this white paper and probably increase the rate. Let me know if your interested. kinlane-productions2 Email is a mission critical business operation. It needs to work and your business needs to be able to control all aspects of your email chain. This guide offers a step by step guide to setting up your business email infrastructure running on Amazon Web Services. The Amazon cloud offers lots of advantages for email, but until recently wasn’t a complete solution for all your email sending and receiving needs. Now the Amazon cloud is ready for your core email infrastructure and this is the guide to help walk you through. This guide assumes: You truly want to understand all aspects of your companies email infrastructure. You wish to guarantee the send and receipt of all email through your infrastructure. You want to be able to diagnose, fix and scale your email infrastructure as needed You have a basic understanding of Amazon Web Services. You have full DNS control over your email domain(s) This guide also addresses several critical parts of your email infrastructure and how it runs in the Amazon Cloud: Your Domain Send Email (SMTP) Receiving Email Scaling and Consolidation Elastic IP Addresses (eIP) Domain Name System Email Infrastructure Health Subscribe / Unsubscribe Administrative Oversight Backup Maintenance Scaling Additionally I have included links to key definitions other vital tools for building your email infrastructure in the cloud. I have also included a basic worksheet for helping walk you through setting up their infrastructure. This email setup in the cloud guide is in its alpha format and offered for $25.00 at this point. Let me know if your looking for a guide to setting up your email in the amazon cloud as well as scaling it. I won’t keep it at this rate for long.","headline":"Email Infrastructure in the Amazon Cloud","image":"http://kinlane-productions2.s3.amazonaws.com/email_icon.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2010/07/03/email-infrastructure-in-the-amazon-cloud/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2010/07/03/email-infrastructure-in-the-amazon-cloud/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2010-07-03T00:00:00-07:00" itemprop="datePublished">
+  <time datetime="2010-07-03T00:00:00-04:00" itemprop="datePublished">
     
     Jul 3, 2010
   </time>

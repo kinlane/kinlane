@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>The Random Calls Home That An Application Makes From My Home | Kin Lane</title>
-<meta name="generator" content="Jekyll v3.4.1" />
+<meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="The Random Calls Home That An Application Makes From My Home" />
 <meta name="author" content="Kin Lane" />
 <meta property="og:locale" content="en" />
@@ -18,9 +18,12 @@
 <meta property="og:site_name" content="Kin Lane" />
 <meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/flocker_citrix.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-02-14T00:00:00-08:00" />
+<meta property="article:published_time" content="2017-02-14T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/flocker_citrix.png" />
+<meta property="twitter:title" content="The Random Calls Home That An Application Makes From My Home" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2017/02/14/the-random-calls-home-that-an-application-makes-from-my-home/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"The Random Calls Home That An Application Makes From My Home","dateModified":"2017-02-14T00:00:00-08:00","datePublished":"2017-02-14T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/02/14/the-random-calls-home-that-an-application-makes-from-my-home/"},"author":{"@type":"Person","name":"Kin Lane"},"image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/flocker_citrix.png","description":"I have been running Charles Proxy locally for quite some time now. I began using it to reverse engineer the APIs behind some mobile applications and continued to use it to map out the APIs I&#39;m depending on each day. I regularly turn on Charles Proxy and export the listing of any HTTP calls made while I&#39;m working, every five minutes. These files get moved up into the cloud using Dropbox, where I have a regular CRON job processing each call made--profiling the domain, and details of the request and response for later review. This process has shed some light on the application architecture of many of the tools and services I depend on. It&#39;s fascinating to see the number of pings home the average application will make when on, or running in the background. In addition to running Charles Proxy and understanding how these applications are communicating with their mothership, from within my home, I downloaded Little Flocker--providing me a peek at another layer of application architecture, and how they interact with my laptop. Little Flocker tells me each time an application is writing or accessing a file, turning on my audio, video, and other items. After a day of running, I have been given another glimpse at the architecture of the apps I&#39;m depending on. One example of suspicious application architecture is from Citrix. I haven&#39;t been on a call using the app in at least 4 days, and usually, I just uninstall the app after use, but it was interesting to see it trying to write files on a regular basis, even though I don&#39;t have the application open. Why do they need to do this? It looks like it is looking for any updates, but not sure why it needs to when I&#39;m not running. I wish applications would provide a list of the remove calls their applications make to the home base. I&#39;ve talked with several platform providers about how they view this layer of their apps, and their thoughts about pulling back the curtain, and being more transparent&nbsp;about the APIs behind their apps--they usually aren&#39;t very interested in having these conversations with end-users and often see this activity as their proprietary secret sauce. The part that interests me is the fact that these client interactions, API calls, and data transmitted are happening here in my home on my laptop. I know that tech company see this as us users operating on their platforms, but in reality, they are entering our homes and making calls home to the platform using our Internet.&nbsp; Sure, we all agree to terms of service that make all of this legally irrelevant--they have their asses covered. It still doesn&#39;t change that many desktop, web and mobile application developers are exploiting the access they have in our lives. With the bad behavior we&#39;ve seen from technology companies, government entities, and hackers in recent years, I feel like this level of access isn&#39;t sustainable or healthy. Especially when apps are either poorly architected, or are done so with a lack of respect for the end-user environment. This is my laptop, in my home, engaging in a personal or business relationship with your company, please be respectful of me, my space, and my privacy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2017-02-14T00:00:00-05:00","datePublished":"2017-02-14T00:00:00-05:00","description":"I have been running Charles Proxy locally for quite some time now. I began using it to reverse engineer the APIs behind some mobile applications and continued to use it to map out the APIs I&#39;m depending on each day. I regularly turn on Charles Proxy and export the listing of any HTTP calls made while I&#39;m working, every five minutes. These files get moved up into the cloud using Dropbox, where I have a regular CRON job processing each call made--profiling the domain, and details of the request and response for later review. This process has shed some light on the application architecture of many of the tools and services I depend on. It&#39;s fascinating to see the number of pings home the average application will make when on, or running in the background. In addition to running Charles Proxy and understanding how these applications are communicating with their mothership, from within my home, I downloaded Little Flocker--providing me a peek at another layer of application architecture, and how they interact with my laptop. Little Flocker tells me each time an application is writing or accessing a file, turning on my audio, video, and other items. After a day of running, I have been given another glimpse at the architecture of the apps I&#39;m depending on. One example of suspicious application architecture is from Citrix. I haven&#39;t been on a call using the app in at least 4 days, and usually, I just uninstall the app after use, but it was interesting to see it trying to write files on a regular basis, even though I don&#39;t have the application open. Why do they need to do this? It looks like it is looking for any updates, but not sure why it needs to when I&#39;m not running. I wish applications would provide a list of the remove calls their applications make to the home base. I&#39;ve talked with several platform providers about how they view this layer of their apps, and their thoughts about pulling back the curtain, and being more transparent&nbsp;about the APIs behind their apps--they usually aren&#39;t very interested in having these conversations with end-users and often see this activity as their proprietary secret sauce. The part that interests me is the fact that these client interactions, API calls, and data transmitted are happening here in my home on my laptop. I know that tech company see this as us users operating on their platforms, but in reality, they are entering our homes and making calls home to the platform using our Internet.&nbsp; Sure, we all agree to terms of service that make all of this legally irrelevant--they have their asses covered. It still doesn&#39;t change that many desktop, web and mobile application developers are exploiting the access they have in our lives. With the bad behavior we&#39;ve seen from technology companies, government entities, and hackers in recent years, I feel like this level of access isn&#39;t sustainable or healthy. Especially when apps are either poorly architected, or are done so with a lack of respect for the end-user environment. This is my laptop, in my home, engaging in a personal or business relationship with your company, please be respectful of me, my space, and my privacy.","headline":"The Random Calls Home That An Application Makes From My Home","image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/flocker_citrix.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/02/14/the-random-calls-home-that-an-application-makes-from-my-home/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2017/02/14/the-random-calls-home-that-an-application-makes-from-my-home/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -216,6 +219,16 @@ function searchResults(form) {
                             
                                 
                                     
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
                                         <li><a href="/images/" >Images</a></li>
                                                                                                         
                                 
@@ -321,7 +334,7 @@ function searchResults(form) {
       </span>
     </span><br>
   
-  <time datetime="2017-02-14T00:00:00-08:00" itemprop="datePublished">
+  <time datetime="2017-02-14T00:00:00-05:00" itemprop="datePublished">
     
     Feb 14, 2017
   </time>
