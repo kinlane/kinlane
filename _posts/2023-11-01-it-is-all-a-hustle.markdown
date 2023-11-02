@@ -1,0 +1,19 @@
+---
+published: true
+layout: post
+title: 'It Is All a Hustle'
+date: 2023-11-01T12:00:00.000Z
+tags:
+  - Hustle
+  - Work
+  - Career
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/bf-skinner-gargoyle-paris.jpg
+---
+I regularly fall into the belief that work is real. I end up caring too much about some technology, corporation, or other capitalist song and dance. I do not love money. I really enjoy what it can afford me, but I don’t dwell on it and chase it like many other people do. I refuse to live each day focused on getting rich, scamming or taking from others, but I do enjoy making good money, and enjoy having a top-tier hustle to keep me living the best version of my life. I first learned to hustle on the Grateful Dead tour in the 1980s and 1990s, making my way around the country. I polished this in the lot, and the after hour parties, and increasingly the business I did along the way. By the end of the 20th Century I traded in that hustle for a new one involving technology, which by 2010, became the hustle known as the API Evangelist-—where I played the part of someone who knows everything about APIs.
+
+I find that the greatest danger of hustles occurs when you begin to believe the hustle. When you are committed to the game, you live dangerously near the line where you think the game is real. If you are going to convince others, you have to convince yourself. If you are fully invested in your hustle, there will always be mornings you wake up and realize that you have gone too far. It goes with the territory, and you have to decide whether or not you just pull the mask back over your face and keep going, or you step away from the fire and move in a new direction. Oftentimes you can’t keep up with the hustle once you have slipped past the point of believing, for fear of losing yourself. Other times you slip back in like the hustle is a comfortable old hoodie, and you get right back to it, forgetting your true self even exists. It is all a hustle. 
+
+What I find fascinating about hustles is that the longer running and more powerfully funded hustles have the upper hand in the narrative. These hustlers get away with the unthinkable and often unspeakable. And people accept it as truth. It is often seen as the way things are, and when someone in a lesser role pulls the same hustle, it is deemed as being crazy, bad, or something other than the normal way of doing things. People can’t imagine getting away with something like that which is a normal place for others. The class separation of the hustle fascinates me, and once you begin to see the role that white supremacy plays in separating the institutional hustlers from the street hustlers, you realize the game is the same, but the deck is always stacked in one direction. Most people know their place and stay there. Hustlers always gotta explore the edges and push their skills to new heights.
+
+It is all a hustle. Remember that. Don’t lose sight of yourself. Go all in on a hustle, but don’t lose who you are. Don’t forget what truly motivates you and interests you. Don’t stop operating from the heart. The more you shut down your heart to stomach the intricacies of your hustle, the more dangerous the hustle is. Don’t get me wrong. I am all for going all in and playing a convincing role. There is a thrill in that. Just don’t lose yourself. Remember which way is up, and leave clues to how to find yourself again. If you are a good hustler, it is likely that you do not have a home anymore, but you still will need a way to find your way back to what matters most. Don’t leave your heart locked in a box somewhere in a hotel room, storage unit, or in that suburban home down the windy street you can barely tell apart from your neighbors. Keep on hustling. Keep on believing. Just make time for you, and operate purely from a place that truly nourishes your existence.
+
