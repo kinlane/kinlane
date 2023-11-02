@@ -38,26 +38,17 @@ authors:
 
 # Social icons displayed in footer
 social:
-    email:
+    email: info@apievangelist.com
     website:
     facebook:       https://www.facebook.com/kinlane
-    flickr:
-    dribbble:
     github:         https://github.com/kinlane
-    googleplus:
-    instagram:     
-    linkedin:       https://www.linkedin.com/in/kinlane/
-    pinterest:
-    twitter:        https://twitter.com/kinlane
-    vimeo:          
-    youtube:        
+    linkedin:       https://www.linkedin.com/in/kinlane/ 
     mastodon:       https://mastodon.kinlane.com/web/@kin 
 
 # Share button
 share:
     post:           true # Display share buttons on a post page
     doc:            true # Display share buttons on a doc page
-    twitter:        username # Enable by adding Twitter handle 
     facebook:       true # Enable by setting true (Facebook handle not required)
 
 # Default footer image settings
