@@ -5,7 +5,7 @@ title: 'Stories About Artificial Intelligence in This Moment Are More About Labo
 date: 2023-11-12T12:00:00.000Z
 tags:
   - Artificial Intelligence
-  - AIB
+  - AI
   - Labor
   - Stories
 image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/america-under-socialism-cloud-red.jpg
