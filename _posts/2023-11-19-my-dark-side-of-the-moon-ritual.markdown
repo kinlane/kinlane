@@ -14,7 +14,7 @@ I have recently started a new ritual where I begin my Sunday mornings off listen
 
 While I was first introduced to the album sometime in the early 1980s, it was in 1983 when I first experience it. My mom and step-dad had divorced and I went to live with him in Santa Barbara for the summer, and I found myself sitting in his truck watching the sunset, listening to Dark Side of the Moon. One afternoon we drove out past Goleta, CA to where the 101 becomes isolated in the hills as it winds its way north and found an isolated parking lot looking out over the Pacific Ocean. While my step-dad smoked a joint and drank a beer, I sat and watched the sunset while listening to the Dark Side of the Moon from end to end—-it has stuck with me ever since.
 
-<img src="https://kinlane-productions2.s3.amazonaws.com/pink-floyd/IMG_0963.jpeg" width="100%">
+<img src="https://kinlane-productions2.s3.amazonaws.com/pink-floyd/IMG_0962.jpeg" width="100%">
 
 I’ve had numerous drug and alcohol fueled experiences with the album since then, further laying grooves on my existence, but I find listening to the album end to end sober on a Sunday morning as very healing and nourishing some 40 years later. It isn’t any particular song, but the entire end to end experience that moves me. It just properly resets, unwinds, and leaves me in a better state than when I started. It programs me in a way that Internet technology never can, and defrags my soul un a way that allows me to face the week and recover from the last one. I can listen to Miles Davis Kind of Blue on a Friday night and heal from the week, and fire up some Jerry Garcia on a Saturday to sooth my soul, but I am finding The Dark Side of the Moon is an essential reconfiguration on a Sunday morning.
 
