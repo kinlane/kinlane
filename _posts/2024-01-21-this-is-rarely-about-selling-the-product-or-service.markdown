@@ -1,0 +1,20 @@
+---
+published: true
+layout: post
+title: 'This Is Rarely About Selling the Product or Service'
+date: 2024-01-21T12:00:00.000Z
+tags:
+  - Products
+  - Services
+  - Business
+  - Startups
+  - Stories
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/yellow-journalism-old-broken-piano-street.jpg
+---
+I consider my bullshit skills to be pretty refined through performing as the API Evangelist over the years. I like telling stories. I like spinning yarns. I do embellish and bullshit quite often as part of this storytelling and yarn spinning. I am not a liar or con artist. So there is always a line. I don’t like feeling like I have taken advantage of someone or tricked them into believing one thing, only to be meaning something else entirely. This is why I struggle in the world of business and more specifically startups. I can bullshit amongst the best of them, but I find the elevated hustle of startups, with the focus on the company and its products or services, distracting from the long or short selling that is occurring at a portfolio or market level, untenable.
+
+Until you’ve worked in Silicon Valley for a while you just don’t see the hustle that is going on. What you believe in this technology startup game tells a lot about where you exist in the food chain. Rarely is this game ever about the products or services a company sells. It is about the company as a product and / or the role that a company plays in a larger narrative. For example, the real artificial intelligence focus is not about OpenAPI selling ChatGPT, the real value there lies in OpenAI as a financial vehicle and the role it plays in the wider AI narrative. I am a long time techno believer. I’d say I’ve moved into the recovery phase, but I can still believe without much effort. However, having moved into the world of finance, and learning about how the different roles view markets, I find it hard to wallow in the more ground floor storytelling, and more concern with stories that will enjoy more longevity and relevance.
+
+I’ve learned over the years that my interest, scope, and level of storytelling occasionally finds alignment with the techno narrative of the moment. I like telling tech stories that developers will care about. However, I find the ground floor stories to be too prescribed and dishonest to join in right now. I am not going to tell AI stories until I find some angle I give a shit about, and I think matters across a diverse spectrum of my audience. I am not selling you AI. I am not investing in, or shorting AI. I am not applying AI in my work. I am watching and studying the role APIs play in AI. Not selling anything forces you to have a different lens when it comes to analyzing what is happening. It does not mean you will be right about where things are going. It just means you aren’t as easily influenced by the stories about a product or service, or even the next level-up about a company being the product—you are able to view things a little more objectively, and a little less emotionally.
+
+I find it hard to write marketing bullshit. I find it hard to write straight up bullshit about what is possible with technology. I find it impossible to knowingly write misleading stories. With that said I like to tell stories, even stories that walk the line of what is possible. Artificial intelligence should really be my jam. The storytelling possibilities are endless. I just feel like I haven’t found the stories that are on this side of the line. I feel like we are entering an entirely new phase of “If we aren’t paying for the product, then we are the product”. I think we jumped the shark on people and startups being the product and are entering even more obfuscated and dishonest territory. The hackles on my neck go up in similar ways when I found myself conflicted with my Alternate Kin Lane and Algortosocope Work in 2016 when Trump was elected. I think eventually I’ll find something I care about when it comes to telling AI stories, but to date, I haven’t.
