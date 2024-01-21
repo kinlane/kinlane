@@ -10,7 +10,7 @@ tags:
   - Gyoza
 image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/citizenship-eagle-spread-tree.jpg
 ---
-I had the best Ramen I have ever had last night at a place appropriately called “Kin”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that of course began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years. 
+I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years. 
 
 I knew it was going to be a memorable evening as soon as I walked in the door, sat down, and looked at the menu. As I opened the “Kin” menu, their definition of Kin shook me a bit. "Kin means gold, and to become gold, it needs to accumulate over a long period from small minerals to be one of the precious things in the world. Same as us, we have gained experiences over and over.” It is this accumulation of meaning and flavor over time that spoke so heavily to me about how far I have come, but it was also the filling and presentation of the Gyoza and the soul nourishing pork broth of the ramen I ate at Kin. 
 
