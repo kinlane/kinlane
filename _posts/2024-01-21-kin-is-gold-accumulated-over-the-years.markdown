@@ -8,7 +8,7 @@ tags:
   - Flavor
   - Ramen
   - Gyoza
-image: https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpeg
+image: https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpg
 ---
 I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years. 
 
