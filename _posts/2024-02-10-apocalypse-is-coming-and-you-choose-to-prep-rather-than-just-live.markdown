@@ -1,0 +1,17 @@
+---
+published: true
+layout: post
+title: 'Apocalypse Is Coming And You Choose To Prep Rather Than Just Live'
+date: 2024-02-10T12:00:00.000Z
+tags:
+  - Apocalypse
+  - Prepping
+  - Living
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/every-sunday-morning-central-park-winter-walkway.jpeg
+---
+One thing I find fascinating about myself is that up until about 40 years of age  I was steeped in an apocalyptic prepper culture frame of mind. The world was always and perpetually going to end. It was always right around the corner and there was no denying it. It was just a fact. In this reality you are always stocking up, hoarding, and prepping for what is to come. It was just a fact of life. You had guns, a garden, and a pantry full of food you most likely will not eat. I was not alone. Most folks I grew up with saw the world this way, and many still live in this state. The thing I find the most fascinating about this state of mind is that in the face of impending doom, instead of getting out in the world and living, we choose to stockpile food and weapons and further isolate ourselves. 
+
+I am fascinated by my wild lack of imagination in accepting this narrative. That in the face of the world ending apocalypse I chose to prepare instead of live. It is this “free beer tomorrow” mentality that bothers me so much of this state of mind. If I really believe the world is ending tomorrow, why not live today, and each day until that happens. Why not seek out all that life has to offer today? Who first told the pepper narrative and those listening thought, “that makes a lot of sense”. I know that there is a whole lot of other trauma, programming, and emotions driving this state of mind--I have been unwinding that for over a decade, but the absurdity of it grabs me regularly, and leaves me chuckling.
+Looking back, this state of mind seems so distant, and almost fictional. However, I know people who encounter my state of mind, and view it with the same distance and levels of absurdity. If you haven’t had someone you knew and loved, or experienced this state of mind first-hand it is difficult to explain. I refuse to look out into the world and feel like it is dangerous. I refuse to look into the future and believe I do not have one, let alone one for the only child I have brought into this world. Especially since my partner in crime literally left this world because they didn’t believe they had a future in it. I refuse to believe in an apocalyptic prepper, because I have to believe. I believe for the younger generations. 
+
+I much prefer spending my money on a broadway show over a survival bunker. I much prefer eating a mix of ethnic cuisines. I love overeating meals ready to eat (MRE). Yes, I am sure at some point there will be an environmental disaster. It is the future we’ve cultivated for our children. However, I am confident that my neighbors and the government will work together to overcome it. Yes, I can have faith in my neighbors and government. I will make sure I have rolling stores of bottled water, and our regular mini pantry of goods to get us through a few days, but I refuse to worry beyond that. I’ve worked my way through much of the trauma that put me in an apocalyptic prepared state of mind, and have traveled long distances over time and space to get to a place where I live in the day. I am choosing to simply live. It is really much easier, peaceful, and nourishing than worrying about a future that will never come.
