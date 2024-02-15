@@ -1,4 +1,6 @@
 # Footer navigation links
+- title: Alternate Kin Lane
+  url: http://alternate.kinlane.com
 
 - title: API Evangelist
   url: https://apievangelist.com
@@ -6,8 +8,11 @@
 - title: Algorotoscope
   url: https://algorithmic.rotoscope.work
 
-- title: Alternate Kin Lane
-  url: http://alternate.kinlane.com
+- title: Contrafabulists
+  url: https://contrafabulists.com
+
+- title: The Digital Self
+  url: https://thedigitalself.org   
 
 - title: Drone Recovery
   url: http://dronerecovery.org
