@@ -1,0 +1,20 @@
+---
+published: true
+layout: post
+title: 'The Book I Needed to Understand Our Gun Obsession'
+date: 2024-02-25T12:00:00.000Z
+tags:
+  - Guns
+  - Consumerism
+  - Capitalism
+  - Communism
+  - Cold War
+image: https://kinlane-productions2.s3.amazonaws.com/gun-country.jpg
+---
+I just finished [Gun Country, Gun Capitalism, Culture & Control in Cold War America, by Andrew C. McKevitt](https://uncpress.org/book/9781469677248/gun-country/). It was exactly the book I needed to continue unpacking my youth — 1972 through 1995. I do not own guns anymore, but I did up until 2012 (and briefly again in 2019), and only just now coming to terms with the crazy mixed up feelings I have about them. I am very thankful for this book because it was the first academic book I have found that addressed World War II forward. [Loaded, by Roxanne Dunbar-Ortiz](https://www.akpress.org/catalog/product/view/id/3332/s/loaded/), was the only thing I have read recently that shifted my views of the landscape in any meaningful way, but Gun Country just gave me everything I need to keep unpacking my shit-—thanks Andrew!
+
+You have to read the book to grasp what is wrong with this country, but it is also a guide to understanding the toxic reality in which I grew up in, and what I am working so hard to unwind. I grew up in Southern Oregon in the 1970s, in the cities and counties the book references as the heart of the shift that occurred in the NRA and gun culture that led us to where we are today. I was a product of the Cold War fear, white flight, and anti-government programming that got us where we are today. I managed to get out just as Obama was taking office, and was successful in elevating my view of things to a more global perspective-—only occasionally looking back, while desperately looking for answers.
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/john-wayne-the-searchers-castle-cannon-tree.jpg" width="100%" style="padding: 15px;"></p>
+I’d say Obama shifted things for me, allowing me to begin studying my earlier programming. I gave away all my guns to my best friend Derek in 2012, and chose to live in Los Angeles, New York, DC, and travel the world. My work in Washington D.C., and the shift to Trumpism showed me there was no going back. In 2020, my best friend shot himself in the head with one of my guns, just as covid took hold of our world. In 2020, my last conversation with my partner's son was a fight where I refused to give him his guns back, I never saw him again. He didn’t commit suicide, but he overdosed the same month Derek did--just as covid grabbed hold of us. I now live in a world where I remember my first 22 rifle, .270 Winchester hunting rifle, 9MM pistol, 12 gauge shotgun, .54 caliber black powder rifle, fully automatic rifle, SKS Chinese rifle, and the smell of cleaning and firing them while also confidently knowing I want nothing to do with having a gun ever again--no matter what.
+
+This book helps you see the control of it all. The culture. The consumerism. The racism. The nationalism. The fear. The fear. The fear. It helps you see that most of the rhetoric is born after WWII, and not a handed down tradition since the founding of this country. I mean the racism is, but the culture and consumer aspect is manufactured to just sell us a product that speaks to our identity. I spent summers doing 4H at the fairgrounds mentioned in the book. I can still count on all the family and friends I care deeply about who always have a gun on them, and who own 25 or 50+ guns and countless rounds of ammunition. I live in New York City as I read Gun Country and I am extremely grateful for the careful research and storytelling in the book. It came at a time when I needed this reinforcement. For me, there is a confidence in being well read and having an understanding of the root of this illness, in the same way I think that being ignorant and not understanding the world had given me un-shaking confidence that owning a gun was essential to living.

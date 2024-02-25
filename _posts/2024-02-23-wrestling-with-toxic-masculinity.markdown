@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: 'Wrestling with Toxic Masculinity '
+title: 'Wrestling with Toxic Masculinity'
 date: 2024-02-23T12:00:00.000Z
 tags:
   - Masculinity
