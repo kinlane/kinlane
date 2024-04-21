@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 'The History We Need To Learn so That We Begin the Healing'
-date: 2024-04-21:00:00.000Z
+date: 2024-04-21T12:00:00.000Z
 tags:
   - History
   - Indigenous
