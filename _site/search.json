@@ -1,10 +1,192 @@
 [
   
     {
-      "title"    : "Leaving People Behind",
-      "tags"     : "Relationships, Change, Programming, History, Baggage",
-      "url"      : "/2023/07/25/deprogramming-the-last-forty-years/",
-      "date"     : "2023-07-25 08:00:00 -0400"
+      "title"    : "Quantitative and Qualitative as a Zero Sum Game",
+      "tags"     : "Qualitative, Quantitative, Business, Investment",
+      "url"      : "/2024/04/04/quantitative-and-qualitative-as-a-zero-sum-game/",
+      "date"     : "2024-04-04 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "What Will We Do After This AI Wave",
+      "tags"     : "AI, Artificial Intelligence, Trends",
+      "url"      : "/2024/04/01/what-will-we-do-after-this-ai-wave/",
+      "date"     : "2024-04-01 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "That Emotion That Prevents You From Reading Books",
+      "tags"     : "Reading, Books",
+      "url"      : "/2024/04/01/that-emotion-that-prevents-you-from-reading-books/",
+      "date"     : "2024-04-01 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "My Domains",
+      "tags"     : "Domains, Stories, Images, Fiction, Non-Fiction",
+      "url"      : "/2024/03/24/my-domains/",
+      "date"     : "2024-03-24 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "The Book I Needed to Understand Our Gun Obsession",
+      "tags"     : "Guns, Consumerism, Capitalism, Communism, Cold War",
+      "url"      : "/2024/02/25/the-book-i-needed-to-understand-our-gun-obsession/",
+      "date"     : "2024-02-25 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Going Directly to the Source to Buy Books",
+      "tags"     : "Guns, Publishing, Capitalism, Books",
+      "url"      : "/2024/02/25/going-directly-to-the-source-to-buy-books/",
+      "date"     : "2024-02-25 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Wrestling with Toxic Masculinity",
+      "tags"     : "Masculinity, Toxic Masculinity, Men, Boy George, Moulin Rouge",
+      "url"      : "/2024/02/23/wrestling-with-toxic-masculinity/",
+      "date"     : "2024-02-23 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Using the Term Luddite To Understand Where People Stand",
+      "tags"     : "Labor, Capital, Industry, Luddite",
+      "url"      : "/2024/02/23/using-the-term-luddite-to-understand-where-people-stand/",
+      "date"     : "2024-02-23 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Subways, Skyscrapers, and Servers",
+      "tags"     : "Subways, Skyscrapers, Servers",
+      "url"      : "/2024/02/22/subways-skyscrapers-servers/",
+      "date"     : "2024-02-22 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "I Am Not Mentally Ill, It is Just the World",
+      "tags"     : "Mental Health, Mental Illness, Living",
+      "url"      : "/2024/02/11/i-am-not-mentally-ill-it-is-just-the-world/",
+      "date"     : "2024-02-11 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Apocalypse Is Coming And You Choose To Prep Rather Than Just Live",
+      "tags"     : "Apocalypse, Prepping, Living",
+      "url"      : "/2024/02/10/apocalypse-is-coming-and-you-choose-to-prep-rather-than-just-live/",
+      "date"     : "2024-02-10 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Only Seeing Value As The End Result",
+      "tags"     : "Work, Tasks, Capitalism, Value",
+      "url"      : "/2024/02/09/only-seeing-value-as-the-end-result/",
+      "date"     : "2024-02-09 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "We Will Look Back And See The Internet Like We Do The Automobile",
+      "tags"     : "Cars, Automobile, Internet",
+      "url"      : "/2024/02/07/we-will-look-back-and-see-the-internet-like-we-do-the-automobile/",
+      "date"     : "2024-02-07 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "This Is Rarely About Selling the Product or Service",
+      "tags"     : "Products, Services, Business, Startups, Stories",
+      "url"      : "/2024/01/21/this-is-rarely-about-selling-the-product-or-service/",
+      "date"     : "2024-01-21 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Kin Is Gold Accumulated Over the Years",
+      "tags"     : "Food, Flavor, Ramen, Gyoza",
+      "url"      : "/2024/01/21/kin-is-gold-accumulated-over-the-years/",
+      "date"     : "2024-01-21 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Those Leaving This World",
+      "tags"     : "Death, Suicide, Life, Family",
+      "url"      : "/2024/01/15/those-leaving-this-world/",
+      "date"     : "2024-01-15 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "It Is Not You New York, It Is Me",
+      "tags"     : "New York City, Cities, Rural, Politics",
+      "url"      : "/2024/01/15/it-is-not-you-new-york-it-is-me/",
+      "date"     : "2024-01-15 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Accepting When You Have Made It",
+      "tags"     : "Career, Success, Life, Family",
+      "url"      : "/2023/12/10/accepting-when-you-have-made-it/",
+      "date"     : "2023-12-10 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "My Dark Side of The Moon Ritual",
+      "tags"     : "Music, Pink FLoyd, Healing, Ritual",
+      "url"      : "/2023/11/19/my-dark-side-of-the-moon-ritual/",
+      "date"     : "2023-11-19 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Stories About Artificial Intelligence in This Moment Are More About Labor",
+      "tags"     : "Artificial Intelligence, AI, Labor, Stories",
+      "url"      : "/2023/11/12/stories-about-artificial-intelligence-in-this-moment-are-more-about-labor/",
+      "date"     : "2023-11-12 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "FTX Syndrome",
+      "tags"     : "FTX, Technology, Reality",
+      "url"      : "/2023/11/11/ftx-syndrome/",
+      "date"     : "2023-11-11 07:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "It Is All a Hustle",
+      "tags"     : "Hustle, Work, Career",
+      "url"      : "/2023/11/01/it-is-all-a-hustle/",
+      "date"     : "2023-11-01 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Going to Bed Early is Just Preemptively Sleeping In",
+      "tags"     : "Sleep, Weekends",
+      "url"      : "/2023/10/14/going-to-bed-early-is-just-preemptively-sleeping-in/",
+      "date"     : "2023-10-14 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Regularly Overwhelmed by the Scope of Things",
+      "tags"     : "Work, Scope, Job, Career",
+      "url"      : "/2023/10/07/regularly-overwhelmed-by-the-scope-of-things/",
+      "date"     : "2023-10-07 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "That Writing Mojo",
+      "tags"     : "Writing, Stories",
+      "url"      : "/2023/10/04/the-writing-mojo/",
+      "date"     : "2023-10-04 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Devolving in a Cubicle Under the Fluorescents",
+      "tags"     : "Careers, Buildings, Offices, Fluorescents, Big Cities",
+      "url"      : "/2023/09/25/devolving-in-a-cubicle-under-the-fluorescents/",
+      "date"     : "2023-09-25 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Deprogramming the Last 40 Years",
+      "tags"     : "Books, Reading, Programming",
+      "url"      : "/2023/09/16/deprogramming-the-last-forty-years/",
+      "date"     : "2023-09-16 08:00:00 -0400"
     } ,
   
     {

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kin Is Gold Accumulated Over the Years | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Kin Is Gold Accumulated Over the Years" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years." />
+<meta property="og:description" content="I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years." />
+<link rel="canonical" href="http://localhost:4000/2024/01/21/kin-is-gold-accumulated-over-the-years/" />
+<meta property="og:url" content="http://localhost:4000/2024/01/21/kin-is-gold-accumulated-over-the-years/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-21T07:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpg" />
+<meta property="twitter:title" content="Kin Is Gold Accumulated Over the Years" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2024-01-21T07:00:00-05:00","datePublished":"2024-01-21T07:00:00-05:00","description":"I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years.","headline":"Kin Is Gold Accumulated Over the Years","image":"https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/01/21/kin-is-gold-accumulated-over-the-years/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2024/01/21/kin-is-gold-accumulated-over-the-years/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kin Is Gold Accumulated Over the Years | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kin Is Gold Accumulated Over the Years | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane" width="50"></a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/blog/" >Stories</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/about/" >About</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/experiences/" >Experiences</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/deprogramming/" >Deprogramming</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/images/" >Images</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/videos/" >Videos</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/archives/" >Archives</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Question?</a></div></li>
+                                
+                            
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Kin Is Gold Accumulated Over the Years</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2024-01-21T07:00:00-05:00" itemprop="datePublished">
+    
+    Jan 21, 2024
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen-sign.jpg" width="90%" align="center" style="padding: 5px;"></center>
+                <p>I had the best Ramen I have ever had last night at a place appropriately called “Kin Ramen”. Like so many things for me in this moment the meal was a sort of milestone reached in a much longer journey that began as it does for many youth in this country with Maruchan Ramen, but it was also the accumulation of meaning, purpose, and flavor in other richer ways over the last 40+ years.</p>
+
+<p>I knew it was going to be a memorable evening as soon as I walked in the door, sat down, and looked at the menu. As I opened the Kin menu, their definition of Kin shook me a bit. “Kin means gold, and to become gold, it needs to accumulate over a long period from small minerals to be one of the precious things in the world. Same as us, we have gained experiences over and over.” It is this accumulation of meaning and flavor over time that spoke so heavily to me about how far I have come, but it was also the Gyoza and the soul nourishing pork broth of the ramen I ate at Kin which moved me.</p>
+
+<p>Audrey and I have a theory about sushi, in that you can’t just take someone new to the world of sushi to an expensive Omakase meal and expect them to understand what has been in front of them. To fully grasp what each dish possesses you have to have experienced the good, the bad, and the mediocre of Sushi in the United States. But with an open mind, and the right amount of exposure and exploration you can accumulate a flavor for what truly matters, elevating beyond the California roll, mayonnaise sauces, and ascend to a place where Omakase from the right place and people will just blow your mind and changes who you are.</p>
+
+<p>I absolutely love the food journey I have been on since I was about 20 years of age, but to understand the depth and richness of the geological accumulation of flavors and experiences you have to go back to my beginnings. My overall journey, but also Ramen journey begins in that single wide trailer home in rural Oregon in the late 1970s and early 1980s, taking me eventually to the big city of Eugene, OR, but then on to California and New York. I know this part of my journey is not unique to me, but you have to understand the role that ramen played alongside frozen burritos, frozen pizzas, as well as the canned meat and free box cheese that came with being poor in 1970s and 1980s if you are going to understand what I experienced last night at Kin.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/single-wide-trailer.png" width="100%" /></p>
+
+<p>Growing up with a single mom in rural Oregon in the 1970s and 1980s meant you prepared many of your meals from what you could find in the freezer and cupboards. This meant you were faced with the decision of whether you wanted chicken, beef, pork, or oriental Maruchan ramen for lunch or dinner. While my sister Angela was going all in on the cheese pizza, I most likely went for chicken Maruchan Ramen, or one of the lesser flavors when I had to, and thoroughly enjoyed my single or sometimes double pack bowl of salty noodle goodness in a sort of Stockholm syndrome kind of way—-slurping down noodles on an almost daily basis.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/maruchan.png" width="100%" /></p>
+
+<p>As I grew older and obtained more agency in the kitchen, but also grew tired of the basic Maruchan flavors, I would slice onions and ham into my bowl, and when I was a teenager I would begin to put bean sprouts, corn, and even throw away the spice package and use Miso soup paste as a base broth. I knew I wanted more flavor and nutrients, but in my hard-done-by state of being I just didn’t have the imagination, experience, and access to what I needed to transform my bowl of Ramen into something that could move me, as well as nourish me in the moment. I tried though. It wouldn’t be until I moved to the big city and got married that I would begin to understand what was truly possible when it came to ramen.</p>
+
+<p>As the years moved on I found myself married and living in Eugene, OR, where during lunch at my job with a company called Palo Alto Software I discovered an amazing ramen place called Toshi’s Ramen. I ordered and fell in love with Toshi’s miso plain bowl, with a side order of gyoza. It was an absolutely perfect meal. While I had recently returned to being a meat eater I loved the vegetarian version of the Miso plain ramen, and Toshi’s gyoza were just light and lovely bites needed for the side. While I frequented Toshi’s regularly during my lunch hours working in Eugene, it would be the impact the restaurant would have on me later that would define my journey after I decided to leave my first wife over fifteen years ago.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/toshis-ramen.jpg" width="100%" /></p>
+
+<p>It is hard to put into words how much Toshi’s Ramen meant to me in the years after my divorce from my first wife in 2008. Eugene (and Oregon) can take on a particular gloomy and dark existence that can shake you to your core. Dealing with divorce, death, drugs, and the other things life throws at you are particularly dark and thick when living in Oregon. Audrey describes Toshi’s ramen best by saying, “is this what happiness is?” It was that good. It was that nourishing. It was that warm, which on a dark wet and gloomy winter’s day in Oregon means everything, and often seems like all you have got when your friends are dying around you, and you are working yourself to death.</p>
+
+<p>In the year I met Audrey I was in between places and living in my van on the streets of Eugene. I would work by day in the University of Oregon libraries, and by night at the local pub chain called McMenamins. I am not exaggerating when I say that all I could afford some days was the $5.00 for my Miso plain, and maybe a happy hour burger and a pint for $6.00. When you are divorced, single, working too hard, a bowl of Miso soup can become the single bright light in your otherwise miserable day. It was. I loved sitting in the corner with my bowl of Miso plain and order of gyoza—-which I began sharing with my new partner in crime Audrey, as we prepared for our exit from this dark existence, to embark on our journey which would ultimately bring us here to New York City.</p>
+
+<p>We have eaten quite a bit of ramen throughout the 15+ years that has brought us to New York, and never has Toshi’s been dethroned as the best ramen. Every bowl of ramen, and side of gyoza has been a mixed bag. Sometimes the broth needs more salt, I am repulsed by the flabby slab of pork thrown on top, or the gyoza has clearly come from a frozen bag. Don’t get me wrong, we’ve had some good ones in there, but none of them ever dethroned Toshi’s—until last night. Kin’s gyoza were perfect in every way. The wrapper and filling were perfect, but the crispy scald it possessed was mind blowing. I quickly realized it was perfection.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-gyoza.jpeg" width="100%" /></p>
+
+<p>I wasn’t even expecting the gyoza to be so good. It floored me. Even before my ramen ever arrived I was blown away. They were the perfect flavor, texture, and presentation. Kin’s gyoza moved the needle from Toshi’s solid 10, to a Spinal Tap 11. I had assumed Toshi’s was a perfect 10, but all of a sudden the scale had shifted on me, revealing that one more notch existed on my gyoza experience scale. Thank you Kin (&lt;3), I am looking forward to developing a long lasting relationship with your gyoza on cold evenings in the city.</p>
+
+<p>Now we get to the ramen part of this story. The obvious choice at the top of the menu was “Kin Ramen”, which was “homemade pork broth, homemade pork chashu, scallion, menma kikurage, red ginger, shallot chip, and nori.” It was beautiful. I grabbed my spoon and dipped it into the sparkly pork broth and slurped up the nourishing gold. While Toshi’s Miso Plain will always hold a place in my heart and mind, Kin was perfection (&lt;3). There is nothing I would or would take away. If I had to look for anything to critique, it would be the noodles. Toshi’s noodles were thicker and his process for making them was pure love. With that said, Kin’s noodles were perfectly thin and flavorful. Delicious, and exactly what is needed alongside their homemade pork broth.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-ramen.jpeg" width="100%" /></p>
+
+<p>I can look into that bowl of Kin and see 40 years of salty joy, pain, and flavor all woven together in the broth, noodles, and toppings. In that moment I could taste forty years of accumulated experience, emotions, and flavor. It reveals to me how much goes into these dishes. Not just the chef’s experience and skill, but also my experience and skill. I now deeply get how it all works in concert. If I had walked 15 year old me into Kin I would not have recognized what was in front of me. I wouldn’t be able to unwind all of the richness and taste that exists in there. It would take a life of exploration to get me here physically, but also experientially. I am incredibly thankful to be a human being at this moment, and to reach milestones like this plate of gyoza and bowl of Ramen at Kin.</p>
+
+<p><img src="https://kinlane-productions2.s3.amazonaws.com/kin-ramen/kin-drink-menu.jpeg" width="100%" /></p>
+
+<p>It feels silly to write about a bowl of ramen this way. It isn’t. I can close my eyes and see myself sitting on the couch watch Michael J. Fox in Family Ties, The Secret of My Success, or Back to the Future slurping on a double pack of Oriental Maruchan Ramen, dreaming of what it would like to not live in a single wide trailer on 10 acres, but in New York City. I can close my eyes and see myself sitting in the corner with my now wife Audrey on a dark winter’s day enjoying a bowl of happiness, plotting our escape from hell. This shit is real for me. What a journey. What an experience. What an emotional set of flavors brought to life by two seemingly simple, yet so complex dishes.</p>
+
+<p>Food is amazing. I am so thankful to be living in New York City eating Kin gyoza and ramen. I am thankful for every shitty pack of Maruchan ramen I have eaten over the years. I am thankful for Toshi literally feeding me happiness during one of the darkest times of my life. I am thankful for every mediocre bowl of ramen and freezer gyoza I have had over the years. It has all accumulated into this experience. I wouldn’t be here without those experiences. I am also thankful for my partner in crime Audrey, who can emotionally validate what I describe in this story, and without her, it is unlikely I’d be sitting in New York City today, let alone find the restaurant which on the surface might seem easy for me to find. However, as the king of missing the obvious that is in front of me, I needed her help to make sure I reached this Kin milestone.</p>
+
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2024/01/15/those-leaving-this-world/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2024/01/21/this-is-rarely-about-selling-the-product-or-service/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" title="LinkedIn" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+<div>
+    <a href="https://github.com/kinlane" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="info@apievangelist.com" title="Email" data-uk-icon="icon: mail" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://apievangelist.com" target="_blank" >API Evangelist</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://algorithmic.rotoscope.work" target="_blank" >Algorotoscope</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://contrafabulists.com" target="_blank" >Contrafabulists</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="https://thedigitalself.org" target="_blank" >The Digital Self</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://dronerecovery.org" target="_blank" >Drone Recovery</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium"></div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    </body>
+
+</html>
