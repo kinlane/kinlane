@@ -10,7 +10,7 @@ tags:
   - Transportation
   - Cities
   - Noise
-image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/american-dream-fundamental-only-walk-zone.jpeg
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/eugenics-nyc-57th-1.jpeg
 ---
  I read the title of this post on the Internet. It resonated with me. Sure there are things in the city like constructions and crowds that can be noisy, but really the noise is primarily cars. But as I was thinking about this it isn’t just that cars are loud, and we separate this and apply to the city, but also everything that is wrapped up in our obsession with cars and how much we love to hate cities because of our largely avoided institutional racism.
 
