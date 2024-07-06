@@ -1,0 +1,18 @@
+---
+published: true
+layout: post
+title: 'Sitting Down and Listening to an Album'
+date: 2024-07-06T12:00:00.000Z
+tags:
+  - Music
+  - Albums
+  - Artists
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/john-wayne-the-searchers-old-chair-hopsital.jpg
+---
+I sat down this morning and listened to two new albums I had purchased this week—-[Only God Was Above Us from Vampire Weekend](https://www.vampireweekend.com/), and [As It Ever Was, So It Will Be Again by the Decemberists](https://www.decemberists.com/). I didn’t just put on these albums and then go do something else, like get online, or clean the house. I just sat there and looked out the window, sometimes closed my eyes, and listened to both albums end to end.
+
+It is really, really, really hard to sit and be present listening to music. You have to put the emergency break on. You have to make a commitment to stay engaged with the sounds coming out of the speakers, and be satisfied with the real world images in front of you. Sitting and listening to an album from end to end in the order intended by the artist is important. Sitting and listening is important. Sitting and just being in this world is important. It is something I don’t do enough of. Sure, I sit on my ass all day, but I am not present, I am online doing 10 different things at any given moment. I am doing too much, and sitting listening to music reminds me of what matters. 
+<img src="https://kinlane-productions2.s3.amazonaws.com/decemberists-as-it-ever-was-so-it-will-be.jpg" width="100%" style="padding: 15px;">
+Both of the albums I listed were two record albums, meaning there were four albums each with two sides—-that was a total of eight sides, and two hours of music. Two hours of sitting and listening. The albums are great. I love both bands. Their storytelling ability, and the energy behind is moving. It is what I need. It is something I don’t do enough. I have listened to a lot of music since I got my record player last year, but I am usually still online or doing something else. I very rarely do I just sit there and listen. I think about the trade-off we have made in our lives that prevents this from happening on a regular basis. What stops us from sitting and listening to music? Why do we insist on multitasking? I feel like we’ve accepted a lot of distractions for not a lot of return, and are letting what truly matters slip away. Sure we keep a digital version of our music, but it isn’t the same.
+<img src="https://kinlane-productions2.s3.amazonaws.com/vampire-weekend-only-god-was-above-us.jpg" width="100%" style="padding: 15px;">
+Listening to an album the way the artists intended reminds me a lot of reading a book end to end. They are much richer and nourishing moments than any I spend online. These analog experiences are greater than their digital equivalent. There are just more nutrients present. They slow or stop the [cybernetic gears](https://alternate.kinlane.com/2024/03/17/revealing-the-cybernetic-gears-in-our-everyday-life/) from spinning around me in the moment. Even as much as I enjoy doing this, my regular day doesn’t allow for it, and I have to make trade-offs like listening to music while also doing work online in the evenings. Just like reading books, I will be pushing myself to listen to my music more. Not just having it playing in the background, but actually listening to it and feeling it. It makes me happy. It makes me feel better. It soothes me. It confounds me that this isn’t a priority in my evenings and on weekends. What a wonky world I have created.
