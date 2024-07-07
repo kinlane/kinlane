@@ -7,7 +7,7 @@ tags:
   - AI
   - Artificial Intelligence
   - Trends
-image: https://algorithmic.rotoscope.work/images/collections/the-persistence-of-memory/highway-truck-silo.jpg
+image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/dark-dali-highway-granary-truck_36557728122_o.jpg
 ---
 I like my blog because it provides me with dated looks into how I feel in any particular moment--something I need to feel sane in a pretty insane digital landscape that likes to just memory hole things so it can perpetually celebrate what is next. With this in mind I wanted to write a blog post about the current AI wave we are in so that I can read it after we have survived it—-which we will. It is so fascinating how people so badly want to believe in AI, and the oxygen gets sucked out of the room for anyone with thoughts on other subjects, or push back on AI in any way. I just want a journal entry for this moment, not so I can point back and say “I Told You So!”. It is just so I can stay sane in all this insanity.
 
