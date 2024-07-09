@@ -8,7 +8,7 @@ tags:
   - OpenAPI
 image: https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/yellow-journalism-japanese-man-sitting.jpeg
 ---
-I have found thirteen more solid examples of API providers using GitHub to manage their OpenAPI and related artifacts. I am regularly finding these as I am profiling APIs, and rather than just write a blog post each time I figured I'd store as YAML, and keep adding them in batches every couple of weeks.
+I have found thirteen more solid <a href="https://apievangelist.com/2024/03/31/using-github-to-manage-your-openapis/">examples of API providers using GitHub to manage their OpenAPI and related artifacts</a>. I am regularly finding these as I am profiling APIs, and rather than just write a blog post each time I figured I'd store as YAML, and keep adding them in batches every couple of weeks.
 
 You can find all of the API providers who are using GitHub via a YAML file, or here via this post.
 
