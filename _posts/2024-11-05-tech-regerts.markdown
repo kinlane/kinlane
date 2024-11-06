@@ -11,12 +11,12 @@ image: https://kinlane-productions2.s3.us-east-1.amazonaws.com/tech-regerts.jpeg
 ---
 I don’t have too many regrets as I enter the second half of my life. I am pretty confident in who I am and that my journey was worthwhile. I am a good and hardworking person. However, when it comes to Internet technology I have a couple of serious regrets, or more appropriately regerts. To help me deal with these regerts I went and got a tattoo on my arm to help me repent, but also not lose sight of what matters in the future—here are my regerts.
 
-1) I let my kid spend so much time online as a youth and teen.
-2) Believed in that libertarian manifest horseshit from John Perry Barlow.
-3) Believed the startup founders when they said they wouldn’t sell out.
-4) Believed VCs when they said they were selling the same product as me.
-5) Believed that y’all wanted to understand the system and do the work.
-6) Being complicit and playing a role in the rise and enablement of fascism.
+1. I let my kid spend so much time online as a youth and teen.
+2. Believed in that libertarian manifest horseshit from John Perry Barlow.
+3. Believed the startup founders when they said they wouldn’t sell out.
+4. Believed VCs when they said they were selling the same product as me.
+5. Believed that y’all wanted to understand the system and do the work.
+6. Being complicit and playing a role in the rise and enablement of fascism.
 
 I feel like I’ve dropped the ball when it comes to Internet technology whispering 
 bullshit into my ear. Getting a tattoo at age 52 was no minor shift for me. Not because of the pain, but because of the decisions I’ve made in my life. I have never gotten it because when I was younger I was a criminal that sold drugs. The first time I was arrested was at 18 years old on the corner of Haight Ashbury in San Francisco, and when they took me in they took pictures of the scars on my body and asked if I had any tattoos—I didn’t. This occurred three more times over the next couple of years, leaving me resolute that I would never get a tattoo—despite having an image of several tattoos that I wanted.
