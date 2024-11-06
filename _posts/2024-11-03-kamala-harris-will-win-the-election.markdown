@@ -18,3 +18,5 @@ I write this because I believe in the people in this country. I don’t want to 
 I am publishing this two days before the election because I believe. I am not worried about being wrong. I believe in us. We got this. Let’s choose to take care of each other. Let’s choose to be inclusive and caring. You can make all those old patriarchal comments you’ve been trained to over the years to say about women in leadership positions, or you can close your eyes and lead with your heart. Don’t be scared. The world can be a scary place, but we still have the capacity to make caring and confident decisions. 
 
 Hate will not win in this election...
+
+UPDATE: I WAS SO WRONG ABOUT YOU AMERICA!! ;-(
