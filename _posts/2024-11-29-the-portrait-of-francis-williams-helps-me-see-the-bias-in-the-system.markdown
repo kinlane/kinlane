@@ -1,0 +1,18 @@
+---
+published: true
+layout: post
+title: 'The Portrait of Francis Williams Helps Me See the Bias in the System'
+date: 2024-11-20T12:00:00.000Z
+tags:
+  - Bias
+  - Racism
+  - Art
+image: https://kinlane-productions2.s3.us-east-1.amazonaws.com/algorotoscope-cli/filters/francis-williams.jpg
+---
+I am obsessed with seeing and showcasing the bias in the Internet. My storytelling on [API Evangelist](https://apievangelist.com) is driven by this obsession and [the AI images I use across my storytelling](https://algorithmic.rotoscope.work/) is all about keeping this bias visible. [It is a long read, but this amazing story of the portrait of Francis Williams has helped better see the direct bias, but also the echoing programming of that bias within the systems and applications we are building with APIs](https://www.lrb.co.uk/the-paper/v46/n22/fara-dabhoiwala/a-man-of-parts-and-learning). For me, APIs are just busy codifying what already exists in the real world, but making it harder to cut out once set in motion as part of the automation and AI applications we are setting loose at the moment.
+
+You will have to read the story for yourself—it is long, but well worth it. In short, a man is selling a painting of a black man from Jamaica in the 1700s, and the story behind the painting reveals just how far white people will go to discredit the intelligence and humanity of black people, but also how all of our own programmed biases work to prevent us from seeing the truth. This is just one man and one painting, but the story for me reveals the institutional mechanisms that exist millions of times each day throughout the physical and online world. And that we are codifying and automating the tools for white people to directly be this awful, but also equip everyone to do it unconsciously and far removed from any knowledge or consequence of.
+
+The more I see the institutional bias that exists all around us offline and online today, the more I can’t look back, and the more I see it. The direct bias is an easy target, and as we all are experiencing right now, it is still a dominant narrative, but I feel like it is the automated everyday bias like people applied to the portrait of Francis Williams along the way that is so very, very, very damaging. The guy who wanted to diminish any legacy Francis Williams might have had is awful, the way everyone sees the painting along the way is the deep dark shit that is baked into our everyday responses. This is the coding and programming that we are baking into the Internet, and enabling, automating, and abstracting away via our mobile devices and now artificial intelligence. 
+
+I am fascinated by seeing the bias in the system in new and mundane ways, but I am also fascinated by how blind I am to much of it, but once I see, it changes everything. I get why it is so terrifying for folks to experience, but I’m obsessed with continuing to pull back the curtain on this. It is liberating to see and experience. It is painful and terrifying, but liberating. It drives me nuts to be ignorant. The gravity of white supremacy frustrates me. I do not like not being able to see things, and my white male privilege is regularly blocking my view. Pulling back the layers, story by story, voice by voice, and in this case painting by painting, is helping me unwind the anxiety I have about the world. These things still exist out there, but actually seeing them and being honest with myself about them, and regularly creating visualizations and stories that help shine a light on what exists out there in the system is my contribution to keeping the conversation alive.
