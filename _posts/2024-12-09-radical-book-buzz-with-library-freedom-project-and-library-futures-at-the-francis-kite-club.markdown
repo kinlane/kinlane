@@ -45,6 +45,7 @@ I am thankful for the work of these two organizations for making the event happe
             <a href="{{ organization.url }}">{{ organization.name }}</a> - {{ organization.description }}
         </td>
     </tr>
+    {% endif %}
 {% endfor %}
 </table>
 
