@@ -1,7 +1,9 @@
-- name: Library Freedom
+- name: Library Freedom Project
   description: Library Freedom Project is radically rethinking the library professional organization by creating a network of values-driven librarian-activists working together to build information democracy. 
   url: https://libraryfreedom.org/
+  image: https://kinlane-productions2.s3.us-east-1.amazonaws.com/book-event-nyc/library-freedom-project.png
 
 - name: Library Futures
   description: We mobilize a community of experts to encourage the adoption of technologies that uplift libraries in the digital age, promoting new possibilities for preservation of and unfettered access to information. Library Futures is a project of The Engelberg Center on Innovation Law & Policy at NYU Law.
   url: https://www.libraryfutures.net/
+  image: https://kinlane-productions2.s3.us-east-1.amazonaws.com/book-event-nyc/library-futures.png
