@@ -19,7 +19,7 @@ Audrey and I headed down to the East Village last night for the [Radical Book Bu
     {% if publisher.BookName == "No Straight Road Takes You There" or publisher.BookName == "Talking About Abolition" or publisher.BookName == "Motherdom" or publisher.BookName == "B. Traven, Portrait of a Famous Unknown" or publisher.BookName == "If I Must Die" or publisher.BookName == "Mafalda" or publisher.BookName == "Sympathy For Wild Girls" or publisher.BookName == "Gabriële" or publisher.BookName == "King of the North" or publisher.BookName == "Ghassan Kanafani, Selected Political Writings" %}
     <tr>
         <td width="175" align="center">
-            <a href="{{ publisher.BookUrl }}"><img src="{{ publisher.image }}" width="150" style="border: 3px solid #000;"></a>
+            <a href="{{ publisher.BookUrl }}"><img src="{{ publisher.BookImage }}" width="150" style="border: 3px solid #000;"></a>
         </td>
         <td>
             <a href="{{ publisher.BookUrl }}">{{ publisher.BookName }}</a> by {{ publisher.BookAuthor }} from <a href="{{ publisher.BookUrl }}">{{ publisherUrl }}</a> - {{ publisher.BookDescription }}
@@ -36,7 +36,7 @@ I am thankful for the work of these two organizations for making the event happe
 {% assign organizations = site.data.organizations %}
 <table align="center" style="width: 70%">
 {% for organization in organizations %}
-    {% if organization.name == "Library Freedom" or organization.name == "Library Futures" %}
+    {% if organization.name == "Library Freedom Project" or organization.name == "Library Futures" %}
     <tr>
         <td width="175" align="center">
             <a href="{{ organization.url }}"><img src="{{ organization.image }}" width="150" style="border: 3px solid #000;"></a>
